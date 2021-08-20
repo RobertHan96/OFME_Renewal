@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DeleteUserViewController" customModule="OfMe" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wzx-kE-a9X">
+                    <rect key="frame" x="111" y="244" width="192.5" height="24"/>
+                    <attributedString key="attributedText">
+                        <fragment content="오브미를 탈퇴">
+                            <attributes>
+                                <color key="NSColor" red="0.091667748990000006" green="0.19188937540000001" blue="0.73729795220000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <font key="NSFont" metaFont="system" size="20"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <attributedString key="attributedText">
+                            <fragment content="오브미를 탈퇴">
+                                <attributes>
+                                    <color key="NSColor" red="0.091667748990000006" green="0.19188937540000001" blue="0.73729795220000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <font key="NSFont" metaFont="system" size="20"/>
+                                </attributes>
+                            </fragment>
+                            <fragment content=" 하시나요?">
+                                <attributes>
+                                    <font key="NSFont" metaFont="system" size="20"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </variation>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oli-Px-diB">
+                    <rect key="frame" x="66.5" y="282" width="281.5" height="17"/>
+                    <attributedString key="attributedText">
+                        <fragment content="회원 탈퇴를 하면 그동안의 이용정보가 삭제됩니다. ">
+                            <attributes>
+                                <color key="NSColor" red="0.50980752709999999" green="0.50979751350000002" blue="0.50980430840000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XFF-yi-hYK">
+                    <rect key="frame" x="30" y="359" width="354" height="55"/>
+                    <color key="backgroundColor" red="0.2254246771" green="0.3421272635" blue="0.84710401300000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="HcQ-Kz-rJN"/>
+                    </constraints>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="탈퇴하기">
+                                <attributes>
+                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <font key="NSFont" metaFont="system" size="14"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="deleteTouchDown:" destination="-1" eventType="touchDown" id="d8e-hl-gUd"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3s7-cQ-yuM">
+                    <rect key="frame" x="162.5" y="424.5" width="89" height="28.5"/>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="계속 이용할게요">
+                                <attributes>
+                                    <color key="NSColor" red="0.50980752709999999" green="0.50979751350000002" blue="0.50980430840000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <font key="NSFont" metaFont="system" size="14"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                    <connections>
+                        <action selector="next:" destination="-1" eventType="touchUpInside" id="5cy-IY-Yp6"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Wzx-kE-a9X" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="5Fu-0m-BEQ"/>
+                <constraint firstItem="3s7-cQ-yuM" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="5o2-yc-XWp"/>
+                <constraint firstItem="XFF-yi-hYK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="FVA-OR-PuL"/>
+                <constraint firstItem="3s7-cQ-yuM" firstAttribute="top" secondItem="XFF-yi-hYK" secondAttribute="bottom" constant="10.5" id="IWI-bx-EZv"/>
+                <constraint firstItem="oli-Px-diB" firstAttribute="top" secondItem="Wzx-kE-a9X" secondAttribute="bottom" constant="14" id="J0T-Uh-Czs"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="XFF-yi-hYK" secondAttribute="trailing" constant="30" id="UPP-OP-giS"/>
+                <constraint firstItem="XFF-yi-hYK" firstAttribute="top" secondItem="oli-Px-diB" secondAttribute="bottom" constant="60" id="WXI-p9-k0C"/>
+                <constraint firstItem="Wzx-kE-a9X" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="200" id="bTZ-Yy-aNz"/>
+                <constraint firstItem="oli-Px-diB" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="uXL-uJ-wXI"/>
+            </constraints>
+            <point key="canvasLocation" x="35" y="92"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

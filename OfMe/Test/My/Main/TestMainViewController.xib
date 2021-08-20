@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TestMainViewController" customModule="OfMe" customModuleProvider="target">
+            <connections>
+                <outlet property="categoryButton" destination="s96-lc-2XA" id="fqD-7T-NpY"/>
+                <outlet property="descriptLabel" destination="Msk-Mx-ufB" id="8ml-py-iqr"/>
+                <outlet property="introLabel" destination="4VU-oo-KeW" id="ltH-cE-BfF"/>
+                <outlet property="testButton" destination="fco-u0-IWt" id="s2v-tk-Qi2"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="475"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4VU-oo-KeW">
+                    <rect key="frame" x="70" y="110" width="180" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Msk-Mx-ufB">
+                    <rect key="frame" x="70" y="135.5" width="180" height="29"/>
+                    <string key="text">직접 선택 또는 테스트를 시작하여
+나다움의 여정을 시작해보세요!</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r0Y-gM-CSD">
+                    <rect key="frame" x="49" y="198.5" width="222" height="1"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="xnG-aR-4CF"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s96-lc-2XA">
+                    <rect key="frame" x="49" y="220.5" width="222" height="55"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="siZ-fX-hzX"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="categoryTouchDown:" destination="-1" eventType="touchUpInside" id="GJc-b2-iaE"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fco-u0-IWt">
+                    <rect key="frame" x="49" y="285.5" width="222" height="55"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="m3u-qe-9Km"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="testTouchDown:" destination="-1" eventType="touchUpInside" id="oea-N5-NcD"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Msk-Mx-ufB" secondAttribute="trailing" constant="70" id="0in-TX-Hj6"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="s96-lc-2XA" secondAttribute="trailing" constant="49" id="A5a-th-phL"/>
+                <constraint firstItem="s96-lc-2XA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="49" id="AZy-g5-0ed"/>
+                <constraint firstItem="r0Y-gM-CSD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="49" id="AsI-hm-Jm3"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="r0Y-gM-CSD" secondAttribute="trailing" constant="49" id="I1N-BJ-1qK"/>
+                <constraint firstItem="fco-u0-IWt" firstAttribute="top" secondItem="s96-lc-2XA" secondAttribute="bottom" constant="10" id="IDT-WR-LIF"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fco-u0-IWt" secondAttribute="trailing" constant="49" id="Oln-P9-25k"/>
+                <constraint firstItem="4VU-oo-KeW" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="70" id="QjC-vh-cmy"/>
+                <constraint firstItem="4VU-oo-KeW" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="110" id="UBb-PQ-LoX"/>
+                <constraint firstItem="fco-u0-IWt" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="49" id="XOV-rG-EnS"/>
+                <constraint firstItem="s96-lc-2XA" firstAttribute="top" secondItem="r0Y-gM-CSD" secondAttribute="bottom" constant="21" id="Zl4-Xm-5qU"/>
+                <constraint firstItem="Msk-Mx-ufB" firstAttribute="top" secondItem="4VU-oo-KeW" secondAttribute="bottom" constant="25.5" id="aFy-8R-KQx"/>
+                <constraint firstItem="r0Y-gM-CSD" firstAttribute="top" secondItem="Msk-Mx-ufB" secondAttribute="bottom" constant="34" id="cCN-mV-Z7i"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="4VU-oo-KeW" secondAttribute="trailing" constant="70" id="cqy-jj-tgW"/>
+                <constraint firstItem="Msk-Mx-ufB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="70" id="zMN-Us-Gx3"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+            <point key="canvasLocation" x="33.75" y="130.98591549295776"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FixNameViewController" customModule="OfMe" customModuleProvider="target">
+            <connections>
+                <outlet property="submitButton" destination="NSZ-J2-hMw" id="0uE-GD-Hfy"/>
+                <outlet property="textField" destination="VUq-wG-5qc" id="fgi-QB-Ldf"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N83-vB-qe4">
+                    <rect key="frame" x="30" y="74" width="52.5" height="17"/>
+                    <attributedString key="attributedText">
+                        <fragment content="새 닉네임">
+                            <attributes>
+                                <font key="NSFont" metaFont="menu" size="14"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="새로운 닉네임" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VUq-wG-5qc">
+                    <rect key="frame" x="30" y="102.5" width="354" height="55"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="jqG-Dy-w6Z"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NSZ-J2-hMw">
+                    <rect key="frame" x="30" y="197.5" width="354" height="55"/>
+                    <color key="backgroundColor" red="0.2254246771" green="0.3421272635" blue="0.84710401300000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="c2N-44-UJj"/>
+                    </constraints>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="변경하기">
+                                <attributes>
+                                    <color key="NSColor" red="1" green="0.99998790029999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <font key="NSFont" metaFont="system" size="16"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="changeTouchDown:" destination="-1" eventType="touchUpInside" id="CeU-d3-bqd"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="NSZ-J2-hMw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="1q1-vw-hKy"/>
+                <constraint firstItem="VUq-wG-5qc" firstAttribute="top" secondItem="N83-vB-qe4" secondAttribute="bottom" constant="11.5" id="GN5-RV-KwV"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="VUq-wG-5qc" secondAttribute="trailing" constant="30" id="KW7-ry-5Ul"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="NSZ-J2-hMw" secondAttribute="trailing" constant="30" id="M2y-Pn-C01"/>
+                <constraint firstItem="NSZ-J2-hMw" firstAttribute="top" secondItem="VUq-wG-5qc" secondAttribute="bottom" constant="40" id="PtY-gV-zeH"/>
+                <constraint firstItem="VUq-wG-5qc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="hml-tQ-nMF"/>
+                <constraint firstItem="N83-vB-qe4" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="pRh-1t-aSa"/>
+                <constraint firstItem="N83-vB-qe4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="wMQ-l1-5UO"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="104.46428571428571"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
