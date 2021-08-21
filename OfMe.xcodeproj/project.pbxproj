@@ -123,12 +123,6 @@
 		3B8391E92689D98000B35A53 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8391C62689D97F00B35A53 /* Color.swift */; };
 		3B8391EB2689D98000B35A53 /* KobisKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8391C92689D97F00B35A53 /* KobisKey.swift */; };
 		3B8391F82689D98000B35A53 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8391D92689D98000B35A53 /* BaseViewController.swift */; };
-		3B8392002689DFE000B35A53 /* NotoSansKR-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3B8391FA2689DFE000B35A53 /* NotoSansKR-Medium.otf */; };
-		3B8392012689DFE000B35A53 /* NotoSansKR-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3B8391FB2689DFE000B35A53 /* NotoSansKR-Thin.otf */; };
-		3B8392022689DFE000B35A53 /* NotoSansKR-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3B8391FC2689DFE000B35A53 /* NotoSansKR-Light.otf */; };
-		3B8392032689DFE000B35A53 /* NotoSansKR-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3B8391FD2689DFE000B35A53 /* NotoSansKR-Regular.otf */; };
-		3B8392042689DFE000B35A53 /* NotoSansKR-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3B8391FE2689DFE000B35A53 /* NotoSansKR-Bold.otf */; };
-		3B8392052689DFE000B35A53 /* NotoSansKR-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3B8391FF2689DFE000B35A53 /* NotoSansKR-Black.otf */; };
 		3B8392092689E12B00B35A53 /* LoginMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8392072689E12B00B35A53 /* LoginMainViewController.swift */; };
 		3B83920A2689E12B00B35A53 /* LoginMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B8392082689E12B00B35A53 /* LoginMainViewController.xib */; };
 		3B83920C2689E49F00B35A53 /* ImageConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B83920B2689E49F00B35A53 /* ImageConstant.swift */; };
@@ -1869,7 +1863,6 @@
 			files = (
 				3B96640726A1F89700DE5DB3 /* QuestionMenuCell.xib in Resources */,
 				3B839213268A246A00B35A53 /* SignInViewController.xib in Resources */,
-				3B8392032689DFE000B35A53 /* NotoSansKR-Regular.otf in Resources */,
 				00F12D2B26D159190055BC5F /* NotoSansKR-Black.otf in Resources */,
 				3BBD934A268F7AD8003BB706 /* TestConceptDescriptCollectionViewCell.xib in Resources */,
 				00F12D1826D1529C0055BC5F /* TimeInfoCell.xib in Resources */,
@@ -1882,7 +1875,6 @@
 				3B4BB01D26AAA0B40055E36D /* QuestionSubViewController.xib in Resources */,
 				3BBD9343268F7652003BB706 /* TestConceptSecondViewController.xib in Resources */,
 				3B28D2F8268DEBD6005BCDE8 /* TestCategoryViewController.xib in Resources */,
-				3B8392012689DFE000B35A53 /* NotoSansKR-Thin.otf in Resources */,
 				3B4037332689D6FE00AFAC40 /* LaunchScreen.storyboard in Resources */,
 				3B326DD42690971100094C0D /* TestConceptThirdViewController.xib in Resources */,
 				3B28D304268E1010005BCDE8 /* TestDetailViewController.xib in Resources */,
@@ -1892,7 +1884,6 @@
 				3BE26F1B269F29F1002F67D4 /* ArchiveWriteViewController.xib in Resources */,
 				3B96640226A1F42900DE5DB3 /* QuestionMainCell.xib in Resources */,
 				3B6CF6DD268EBC39002A4DDE /* TestResultViewController.xib in Resources */,
-				3B8392022689DFE000B35A53 /* NotoSansKR-Light.otf in Resources */,
 				3B2BAF29268B4FCE00CF3048 /* MyInfoMainViewController.xib in Resources */,
 				00F12D2826D159190055BC5F /* NotoSansKR-Bold.otf in Resources */,
 				00F12D2926D159190055BC5F /* NotoSansKR-Thin.otf in Resources */,
@@ -1919,7 +1910,6 @@
 				3B9663FD26A1E46E00DE5DB3 /* QuestionViewController.xib in Resources */,
 				3BD7007F26A5CB4C0055AF8A /* QuestionWriteViewController.xib in Resources */,
 				3BBD933B268F68D0003BB706 /* ConceptTestCollectionViewCell.xib in Resources */,
-				3B8392052689DFE000B35A53 /* NotoSansKR-Black.otf in Resources */,
 				3B1943F126AAF6DC0014558F /* InfoDetailViewController.xib in Resources */,
 				3B28D300268DF33E005BCDE8 /* CategoryCollectionViewCell.xib in Resources */,
 				3B40F76826A1C0CF001F6FE7 /* QuestionSubMainViewController.xib in Resources */,
@@ -1927,8 +1917,6 @@
 				3B2BAF2D268B5E9200CF3048 /* CustomTabBarViewController.xib in Resources */,
 				3B40F75B26A02C9E001F6FE7 /* WriteImageCell.xib in Resources */,
 				00F12D2A26D159190055BC5F /* NotoSansKR-Light.otf in Resources */,
-				3B8392042689DFE000B35A53 /* NotoSansKR-Bold.otf in Resources */,
-				3B8392002689DFE000B35A53 /* NotoSansKR-Medium.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
