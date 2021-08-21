@@ -7,8 +7,13 @@
 
 import UIKit
 
+// 데이터 전달 로직
+//1. HomeVC(데이터 전달) ->
+//2. TableViewCell with TableView Horizental(데이터 전달, 페이지 컨트롤 델리게이트) ->
+//3. TableViewCell in TableView of TableView (최종적으로 캐릭터 특성 표시)
+
 class CharacterInfoCell: UITableViewCell {
-    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var tableView: UITableView!
     let pageControl = UIPageControl()
     
     override func awakeFromNib() {
@@ -29,11 +34,10 @@ class CharacterInfoCell: UITableViewCell {
 
     // 컬렉션뷰 셋업, 데이터 주입
     private func setupUI() {
-        setupCollectionView()
+        setupTableView()
     }
     
-    private func setupCollectionView() {
-        
+    private func setupTableView() {
     }
     
     private func setupPageControll() {
