@@ -15,6 +15,8 @@
 		00F12D2A26D159190055BC5F /* NotoSansKR-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 00F12D2426D159180055BC5F /* NotoSansKR-Light.otf */; };
 		00F12D2B26D159190055BC5F /* NotoSansKR-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 00F12D2526D159180055BC5F /* NotoSansKR-Black.otf */; };
 		00F12D2C26D159190055BC5F /* NotoSansKR-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 00F12D2626D159190055BC5F /* NotoSansKR-Medium.otf */; };
+		00F12D2F26D15B1E0055BC5F /* CharacterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F12D2D26D15B1E0055BC5F /* CharacterCell.swift */; };
+		00F12D3026D15B1E0055BC5F /* CharacterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00F12D2E26D15B1E0055BC5F /* CharacterCell.xib */; };
 		3B1943F026AAF6DC0014558F /* InfoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1943EE26AAF6DC0014558F /* InfoDetailViewController.swift */; };
 		3B1943F126AAF6DC0014558F /* InfoDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B1943EF26AAF6DC0014558F /* InfoDetailViewController.xib */; };
 		3B1943F526AB02720014558F /* FixNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1943F326AB02720014558F /* FixNameViewController.swift */; };
@@ -217,6 +219,8 @@
 		00F12D2426D159180055BC5F /* NotoSansKR-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Light.otf"; sourceTree = "<group>"; };
 		00F12D2526D159180055BC5F /* NotoSansKR-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Black.otf"; sourceTree = "<group>"; };
 		00F12D2626D159190055BC5F /* NotoSansKR-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Medium.otf"; sourceTree = "<group>"; };
+		00F12D2D26D15B1E0055BC5F /* CharacterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCell.swift; sourceTree = "<group>"; };
+		00F12D2E26D15B1E0055BC5F /* CharacterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterCell.xib; sourceTree = "<group>"; };
 		0F294F538A4B97EB52248CC5 /* Pods-OfMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OfMe.debug.xcconfig"; path = "Target Support Files/Pods-OfMe/Pods-OfMe.debug.xcconfig"; sourceTree = "<group>"; };
 		0FF14BA05BC0532E439C92AA /* Pods_OfMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OfMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B1943EE26AAF6DC0014558F /* InfoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoDetailViewController.swift; sourceTree = "<group>"; };
@@ -431,6 +435,8 @@
 			children = (
 				00F12D1526D1529B0055BC5F /* TimeInfoCell.swift */,
 				00F12D1626D1529B0055BC5F /* TimeInfoCell.xib */,
+				00F12D2D26D15B1E0055BC5F /* CharacterCell.swift */,
+				00F12D2E26D15B1E0055BC5F /* CharacterCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -1853,6 +1859,7 @@
 				3BBD934A268F7AD8003BB706 /* TestConceptDescriptCollectionViewCell.xib in Resources */,
 				00F12D1826D1529C0055BC5F /* TimeInfoCell.xib in Resources */,
 				3B638FCA268B485B0095F05B /* HomeMainViewController.xib in Resources */,
+				00F12D3026D15B1E0055BC5F /* CharacterCell.xib in Resources */,
 				00F12D2726D159190055BC5F /* NotoSansKR-Regular.otf in Resources */,
 				3B97443E26A86A8800027219 /* QuestionSubCell.xib in Resources */,
 				3BE470CF26A470EA00FF18D2 /* QuestionAllViewController.xib in Resources */,
@@ -2072,6 +2079,7 @@
 				3B96640E26A2112100DE5DB3 /* TestThirdDataManager.swift in Sources */,
 				3BD6A044269DFCDF00F7E3AF /* TestConceptSecondDataManager.swift in Sources */,
 				3B8C37FE26AD400100CD893A /* QuestionAllDataManager.swift in Sources */,
+				00F12D2F26D15B1E0055BC5F /* CharacterCell.swift in Sources */,
 				3B91500A269855AD004FE9C0 /* SignInResponse.swift in Sources */,
 				3B96640C26A210A700DE5DB3 /* TestConceptThirdResponse.swift in Sources */,
 				3B8CF34026A36BB200A6B627 /* FinishDataManager.swift in Sources */,
