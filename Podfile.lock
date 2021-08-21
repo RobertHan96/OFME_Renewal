@@ -2,37 +2,53 @@ PODS:
   - Alamofire (5.4.3)
   - FSCalendar (2.8.2)
   - ImagePicker (3.2.0)
+  - Instructions (2.1.0)
+  - IQKeyboardManager (6.5.6)
   - Kingfisher (6.3.0)
   - NVActivityIndicatorView (5.1.1):
     - NVActivityIndicatorView/Base (= 5.1.1)
   - NVActivityIndicatorView/Base (5.1.1)
+  - SideMenu (6.5.0)
   - SnapKit (5.0.1)
+  - Then (2.7.0)
 
 DEPENDENCIES:
   - Alamofire
   - FSCalendar
   - ImagePicker
+  - Instructions
+  - IQKeyboardManager
   - Kingfisher
   - NVActivityIndicatorView
+  - SideMenu
   - SnapKit
+  - Then
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - FSCalendar
     - ImagePicker
+    - Instructions
+    - IQKeyboardManager
     - Kingfisher
     - NVActivityIndicatorView
+    - SideMenu
     - SnapKit
+    - Then
 
 SPEC CHECKSUMS:
   Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
   FSCalendar: e6a2eb9c571bf0719ed797ef807e08426753c241
   ImagePicker: 1d950bbb2422548ed58791b4ec7f42fe42920511
+  Instructions: 2465e321dde23f7c8fc26fe8efddf605df80dfba
+  IQKeyboardManager: 2a6e97afdafc7becf0cb17a9a8d795e3a980717f
   Kingfisher: 6c3df386db71d82c0817a429d2c9421a77396529
   NVActivityIndicatorView: 1f6c5687f1171810aa27a3296814dc2d7dec3667
+  SideMenu: f583187d21c5b1dd04c72002be544b555a2627a2
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  Then: acfe0be7e98221c6204e12f8161459606d5d822d
 
-PODFILE CHECKSUM: 3a64535f8be73bb10ea3b537bc5d8baf34f57b32
+PODFILE CHECKSUM: ea96ceeb8d82d4d0c27790fb53138b7f0ed4e374
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.10.0
