@@ -11,7 +11,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeMainViewController" customModule="OfMe" customModuleProvider="target">
             <connections>
-                <outlet property="backgroundImageView" destination="vjk-WJ-9Ya" id="rKj-LH-Jcq"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,23 +19,35 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeBackground" translatesAutoresizingMaskIntoConstraints="NO" id="vjk-WJ-9Ya">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zJM-i5-Xe3">
+                    <rect key="frame" x="30" y="74" width="354" height="748"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Qg-6y-c3p">
+                    <rect key="frame" x="350" y="427" width="64" height="52"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="64" id="LBC-Iw-jpx"/>
+                        <constraint firstAttribute="height" constant="52" id="Tcc-C9-2ur"/>
+                    </constraints>
+                    <state key="normal" image="main_action_button"/>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="vjk-WJ-9Ya" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="8cU-wj-I5g"/>
-                <constraint firstItem="vjk-WJ-9Ya" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="LaR-fI-ZIB"/>
-                <constraint firstAttribute="bottom" secondItem="vjk-WJ-9Ya" secondAttribute="bottom" id="SHB-1i-inR"/>
-                <constraint firstAttribute="trailing" secondItem="vjk-WJ-9Ya" secondAttribute="trailing" id="gaZ-47-CwC"/>
+                <constraint firstItem="0Qg-6y-c3p" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="9F3-xe-tTp"/>
+                <constraint firstItem="zJM-i5-Xe3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="MQr-UZ-sk0"/>
+                <constraint firstItem="zJM-i5-Xe3" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="Tac-RI-3ne"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="0Qg-6y-c3p" secondAttribute="trailing" id="fL4-HS-UiJ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="zJM-i5-Xe3" secondAttribute="bottom" constant="40" id="lMM-SX-9eC"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="zJM-i5-Xe3" secondAttribute="trailing" constant="30" id="thW-Dy-ylT"/>
             </constraints>
-            <point key="canvasLocation" x="132" y="96"/>
+            <point key="canvasLocation" x="131.8840579710145" y="95.758928571428569"/>
         </view>
     </objects>
     <resources>
-        <image name="homeBackground" width="375" height="762"/>
+        <image name="main_action_button" width="22" height="19"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
