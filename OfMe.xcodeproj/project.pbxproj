@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		00F12D1726D1529B0055BC5F /* TimeInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F12D1526D1529B0055BC5F /* TimeInfoCell.swift */; };
 		00F12D1826D1529C0055BC5F /* TimeInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00F12D1626D1529B0055BC5F /* TimeInfoCell.xib */; };
+		00F12D2726D159190055BC5F /* NotoSansKR-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 00F12D2126D159170055BC5F /* NotoSansKR-Regular.otf */; };
+		00F12D2826D159190055BC5F /* NotoSansKR-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 00F12D2226D159180055BC5F /* NotoSansKR-Bold.otf */; };
+		00F12D2926D159190055BC5F /* NotoSansKR-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 00F12D2326D159180055BC5F /* NotoSansKR-Thin.otf */; };
+		00F12D2A26D159190055BC5F /* NotoSansKR-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 00F12D2426D159180055BC5F /* NotoSansKR-Light.otf */; };
+		00F12D2B26D159190055BC5F /* NotoSansKR-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 00F12D2526D159180055BC5F /* NotoSansKR-Black.otf */; };
+		00F12D2C26D159190055BC5F /* NotoSansKR-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 00F12D2626D159190055BC5F /* NotoSansKR-Medium.otf */; };
 		3B1943F026AAF6DC0014558F /* InfoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1943EE26AAF6DC0014558F /* InfoDetailViewController.swift */; };
 		3B1943F126AAF6DC0014558F /* InfoDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B1943EF26AAF6DC0014558F /* InfoDetailViewController.xib */; };
 		3B1943F526AB02720014558F /* FixNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1943F326AB02720014558F /* FixNameViewController.swift */; };
@@ -205,6 +211,12 @@
 /* Begin PBXFileReference section */
 		00F12D1526D1529B0055BC5F /* TimeInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeInfoCell.swift; sourceTree = "<group>"; };
 		00F12D1626D1529B0055BC5F /* TimeInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeInfoCell.xib; sourceTree = "<group>"; };
+		00F12D2126D159170055BC5F /* NotoSansKR-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Regular.otf"; sourceTree = "<group>"; };
+		00F12D2226D159180055BC5F /* NotoSansKR-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Bold.otf"; sourceTree = "<group>"; };
+		00F12D2326D159180055BC5F /* NotoSansKR-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Thin.otf"; sourceTree = "<group>"; };
+		00F12D2426D159180055BC5F /* NotoSansKR-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Light.otf"; sourceTree = "<group>"; };
+		00F12D2526D159180055BC5F /* NotoSansKR-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Black.otf"; sourceTree = "<group>"; };
+		00F12D2626D159190055BC5F /* NotoSansKR-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Medium.otf"; sourceTree = "<group>"; };
 		0F294F538A4B97EB52248CC5 /* Pods-OfMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OfMe.debug.xcconfig"; path = "Target Support Files/Pods-OfMe/Pods-OfMe.debug.xcconfig"; sourceTree = "<group>"; };
 		0FF14BA05BC0532E439C92AA /* Pods_OfMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OfMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B1943EE26AAF6DC0014558F /* InfoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoDetailViewController.swift; sourceTree = "<group>"; };
@@ -436,6 +448,12 @@
 		00F12D1A26D156500055BC5F /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				00F12D2526D159180055BC5F /* NotoSansKR-Black.otf */,
+				00F12D2226D159180055BC5F /* NotoSansKR-Bold.otf */,
+				00F12D2426D159180055BC5F /* NotoSansKR-Light.otf */,
+				00F12D2626D159190055BC5F /* NotoSansKR-Medium.otf */,
+				00F12D2126D159170055BC5F /* NotoSansKR-Regular.otf */,
+				00F12D2326D159180055BC5F /* NotoSansKR-Thin.otf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -1831,9 +1849,11 @@
 				3B96640726A1F89700DE5DB3 /* QuestionMenuCell.xib in Resources */,
 				3B839213268A246A00B35A53 /* SignInViewController.xib in Resources */,
 				3B8392032689DFE000B35A53 /* NotoSansKR-Regular.otf in Resources */,
+				00F12D2B26D159190055BC5F /* NotoSansKR-Black.otf in Resources */,
 				3BBD934A268F7AD8003BB706 /* TestConceptDescriptCollectionViewCell.xib in Resources */,
 				00F12D1826D1529C0055BC5F /* TimeInfoCell.xib in Resources */,
 				3B638FCA268B485B0095F05B /* HomeMainViewController.xib in Resources */,
+				00F12D2726D159190055BC5F /* NotoSansKR-Regular.otf in Resources */,
 				3B97443E26A86A8800027219 /* QuestionSubCell.xib in Resources */,
 				3BE470CF26A470EA00FF18D2 /* QuestionAllViewController.xib in Resources */,
 				3B4BB01D26AAA0B40055E36D /* QuestionSubViewController.xib in Resources */,
@@ -1851,6 +1871,8 @@
 				3B6CF6DD268EBC39002A4DDE /* TestResultViewController.xib in Resources */,
 				3B8392022689DFE000B35A53 /* NotoSansKR-Light.otf in Resources */,
 				3B2BAF29268B4FCE00CF3048 /* MyInfoMainViewController.xib in Resources */,
+				00F12D2826D159190055BC5F /* NotoSansKR-Bold.otf in Resources */,
+				00F12D2926D159190055BC5F /* NotoSansKR-Thin.otf in Resources */,
 				3BBD9334268F63C4003BB706 /* TestConceptHeader.xib in Resources */,
 				3B3ECE3D269228E7006BCD5D /* ConceptResultMusicCell.xib in Resources */,
 				3B753D3226B590F200A941AA /* DeleteUserViewController.xib in Resources */,
@@ -1859,6 +1881,7 @@
 				3B83920A2689E12B00B35A53 /* LoginMainViewController.xib in Resources */,
 				3B638FCF268B488F0095F05B /* ArchiveMainViewController.xib in Resources */,
 				3B96642B26A356FC00DE5DB3 /* HomeFinishViewController.xib in Resources */,
+				00F12D2C26D159190055BC5F /* NotoSansKR-Medium.otf in Resources */,
 				3B8CF33826A362BC00A6B627 /* StarCell.xib in Resources */,
 				3B6CF6E4268EEC43002A4DDE /* TestConceptMainViewController.xib in Resources */,
 				3B4037302689D6FE00AFAC40 /* Assets.xcassets in Resources */,
@@ -1879,6 +1902,7 @@
 				3B2BAF3F268CC5D000CF3048 /* TestMainViewController.xib in Resources */,
 				3B2BAF2D268B5E9200CF3048 /* CustomTabBarViewController.xib in Resources */,
 				3B40F75B26A02C9E001F6FE7 /* WriteImageCell.xib in Resources */,
+				00F12D2A26D159190055BC5F /* NotoSansKR-Light.otf in Resources */,
 				3B8392042689DFE000B35A53 /* NotoSansKR-Bold.otf in Resources */,
 				3B8392002689DFE000B35A53 /* NotoSansKR-Medium.otf in Resources */,
 			);
