@@ -54,6 +54,11 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="CharacterTimeLabel" destination="3Wd-dC-g0H" id="NUL-fU-7HH"/>
+                <outlet property="endCharacterBtn" destination="Cee-ya-D9U" id="noJ-Jq-3gY"/>
+                <outlet property="timeNameLabel" destination="RTc-DX-wil" id="67z-NW-chE"/>
+            </connections>
             <point key="canvasLocation" x="22" y="139"/>
         </tableViewCell>
     </objects>

@@ -7,17 +7,31 @@
 
 import UIKit
 
-class TimeInfoCell: UITableViewCell {
+// 종료 버튼 선택시 API 호출을 위한 protocol
+protocol TimeInfoCellButtonsClicked {
+    func endButtonDidCliikd()
+}
 
+class TimeInfoCell: UITableViewCell {
+    @IBOutlet weak var timeNameLabel: UILabel!
+    @IBOutlet weak var CharacterTimeLabel: UILabel!
+    @IBOutlet weak var endCharacterBtn: UIButton!
+    var delegate: TimeInfoCellButtonsClicked?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        setupUI()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    // 색상, 버튼 UI 설정
+    private func setupUI() {
+
     }
     
 }
