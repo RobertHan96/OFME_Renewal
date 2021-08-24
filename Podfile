@@ -6,10 +6,11 @@ target 'OfMe' do
   use_frameworks!
 
   # Pods for OfMe
-  # 화면 외 라이브러리, 추후 Firebase 연동 예정
+  # 화면 외 라이브러리
   pod 'Alamofire'
-
+  pod 'Firebase/Analytics'
   pod 'Kingfisher'
+
   pod 'SnapKit'
   pod 'Then'
   pod 'IQKeyboardManager'
