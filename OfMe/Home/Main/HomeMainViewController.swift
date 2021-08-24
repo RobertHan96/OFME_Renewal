@@ -95,6 +95,9 @@ class HomeMainViewController: BaseViewController {
     func setupTableView() {
         homeMainTableView.delegate = self
         homeMainTableView.dataSource = self
+        homeMainTableView.register(UINib.init(nibName: CellManager.CharacterCellName, bundle: nil), forCellReuseIdentifier: CellManager.CharacterCellIdentifier)
+        homeMainTableView.register(UINib.init(nibName: CellManager.CharacterFeatureCellName, bundle: nil), forCellReuseIdentifier: CellManager.CharacterFeatureCellIdentifier)
+        homeMainTableView.register(UINib.init(nibName: CellManager.TimeInfoCellName, bundle: nil), forCellReuseIdentifier: CellManager.TimeInfoCellIdentifier)
     }
     
     func setTimer(startTime: Date) {

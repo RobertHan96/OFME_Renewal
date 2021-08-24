@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		00EAF4BE26D53EFD005DBDB8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 00EAF4BD26D53EFD005DBDB8 /* GoogleService-Info.plist */; };
+		00EAF4C026D544FB005DBDB8 /* CellManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EAF4BF26D544FB005DBDB8 /* CellManager.swift */; };
 		00F12D1726D1529B0055BC5F /* TimeInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F12D1526D1529B0055BC5F /* TimeInfoCell.swift */; };
 		00F12D1826D1529C0055BC5F /* TimeInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00F12D1626D1529B0055BC5F /* TimeInfoCell.xib */; };
 		00F12D2726D159190055BC5F /* NotoSansKR-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 00F12D2126D159170055BC5F /* NotoSansKR-Regular.otf */; };
@@ -212,6 +213,7 @@
 
 /* Begin PBXFileReference section */
 		00EAF4BD26D53EFD005DBDB8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		00EAF4BF26D544FB005DBDB8 /* CellManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellManager.swift; sourceTree = "<group>"; };
 		00F12D1526D1529B0055BC5F /* TimeInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeInfoCell.swift; sourceTree = "<group>"; };
 		00F12D1626D1529B0055BC5F /* TimeInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeInfoCell.xib; sourceTree = "<group>"; };
 		00F12D2126D159170055BC5F /* NotoSansKR-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Regular.otf"; sourceTree = "<group>"; };
@@ -447,6 +449,7 @@
 				00F12D3226D15E060055BC5F /* CharacterInfoCell.xib */,
 				00F12D3526D1612F0055BC5F /* CharacterFeatureTableViewCell.swift */,
 				00F12D3626D1612F0055BC5F /* CharacterFeatureTableViewCell.xib */,
+				00EAF4BF26D544FB005DBDB8 /* CellManager.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -2028,6 +2031,7 @@
 				3B2BAF3E268CC5D000CF3048 /* TestMainViewController.swift in Sources */,
 				3B8391F82689D98000B35A53 /* BaseViewController.swift in Sources */,
 				3BD6A026269DE49400F7E3AF /* TestMyCategoryDataManager.swift in Sources */,
+				00EAF4C026D544FB005DBDB8 /* CellManager.swift in Sources */,
 				3BBD9342268F7652003BB706 /* TestConceptSecondViewController.swift in Sources */,
 				3B40F75D26A07816001F6FE7 /* CharactorPickerView.swift in Sources */,
 				3B4BB02126AAA9440055E36D /* CommentCell.swift in Sources */,
