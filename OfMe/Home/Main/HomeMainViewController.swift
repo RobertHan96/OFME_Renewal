@@ -1,7 +1,22 @@
 import UIKit
 import Kingfisher
 
+
+extension HomeMainViewController : UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return UITableViewCell()
+    }
+    
+}
+
 class HomeMainViewController: BaseViewController {
+    
+    @IBOutlet weak var homeMainTableView: UITableView!
+    
     private var stopImage: String = ""
     private let dataManager = HomeMainDataManager()
     private var tapImages: [String] = []
@@ -39,21 +54,22 @@ class HomeMainViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        preview = PreviewAdapter { button in
-            switch button.tag {
-            case 0:
-                self.preview?.backgroundView.removeFromSuperview()
-                self.preview?.view.removeFromSuperview()
-            case 1:
-                let vc = TestMainViewController()
-                self.navigationController?.pushViewController(vc, animated: true)
-            default:
-                let vc = TestConceptMainViewController()
-                self.navigationController?.pushViewController(vc, animated: true)
-            }
-        }
-        customView.infoButton.addTarget(self, action: #selector(infoTouchDown(_:)), for: .touchDown)
-        changeIsFirst()
+        setupTableView()
+//        preview = PreviewAdapter { button in
+//            switch button.tag {
+//            case 0:
+//                self.preview?.backgroundView.removeFromSuperview()
+//                self.preview?.view.removeFromSuperview()
+//            case 1:
+//                let vc = TestMainViewController()
+//                self.navigationController?.pushViewController(vc, animated: true)
+//            default:
+//                let vc = TestConceptMainViewController()
+//                self.navigationController?.pushViewController(vc, animated: true)
+//            }
+//        }
+//        customView.infoButton.addTarget(self, action: #selector(infoTouchDown(_:)), for: .touchDown)
+//        changeIsFirst()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -73,6 +89,12 @@ class HomeMainViewController: BaseViewController {
         middleButton?.removeFromSuperview()
         self.view.removeFromSuperview()
         dataManager.patchCharacterTime(time: time)
+    }
+    
+    // Delegate에서 처음 유저인지 여부를 판단해서 다르게 테이블뷰 생성
+    func setupTableView() {
+        homeMainTableView.delegate = self
+        homeMainTableView.dataSource = self
     }
     
     func setTimer(startTime: Date) {

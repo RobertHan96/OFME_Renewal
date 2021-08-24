@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeMainViewController" customModule="OfMe" customModuleProvider="target">
             <connections>
+                <outlet property="homeMainTableView" destination="zJM-i5-Xe3" id="YJs-Ob-29h"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
