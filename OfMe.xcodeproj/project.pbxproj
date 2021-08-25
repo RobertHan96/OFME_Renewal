@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		00EAF4BE26D53EFD005DBDB8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 00EAF4BD26D53EFD005DBDB8 /* GoogleService-Info.plist */; };
 		00EAF4C026D544FB005DBDB8 /* CellManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EAF4BF26D544FB005DBDB8 /* CellManager.swift */; };
+		00EAF4C326D6889F005DBDB8 /* ConceptSugesstionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EAF4C126D6889F005DBDB8 /* ConceptSugesstionCell.swift */; };
+		00EAF4C426D6889F005DBDB8 /* ConceptSugesstionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00EAF4C226D6889F005DBDB8 /* ConceptSugesstionCell.xib */; };
 		00F12D1726D1529B0055BC5F /* TimeInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F12D1526D1529B0055BC5F /* TimeInfoCell.swift */; };
 		00F12D1826D1529C0055BC5F /* TimeInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00F12D1626D1529B0055BC5F /* TimeInfoCell.xib */; };
 		00F12D2726D159190055BC5F /* NotoSansKR-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 00F12D2126D159170055BC5F /* NotoSansKR-Regular.otf */; };
@@ -214,6 +216,8 @@
 /* Begin PBXFileReference section */
 		00EAF4BD26D53EFD005DBDB8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		00EAF4BF26D544FB005DBDB8 /* CellManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellManager.swift; sourceTree = "<group>"; };
+		00EAF4C126D6889F005DBDB8 /* ConceptSugesstionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConceptSugesstionCell.swift; sourceTree = "<group>"; };
+		00EAF4C226D6889F005DBDB8 /* ConceptSugesstionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConceptSugesstionCell.xib; sourceTree = "<group>"; };
 		00F12D1526D1529B0055BC5F /* TimeInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeInfoCell.swift; sourceTree = "<group>"; };
 		00F12D1626D1529B0055BC5F /* TimeInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeInfoCell.xib; sourceTree = "<group>"; };
 		00F12D2126D159170055BC5F /* NotoSansKR-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Regular.otf"; sourceTree = "<group>"; };
@@ -450,6 +454,8 @@
 				00F12D3526D1612F0055BC5F /* CharacterFeatureTableViewCell.swift */,
 				00F12D3626D1612F0055BC5F /* CharacterFeatureTableViewCell.xib */,
 				00EAF4BF26D544FB005DBDB8 /* CellManager.swift */,
+				00EAF4C126D6889F005DBDB8 /* ConceptSugesstionCell.swift */,
+				00EAF4C226D6889F005DBDB8 /* ConceptSugesstionCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -1901,6 +1907,7 @@
 				3B45DF7C26AAC37D0072B314 /* InfoMenuCell.xib in Resources */,
 				3B83920A2689E12B00B35A53 /* LoginMainViewController.xib in Resources */,
 				3B638FCF268B488F0095F05B /* ArchiveMainViewController.xib in Resources */,
+				00EAF4C426D6889F005DBDB8 /* ConceptSugesstionCell.xib in Resources */,
 				3B96642B26A356FC00DE5DB3 /* HomeFinishViewController.xib in Resources */,
 				00F12D2C26D159190055BC5F /* NotoSansKR-Medium.otf in Resources */,
 				3B8CF33826A362BC00A6B627 /* StarCell.xib in Resources */,
@@ -2109,6 +2116,7 @@
 				3B8CF34526A4187300A6B627 /* DirayGetResponse.swift in Sources */,
 				3B638FB7268A44430095F05B /* SignInfo.swift in Sources */,
 				3B5EB1A526ABE5FC00E41D24 /* WriteConceptResponse.swift in Sources */,
+				00EAF4C326D6889F005DBDB8 /* ConceptSugesstionCell.swift in Sources */,
 				3B8CF34726A421E500A6B627 /* DiaryDataManager.swift in Sources */,
 				3B96640126A1F42900DE5DB3 /* QuestionMainCell.swift in Sources */,
 				3B96641F26A2FC8100DE5DB3 /* HomeMainDataManager.swift in Sources */,

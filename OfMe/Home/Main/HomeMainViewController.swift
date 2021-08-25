@@ -2,7 +2,7 @@ import UIKit
 import Kingfisher
 
 
-extension HomeMainViewController : UITableViewDelegate, UITableViewDataSource {
+extension HomeMainViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
@@ -13,8 +13,17 @@ extension HomeMainViewController : UITableViewDelegate, UITableViewDataSource {
     
 }
 
-class HomeMainViewController: BaseViewController {
+extension HomeInfoViewController: TimeInfoCellDelegate, ConceptSugesstionCellDelegate {
+    func endButtonDidCliikd() {
+        print("캐릭터 컨셉이 종료되었습니다. + API 호출")
+    }
     
+    func conceptSugesstionButtonDidClicked() {
+        print("컨셉 테스트 화면으로 이동 + API 호출")
+    }
+}
+
+class HomeMainViewController: BaseViewController {
     @IBOutlet weak var homeMainTableView: UITableView!
     
     private var stopImage: String = ""

@@ -11,8 +11,10 @@ struct CellManager {
     static let TimeInfoCellName = "TimeInfoCell"
     static let CharacterCellName = "CharacterCell"
     static let CharacterFeatureCellName = "CharacterFeature"
-    static let TimeInfoCellIdentifier = "timeInfoCell"
-    static let CharacterCellIdentifier = "characterCell"
+    static let ConceptSugesstionCellName = "ConceptSugesstionCell"
+    static let TimeInfoCellIdentifier = "timeInfo"
+    static let CharacterCellIdentifier = "character"
     static let CharacterFeatureCellIdentifier = "characterFeature"
+    static let ConceptSugesstionCellIdentifier = "conceptSugesstion"
 
 }

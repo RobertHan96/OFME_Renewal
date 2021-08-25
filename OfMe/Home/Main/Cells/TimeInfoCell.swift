@@ -8,7 +8,7 @@
 import UIKit
 
 // 종료 버튼 선택시 API 호출을 위한 protocol
-protocol TimeInfoCellButtonsClicked {
+protocol TimeInfoCellDelegate {
     func endButtonDidCliikd()
 }
 
@@ -16,7 +16,7 @@ class TimeInfoCell: UITableViewCell {
     @IBOutlet weak var timeNameLabel: UILabel!
     @IBOutlet weak var CharacterTimeLabel: UILabel!
     @IBOutlet weak var endCharacterBtn: UIButton!
-    var delegate: TimeInfoCellButtonsClicked?
+    var delegate: TimeInfoCellDelegate?
     
     override func awakeFromNib() {
         super.awakeFromNib()
