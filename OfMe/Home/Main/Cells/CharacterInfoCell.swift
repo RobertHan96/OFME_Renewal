@@ -27,8 +27,7 @@ class CharacterInfoCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    // TableView -> CollectionVeiw 데이터 주입 메소드
-    func setupCollectionViewDataSource() {
+    func configure(userConcept: UserConcept?) {
         
     }
 

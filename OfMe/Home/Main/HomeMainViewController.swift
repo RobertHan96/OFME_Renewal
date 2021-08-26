@@ -4,11 +4,26 @@ import Kingfisher
 
 extension HomeMainViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return 3
     }
-    
+        
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        switch indexPath.section {
+        case 0: // 시간 정보 표시 Cell
+            let timeInfocell = homeMainTableView.dequeueReusableCell(withIdentifier: CellManager.TimeInfoCellIdentifier) ?? UITableViewCell()
+            return timeInfocell
+        case 1: // 캐릭터 이미지 표시 Cell
+            let characterImagecell = homeMainTableView.dequeueReusableCell(withIdentifier: CellManager.CharacterCellName) ?? UITableViewCell()
+            return characterImagecell
+        default: // 컨셉 진행 여부에 따라 -> 컨셉 테스트 시작 or 캐릭터 특성 표시 Cell
+            return getBottomCell(isEmptyCharacter: isEmptyChracter, userConcept: userConcept) { cell in
+                if self.userConcept != nil {
+                    print("LOG - 유저가 진행 중인 컨셉 있음")
+                } else {
+                    print("LOG - 유저가 진행 중인 컨셉 없음")
+                }
+            }
+        }
     }
     
 }
@@ -26,6 +41,12 @@ extension HomeInfoViewController: TimeInfoCellDelegate, ConceptSugesstionCellDel
 class HomeMainViewController: BaseViewController {
     @IBOutlet weak var homeMainTableView: UITableView!
     
+    private var userConcept: UserConcept?
+    private var isEmptyChracter: Bool = true { didSet {
+        homeMainTableView.reloadData()
+    }}
+    
+    // 이전 개발자가 짠 코드
     private var stopImage: String = ""
     private let dataManager = HomeMainDataManager()
     private var tapImages: [String] = []
@@ -63,7 +84,7 @@ class HomeMainViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupTableView()
+        setupUI()
 //        preview = PreviewAdapter { button in
 //            switch button.tag {
 //            case 0:
@@ -100,13 +121,25 @@ class HomeMainViewController: BaseViewController {
         dataManager.patchCharacterTime(time: time)
     }
     
+    // Main API response코드에 따라서, 캐릭터 진행 중 / 미진행에 맞는 UI 렌더링
+    private func setupUI() {
+        // 1. API 호출 -> response code & reuslt? 반환 -> response code를 기준으로 진행 중 / 미진행 UI 분기
+        // dataManager.get() { code, result in
+        // switch code 1001 -> setEmptyCharacterView & isEmptyChracter = true
+        //             default -> setCharacterView & isEmptyChracter = false
+        // }
+        setupTableView()
+    }
+    
     // Delegate에서 처음 유저인지 여부를 판단해서 다르게 테이블뷰 생성
-    func setupTableView() {
+    private func setupTableView() {
         homeMainTableView.delegate = self
         homeMainTableView.dataSource = self
-        homeMainTableView.register(UINib.init(nibName: CellManager.CharacterCellName, bundle: nil), forCellReuseIdentifier: CellManager.CharacterCellIdentifier)
-        homeMainTableView.register(UINib.init(nibName: CellManager.CharacterFeatureCellName, bundle: nil), forCellReuseIdentifier: CellManager.CharacterFeatureCellIdentifier)
         homeMainTableView.register(UINib.init(nibName: CellManager.TimeInfoCellName, bundle: nil), forCellReuseIdentifier: CellManager.TimeInfoCellIdentifier)
+        homeMainTableView.register(UINib.init(nibName: CellManager.CharacterCellName, bundle: nil), forCellReuseIdentifier: CellManager.CharacterCellIdentifier)
+        homeMainTableView.register(UINib.init(nibName: CellManager.CharacterInfoCellName, bundle: nil), forCellReuseIdentifier: CellManager.CharacterInfoCellIdentifier)
+        homeMainTableView.register(UINib.init(nibName: CellManager.CharacterFeatureCellName, bundle: nil), forCellReuseIdentifier: CellManager.CharacterFeatureCellIdentifier)
+        homeMainTableView.register(UINib.init(nibName: CellManager.ConceptSugesstionCellName, bundle: nil), forCellReuseIdentifier: CellManager.ConceptSugesstionCellIdentifier)
     }
     
     func setTimer(startTime: Date) {

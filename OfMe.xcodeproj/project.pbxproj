@@ -463,8 +463,7 @@
 		00F12D1926D156430055BC5F /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
-				00F12D1C26D156630055BC5F /* Utills */,
-				00F12D1B26D156580055BC5F /* Extensions */,
+				3B8391B52689D97F00B35A53 /* Configuaration */,
 				00F12D1A26D156500055BC5F /* Fonts */,
 			);
 			path = Configuration;
@@ -481,21 +480,6 @@
 				00F12D2326D159180055BC5F /* NotoSansKR-Thin.otf */,
 			);
 			path = Fonts;
-			sourceTree = "<group>";
-		};
-		00F12D1B26D156580055BC5F /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				00F12D3926D16FE20055BC5F /* IBDesignable.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		00F12D1C26D156630055BC5F /* Utills */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Utills;
 			sourceTree = "<group>";
 		};
 		2D7B7E5E36172B6EE031C748 /* Pods */ = {
@@ -933,7 +917,6 @@
 			children = (
 				3B638FC7268B485B0095F05B /* HomeMainViewController.swift */,
 				3B638FC8268B485B0095F05B /* HomeMainViewController.xib */,
-				3B8391B52689D97F00B35A53 /* Configuaration */,
 				00F12D1426D14B130055BC5F /* Cells */,
 				3B96642726A356DD00DE5DB3 /* Finish */,
 				3B96641926A2D7E900DE5DB3 /* Network */,
@@ -1118,6 +1101,7 @@
 		3B8391BA2689D97F00B35A53 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				00F12D3926D16FE20055BC5F /* IBDesignable.swift */,
 				3B8391BB2689D97F00B35A53 /* Date.swift */,
 				3B8391BC2689D97F00B35A53 /* UIView.swift */,
 				3B8391BD2689D97F00B35A53 /* String.swift */,
@@ -1458,7 +1442,7 @@
 		3B96641926A2D7E900DE5DB3 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				3B96641B26A2D7FA00DE5DB3 /* DataManager */,
+				3B96641E26A2FC8100DE5DB3 /* HomeMainDataManager.swift */,
 				3B96641A26A2D7F700DE5DB3 /* Data */,
 			);
 			path = Network;
@@ -1472,14 +1456,6 @@
 				3B96642226A33D7000DE5DB3 /* CharacterTimeResponse.swift */,
 			);
 			path = Data;
-			sourceTree = "<group>";
-		};
-		3B96641B26A2D7FA00DE5DB3 /* DataManager */ = {
-			isa = PBXGroup;
-			children = (
-				3B96641E26A2FC8100DE5DB3 /* HomeMainDataManager.swift */,
-			);
-			path = DataManager;
 			sourceTree = "<group>";
 		};
 		3B96642426A34AF100DE5DB3 /* Finish */ = {
