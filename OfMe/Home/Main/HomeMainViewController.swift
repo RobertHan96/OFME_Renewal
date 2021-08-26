@@ -4,16 +4,31 @@ import Kingfisher
 
 extension HomeMainViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
         return 3
     }
-        
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        switch indexPath.section {
+        case 0:
+            return 52
+        case 1:
+            return 400
+        default:
+            return 171
+        }
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         switch indexPath.section {
         case 0: // 시간 정보 표시 Cell
-            let timeInfocell = homeMainTableView.dequeueReusableCell(withIdentifier: CellManager.TimeInfoCellIdentifier) ?? UITableViewCell()
+            guard let timeInfocell = homeMainTableView.dequeueReusableCell(withIdentifier: CellManager.TimeInfoCellIdentifier) as? TimeInfoCell else { return UITableViewCell() }
             return timeInfocell
         case 1: // 캐릭터 이미지 표시 Cell
-            let characterImagecell = homeMainTableView.dequeueReusableCell(withIdentifier: CellManager.CharacterCellName) ?? UITableViewCell()
+            guard let characterImagecell = homeMainTableView.dequeueReusableCell(withIdentifier: CellManager.CharacterCellIdentifier) as? CharacterCell else{ return UITableViewCell() }
             return characterImagecell
         default: // 컨셉 진행 여부에 따라 -> 컨셉 테스트 시작 or 캐릭터 특성 표시 Cell
             return getBottomCell(isEmptyCharacter: isEmptyChracter, userConcept: userConcept) { cell in
@@ -25,7 +40,6 @@ extension HomeMainViewController: UITableViewDelegate, UITableViewDataSource {
             }
         }
     }
-    
 }
 
 extension HomeInfoViewController: TimeInfoCellDelegate, ConceptSugesstionCellDelegate {

@@ -17,7 +17,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JBK-y2-F5g">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="charctor" translatesAutoresizingMaskIntoConstraints="NO" id="JBK-y2-F5g">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
                     </imageView>
                 </subviews>
@@ -35,4 +35,7 @@
             <point key="canvasLocation" x="22" y="139"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="charctor" width="222" height="222"/>
+    </resources>
 </document>

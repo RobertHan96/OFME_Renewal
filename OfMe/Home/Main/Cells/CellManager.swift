@@ -32,7 +32,7 @@ extension HomeMainViewController {
             characterInfoCell.configure(userConcept: userConcept)
             return characterInfoCell
         default: // 캐릭터가 비어있다면 -> 컨셉 추천 cell 표시
-            guard let conceptSugesstionCell = homeMainTableView.dequeueReusableCell(withIdentifier: CellManager.ConceptSugesstionCellIdentifier) as? CharacterInfoCell else { return UITableViewCell() }
+            guard let conceptSugesstionCell = homeMainTableView.dequeueReusableCell(withIdentifier: CellManager.ConceptSugesstionCellIdentifier) as? ConceptSugesstionCell else { return UITableViewCell() }
             return conceptSugesstionCell
         }
     }
