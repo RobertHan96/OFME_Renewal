@@ -8,7 +8,8 @@
 import UIKit
 
 class CharacterCell: UITableViewCell {
-    @IBOutlet weak var charaterImage: UIImageView!
+    @IBOutlet weak var backgroundImage: UIImageView!
+    @IBOutlet weak var characterImage: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -22,8 +23,8 @@ class CharacterCell: UITableViewCell {
     }
     
     private func setupUI() {
-        charaterImage.layer.cornerRadius = 10
-        charaterImage.clipsToBounds = true
+        backgroundImage.layer.cornerRadius = 10
+        backgroundImage.clipsToBounds = true
     }
     
 }

@@ -1,7 +1,8 @@
 import UIKit
 import IQKeyboardManager
 import Firebase
- 
+import FirebaseAnalytics
+
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -12,6 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Thread.sleep(forTimeInterval: 2.0)
         IQKeyboardManager.shared().isEnabled = true
         FirebaseApp.configure()
+        Analytics.logEvent("init", parameters: nil)
         
         return true
     }

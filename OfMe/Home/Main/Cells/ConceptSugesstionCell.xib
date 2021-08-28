@@ -22,11 +22,14 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="335"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fQd-My-bvY">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="272"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeBackground_1" translatesAutoresizingMaskIntoConstraints="NO" id="fQd-My-bvY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="170"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="170" id="07y-GW-Wk0"/>
+                        </constraints>
                     </imageView>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EfG-5e-aZ9">
-                        <rect key="frame" x="165" y="252" width="155" height="41"/>
+                        <rect key="frame" x="165" y="150" width="155" height="41"/>
                         <fontDescription key="fontDescription" name="NotoSansKR-Medium" family="Noto Sans KR" pointSize="16"/>
                         <state key="normal" title="컨셉 추천받기" backgroundImage="concept_sugesstion"/>
                         <connections>
@@ -34,7 +37,7 @@
                         </connections>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="32G-9h-AUp">
-                        <rect key="frame" x="10" y="54.5" width="273.5" height="61"/>
+                        <rect key="frame" x="23.5" y="54.5" width="273.5" height="61"/>
                         <string key="text">오브미 안에서 가상 캐릭터의 성향을 경험해보며
 일상의 감정을 기록해보세요. 
 지금 바로 내 안의 자아를 발견하러 떠나볼까요?</string>
@@ -43,15 +46,15 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오늘의 오브미를 만나보세요 !" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d3A-1H-7XK">
-                        <rect key="frame" x="10" y="12" width="286" height="23.5"/>
+                        <rect key="frame" x="23.5" y="12" width="272.5" height="23.5"/>
                         <fontDescription key="fontDescription" name="NotoSansKR-Medium" family="Noto Sans KR" pointSize="16"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
+                    <constraint firstAttribute="bottom" secondItem="fQd-My-bvY" secondAttribute="bottom" constant="63" id="Ac7-H7-5J3"/>
                     <constraint firstAttribute="trailing" secondItem="EfG-5e-aZ9" secondAttribute="trailing" id="Af9-Iq-JkK"/>
-                    <constraint firstItem="32G-9h-AUp" firstAttribute="leading" secondItem="fQd-My-bvY" secondAttribute="trailing" constant="-310" id="FfF-3V-ybG"/>
                     <constraint firstAttribute="trailing" secondItem="d3A-1H-7XK" secondAttribute="trailing" constant="24" id="TGr-Fk-v3F"/>
                     <constraint firstItem="d3A-1H-7XK" firstAttribute="leading" secondItem="32G-9h-AUp" secondAttribute="leading" id="UCk-S0-qFw"/>
                     <constraint firstAttribute="trailing" secondItem="fQd-My-bvY" secondAttribute="trailing" id="Utm-Dh-DGq"/>
@@ -59,7 +62,8 @@
                     <constraint firstItem="32G-9h-AUp" firstAttribute="top" secondItem="d3A-1H-7XK" secondAttribute="bottom" constant="19" id="dZg-ze-jkK"/>
                     <constraint firstItem="fQd-My-bvY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="erp-LV-CZf"/>
                     <constraint firstAttribute="bottom" secondItem="EfG-5e-aZ9" secondAttribute="bottom" constant="42" id="hqY-U1-KUY"/>
-                    <constraint firstItem="EfG-5e-aZ9" firstAttribute="top" secondItem="fQd-My-bvY" secondAttribute="bottom" constant="-20" id="oz7-Ix-gAt"/>
+                    <constraint firstItem="EfG-5e-aZ9" firstAttribute="top" secondItem="fQd-My-bvY" secondAttribute="bottom" constant="-20" id="qQr-M9-b5v"/>
+                    <constraint firstItem="32G-9h-AUp" firstAttribute="centerX" secondItem="fQd-My-bvY" secondAttribute="centerX" id="uNl-NH-4o3"/>
                     <constraint firstItem="fQd-My-bvY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="wFZ-Gb-Pr1"/>
                 </constraints>
             </tableViewCellContentView>
@@ -75,5 +79,6 @@
     </objects>
     <resources>
         <image name="concept_sugesstion" width="155" height="41"/>
+        <image name="homeBackground_1" width="375" height="762"/>
     </resources>
 </document>

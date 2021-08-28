@@ -18,7 +18,7 @@ extension HomeMainViewController: UITableViewDelegate, UITableViewDataSource {
         case 1:
             return 400
         default:
-            return 171
+            return 230
         }
     }
     
@@ -26,6 +26,7 @@ extension HomeMainViewController: UITableViewDelegate, UITableViewDataSource {
         switch indexPath.section {
         case 0: // 시간 정보 표시 Cell
             guard let timeInfocell = homeMainTableView.dequeueReusableCell(withIdentifier: CellManager.TimeInfoCellIdentifier) as? TimeInfoCell else { return UITableViewCell() }
+            timeInfocell.delegate = self
             return timeInfocell
         case 1: // 캐릭터 이미지 표시 Cell
             guard let characterImagecell = homeMainTableView.dequeueReusableCell(withIdentifier: CellManager.CharacterCellIdentifier) as? CharacterCell else{ return UITableViewCell() }
@@ -42,7 +43,7 @@ extension HomeMainViewController: UITableViewDelegate, UITableViewDataSource {
     }
 }
 
-extension HomeInfoViewController: TimeInfoCellDelegate, ConceptSugesstionCellDelegate {
+extension HomeMainViewController: TimeInfoCellDelegate, ConceptSugesstionCellDelegate {
     func endButtonDidCliikd() {
         print("캐릭터 컨셉이 종료되었습니다. + API 호출")
     }
@@ -53,6 +54,7 @@ extension HomeInfoViewController: TimeInfoCellDelegate, ConceptSugesstionCellDel
 }
 
 class HomeMainViewController: BaseViewController {
+    
     @IBOutlet weak var homeMainTableView: UITableView!
     
     private var userConcept: UserConcept?
