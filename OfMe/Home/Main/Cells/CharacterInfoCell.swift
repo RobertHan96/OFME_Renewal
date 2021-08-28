@@ -33,6 +33,7 @@ class CharacterInfoCell: UITableViewCell {
 
     // 컬렉션뷰 셋업, 데이터 주입
     private func setupUI() {
+        self.backgroundColor = .clear
         setupTableView()
     }
     

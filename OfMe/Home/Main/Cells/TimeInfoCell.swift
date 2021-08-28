@@ -31,6 +31,8 @@ class TimeInfoCell: UITableViewCell {
     
     // 색상, 버튼 UI 설정
     private func setupUI() {
+        self.backgroundColor = .white
+        self.layer.cornerRadius = 10
 
     }
     

@@ -25,6 +25,7 @@ class CharacterCell: UITableViewCell {
     private func setupUI() {
         backgroundImage.layer.cornerRadius = 10
         backgroundImage.clipsToBounds = true
+        self.backgroundColor = .clear
     }
     
 }

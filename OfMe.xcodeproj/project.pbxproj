@@ -445,6 +445,7 @@
 		00F12D1426D14B130055BC5F /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				00EAF4BF26D544FB005DBDB8 /* CellManager.swift */,
 				00F12D1526D1529B0055BC5F /* TimeInfoCell.swift */,
 				00F12D1626D1529B0055BC5F /* TimeInfoCell.xib */,
 				00F12D2D26D15B1E0055BC5F /* CharacterCell.swift */,
@@ -453,7 +454,6 @@
 				00F12D3226D15E060055BC5F /* CharacterInfoCell.xib */,
 				00F12D3526D1612F0055BC5F /* CharacterFeatureTableViewCell.swift */,
 				00F12D3626D1612F0055BC5F /* CharacterFeatureTableViewCell.xib */,
-				00EAF4BF26D544FB005DBDB8 /* CellManager.swift */,
 				00EAF4C126D6889F005DBDB8 /* ConceptSugesstionCell.swift */,
 				00EAF4C226D6889F005DBDB8 /* ConceptSugesstionCell.xib */,
 			);

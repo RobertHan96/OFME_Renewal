@@ -21,7 +21,7 @@ class ConceptSugesstionCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        setupUI()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -31,7 +31,7 @@ class ConceptSugesstionCell: UITableViewCell {
     }
     
     private func setupUI() {
-        
+        self.backgroundColor = .clear
     }
     
     @IBAction func conceptSugesstionClicked(_ sender: UIButton) {

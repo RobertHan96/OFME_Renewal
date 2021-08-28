@@ -151,6 +151,8 @@ class HomeMainViewController: BaseViewController {
     private func setupTableView() {
         homeMainTableView.delegate = self
         homeMainTableView.dataSource = self
+        homeMainTableView.backgroundColor = .clear
+        
         homeMainTableView.register(UINib.init(nibName: CellManager.TimeInfoCellName, bundle: nil), forCellReuseIdentifier: CellManager.TimeInfoCellIdentifier)
         homeMainTableView.register(UINib.init(nibName: CellManager.CharacterCellName, bundle: nil), forCellReuseIdentifier: CellManager.CharacterCellIdentifier)
         homeMainTableView.register(UINib.init(nibName: CellManager.CharacterInfoCellName, bundle: nil), forCellReuseIdentifier: CellManager.CharacterInfoCellIdentifier)

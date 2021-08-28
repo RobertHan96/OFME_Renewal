@@ -21,7 +21,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
                     </imageView>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="TO2-ad-uUP">
-                        <rect key="frame" x="16" y="11" width="288" height="298"/>
+                        <rect key="frame" x="16" y="22" width="288" height="287"/>
                     </imageView>
                 </subviews>
                 <constraints>
@@ -31,7 +31,7 @@
                     <constraint firstAttribute="bottom" secondItem="JBK-y2-F5g" secondAttribute="bottom" id="Wod-cN-cTr"/>
                     <constraint firstAttribute="trailing" secondItem="JBK-y2-F5g" secondAttribute="trailing" id="XpD-zh-UVl"/>
                     <constraint firstItem="JBK-y2-F5g" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="abA-aI-wq2"/>
-                    <constraint firstItem="TO2-ad-uUP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="gZ0-5p-pfO"/>
+                    <constraint firstItem="TO2-ad-uUP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" multiplier="2" id="gZ0-5p-pfO"/>
                     <constraint firstAttribute="bottomMargin" secondItem="TO2-ad-uUP" secondAttribute="bottom" id="uKT-SN-zTh"/>
                 </constraints>
             </tableViewCellContentView>
