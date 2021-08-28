@@ -20,9 +20,13 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zJM-i5-Xe3">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_main_background" translatesAutoresizingMaskIntoConstraints="NO" id="bkz-pZ-jwB">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="zJM-i5-Xe3">
                     <rect key="frame" x="30" y="74" width="354" height="748"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                 </tableView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Qg-6y-c3p">
                     <rect key="frame" x="350" y="427" width="64" height="52"/>
@@ -37,17 +41,22 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="bkz-pZ-jwB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="0vz-7n-aJE"/>
+                <constraint firstAttribute="trailing" secondItem="bkz-pZ-jwB" secondAttribute="trailing" id="2I8-0Y-msE"/>
                 <constraint firstItem="0Qg-6y-c3p" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="9F3-xe-tTp"/>
                 <constraint firstItem="zJM-i5-Xe3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="MQr-UZ-sk0"/>
                 <constraint firstItem="zJM-i5-Xe3" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="Tac-RI-3ne"/>
+                <constraint firstAttribute="top" secondItem="bkz-pZ-jwB" secondAttribute="top" id="aKV-fV-SkL"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="0Qg-6y-c3p" secondAttribute="trailing" id="fL4-HS-UiJ"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="zJM-i5-Xe3" secondAttribute="bottom" constant="40" id="lMM-SX-9eC"/>
+                <constraint firstAttribute="bottom" secondItem="bkz-pZ-jwB" secondAttribute="bottom" id="taz-G9-FAV"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="zJM-i5-Xe3" secondAttribute="trailing" constant="30" id="thW-Dy-ylT"/>
             </constraints>
             <point key="canvasLocation" x="131.8840579710145" y="95.758928571428569"/>
         </view>
     </objects>
     <resources>
+        <image name="home_main_background" width="375" height="812"/>
         <image name="main_action_button" width="22" height="19"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
