@@ -19,6 +19,5 @@ target 'OfMe' do
   pod 'ImagePicker'
   pod 'SideMenu'
   pod 'Instructions'
-  
 
 end

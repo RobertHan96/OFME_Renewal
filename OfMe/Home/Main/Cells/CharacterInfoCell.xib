@@ -18,26 +18,34 @@
                 <rect key="frame" x="0.0" y="0.0" width="317" height="171"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="orL-dA-rOH">
-                        <rect key="frame" x="0.0" y="0.0" width="317" height="171"/>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="8mE-Gq-zhI">
+                        <rect key="frame" x="0.0" y="0.0" width="317" height="141"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                <color key="value" red="0.0028394792260000002" green="0.0044057105550000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </userDefinedRuntimeAttribute>
-                        </userDefinedRuntimeAttributes>
-                    </tableView>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="zRa-sk-XCo">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="OVJ-PC-SlC">
+                        <rect key="frame" x="97.5" y="147" width="122" height="24"/>
+                    </pageControl>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="orL-dA-rOH" secondAttribute="trailing" id="Bw7-X9-39m"/>
-                    <constraint firstItem="orL-dA-rOH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="UjK-37-J8A"/>
-                    <constraint firstAttribute="bottom" secondItem="orL-dA-rOH" secondAttribute="bottom" id="Uuv-zv-eRl"/>
-                    <constraint firstItem="orL-dA-rOH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="yXZ-z9-fYY"/>
+                    <constraint firstItem="OVJ-PC-SlC" firstAttribute="top" secondItem="8mE-Gq-zhI" secondAttribute="bottom" constant="6" id="2HB-jN-Tqg"/>
+                    <constraint firstItem="8mE-Gq-zhI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="LLc-Py-mae"/>
+                    <constraint firstItem="OVJ-PC-SlC" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Lue-6F-bQB"/>
+                    <constraint firstItem="8mE-Gq-zhI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Lyr-zv-coo"/>
+                    <constraint firstAttribute="bottom" secondItem="8mE-Gq-zhI" secondAttribute="bottom" constant="30" id="Por-2v-sSP"/>
+                    <constraint firstAttribute="trailing" secondItem="8mE-Gq-zhI" secondAttribute="trailing" id="b3s-zk-tyz"/>
+                    <constraint firstAttribute="bottom" secondItem="OVJ-PC-SlC" secondAttribute="bottom" id="uFG-X3-WgE"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="tableView" destination="orL-dA-rOH" id="HEz-HB-SL8"/>
+                <outlet property="collectionView" destination="8mE-Gq-zhI" id="Us9-fG-1Au"/>
+                <outlet property="pageControll" destination="OVJ-PC-SlC" id="GfJ-7u-3J8"/>
             </connections>
             <point key="canvasLocation" x="22" y="139"/>
         </tableViewCell>

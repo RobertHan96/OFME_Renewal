@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0020E95726DBF2A600CA4882 /* CharacterFeatureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0020E95526DBF2A600CA4882 /* CharacterFeatureCell.swift */; };
+		0020E95826DBF2A600CA4882 /* CharacterFeatureCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0020E95626DBF2A600CA4882 /* CharacterFeatureCell.xib */; };
 		00CE4F4926D9F42000EE352C /* MainHomeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CE4F4826D9F42000EE352C /* MainHomeResponse.swift */; };
 		00EAF4BE26D53EFD005DBDB8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 00EAF4BD26D53EFD005DBDB8 /* GoogleService-Info.plist */; };
 		00EAF4C026D544FB005DBDB8 /* CellManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EAF4BF26D544FB005DBDB8 /* CellManager.swift */; };
@@ -24,7 +26,6 @@
 		00F12D3026D15B1E0055BC5F /* CharacterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00F12D2E26D15B1E0055BC5F /* CharacterCell.xib */; };
 		00F12D3326D15E060055BC5F /* CharacterInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F12D3126D15E060055BC5F /* CharacterInfoCell.swift */; };
 		00F12D3426D15E060055BC5F /* CharacterInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00F12D3226D15E060055BC5F /* CharacterInfoCell.xib */; };
-		00F12D3726D1612F0055BC5F /* CharacterFeatureTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F12D3526D1612F0055BC5F /* CharacterFeatureTableViewCell.swift */; };
 		00F12D3826D1612F0055BC5F /* CharacterFeatureTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00F12D3626D1612F0055BC5F /* CharacterFeatureTableViewCell.xib */; };
 		00F12D3A26D16FE20055BC5F /* IBDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F12D3926D16FE20055BC5F /* IBDesignable.swift */; };
 		3B1943F026AAF6DC0014558F /* InfoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1943EE26AAF6DC0014558F /* InfoDetailViewController.swift */; };
@@ -215,6 +216,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0020E95526DBF2A600CA4882 /* CharacterFeatureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterFeatureCell.swift; sourceTree = "<group>"; };
+		0020E95626DBF2A600CA4882 /* CharacterFeatureCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterFeatureCell.xib; sourceTree = "<group>"; };
 		00CE4F4826D9F42000EE352C /* MainHomeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHomeResponse.swift; sourceTree = "<group>"; };
 		00EAF4BD26D53EFD005DBDB8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		00EAF4BF26D544FB005DBDB8 /* CellManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellManager.swift; sourceTree = "<group>"; };
@@ -232,7 +235,6 @@
 		00F12D2E26D15B1E0055BC5F /* CharacterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterCell.xib; sourceTree = "<group>"; };
 		00F12D3126D15E060055BC5F /* CharacterInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterInfoCell.swift; sourceTree = "<group>"; };
 		00F12D3226D15E060055BC5F /* CharacterInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterInfoCell.xib; sourceTree = "<group>"; };
-		00F12D3526D1612F0055BC5F /* CharacterFeatureTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterFeatureTableViewCell.swift; sourceTree = "<group>"; };
 		00F12D3626D1612F0055BC5F /* CharacterFeatureTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterFeatureTableViewCell.xib; sourceTree = "<group>"; };
 		00F12D3926D16FE20055BC5F /* IBDesignable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBDesignable.swift; sourceTree = "<group>"; };
 		0F294F538A4B97EB52248CC5 /* Pods-OfMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OfMe.debug.xcconfig"; path = "Target Support Files/Pods-OfMe/Pods-OfMe.debug.xcconfig"; sourceTree = "<group>"; };
@@ -454,10 +456,11 @@
 				00F12D2E26D15B1E0055BC5F /* CharacterCell.xib */,
 				00F12D3126D15E060055BC5F /* CharacterInfoCell.swift */,
 				00F12D3226D15E060055BC5F /* CharacterInfoCell.xib */,
-				00F12D3526D1612F0055BC5F /* CharacterFeatureTableViewCell.swift */,
 				00F12D3626D1612F0055BC5F /* CharacterFeatureTableViewCell.xib */,
 				00EAF4C126D6889F005DBDB8 /* ConceptSugesstionCell.swift */,
 				00EAF4C226D6889F005DBDB8 /* ConceptSugesstionCell.xib */,
+				0020E95526DBF2A600CA4882 /* CharacterFeatureCell.swift */,
+				0020E95626DBF2A600CA4882 /* CharacterFeatureCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -1904,6 +1907,7 @@
 				3BD7007F26A5CB4C0055AF8A /* QuestionWriteViewController.xib in Resources */,
 				3BBD933B268F68D0003BB706 /* ConceptTestCollectionViewCell.xib in Resources */,
 				3B1943F126AAF6DC0014558F /* InfoDetailViewController.xib in Resources */,
+				0020E95826DBF2A600CA4882 /* CharacterFeatureCell.xib in Resources */,
 				3B28D300268DF33E005BCDE8 /* CategoryCollectionViewCell.xib in Resources */,
 				3B40F76826A1C0CF001F6FE7 /* QuestionSubMainViewController.xib in Resources */,
 				3B2BAF3F268CC5D000CF3048 /* TestMainViewController.xib in Resources */,
@@ -1964,7 +1968,6 @@
 			files = (
 				3B28D2F7268DEBD6005BCDE8 /* TestCategoryViewController.swift in Sources */,
 				3B3EC6AB26B3F85C0063F3EA /* QuestionGetResponse.swift in Sources */,
-				00F12D3726D1612F0055BC5F /* CharacterFeatureTableViewCell.swift in Sources */,
 				3B38D01E269E244B00870EB5 /* MainPicker.swift in Sources */,
 				3B8391DF2689D98000B35A53 /* UIView.swift in Sources */,
 				3B97443D26A86A8800027219 /* QuestionSubCell.swift in Sources */,
@@ -2035,6 +2038,7 @@
 				3B9150182698C240004FE9C0 /* LoginDataManager.swift in Sources */,
 				3B4037272689D6FC00AFAC40 /* AppDelegate.swift in Sources */,
 				3B5EB1A126AB08FD00E41D24 /* LogoutResponse.swift in Sources */,
+				0020E95726DBF2A600CA4882 /* CharacterFeatureCell.swift in Sources */,
 				3B3ECE332692283E006BCD5D /* ConceptResultAdapter.swift in Sources */,
 				3BE26F0E269EF6C0002F67D4 /* ArchiveMainAdapter.swift in Sources */,
 				3B83920C2689E49F00B35A53 /* ImageConstant.swift in Sources */,

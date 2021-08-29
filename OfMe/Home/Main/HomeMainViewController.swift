@@ -29,7 +29,7 @@ extension HomeMainViewController: UITableViewDelegate, UITableViewDataSource {
             // 메인 API 반환 Data를 매번 configrue 함수에 전달
             let name = userConcept?.nickname
 //            let time = nil : 추후 메인 API에서 내려주는 시간 정보값 할당
-            timeInfocell.configure(name: name, time: nil)
+            timeInfocell.configure(name: name, time: "500")
             return timeInfocell
             
         case 1: // 캐릭터 이미지 표시 Cell
@@ -115,6 +115,7 @@ class HomeMainViewController: BaseViewController {
         HomeMainDataManager().getMainHomeData { data in
             self.isEmptyChracter = data.conceptProgressCheck.getBoolFromOX ?? false
             self.userConcept = data
+            print("LOG:HOME-MAIN", data)
         }
         
 //        preview = PreviewAdapter { button in
