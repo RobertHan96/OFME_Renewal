@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class CharacterCell: UITableViewCell {
     @IBOutlet weak var backgroundImage: UIImageView!
@@ -18,14 +19,25 @@ class CharacterCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
     
     private func setupUI() {
         backgroundImage.layer.cornerRadius = 10
         backgroundImage.clipsToBounds = true
         self.backgroundColor = .clear
+    }
+    
+    func confgirue(imageUrl: String) {
+        DispatchQueue.main.async() {
+            if let url = URL(string: imageUrl) {
+                
+                UIView.transition(with: self.characterImage,
+                                  duration: 0.75,
+                                  options: .transitionCrossDissolve,
+                                  animations: { self.characterImage.kf.setImage(with: url) },
+                                  completion: nil)
+            }
+        }
     }
     
 }

@@ -35,9 +35,15 @@ extension HomeMainViewController: UITableViewDelegate, UITableViewDataSource {
             // 메인 API 반환 Data를 매번 configrue 함수에 전달
             timeInfocell.configure(name: "헤이든", time: nil)
             return timeInfocell
+            
         case 1: // 캐릭터 이미지 표시 Cell
             guard let characterImagecell = homeMainTableView.dequeueReusableCell(withIdentifier: CellManager.CharacterCellIdentifier) as? CharacterCell else{ return UITableViewCell() }
+            
+            // 메인 API 반환 Data를 매번 configure 함수에 전달
+            let dummyImageUrl = "https://ofmebucket.s3.ap-northeast-2.amazonaws.com/06_water_1.png"
+            characterImagecell.confgirue(imageUrl: dummyImageUrl)
             return characterImagecell
+            
         default: // 컨셉 진행 여부에 따라 -> 컨셉 테스트 시작 or 캐릭터 특성 표시 Cell
             return getBottomCell(isEmptyCharacter: isEmptyChracter, userConcept: userConcept) { cell in
                 if self.userConcept != nil {
