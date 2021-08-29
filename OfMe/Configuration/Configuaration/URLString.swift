@@ -51,3 +51,12 @@ struct URLString {
     
     static let delete = base + "/users"
 }
+
+struct NewURLString {
+    static let base = "https://dev.makeusofme.shop"
+    
+    static let signIn = base + "/sign-up"
+    static let login = base + "/login"
+    static let autoLogIn = base + "/auto-login"
+    static let homeMain = base + "/characters2"
+}
