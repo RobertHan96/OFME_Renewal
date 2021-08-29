@@ -1,10 +1,4 @@
 import UIKit
-import Kingfisher
-
-
-// 컨셉 없는 상태 : 액션 버튼, TimeInfoCell 정보 없애기
-// Cell 버튼, 폰트 디자인 변경
-// 컨셉 추천받기 Delegate 액션
 
 extension HomeMainViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -33,7 +27,9 @@ extension HomeMainViewController: UITableViewDelegate, UITableViewDataSource {
             timeInfocell.delegate = self
             
             // 메인 API 반환 Data를 매번 configrue 함수에 전달
-            timeInfocell.configure(name: "헤이든", time: nil)
+            let name = userConcept?.nickname
+//            let time = nil : 추후 메인 API에서 내려주는 시간 정보값 할당
+            timeInfocell.configure(name: name, time: nil)
             return timeInfocell
             
         case 1: // 캐릭터 이미지 표시 Cell
@@ -45,12 +41,12 @@ extension HomeMainViewController: UITableViewDelegate, UITableViewDataSource {
             return characterImagecell
             
         default: // 컨셉 진행 여부에 따라 -> 컨셉 테스트 시작 or 캐릭터 특성 표시 Cell
-            return getBottomCell(isEmptyCharacter: isEmptyChracter, userConcept: userConcept) { cell in
-                if self.userConcept != nil {
-                    print("LOG - 유저가 진행 중인 컨셉 있음")
-                } else {
-                    print("LOG - 유저가 진행 중인 컨셉 없음")
-                }
+            if isEmptyChracter {
+                characterActions.isHidden = true
+                return getBottomCellWithEmptyConcept()
+            } else {
+                characterActions.isHidden = false
+                return getBottomCellWithConcept(userConcept: userConcept)
             }
         }
     }
@@ -69,9 +65,10 @@ extension HomeMainViewController: TimeInfoCellDelegate, ConceptSugesstionCellDel
 class HomeMainViewController: BaseViewController {
     
     @IBOutlet weak var homeMainTableView: UITableView!
+    @IBOutlet weak var characterActions: UIButton!
     
     private var userConcept: HomeMainResult?
-    private var isEmptyChracter: Bool = true { didSet {
+    private var isEmptyChracter: Bool = false { didSet {
         homeMainTableView.reloadData()
     }}
     
@@ -116,7 +113,8 @@ class HomeMainViewController: BaseViewController {
         setupUI()
         
         HomeMainDataManager().getMainHomeData { data in
-            print("LOGT:",data)
+            self.isEmptyChracter = data.conceptProgressCheck.getBoolFromOX ?? false
+            self.userConcept = data
         }
         
 //        preview = PreviewAdapter { button in
@@ -153,6 +151,11 @@ class HomeMainViewController: BaseViewController {
         middleButton?.removeFromSuperview()
         self.view.removeFromSuperview()
         dataManager.patchCharacterTime(time: time)
+    }
+    
+    
+    @IBAction func characterActionsBtnClicked(_ sender: UIButton) {
+        print("LOG: 액션 버튼 눌림")
     }
     
     // Main API response코드에 따라서, 캐릭터 진행 중 / 미진행에 맞는 UI 렌더링

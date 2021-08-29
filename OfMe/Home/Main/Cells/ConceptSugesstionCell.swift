@@ -35,6 +35,6 @@ class ConceptSugesstionCell: UITableViewCell {
     }
     
     @IBAction func conceptSugesstionClicked(_ sender: UIButton) {
-        
+        delegate?.conceptSugesstionButtonDidClicked()
     }
 }

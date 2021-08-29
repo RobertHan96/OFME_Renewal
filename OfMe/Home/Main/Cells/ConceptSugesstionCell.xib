@@ -33,7 +33,7 @@
                         <fontDescription key="fontDescription" name="NotoSansKR-Medium" family="Noto Sans KR" pointSize="16"/>
                         <state key="normal" title="컨셉 추천받기" backgroundImage="concept_sugesstion"/>
                         <connections>
-                            <action selector="conceptSugesstionClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="VkU-dp-Ib6"/>
+                            <action selector="conceptSugesstionClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="cvA-eA-hDF"/>
                         </connections>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="32G-9h-AUp">

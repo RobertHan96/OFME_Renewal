@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeMainViewController" customModule="OfMe" customModuleProvider="target">
             <connections>
+                <outlet property="characterActions" destination="0Qg-6y-c3p" id="ZAE-3Q-Nht"/>
                 <outlet property="homeMainTableView" destination="zJM-i5-Xe3" id="YJs-Ob-29h"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -41,6 +42,9 @@
                             <real key="value" value="10"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="characterActionsBtnClicked:" destination="-1" eventType="touchUpInside" id="RvO-Mv-Azg"/>
+                    </connections>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

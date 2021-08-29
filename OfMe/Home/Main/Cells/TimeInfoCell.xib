@@ -32,6 +32,9 @@
                         <rect key="frame" x="270" y="5.5" width="30" height="33"/>
                         <fontDescription key="fontDescription" name="NotoSansKR-Regular" family="Noto Sans KR" pointSize="14"/>
                         <state key="normal" title="종료"/>
+                        <connections>
+                            <action selector="endCharacter:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="gxE-Br-rmH"/>
+                        </connections>
                     </button>
                 </subviews>
                 <constraints>

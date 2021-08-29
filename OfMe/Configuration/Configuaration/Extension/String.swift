@@ -12,7 +12,9 @@ extension String {
     var trim: String? {
         return self.trimmingCharacters(in: .whitespacesAndNewlines)
     }
-    
+    var getBoolFromOX: Bool {
+        return self == "X"
+    }
     
     // MARK: 다국어 지원 (localization)
     var localized: String {

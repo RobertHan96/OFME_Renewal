@@ -8,7 +8,8 @@ struct HomeMainResponse: Codable {
 }
 
 struct HomeMainResult: Codable {
-    var conceptProgressCheck: String?
+    var conceptProgressCheck: String
+    var nickname: String?
     var image: [String]?
     var data: CharacterFeatures?
 }

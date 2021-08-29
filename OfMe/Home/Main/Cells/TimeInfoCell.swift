@@ -26,6 +26,10 @@ class TimeInfoCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
+    @IBAction func endCharacter(_ sender: UIButton) {
+        delegate?.endButtonDidCliikd()
+    }
+    
     func configure(name: String?, time: String?) {
         if let userTime = time {
             timeNameLabel.makeHightledText(all: "함께한지 \(userTime)", for: userTime)

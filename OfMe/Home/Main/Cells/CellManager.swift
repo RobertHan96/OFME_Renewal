@@ -19,22 +19,21 @@ struct CellManager {
     static let CharacterCellIdentifier = "character"
     static let CharacterInfoCellIdentifier = "characterInfo"
     static let CharacterFeatureCellIdentifier = "characterFeature"
-    static let ConceptSugesstionCellIdentifier = "conceptSugesstion"
-    
+    static let ConceptSugesstionCellIdentifier = "conceptSugesstion"    
 }
 
 extension HomeMainViewController {
-    // 캐릭터 존재 유/무에 따라서 메인 화면 최하단에 보여줄 cell 반환
-    func getBottomCell(isEmptyCharacter: Bool, userConcept: HomeMainResult?, completion: @escaping(UITableViewCell) -> Void ) -> UITableViewCell {
-        switch isEmptyCharacter {
-        case false: // 캐릭터가 비어있지 않다면 -> 캐릭터 정보 cell 표시
-            guard let characterInfoCell = homeMainTableView.dequeueReusableCell(withIdentifier: CellManager.CharacterInfoCellIdentifier) as? CharacterInfoCell else { return UITableViewCell() }
-            characterInfoCell.configure(userConcept: userConcept)
-            return characterInfoCell
-        default: // 캐릭터가 비어있다면 -> 컨셉 추천 cell 표시
-            guard let conceptSugesstionCell = homeMainTableView.dequeueReusableCell(withIdentifier: CellManager.ConceptSugesstionCellIdentifier) as? ConceptSugesstionCell else { return UITableViewCell() }
-            return conceptSugesstionCell
-        }
+    func getBottomCellWithEmptyConcept() -> ConceptSugesstionCell{
+        let conceptSugesstionCell = homeMainTableView.dequeueReusableCell(withIdentifier: CellManager.ConceptSugesstionCellIdentifier) as! ConceptSugesstionCell
+        conceptSugesstionCell.delegate = self
+        
+        return conceptSugesstionCell
+    }
+
+    func getBottomCellWithConcept(userConcept: HomeMainResult?) -> CharacterInfoCell{
+        let characterInfoCell = homeMainTableView.dequeueReusableCell(withIdentifier: CellManager.CharacterInfoCellIdentifier) as! CharacterInfoCell
+        characterInfoCell.configure(userConcept: userConcept)
+        return characterInfoCell
     }
 
 }
