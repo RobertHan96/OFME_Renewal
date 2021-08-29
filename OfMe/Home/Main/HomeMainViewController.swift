@@ -2,6 +2,10 @@ import UIKit
 import Kingfisher
 
 
+// 컨셉 없는 상태 : 액션 버튼, TimeInfoCell 정보 없애기
+// Cell 버튼, 폰트 디자인 변경
+// 컨셉 추천받기 Delegate 액션
+
 extension HomeMainViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
@@ -57,7 +61,7 @@ class HomeMainViewController: BaseViewController {
     
     @IBOutlet weak var homeMainTableView: UITableView!
     
-    private var userConcept: UserConcept?
+    private var userConcept: HomeMainResult?
     private var isEmptyChracter: Bool = true { didSet {
         homeMainTableView.reloadData()
     }}
@@ -101,6 +105,10 @@ class HomeMainViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        HomeMainDataManager().getMainHomeData { data in
+            print("LOGT:",data)
+        }
+        
 //        preview = PreviewAdapter { button in
 //            switch button.tag {
 //            case 0:

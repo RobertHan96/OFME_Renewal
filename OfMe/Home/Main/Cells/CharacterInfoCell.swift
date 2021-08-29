@@ -27,7 +27,7 @@ class CharacterInfoCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func configure(userConcept: UserConcept?) {
+    func configure(userConcept: HomeMainResult?) {
         
     }
 

@@ -16,24 +16,3 @@ struct CharacterResult: Codable {
     var url: String?
     var timer: Int?
 }
-
-struct EmptyConcept: Codable {
-    var conceptProgressCheck: String
-    var nickname: String
-}
-
-struct UserConcept: Codable {
-    var conceptProgressCheck: String
-    var image: [String]
-    var data: CharacterFeatures
-}
-
-struct CharacterFeatures: Codable {
-    var id: Int
-    var name: String
-    var advantage: String
-    var habit: String
-    var behavior: String
-    var value: String
-    var music: String
-}

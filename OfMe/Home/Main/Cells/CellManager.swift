@@ -25,7 +25,7 @@ struct CellManager {
 
 extension HomeMainViewController {
     // 캐릭터 존재 유/무에 따라서 메인 화면 최하단에 보여줄 cell 반환
-    func getBottomCell(isEmptyCharacter: Bool, userConcept: UserConcept?, completion: @escaping(UITableViewCell) -> Void ) -> UITableViewCell {
+    func getBottomCell(isEmptyCharacter: Bool, userConcept: HomeMainResult?, completion: @escaping(UITableViewCell) -> Void ) -> UITableViewCell {
         switch isEmptyCharacter {
         case false: // 캐릭터가 비어있지 않다면 -> 캐릭터 정보 cell 표시
             guard let characterInfoCell = homeMainTableView.dequeueReusableCell(withIdentifier: CellManager.CharacterInfoCellIdentifier) as? CharacterInfoCell else { return UITableViewCell() }

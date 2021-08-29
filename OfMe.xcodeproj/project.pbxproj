@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00CE4F4926D9F42000EE352C /* MainHomeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CE4F4826D9F42000EE352C /* MainHomeResponse.swift */; };
 		00EAF4BE26D53EFD005DBDB8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 00EAF4BD26D53EFD005DBDB8 /* GoogleService-Info.plist */; };
 		00EAF4C026D544FB005DBDB8 /* CellManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EAF4BF26D544FB005DBDB8 /* CellManager.swift */; };
 		00EAF4C326D6889F005DBDB8 /* ConceptSugesstionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EAF4C126D6889F005DBDB8 /* ConceptSugesstionCell.swift */; };
@@ -214,6 +215,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00CE4F4826D9F42000EE352C /* MainHomeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHomeResponse.swift; sourceTree = "<group>"; };
 		00EAF4BD26D53EFD005DBDB8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		00EAF4BF26D544FB005DBDB8 /* CellManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellManager.swift; sourceTree = "<group>"; };
 		00EAF4C126D6889F005DBDB8 /* ConceptSugesstionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConceptSugesstionCell.swift; sourceTree = "<group>"; };
@@ -1454,6 +1456,7 @@
 				3B96641C26A2FC2200DE5DB3 /* CharacterResponse.swift */,
 				3B96642026A335F100DE5DB3 /* CharacterActionResponse.swift */,
 				3B96642226A33D7000DE5DB3 /* CharacterTimeResponse.swift */,
+				00CE4F4826D9F42000EE352C /* MainHomeResponse.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -2075,6 +2078,7 @@
 				3B8391DC2689D98000B35A53 /* IndicatorView.swift in Sources */,
 				3B753D2D26B5368500A941AA /* InfoWriteResponse.swift in Sources */,
 				3B96640E26A2112100DE5DB3 /* TestThirdDataManager.swift in Sources */,
+				00CE4F4926D9F42000EE352C /* MainHomeResponse.swift in Sources */,
 				3BD6A044269DFCDF00F7E3AF /* TestConceptSecondDataManager.swift in Sources */,
 				3B8C37FE26AD400100CD893A /* QuestionAllDataManager.swift in Sources */,
 				00F12D2F26D15B1E0055BC5F /* CharacterCell.swift in Sources */,
