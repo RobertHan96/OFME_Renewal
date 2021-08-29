@@ -36,4 +36,35 @@ extension UIButton {
                                 .foregroundColor : color
                                ]), for: .normal)
     }
+    
+    func makeRoundedButtnon(_ title: String, titleColor: UIColor , borderColor: CGColor, backgroundColor: UIColor) {
+        self.contentEdgeInsets = UIEdgeInsets(top: 11, left: 20, bottom: 15, right: 20)
+        self.setTitleColor(titleColor, for: .normal)
+        self.setTitle(title, for: .normal)
+        self.layer.borderWidth = 1
+        self.layer.borderColor = borderColor
+        self.backgroundColor = backgroundColor
+        self.layer.cornerRadius = self.frame.height / 2
+    }
+
+    func makeSmallRoundedButtnon(_ title: String, titleColor: UIColor , borderColor: CGColor, backgroundColor: UIColor) {
+        self.contentEdgeInsets = UIEdgeInsets(top: 4, left: 22, bottom: 7, right: 22)
+        self.setTitleColor(titleColor, for: .normal)
+        self.setTitle(title, for: .normal)
+        self.layer.borderWidth = 1
+        self.layer.borderColor = borderColor
+        self.backgroundColor = backgroundColor
+        self.layer.cornerRadius = self.frame.height / 2
+    }
+    
+    func makeRoundedTagButtnon(_ title: String, titleColor: UIColor , borderColor: CGColor, backgroundColor: UIColor) {
+        self.contentEdgeInsets = UIEdgeInsets(top: 1, left: 10, bottom: 3, right: 10)
+        self.setTitleColor(titleColor, for: .normal)
+        self.setTitle(title, for: .normal)
+        self.layer.borderWidth = 1
+        self.layer.borderColor = borderColor
+        self.backgroundColor = backgroundColor
+        self.layer.cornerRadius = 4
+    }
+    
 }

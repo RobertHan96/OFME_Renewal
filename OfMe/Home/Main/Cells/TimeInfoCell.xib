@@ -8,9 +8,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="NotoSansKR-Bold.otf">
-            <string>NotoSansKR-Bold</string>
-        </array>
         <array key="NotoSansKR-Regular.otf">
             <string>NotoSansKR-Regular</string>
         </array>
@@ -36,26 +33,16 @@
                         <fontDescription key="fontDescription" name="NotoSansKR-Regular" family="Noto Sans KR" pointSize="14"/>
                         <state key="normal" title="종료"/>
                     </button>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Wd-dC-g0H">
-                        <rect key="frame" x="80" y="8.5" width="49" height="27"/>
-                        <fontDescription key="fontDescription" name="NotoSansKR-Bold" family="Noto Sans KR" pointSize="18"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="Cee-ya-D9U" secondAttribute="trailing" constant="20" id="3wR-pr-lS4"/>
                     <constraint firstItem="RTc-DX-wil" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="18" id="66N-uZ-hBF"/>
-                    <constraint firstItem="Cee-ya-D9U" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="3Wd-dC-g0H" secondAttribute="trailing" constant="10" id="Rhg-kY-q2U"/>
                     <constraint firstItem="RTc-DX-wil" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="UlD-a6-vRt"/>
-                    <constraint firstItem="3Wd-dC-g0H" firstAttribute="leading" secondItem="RTc-DX-wil" secondAttribute="trailing" constant="6" id="fMh-C9-05n"/>
                     <constraint firstItem="Cee-ya-D9U" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="mcX-Uj-gGM"/>
-                    <constraint firstItem="3Wd-dC-g0H" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="pS4-nJ-hFJ"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="CharacterTimeLabel" destination="3Wd-dC-g0H" id="NUL-fU-7HH"/>
                 <outlet property="endCharacterBtn" destination="Cee-ya-D9U" id="noJ-Jq-3gY"/>
                 <outlet property="timeNameLabel" destination="RTc-DX-wil" id="67z-NW-chE"/>
             </connections>

@@ -31,6 +31,9 @@ extension HomeMainViewController: UITableViewDelegate, UITableViewDataSource {
         case 0: // 시간 정보 표시 Cell
             guard let timeInfocell = homeMainTableView.dequeueReusableCell(withIdentifier: CellManager.TimeInfoCellIdentifier) as? TimeInfoCell else { return UITableViewCell() }
             timeInfocell.delegate = self
+            
+            // 메인 API 반환 Data를 매번 configrue 함수에 전달
+            timeInfocell.configure(name: "헤이든", time: nil)
             return timeInfocell
         case 1: // 캐릭터 이미지 표시 Cell
             guard let characterImagecell = homeMainTableView.dequeueReusableCell(withIdentifier: CellManager.CharacterCellIdentifier) as? CharacterCell else{ return UITableViewCell() }
@@ -105,6 +108,7 @@ class HomeMainViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        
         HomeMainDataManager().getMainHomeData { data in
             print("LOGT:",data)
         }

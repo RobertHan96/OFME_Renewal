@@ -40,5 +40,10 @@ extension UIColor {
     class var purple: UIColor { UIColor(hex: 0xF4F5FF) }
     class var mainBlueBlur: UIColor { UIColor(hex: 0x1038BC) }
     class var gray4: UIColor { UIColor(hex: 0xBDBDBD) }
+    class var typoBlack: UIColor { UIColor(hex: 0xD2D2D) }
+
+    class var endCharacterBtnBackground: UIColor { UIColor(hex: 0xF9FAFC) }
+    class var endCharacterBtnBorder: UIColor { UIColor(hex: 0xD9DFE7) }
+    class var endCharacterBtnTitle: UIColor { UIColor(hex: 0x868E9E) }
     
 }
