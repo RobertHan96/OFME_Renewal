@@ -12,6 +12,8 @@
 		0020E95B26DC8A6400CA4882 /* CharacterFavoriteMusicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0020E95926DC8A6400CA4882 /* CharacterFavoriteMusicCell.swift */; };
 		0020E95C26DC8A6400CA4882 /* CharacterFavoriteMusicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0020E95A26DC8A6400CA4882 /* CharacterFavoriteMusicCell.xib */; };
 		0020E95E26DCD6A100CA4882 /* Concpet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0020E95D26DCD6A100CA4882 /* Concpet.swift */; };
+		0020E96126DD019300CA4882 /* SidemenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0020E95F26DD019300CA4882 /* SidemenuViewController.swift */; };
+		0020E96226DD019300CA4882 /* SidemenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0020E96026DD019300CA4882 /* SidemenuViewController.xib */; };
 		00CE4F4926D9F42000EE352C /* MainHomeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CE4F4826D9F42000EE352C /* MainHomeResponse.swift */; };
 		00EAF4BE26D53EFD005DBDB8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 00EAF4BD26D53EFD005DBDB8 /* GoogleService-Info.plist */; };
 		00EAF4C026D544FB005DBDB8 /* CellManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EAF4BF26D544FB005DBDB8 /* CellManager.swift */; };
@@ -223,6 +225,8 @@
 		0020E95926DC8A6400CA4882 /* CharacterFavoriteMusicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterFavoriteMusicCell.swift; sourceTree = "<group>"; };
 		0020E95A26DC8A6400CA4882 /* CharacterFavoriteMusicCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterFavoriteMusicCell.xib; sourceTree = "<group>"; };
 		0020E95D26DCD6A100CA4882 /* Concpet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concpet.swift; sourceTree = "<group>"; };
+		0020E95F26DD019300CA4882 /* SidemenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidemenuViewController.swift; sourceTree = "<group>"; };
+		0020E96026DD019300CA4882 /* SidemenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SidemenuViewController.xib; sourceTree = "<group>"; };
 		00CE4F4826D9F42000EE352C /* MainHomeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHomeResponse.swift; sourceTree = "<group>"; };
 		00EAF4BD26D53EFD005DBDB8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		00EAF4BF26D544FB005DBDB8 /* CellManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellManager.swift; sourceTree = "<group>"; };
@@ -933,6 +937,8 @@
 				3B96641926A2D7E900DE5DB3 /* Network */,
 				3B91501C2698CE0A004FE9C0 /* Info */,
 				3B91501B2698CDF9004FE9C0 /* MainSubView */,
+				0020E95F26DD019300CA4882 /* SidemenuViewController.swift */,
+				0020E96026DD019300CA4882 /* SidemenuViewController.xib */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -1913,6 +1919,7 @@
 				3BD7007F26A5CB4C0055AF8A /* QuestionWriteViewController.xib in Resources */,
 				3BBD933B268F68D0003BB706 /* ConceptTestCollectionViewCell.xib in Resources */,
 				3B1943F126AAF6DC0014558F /* InfoDetailViewController.xib in Resources */,
+				0020E96226DD019300CA4882 /* SidemenuViewController.xib in Resources */,
 				0020E95826DBF2A600CA4882 /* CharacterFeatureCell.xib in Resources */,
 				3B28D300268DF33E005BCDE8 /* CategoryCollectionViewCell.xib in Resources */,
 				3B40F76826A1C0CF001F6FE7 /* QuestionSubMainViewController.xib in Resources */,
@@ -2052,6 +2059,7 @@
 				3B326DD32690971100094C0D /* TestConceptThirdViewController.swift in Sources */,
 				3B4BB01C26AAA0B40055E36D /* QuestionSubViewController.swift in Sources */,
 				3B40F76726A1C0CF001F6FE7 /* QuestionSubMainViewController.swift in Sources */,
+				0020E96126DD019300CA4882 /* SidemenuViewController.swift in Sources */,
 				3B9663FC26A1E46E00DE5DB3 /* QuestionViewController.swift in Sources */,
 				3B8391E02689D98000B35A53 /* String.swift in Sources */,
 				3B96641826A2C07E00DE5DB3 /* ConceptResultDataManager.swift in Sources */,

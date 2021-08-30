@@ -1,4 +1,5 @@
 import UIKit
+import SideMenu
 
 extension HomeMainViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -62,6 +63,12 @@ extension HomeMainViewController: TimeInfoCellDelegate, ConceptSugesstionCellDel
     }
 }
 
+extension HomeMainViewController: SideActionMenuDelegate {
+    func waterActionButtonDidCliikd() {
+        print("LOG:물 동작 눌림")
+    }
+}
+
 class HomeMainViewController: BaseViewController {
     
     @IBOutlet weak var homeMainTableView: UITableView!
@@ -96,18 +103,6 @@ class HomeMainViewController: BaseViewController {
         imageView.image = UIImage(named: ImgName.imgName(of: .bubble))
         return imageView
     }()
-    private lazy var label: UILabel = {
-        let label = UILabel()
-        label.numberOfLines = 0
-        label.textAlignment = .center
-        label.font = .Notos(.regular, size: 12)
-        label.textColor = .gray3
-        label.text = "오늘의 친구를 만나보세요"
-        return label
-    }()
-
-    @IBOutlet weak var backgroundImageView: UIImageView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
@@ -148,7 +143,14 @@ class HomeMainViewController: BaseViewController {
     
     
     @IBAction func characterActionsBtnClicked(_ sender: UIButton) {
-        print("LOG: 액션 버튼 눌림")
+        let vc = SidemenuViewController()
+        vc.deleagte = self
+        let sideMenu = SideMenuNavigationController(rootViewController: vc)
+        sideMenu.leftSide = false
+        sideMenu.statusBarEndAlpha = 0
+        sideMenu.presentationStyle.backgroundColor = .clear
+        sideMenu.presentationStyle = .menuDissolveIn
+        self.show(sideMenu, sender: nil)
     }
     
     // Main API response코드에 따라서, 캐릭터 진행 중 / 미진행에 맞는 UI 렌더링
@@ -187,43 +189,10 @@ class HomeMainViewController: BaseViewController {
             }
         }
     }
-    
-    func setFirst() {
-        bubbleImage.image = UIImage(named: ImgName.imgName(of: .bubble))
-        label.text = "오늘의 친구를 만나보세요"
-        self.view.addSubview(bubbleImage)
-        bubbleImage.snp.makeConstraints { make in
-            make.top.equalToSuperview().inset(self.view.frame.height*0.48)
-            make.left.equalToSuperview().inset(self.view.frame.width*0.14)
-        }
-        bubbleImage.addSubview(label)
-        label.snp.makeConstraints { make in
-            make.centerY.equalToSuperview().inset(-30)
-            make.left.right.equalToSuperview().inset(15)
-        }
-    }
-    
-    func setStop() {
-        bubbleImage.image = UIImage(named: ImgName.imgName(of: .bubbleRight))
-        label.text = "나 여기 있어..!"
-        self.view.addSubview(bubbleImage)
-        bubbleImage.snp.makeConstraints { make in
-            make.top.equalToSuperview().inset(self.view.frame.height*0.6)
-            make.left.equalToSuperview().inset(self.view.frame.width*0.37)
-        }
-        bubbleImage.addSubview(label)
-        label.snp.makeConstraints { make in
-            make.centerY.equalToSuperview().inset(-30)
-            make.left.right.equalToSuperview().inset(15)
-        }
-    }
+
     
     func changeIsFirst() {
         self.timer.invalidate()
-        [self.bubbleImage, self.label].forEach { $0?.removeFromSuperview() }
-        [customView.changeButton,customView.charactorImageView,customView.infoButton,customView.menu].forEach {
-            $0.removeFromSuperview()
-        }
         startTime = Date()
         dataManager.getCharacter { result in
             print(result)
@@ -231,10 +200,7 @@ class HomeMainViewController: BaseViewController {
             self.middleButton?.removeFromSuperview()
             if let data = result.last, data.name != nil {
                 self.time = result.last!.timer!
-                [self.bubbleImage, self.label].forEach { $0?.removeFromSuperview() }
                 self.customView.setConstraint(view: self.view)
-                self.customView.timeButton?.addTarget(self, action: #selector(self.timerTouchDown(_:)), for: .touchDown)
-                self.customView.changeButton.addTarget(self, action: #selector(self.changeTouchDown(_:)), for: .touchDown)
                 let screen = UIScreen.main.bounds.width
                 if let url = URL(string: result.last!.url!) {
                     self.customView.charactorImageView.kf.setImage(with: url)
@@ -246,10 +212,7 @@ class HomeMainViewController: BaseViewController {
                 self.customView.titleLabel?.text = "\(result.last!.nickname)과 \(result.last!.name!)과 함께한지"
                 self.setTimer(startTime: self.startTime)
                 self.isFirst = true
-                self.middleButton?.addTarget(self, action: #selector(self.middleTouchDown(_:)), for: .touchDown)
             } else {
-                self.middleButton?.addTarget(self, action: #selector(self.middleTouchDown(_:)), for: .touchDown)
-                self.setFirst()
                 self.isFirst = false
             }
         }
@@ -260,7 +223,6 @@ class HomeMainViewController: BaseViewController {
     
     func setCharactor(idx: Int) {
         customView.changeButton.setImage(UIImage(named: ImgName.imgName(of: .moon)), for: .normal)
-        backgroundImageView.image = UIImage(named: ImgName.imgName(of: .background))
         customView.charactorImageView.image = nil
         customView.charactorImageView.isUserInteractionEnabled = true
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tapGesture))
@@ -303,7 +265,6 @@ class HomeMainViewController: BaseViewController {
                 }
                 customView.charactorImageView.isHidden = false
                 customView.changeButton.setImage(UIImage(named: ImgName.imgName(of: .sunButton)), for: .normal)
-                backgroundImageView.image = UIImage(named: ImgName.imgName(of: .backgroundSun))
                 let images = actionData.filter { return $0.situation.contains("sun") }
                 tapImages = [images[0].url, images[1].url]
                 customView.charactorImageView.kf.setImage(with: URL(string: images[0].url))
@@ -355,77 +316,12 @@ class HomeMainViewController: BaseViewController {
         }
         isTap = !isTap
     }
-    
-    @objc func timerTouchDown(_ sender: UIButton) {
-        if isPlay {
-            customView.changeButton.isUserInteractionEnabled = false
-            customView.charactorImageView.isUserInteractionEnabled = false
-            timer.invalidate()
-            time = Int(Date().timeIntervalSince(startTime)) / 60
-            dataManager.patchCharacterTime(time: time)
-            var cnt = 0
-            customView.timeButton?.isUserInteractionEnabled = false
-            self.customView.charactorImageView.snp.remakeConstraints { make in
-                make.bottom.equalToSuperview().inset(80)
-                make.centerX.equalToSuperview()
-                make.width.equalTo(116)
-                make.height.equalTo(325)
-            }
-            let images = actionData.filter { return $0.situation.contains("stop") }
-            self.customView.charactorImageView.kf.setImage(with: URL(string: images[0].url))
-            stopTimer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { [weak self] timer in
-                if cnt == 0 {
-                    self?.backgroundImageView.image = UIImage(named: ImgName.imgName(of: .backgroundStop))
-                    self?.customView.charactorImageView.kf.setImage(with: URL(string: images[0].url))
-                } else {
-                    self?.backgroundImageView.image = UIImage(named: ImgName.imgName(of: .background))
-                    self?.customView.charactorImageView.image = nil
-                    self?.setStop()
-                    self?.customView.timeButton?.isUserInteractionEnabled = true
-                    self?.timer.invalidate()
-                    self?.stopTimer.invalidate()
-                }
-                cnt += 1
-            }
-        } else {
-            timer.invalidate()
-            customView.changeButton.isUserInteractionEnabled = true
-            [bubbleImage,label].forEach { $0.removeFromSuperview() }
-            setCharactor(idx: idx)
-            customView.charactorImageView.isUserInteractionEnabled = true
-            startTime = Date()
-            setTimer(startTime: startTime)
-        }
-        isPlay = !isPlay
-        customView.setButton(customView.timeButton!, isPlay: isPlay)
-    }
-    
+        
     @objc func infoTouchDown(_ sender: UIButton) {
         var idx: Int
         if let data = data.last {
             idx = data.id!
             let vc = HomeInfoViewController(idx: idx)
-            self.navigationController?.pushViewController(vc, animated: true)
-        }
-    }
-    
-    @objc func middleTouchDown(_ sender: UIButton) {
-        if isFirst {
-            finishView.setConstraint(view: self.view)
-            finishView.confirmButton?.addTarget(self, action: #selector(finishTouchDown), for: .touchDown)
-        } else {
-            if let preview = preview {
-                self.view.addSubview(preview.backgroundView)
-                self.view.addSubview(preview.view)
-            }
-        }
-    }
-    
-    @objc func finishTouchDown() {
-        if let data = data.last {
-            finishView.mainView.removeFromSuperview()
-            let time = (Int(Date().timeIntervalSince(startTime)) + self.time * 60) / 60
-            let vc = HomeFinishViewController(data: data, time: time)
             self.navigationController?.pushViewController(vc, animated: true)
         }
     }
