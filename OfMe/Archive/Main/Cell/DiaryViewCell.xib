@@ -61,7 +61,7 @@
                                 <fragment content="수정하기">
                                     <attributes>
                                         <color key="NSColor" red="0.50980752709999999" green="0.50979751350000002" blue="0.50980430840000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <font key="NSFont" size="13" name="NotoSansKR-Regular"/>
+                                        <font key="NSFont" metaFont="system"/>
                                         <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                     </attributes>
                                 </fragment>
@@ -86,7 +86,7 @@
                                 <fragment content="삭제하기">
                                     <attributes>
                                         <color key="NSColor" red="0.50980752709999999" green="0.50979751350000002" blue="0.50980430840000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <font key="NSFont" size="13" name="NotoSansKR-Regular"/>
+                                        <font key="NSFont" metaFont="system"/>
                                         <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                     </attributes>
                                 </fragment>

@@ -57,22 +57,22 @@
                             <textInputTraits key="textInputTraits"/>
                         </textField>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PLl-3p-BAT">
-                            <rect key="frame" x="15" y="108" width="144" height="20.5"/>
+                            <rect key="frame" x="15" y="108" width="136.5" height="17"/>
                             <attributedString key="attributedText">
                                 <fragment content="오늘 나와 함께한 친구는 ">
                                     <attributes>
-                                        <font key="NSFont" size="14" name="NotoSansKR-Regular"/>
+                                        <font key="NSFont" metaFont="menu" size="14"/>
                                     </attributes>
                                 </fragment>
                             </attributedString>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vGS-TT-sKZ">
-                            <rect key="frame" x="245" y="108" width="39" height="21"/>
+                            <rect key="frame" x="237.5" y="108" width="36.5" height="17"/>
                             <attributedString key="attributedText">
                                 <fragment content="입니다">
                                     <attributes>
-                                        <font key="NSFont" size="14" name="NotoSansKR-Regular"/>
+                                        <font key="NSFont" metaFont="system" size="14"/>
                                         <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                     </attributes>
                                 </fragment>
@@ -80,7 +80,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="캐릭터명" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y5R-gG-hd4">
-                            <rect key="frame" x="167" y="109" width="70" height="18.5"/>
+                            <rect key="frame" x="159.5" y="107.5" width="70" height="18.5"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="70" id="mHH-qy-gNo"/>
                             </constraints>
@@ -88,7 +88,7 @@
                             <textInputTraits key="textInputTraits"/>
                         </textField>
                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="qiM-M6-JDe">
-                            <rect key="frame" x="20" y="163.5" width="117" height="295"/>
+                            <rect key="frame" x="20" y="160" width="117" height="295"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="295" id="FEc-W1-8Af"/>
@@ -109,7 +109,7 @@
                             </userDefinedRuntimeAttributes>
                         </textView>
                         <collectionView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="b5g-0r-sSy">
-                            <rect key="frame" x="20" y="479" width="117" height="95"/>
+                            <rect key="frame" x="20" y="475.5" width="117" height="95"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="95" id="fhn-hU-k6f"/>

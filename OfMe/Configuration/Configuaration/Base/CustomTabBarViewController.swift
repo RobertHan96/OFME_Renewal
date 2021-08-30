@@ -1,16 +1,17 @@
 import UIKit
 
 class CustomTabBarViewController: UITabBarController, UITabBarControllerDelegate {
+    let data = Date()
     
     let homeVC = HomeMainViewController()
     let questionVC = QuestionViewController()
     let archiveVC = ArchiveMainViewController()
     let myinfoVC = MyInfoMainViewController()
-    
-    let homeTabBarItem = UITabBarItem(title: "홈", image: UIImage(named: ImgName.imgName(of: .homeIcon)), tag: 0)
-    let questionTabBarItem = UITabBarItem(title: "Q&A", image: UIImage(named: ImgName.imgName(of: .questionIcon)), tag: 2)
-    let archiveTabBarItem = UITabBarItem(title: "기록", image: UIImage(named: ImgName.imgName(of: .archiveIcon)), tag: 1)
-    let myinfoTabBarItem = UITabBarItem(title: "마이", image: UIImage(named: ImgName.imgName(of: .myInfoIcon)), tag: 3)
+    let archiveWriteVC = ArchiveWriteViewController()
+    let homeTabBarItem = UITabBarItem(title: nil, image: UIImage(named: ImgName.imgName(of: .homeIcon)), tag: 0)
+    let archiveTabBarItem = UITabBarItem(title: nil, image: UIImage(named: ImgName.imgName(of: .testIcon)), tag: 1)
+    let questionTabBarItem = UITabBarItem(title: nil, image: UIImage(named: ImgName.imgName(of: .questionIcon)), tag: 2)
+    let myinfoTabBarItem = UITabBarItem(title: nil, image: UIImage(named: ImgName.imgName(of: .defaultProfile)), tag: 3)
 
     override func viewDidLoad() {
         super.viewDidLoad()

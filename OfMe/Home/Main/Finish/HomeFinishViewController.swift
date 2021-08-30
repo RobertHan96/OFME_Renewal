@@ -65,7 +65,6 @@ class HomeFinishViewController: BaseViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        middleButton = self.tabBarController?.normalMiddleButton()
         self.navigationItem.title = "컨셉 종료 평가"
     }
     

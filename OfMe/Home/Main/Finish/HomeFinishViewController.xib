@@ -42,11 +42,11 @@
                     <rect key="frame" x="155" y="126.5" width="178" height="95"/>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UHA-ZN-rcs">
-                    <rect key="frame" x="267" y="102" width="66" height="16"/>
+                    <rect key="frame" x="268.5" y="104.5" width="64.5" height="13.5"/>
                     <attributedString key="attributedText">
                         <fragment content="예상포인트 5p">
                             <attributes>
-                                <font key="NSFont" size="11" name="NotoSansKR-Regular"/>
+                                <font key="NSFont" metaFont="smallSystem"/>
                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                             </attributes>
                         </fragment>
@@ -61,26 +61,26 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Ku-L8-l6z">
-                    <rect key="frame" x="30" y="378.5" width="354" height="1"/>
+                    <rect key="frame" x="30" y="375.5" width="354" height="1"/>
                     <color key="backgroundColor" systemColor="systemGray4Color"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="1" id="71l-Lz-8fO"/>
                     </constraints>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3B8-b9-OmM">
-                    <rect key="frame" x="98" y="288" width="218" height="17.5"/>
+                    <rect key="frame" x="104" y="288" width="206.5" height="14.5"/>
                     <color key="backgroundColor" red="0.95719021559999995" green="0.95999711750000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <attributedString key="attributedText">
                         <fragment content="컨셉과 함께 보낸 하루가 만족스러우셨나요?">
                             <attributes>
-                                <font key="NSFont" size="12" name="NotoSansKR-Regular"/>
+                                <font key="NSFont" metaFont="cellTitle"/>
                             </attributes>
                         </fragment>
                     </attributedString>
                     <nil key="highlightedColor"/>
                 </label>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="YMf-tt-hQx">
-                    <rect key="frame" x="50" y="323.5" width="314" height="45"/>
+                    <rect key="frame" x="50" y="320.5" width="314" height="45"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="45" id="LCy-cO-s6c"/>
@@ -93,14 +93,14 @@
                     </collectionViewFlowLayout>
                 </collectionView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nOC-4q-tOR">
-                    <rect key="frame" x="101.5" y="387" width="211" height="35"/>
+                    <rect key="frame" x="106.5" y="384" width="201" height="29"/>
                     <attributedString key="attributedText">
                         <fragment>
                             <string key="content">어떤 점이 나와 잘 맞고 다른지 직접
 기록해보고 나다움의 여정을 정리해보세요!</string>
                             <attributes>
                                 <color key="NSColor" red="0.50980752709999999" green="0.50979751350000002" blue="0.50980430840000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <font key="NSFont" size="12" name="NotoSansKR-Regular"/>
+                                <font key="NSFont" metaFont="cellTitle"/>
                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                             </attributes>
                         </fragment>
@@ -108,7 +108,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1tn-oW-15k">
-                    <rect key="frame" x="40" y="442" width="334" height="55"/>
+                    <rect key="frame" x="40" y="433" width="334" height="55"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="55" id="Zsb-gn-0Nf"/>
                     </constraints>
@@ -117,7 +117,7 @@
                             <fragment content="컨셉 종료하기">
                                 <attributes>
                                     <color key="NSColor" red="0.091667748990000006" green="0.19188937540000001" blue="0.73729795220000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    <font key="NSFont" size="16" name="NotoSansKR-Bold"/>
+                                    <font key="NSFont" metaFont="system" size="16"/>
                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                 </attributes>
                             </fragment>

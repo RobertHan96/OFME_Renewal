@@ -37,7 +37,6 @@ class QuestionSubViewController: BaseViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         navigationItem.title = "둘러보기"
-        middleButton = self.tabBarController?.normalMiddleButton()
     }
     
     override func viewWillDisappear(_ animated: Bool) {

@@ -35,7 +35,6 @@ class ArchiveMainViewController: BaseViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         navigationItem.title = "컨셉 기록"
-        middleButton = self.tabBarController?.testMiddleButton()
         middleButton?.addTarget(self, action: #selector(writeTouchDown), for: .touchDown)
         dataManager.getDiary(date: date) { result in
             self.adapter = ArchiveMainAdapter(of: self.collectionView, data: result, vc: self)

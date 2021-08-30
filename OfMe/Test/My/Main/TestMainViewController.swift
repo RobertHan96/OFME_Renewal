@@ -24,7 +24,6 @@ class TestMainViewController: BaseViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         self.navigationItem.title = "나의 성향 알기"
-        middleButton = self.tabBarController?.normalMiddleButton()
     }
     
     override func viewWillDisappear(_ animated: Bool) {

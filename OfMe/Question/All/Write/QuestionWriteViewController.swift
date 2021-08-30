@@ -132,7 +132,6 @@ class QuestionWriteViewController: BaseViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        middleButton = self.tabBarController?.normalMiddleButton()
         self.navigationItem.title = "답변 작성"
     }
     

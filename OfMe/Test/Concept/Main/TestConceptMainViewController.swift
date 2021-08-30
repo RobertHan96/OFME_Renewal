@@ -10,7 +10,6 @@ class TestConceptMainViewController: BaseViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         self.navigationItem.title = "컨셉 추천 받기"
-        middleButton = self.tabBarController?.normalMiddleButton()
     }
     
     override func viewWillDisappear(_ animated: Bool) {

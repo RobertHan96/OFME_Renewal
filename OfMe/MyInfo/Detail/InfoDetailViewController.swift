@@ -23,7 +23,6 @@ class InfoDetailViewController: BaseViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         self.navigationItem.title = "내 정보"
-        middleButton = self.tabBarController?.normalMiddleButton()
         
         dataManager.getDetail() { data in
             if data.count > 0 {

@@ -18,7 +18,6 @@ class QuestionViewController: BaseViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         self.navigationItem.title = "Q&A"
-        middleButton = self.tabBarController?.normalMiddleButton()
     }
     
     override func viewWillDisappear(_ animated: Bool) {

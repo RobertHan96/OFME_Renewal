@@ -40,7 +40,6 @@ class HomeInfoViewController: BaseViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         self.navigationItem.title = "캐릭터 특징"
-        middleButton = self.tabBarController?.endMiddleButton()
     }
     
     override func viewWillDisappear(_ animated: Bool) {

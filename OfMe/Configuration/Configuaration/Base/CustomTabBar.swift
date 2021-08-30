@@ -6,7 +6,7 @@ class CustomTabBar: UITabBar {
     
     private func addShape() {
         let shapeLayer = CAShapeLayer()
-        shapeLayer.path = createPath()
+//        shapeLayer.path = createPath()
         shapeLayer.strokeColor = UIColor.systemBackground.cgColor
         shapeLayer.fillColor = UIColor.systemBackground.cgColor
         shapeLayer.lineWidth = 1.0
@@ -21,11 +21,11 @@ class CustomTabBar: UITabBar {
         } else {
             self.layer.insertSublayer(shapeLayer, at: 0)
         }
-        self.shapeLayer = shapeLayer
+//        self.shapeLayer = shapeLayer
     }
     
     override func draw(_ rect:CGRect) {
-        self.addShape()
+//        self.addShape()
     }
     
     override func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {

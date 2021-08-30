@@ -115,7 +115,6 @@ class HomeMainViewController: BaseViewController {
         HomeMainDataManager().getMainHomeData { data in
             self.isEmptyChracter = data.conceptProgressCheck.getBoolFromOX ?? false
             self.userConcept = data
-            print("LOG:HOME-MAIN", data)
         }
         
 //        preview = PreviewAdapter { button in
@@ -138,13 +137,6 @@ class HomeMainViewController: BaseViewController {
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.navigationBar.isHidden = true
         self.middleButton?.removeFromSuperview()
-        if !data.isEmpty {
-            self.middleButton = self.tabBarController?.endMiddleButton()
-        } else {
-            self.middleButton = self.tabBarController?.testMiddleButton()
-        }
-        self.middleButton?.addTarget(self, action: #selector(self.middleTouchDown(_:)), for: .touchDown)
-        
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -239,7 +231,6 @@ class HomeMainViewController: BaseViewController {
             self.middleButton?.removeFromSuperview()
             if let data = result.last, data.name != nil {
                 self.time = result.last!.timer!
-                self.middleButton = self.tabBarController?.endMiddleButton()
                 [self.bubbleImage, self.label].forEach { $0?.removeFromSuperview() }
                 self.customView.setConstraint(view: self.view)
                 self.customView.timeButton?.addTarget(self, action: #selector(self.timerTouchDown(_:)), for: .touchDown)
@@ -257,7 +248,6 @@ class HomeMainViewController: BaseViewController {
                 self.isFirst = true
                 self.middleButton?.addTarget(self, action: #selector(self.middleTouchDown(_:)), for: .touchDown)
             } else {
-                self.middleButton = self.tabBarController?.testMiddleButton()
                 self.middleButton?.addTarget(self, action: #selector(self.middleTouchDown(_:)), for: .touchDown)
                 self.setFirst()
                 self.isFirst = false

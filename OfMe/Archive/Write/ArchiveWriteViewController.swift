@@ -118,7 +118,6 @@ class ArchiveWriteViewController: BaseViewController {
     override func viewWillAppear(_ animated: Bool) {
         navigationItem.title = "컨셉 기록"
         self.navigationItem.rightBarButtonItem = rightButton
-        middleButton = self.tabBarController?.normalMiddleButton()
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(keyboardWillHide(_:)),
                                                name: UIResponder.keyboardWillHideNotification, object: nil)

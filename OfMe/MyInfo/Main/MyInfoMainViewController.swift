@@ -48,7 +48,6 @@ class MyInfoMainViewController: BaseViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         self.navigationItem.title = "마이페이지"
-        middleButton = self.tabBarController?.normalMiddleButton()
         
         dataManager.getInfo() { data in
             print(data.selectMypageResult)
