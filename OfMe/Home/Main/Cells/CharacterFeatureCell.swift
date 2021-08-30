@@ -8,14 +8,27 @@
 import UIKit
 
 class CharacterFeatureCell: UICollectionViewCell {
-
+    @IBOutlet weak var featureName: UILabel!
+    @IBOutlet weak var featureBorderView: UIView!
+    @IBOutlet weak var featureDescription: PaddingLabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        setupUI()
     }
     
-    func configure(feature: String?, description: String?) {
+    func configure(feature: String?, data: HomeMainResult?) {
         
+        if let characterFeature = feature, let characterInfo = data {
+            featureName.makeHightledText(all: "\(characterFeature.getFeatureNameForLable)을 알려줘!", for: characterFeature.getFeatureNameForLable)
+            featureDescription.text = data?.data?.advantage
+        }
+    }
+    
+    private func setupUI() {
+        self.layer.borderWidth = 1
+        self.backgroundColor = .characterFeatureCellGrayBackground
+        featureBorderView.backgroundColor = .characterFeatureCellBackground
     }
 
 }

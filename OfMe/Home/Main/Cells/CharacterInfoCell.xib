@@ -19,7 +19,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="8mE-Gq-zhI">
-                        <rect key="frame" x="0.0" y="0.0" width="317" height="141"/>
+                        <rect key="frame" x="0.0" y="0.0" width="317" height="156"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="zRa-sk-XCo">
                             <size key="itemSize" width="128" height="128"/>
@@ -29,7 +29,7 @@
                         </collectionViewFlowLayout>
                     </collectionView>
                     <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="OVJ-PC-SlC">
-                        <rect key="frame" x="97.5" y="147" width="122" height="24"/>
+                        <rect key="frame" x="97.5" y="162" width="122" height="9"/>
                     </pageControl>
                 </subviews>
                 <constraints>
@@ -37,7 +37,7 @@
                     <constraint firstItem="8mE-Gq-zhI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="LLc-Py-mae"/>
                     <constraint firstItem="OVJ-PC-SlC" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Lue-6F-bQB"/>
                     <constraint firstItem="8mE-Gq-zhI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Lyr-zv-coo"/>
-                    <constraint firstAttribute="bottom" secondItem="8mE-Gq-zhI" secondAttribute="bottom" constant="30" id="Por-2v-sSP"/>
+                    <constraint firstAttribute="bottom" secondItem="8mE-Gq-zhI" secondAttribute="bottom" constant="15" id="Por-2v-sSP"/>
                     <constraint firstAttribute="trailing" secondItem="8mE-Gq-zhI" secondAttribute="trailing" id="b3s-zk-tyz"/>
                     <constraint firstAttribute="bottom" secondItem="OVJ-PC-SlC" secondAttribute="bottom" id="uFG-X3-WgE"/>
                 </constraints>

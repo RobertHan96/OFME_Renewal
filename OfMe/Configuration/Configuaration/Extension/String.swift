@@ -16,6 +16,21 @@ extension String {
         return self == "X"
     }
     
+    var getFeatureNameForLable: String {
+        switch self {
+        case "advantage":
+            return "장단점"
+        case "habit":
+            return "습관"
+        case "behavior":
+            return "자주 하는 행동"
+        case "value":
+            return "가치관"
+        default:
+            return "최애 플레이 리스트"
+        }
+    }
+
     // MARK: 다국어 지원 (localization)
     var localized: String {
         return NSLocalizedString(self, comment: "")

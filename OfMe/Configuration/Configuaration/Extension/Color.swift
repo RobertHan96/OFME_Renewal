@@ -42,8 +42,11 @@ extension UIColor {
     class var gray4: UIColor { UIColor(hex: 0xBDBDBD) }
     class var typoBlack: UIColor { UIColor(hex: 0xD2D2D) }
 
+    // 메인 Cells에서 사용하는 색상들
     class var endCharacterBtnBackground: UIColor { UIColor(hex: 0xF9FAFC) }
     class var endCharacterBtnBorder: UIColor { UIColor(hex: 0xD9DFE7) }
     class var endCharacterBtnTitle: UIColor { UIColor(hex: 0x868E9E) }
-    
+    class var characterFeatureCellBackground: UIColor { UIColor(hex: 0xF4F5FF) }
+    class var characterFeatureCellGrayBackground: UIColor { UIColor(hex: 0xFFFFFF) }
+
 }

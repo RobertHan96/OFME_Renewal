@@ -24,3 +24,23 @@ struct CharacterFeatures: Codable {
     var music: String?
     var isFirstMain: String?
 }
+
+struct CharacterFeatureCellModel {
+    static let totalCharacterFeature: Int = 5
+    static let characterFeatures: [String] = [
+        CharacterFeatureParsingName.advantage.rawValue,
+        CharacterFeatureParsingName.habit.rawValue,
+        CharacterFeatureParsingName.behavior.rawValue,
+        CharacterFeatureParsingName.value.rawValue,
+        CharacterFeatureParsingName.music.rawValue,
+    ]
+}
+
+
+enum CharacterFeatureParsingName: String {
+    case advantage = "advantage"
+    case habit = "habit"
+    case behavior = "behavior"
+    case value = "value"
+    case music = "music"
+}

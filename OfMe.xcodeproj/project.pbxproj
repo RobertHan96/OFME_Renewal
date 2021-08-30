@@ -26,7 +26,6 @@
 		00F12D3026D15B1E0055BC5F /* CharacterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00F12D2E26D15B1E0055BC5F /* CharacterCell.xib */; };
 		00F12D3326D15E060055BC5F /* CharacterInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F12D3126D15E060055BC5F /* CharacterInfoCell.swift */; };
 		00F12D3426D15E060055BC5F /* CharacterInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00F12D3226D15E060055BC5F /* CharacterInfoCell.xib */; };
-		00F12D3826D1612F0055BC5F /* CharacterFeatureTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00F12D3626D1612F0055BC5F /* CharacterFeatureTableViewCell.xib */; };
 		00F12D3A26D16FE20055BC5F /* IBDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F12D3926D16FE20055BC5F /* IBDesignable.swift */; };
 		3B1943F026AAF6DC0014558F /* InfoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1943EE26AAF6DC0014558F /* InfoDetailViewController.swift */; };
 		3B1943F126AAF6DC0014558F /* InfoDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B1943EF26AAF6DC0014558F /* InfoDetailViewController.xib */; };
@@ -235,7 +234,6 @@
 		00F12D2E26D15B1E0055BC5F /* CharacterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterCell.xib; sourceTree = "<group>"; };
 		00F12D3126D15E060055BC5F /* CharacterInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterInfoCell.swift; sourceTree = "<group>"; };
 		00F12D3226D15E060055BC5F /* CharacterInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterInfoCell.xib; sourceTree = "<group>"; };
-		00F12D3626D1612F0055BC5F /* CharacterFeatureTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterFeatureTableViewCell.xib; sourceTree = "<group>"; };
 		00F12D3926D16FE20055BC5F /* IBDesignable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBDesignable.swift; sourceTree = "<group>"; };
 		0F294F538A4B97EB52248CC5 /* Pods-OfMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OfMe.debug.xcconfig"; path = "Target Support Files/Pods-OfMe/Pods-OfMe.debug.xcconfig"; sourceTree = "<group>"; };
 		0FF14BA05BC0532E439C92AA /* Pods_OfMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OfMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -456,7 +454,6 @@
 				00F12D2E26D15B1E0055BC5F /* CharacterCell.xib */,
 				00F12D3126D15E060055BC5F /* CharacterInfoCell.swift */,
 				00F12D3226D15E060055BC5F /* CharacterInfoCell.xib */,
-				00F12D3626D1612F0055BC5F /* CharacterFeatureTableViewCell.xib */,
 				00EAF4C126D6889F005DBDB8 /* ConceptSugesstionCell.swift */,
 				00EAF4C226D6889F005DBDB8 /* ConceptSugesstionCell.xib */,
 				0020E95526DBF2A600CA4882 /* CharacterFeatureCell.swift */,
@@ -1900,7 +1897,6 @@
 				3B1943F626AB02720014558F /* FixNameViewController.xib in Resources */,
 				3B638FD4268B498C0095F05B /* QuestionMainViewController.xib in Resources */,
 				3B753D3626B5ADC100A941AA /* MyInfoHistoryCell.xib in Resources */,
-				00F12D3826D1612F0055BC5F /* CharacterFeatureTableViewCell.xib in Resources */,
 				3BBD932F268F51F7003BB706 /* TestConceptDetailFirstViewController.xib in Resources */,
 				3B753D3A26B5B11B00A941AA /* MyInfoCharCell.xib in Resources */,
 				3B9663FD26A1E46E00DE5DB3 /* QuestionViewController.xib in Resources */,

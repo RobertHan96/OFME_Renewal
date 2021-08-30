@@ -11,7 +11,6 @@ class CharacterInfoCell: UITableViewCell {
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var pageControll: UIPageControl!
 
-    let list = [UIColor.red, UIColor.green, UIColor.blue, UIColor.gray, UIColor.black]
     var characterInfo: HomeMainResult? { didSet {
         collectionView.reloadData()
     }}
@@ -46,15 +45,15 @@ class CharacterInfoCell: UITableViewCell {
     private func setupFlowLayout() {
         let flowLayout = UICollectionViewFlowLayout()
         flowLayout.scrollDirection = .horizontal
-        flowLayout.itemSize = CGSize(width: collectionView.layer.bounds.width
-                                     , height: 138)
-        flowLayout.minimumLineSpacing = 0.0
+        flowLayout.itemSize = CGSize(width: collectionView.layer.bounds.width - 10
+                                     , height: 171)
+        flowLayout.minimumLineSpacing = 10.0
         flowLayout.minimumInteritemSpacing = 0.0
         collectionView.collectionViewLayout = flowLayout
     }
 
     private func setupPageControll() {
-        pageControll.numberOfPages = list.count
+        pageControll.numberOfPages = CharacterFeatureCellModel.totalCharacterFeature
         pageControll.currentPage = 0
         pageControll.pageIndicatorTintColor = UIColor.systemGray
         pageControll.currentPageIndicatorTintColor = UIColor.black
@@ -65,13 +64,12 @@ class CharacterInfoCell: UITableViewCell {
 // 고정된 값이 아닌 미리 받아온 데이터 기반으로 cell, cell size 초기화
 extension CharacterInfoCell: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        list.count
+        CharacterFeatureCellModel.totalCharacterFeature
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "characterFeature", for: indexPath as IndexPath) as? CharacterFeatureCell else { return UICollectionViewCell() }
-        cell.backgroundColor = list[indexPath.row]
-        cell.configure(feature: "", description: "")
+        cell.configure(feature: CharacterFeatureCellModel.characterFeatures[indexPath.row], data: characterInfo)
 
         return cell
     }
