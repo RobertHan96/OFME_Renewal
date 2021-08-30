@@ -48,5 +48,6 @@ extension UIColor {
     class var endCharacterBtnTitle: UIColor { UIColor(hex: 0x868E9E) }
     class var characterFeatureCellBackground: UIColor { UIColor(hex: 0xF4F5FF) }
     class var characterFeatureCellGrayBackground: UIColor { UIColor(hex: 0xFFFFFF) }
-
+    class var favoriteSongArtistName: UIColor { UIColor(hex: 0x828282) }
+    
 }

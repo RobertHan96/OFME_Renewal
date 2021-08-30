@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		0020E95726DBF2A600CA4882 /* CharacterFeatureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0020E95526DBF2A600CA4882 /* CharacterFeatureCell.swift */; };
 		0020E95826DBF2A600CA4882 /* CharacterFeatureCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0020E95626DBF2A600CA4882 /* CharacterFeatureCell.xib */; };
+		0020E95B26DC8A6400CA4882 /* CharacterFavoriteMusicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0020E95926DC8A6400CA4882 /* CharacterFavoriteMusicCell.swift */; };
+		0020E95C26DC8A6400CA4882 /* CharacterFavoriteMusicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0020E95A26DC8A6400CA4882 /* CharacterFavoriteMusicCell.xib */; };
+		0020E95E26DCD6A100CA4882 /* Concpet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0020E95D26DCD6A100CA4882 /* Concpet.swift */; };
 		00CE4F4926D9F42000EE352C /* MainHomeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CE4F4826D9F42000EE352C /* MainHomeResponse.swift */; };
 		00EAF4BE26D53EFD005DBDB8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 00EAF4BD26D53EFD005DBDB8 /* GoogleService-Info.plist */; };
 		00EAF4C026D544FB005DBDB8 /* CellManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EAF4BF26D544FB005DBDB8 /* CellManager.swift */; };
@@ -217,6 +220,9 @@
 /* Begin PBXFileReference section */
 		0020E95526DBF2A600CA4882 /* CharacterFeatureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterFeatureCell.swift; sourceTree = "<group>"; };
 		0020E95626DBF2A600CA4882 /* CharacterFeatureCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterFeatureCell.xib; sourceTree = "<group>"; };
+		0020E95926DC8A6400CA4882 /* CharacterFavoriteMusicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterFavoriteMusicCell.swift; sourceTree = "<group>"; };
+		0020E95A26DC8A6400CA4882 /* CharacterFavoriteMusicCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterFavoriteMusicCell.xib; sourceTree = "<group>"; };
+		0020E95D26DCD6A100CA4882 /* Concpet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concpet.swift; sourceTree = "<group>"; };
 		00CE4F4826D9F42000EE352C /* MainHomeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHomeResponse.swift; sourceTree = "<group>"; };
 		00EAF4BD26D53EFD005DBDB8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		00EAF4BF26D544FB005DBDB8 /* CellManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellManager.swift; sourceTree = "<group>"; };
@@ -458,6 +464,8 @@
 				00EAF4C226D6889F005DBDB8 /* ConceptSugesstionCell.xib */,
 				0020E95526DBF2A600CA4882 /* CharacterFeatureCell.swift */,
 				0020E95626DBF2A600CA4882 /* CharacterFeatureCell.xib */,
+				0020E95926DC8A6400CA4882 /* CharacterFavoriteMusicCell.swift */,
+				0020E95A26DC8A6400CA4882 /* CharacterFavoriteMusicCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -919,6 +927,7 @@
 			children = (
 				3B638FC7268B485B0095F05B /* HomeMainViewController.swift */,
 				3B638FC8268B485B0095F05B /* HomeMainViewController.xib */,
+				3B96641A26A2D7F700DE5DB3 /* Data */,
 				00F12D1426D14B130055BC5F /* Cells */,
 				3B96642726A356DD00DE5DB3 /* Finish */,
 				3B96641926A2D7E900DE5DB3 /* Network */,
@@ -1445,7 +1454,6 @@
 			isa = PBXGroup;
 			children = (
 				3B96641E26A2FC8100DE5DB3 /* HomeMainDataManager.swift */,
-				3B96641A26A2D7F700DE5DB3 /* Data */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -1457,6 +1465,7 @@
 				3B96642026A335F100DE5DB3 /* CharacterActionResponse.swift */,
 				3B96642226A33D7000DE5DB3 /* CharacterTimeResponse.swift */,
 				00CE4F4826D9F42000EE352C /* MainHomeResponse.swift */,
+				0020E95D26DCD6A100CA4882 /* Concpet.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -1893,6 +1902,7 @@
 				3B6CF6E4268EEC43002A4DDE /* TestConceptMainViewController.xib in Resources */,
 				3B4037302689D6FE00AFAC40 /* Assets.xcassets in Resources */,
 				3B3ECE38269228AB006BCD5D /* ConceptResultTextCell.xib in Resources */,
+				0020E95C26DC8A6400CA4882 /* CharacterFavoriteMusicCell.xib in Resources */,
 				3BE26F13269EF842002F67D4 /* DiaryViewCell.xib in Resources */,
 				3B1943F626AB02720014558F /* FixNameViewController.xib in Resources */,
 				3B638FD4268B498C0095F05B /* QuestionMainViewController.xib in Resources */,
@@ -1988,6 +1998,7 @@
 				3B753D1A26B4605800A941AA /* QuestionSubDataManager.swift in Sources */,
 				3BE26F1E269F2EBC002F67D4 /* ArchiveWritePicker.swift in Sources */,
 				3BD6A03A269DF70900F7E3AF /* TestConceptFirstResponse.swift in Sources */,
+				0020E95B26DC8A6400CA4882 /* CharacterFavoriteMusicCell.swift in Sources */,
 				3B8391E52689D98000B35A53 /* FSCalendar.swift in Sources */,
 				3BBD9349268F7AD8003BB706 /* TestConceptDescriptCollectionViewCell.swift in Sources */,
 				3B91501A2698C8D6004FE9C0 /* LoginBaseViewController.swift in Sources */,
@@ -2085,6 +2096,7 @@
 				3B91500A269855AD004FE9C0 /* SignInResponse.swift in Sources */,
 				3B96640C26A210A700DE5DB3 /* TestConceptThirdResponse.swift in Sources */,
 				3B8CF34026A36BB200A6B627 /* FinishDataManager.swift in Sources */,
+				0020E95E26DCD6A100CA4882 /* Concpet.swift in Sources */,
 				3B753D2626B4E5D500A941AA /* MyInfoResponse.swift in Sources */,
 				3B91501F2698CE21004FE9C0 /* HomeInfoViewController.swift in Sources */,
 				3BD6A03D269DF89700F7E3AF /* TestConceptFirstDataManager.swift in Sources */,
@@ -2248,7 +2260,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7ZJR765VK9;
+				DEVELOPMENT_TEAM = KQS5CL5P74;
 				INFOPLIST_FILE = OfMe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2269,7 +2281,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7ZJR765VK9;
+				DEVELOPMENT_TEAM = KQS5CL5P74;
 				INFOPLIST_FILE = OfMe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

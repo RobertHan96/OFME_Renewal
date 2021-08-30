@@ -1,28 +1,16 @@
+//
+//  Concpet.swift
+//  OfMe
+//
+//  Created by HanaHan on 2021/08/30.
+//
+
+// 메인 화면 : 캐릭터, 컨셉 정보 표시에 필요한 구조체 정리
 import Foundation
 
-struct HomeMainResponse: Codable {
-    var isSuccess: Bool
-    var code: Int
-    var message: String
-    var result: HomeMainResult?
-}
-
-struct HomeMainResult: Codable {
-    var conceptProgressCheck: String
-    var nickname: String?
-    var image: [String]?
-    var data: CharacterFeatures?
-}
-
-struct CharacterFeatures: Codable {
-    var id: Int?
-    var name: String?
-    var advantage: String?
-    var habit: String?
-    var behavior: String?
-    var value: String?
-    var music: String?
-    var isFirstMain: String?
+struct FavoriteSong {
+    var name: String
+    var artist: String
 }
 
 struct CharacterFeatureCellModel {
@@ -44,3 +32,4 @@ enum CharacterFeatureParsingName: String {
     case value = "value"
     case music = "music"
 }
+

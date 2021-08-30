@@ -38,7 +38,8 @@ class CharacterInfoCell: UITableViewCell {
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.backgroundColor = .clear
-        collectionView.register(UINib.init(nibName: "CharacterFeatureCell", bundle: nil), forCellWithReuseIdentifier: "characterFeature")
+        collectionView.register(UINib.init(nibName: CellManager.CharacterFeatureCellName, bundle: nil), forCellWithReuseIdentifier: CellManager.CharacterFeatureCellIdentifier)
+        collectionView.register(UINib.init(nibName: CellManager.CharacterFavoriteMusicCellIName, bundle: nil), forCellWithReuseIdentifier: CellManager.CharacterFavoriteMusicCellIdentifier)
         setupFlowLayout()
     }
     
@@ -68,10 +69,19 @@ extension CharacterInfoCell: UICollectionViewDelegate, UICollectionViewDataSourc
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "characterFeature", for: indexPath as IndexPath) as? CharacterFeatureCell else { return UICollectionViewCell() }
-        cell.configure(feature: CharacterFeatureCellModel.characterFeatures[indexPath.row], data: characterInfo)
+        switch CharacterFeatureCellModel.characterFeatures[indexPath.row] {
+        case CharacterFeatureParsingName.music.rawValue:
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellManager.CharacterFavoriteMusicCellIdentifier, for: indexPath as IndexPath) as? CharacterFavoriteMusicCell else { return UICollectionViewCell() }
+            cell.configure(feature: CharacterFeatureCellModel.characterFeatures[indexPath.row], data: characterInfo)
+            
+            return cell
+            
+        default:
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellManager.CharacterFeatureCellIdentifier, for: indexPath as IndexPath) as? CharacterFeatureCell else { return UICollectionViewCell() }
+            cell.configure(feature: CharacterFeatureCellModel.characterFeatures[indexPath.row], data: characterInfo)
 
-        return cell
+            return cell
+        }
     }
 }
 

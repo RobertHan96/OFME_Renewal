@@ -20,13 +20,14 @@ class CharacterFeatureCell: UICollectionViewCell {
     func configure(feature: String?, data: HomeMainResult?) {
         
         if let characterFeature = feature, let characterInfo = data {
-            featureName.makeHightledText(all: "\(characterFeature.getFeatureNameForLable)을 알려줘!", for: characterFeature.getFeatureNameForLable)
-            featureDescription.text = data?.data?.advantage
+            featureName.makeHightledText(all: "\(characterFeature.getFeatureNameForLable)을 알려줘 !", for: characterFeature.getFeatureNameForLable)
+            featureDescription.text = characterInfo.data?[characterFeature]
         }
     }
     
     private func setupUI() {
         self.layer.borderWidth = 1
+        self.layer.borderColor = UIColor.characterFeatureCellGrayBackground.cgColor
         self.backgroundColor = .characterFeatureCellGrayBackground
         featureBorderView.backgroundColor = .characterFeatureCellBackground
     }
