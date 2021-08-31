@@ -16,6 +16,7 @@
 		0020E96A26DE754300CA4882 /* ActionButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0020E96826DE754300CA4882 /* ActionButtonCell.xib */; };
 		0020E96C26DE7B1400CA4882 /* SideActionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0020E96B26DE7B1400CA4882 /* SideActionsViewController.xib */; };
 		0020E97026DE7B7900CA4882 /* SideActionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0020E96F26DE7B7900CA4882 /* SideActionsViewController.swift */; };
+		0020E97526DE7E0700CA4882 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0020E97426DE7E0700CA4882 /* Action.swift */; };
 		00CE4F4926D9F42000EE352C /* MainHomeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CE4F4826D9F42000EE352C /* MainHomeResponse.swift */; };
 		00EAF4BE26D53EFD005DBDB8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 00EAF4BD26D53EFD005DBDB8 /* GoogleService-Info.plist */; };
 		00EAF4C026D544FB005DBDB8 /* CellManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EAF4BF26D544FB005DBDB8 /* CellManager.swift */; };
@@ -231,6 +232,7 @@
 		0020E96826DE754300CA4882 /* ActionButtonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActionButtonCell.xib; sourceTree = "<group>"; };
 		0020E96B26DE7B1400CA4882 /* SideActionsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SideActionsViewController.xib; sourceTree = "<group>"; };
 		0020E96F26DE7B7900CA4882 /* SideActionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideActionsViewController.swift; sourceTree = "<group>"; };
+		0020E97426DE7E0700CA4882 /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
 		00CE4F4826D9F42000EE352C /* MainHomeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHomeResponse.swift; sourceTree = "<group>"; };
 		00EAF4BD26D53EFD005DBDB8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		00EAF4BF26D544FB005DBDB8 /* CellManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellManager.swift; sourceTree = "<group>"; };
@@ -458,6 +460,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0020E97226DE7DD800CA4882 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0020E95D26DCD6A100CA4882 /* Concpet.swift */,
+				0020E97426DE7E0700CA4882 /* Action.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0020E97326DE7DEE00CA4882 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				3B96641C26A2FC2200DE5DB3 /* CharacterResponse.swift */,
+				3B96642226A33D7000DE5DB3 /* CharacterTimeResponse.swift */,
+				3B96642026A335F100DE5DB3 /* CharacterActionResponse.swift */,
+				00CE4F4826D9F42000EE352C /* MainHomeResponse.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
 		00F12D1426D14B130055BC5F /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -1473,11 +1495,8 @@
 		3B96641A26A2D7F700DE5DB3 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				3B96641C26A2FC2200DE5DB3 /* CharacterResponse.swift */,
-				3B96642026A335F100DE5DB3 /* CharacterActionResponse.swift */,
-				3B96642226A33D7000DE5DB3 /* CharacterTimeResponse.swift */,
-				00CE4F4826D9F42000EE352C /* MainHomeResponse.swift */,
-				0020E95D26DCD6A100CA4882 /* Concpet.swift */,
+				0020E97326DE7DEE00CA4882 /* DataModel */,
+				0020E97226DE7DD800CA4882 /* Model */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -2090,6 +2109,7 @@
 				3B8391E12689D98000B35A53 /* UIButton.swift in Sources */,
 				3B45DF7B26AAC37D0072B314 /* InfoMenuCell.swift in Sources */,
 				3BBD933E268F73AB003BB706 /* ConceptFirstMenu.swift in Sources */,
+				0020E97526DE7E0700CA4882 /* Action.swift in Sources */,
 				3B8391EB2689D98000B35A53 /* KobisKey.swift in Sources */,
 				3B4037292689D6FC00AFAC40 /* SceneDelegate.swift in Sources */,
 				3B2BAF28268B4FCE00CF3048 /* MyInfoMainViewController.swift in Sources */,

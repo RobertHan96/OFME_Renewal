@@ -65,7 +65,11 @@ extension HomeMainViewController: TimeInfoCellDelegate, ConceptSugesstionCellDel
 
 extension HomeMainViewController: SideActionMenuDelegate {
     func actionButtonDidCliikd(actionIndexPath: Int) {
-        print("LOG: 동작 \(actionIndexPath) 눌림")
+        let actionName = Action().getActionNameFromIndexPath(indexPath: actionIndexPath)
+        print("LOG: 동작 \(actionName) 눌림")
+        HomeMainDataManager().getMainHomeData(action: actionName) { data in
+            print(data)
+        }
     }
 }
 

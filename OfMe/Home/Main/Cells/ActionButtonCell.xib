@@ -47,7 +47,7 @@
             <size key="customSize" width="154" height="134"/>
             <connections>
                 <outlet property="actionImage" destination="P7S-nX-ffH" id="x2E-c8-BpK"/>
-                <outlet property="actionName" destination="xjP-U7-klg" id="EL2-Fo-gTD"/>
+                <outlet property="actionNameLabel" destination="xjP-U7-klg" id="5t4-ba-WJ4"/>
             </connections>
             <point key="canvasLocation" x="13.043478260869566" y="101.78571428571428"/>
         </collectionViewCell>

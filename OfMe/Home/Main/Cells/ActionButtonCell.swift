@@ -8,7 +8,7 @@
 import UIKit
 
 class ActionButtonCell: UICollectionViewCell {
-    @IBOutlet weak var actionName: UILabel!
+    @IBOutlet weak var actionNameLabel: UILabel!
     @IBOutlet weak var actionImage: UIImageView!
     
     override func awakeFromNib() {
@@ -16,6 +16,7 @@ class ActionButtonCell: UICollectionViewCell {
     }
 
     func configure(actionName: String) {
-        
+        actionImage.image = UIImage(named: actionName)
+        actionNameLabel.text = Action(name: actionName).getNameForLabel()
     }
 }

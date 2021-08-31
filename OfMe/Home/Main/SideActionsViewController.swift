@@ -57,6 +57,7 @@ extension SideActionsViewController: UICollectionViewDataSource, UICollectionVie
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellManager.ActionButtonCellIdentifier, for: indexPath as IndexPath) as? ActionButtonCell else { return UICollectionViewCell() }
+        cell.configure(actionName: Action.actions[indexPath.row])
         
         return cell
     }
