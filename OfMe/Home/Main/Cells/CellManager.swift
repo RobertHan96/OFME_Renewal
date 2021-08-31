@@ -16,13 +16,16 @@ struct CellManager {
     static let ConceptSugesstionCellName = "ConceptSugesstionCell" // 진행 중인 컨셉이 없는 유저에게 CharacterFeatureTableViewCell 대신 정보 제공
     static let CharacterFeatureCellName = "CharacterFeatureCell"
     static let CharacterFavoriteMusicCellIName = "CharacterFavoriteMusicCell" // 컨셉별 추천곡 cell
+    static let ActionButtonCellName = "ActionButtonCell" // 사이드 메뉴내 각 버튼 액션 cell
 
+    
     static let TimeInfoCellIdentifier = "timeInfo"
     static let CharacterCellIdentifier = "character"
     static let CharacterInfoCellIdentifier = "characterInfo"
     static let CharacterFeatureCellIdentifier = "characterFeature"
     static let ConceptSugesstionCellIdentifier = "conceptSugesstion"
     static let CharacterFavoriteMusicCellIdentifier = "characterFavoriteMusic"
+    static let ActionButtonCellIdentifier = "actionButtonCell"
 }
 
 extension HomeMainViewController {

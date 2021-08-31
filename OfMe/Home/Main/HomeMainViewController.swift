@@ -64,8 +64,8 @@ extension HomeMainViewController: TimeInfoCellDelegate, ConceptSugesstionCellDel
 }
 
 extension HomeMainViewController: SideActionMenuDelegate {
-    func waterActionButtonDidCliikd() {
-        print("LOG:물 동작 눌림")
+    func actionButtonDidCliikd(actionIndexPath: Int) {
+        print("LOG: 동작 \(actionIndexPath) 눌림")
     }
 }
 
@@ -143,7 +143,7 @@ class HomeMainViewController: BaseViewController {
     
     
     @IBAction func characterActionsBtnClicked(_ sender: UIButton) {
-        let vc = SidemenuViewController()
+        let vc = SideActionsViewController()
         vc.deleagte = self
         let sideMenu = SideMenuNavigationController(rootViewController: vc)
         sideMenu.leftSide = false
