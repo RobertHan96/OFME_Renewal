@@ -12,6 +12,7 @@ struct HomeMainResult: Codable {
     var nickname: String?
     var image: [String]?
     var data: CharacterFeatures?
+    var clientTime: Int?
 }
 
 struct CharacterFeatures: Codable {

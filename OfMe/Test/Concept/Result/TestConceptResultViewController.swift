@@ -37,20 +37,6 @@ class TestConceptResultViewController: BaseViewController {
         circularProgressBar?.removeFromSuperview()
     }
     
-    @IBAction func startTouchDown(_ sender: Any) {
-        dataManager.registerConcept() {
-            if $0 == 1000 {
-                self.navigationController?.viewControllers.forEach {
-                    if $0 is HomeMainViewController {
-                        if let vc = $0 as? HomeMainViewController {
-                            vc.changeIsFirst()
-                            self.navigationController?.popToViewController(vc, animated: true)
-                        }
-                    }
-                }
-            }
-        }
-    }
     
     func setUP(result: ConceptResult) {
         if let url = URL(string: result.url) {

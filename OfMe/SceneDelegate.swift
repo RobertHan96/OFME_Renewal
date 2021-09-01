@@ -35,9 +35,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
-        if let time = UserDefaults.standard.object(forKey: "time") as? Int {
-            HomeMainDataManager().patchCharacterTime(time: time)
-        }
+
     }
 
     func sceneDidBecomeActive(_ scene: UIScene) {
@@ -53,9 +51,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func sceneWillEnterForeground(_ scene: UIScene) {
         // Called as the scene transitions from the background to the foreground.
         // Use this method to undo the changes made on entering the background.
-        if let time = UserDefaults.standard.object(forKey: "time") as? Int {
-            HomeMainDataManager().patchCharacterTime(time: time)
-        }
     }
 
     func sceneDidEnterBackground(_ scene: UIScene) {

@@ -51,8 +51,6 @@ class HomeFinishViewController: BaseViewController {
                     self.navigationController?.viewControllers.forEach {
                         if $0 is HomeMainViewController {
                             if let vc = $0 as? HomeMainViewController {
-                                print("change")
-                                vc.changeIsFirst()
                                 self.navigationController?.popToViewController(vc, animated: true)
                             }
                         }

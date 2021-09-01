@@ -32,7 +32,7 @@ struct Action {
         case 4:
             return ActionName.tv.rawValue
         case 5:
-            return ActionName.water.rawValue
+            return ActionName._default.rawValue
         default:
             return ActionName._default.rawValue
         }
@@ -65,5 +65,10 @@ struct Action {
         case tv = "tv"
         case handTree = "handTree"
         case _default = "reset"
+        case defaultUrl = "default"
+        
+        var url: String {
+            return "/\(self)"
+        }
     }
 }
