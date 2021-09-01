@@ -10,6 +10,7 @@ import Foundation
 struct Action {
     
     var name: String = ""
+    static let defaultActionIndexPath: Int = 6
 
     
     static let actions: [String] = [ActionName.water.rawValue,
@@ -32,7 +33,7 @@ struct Action {
         case 4:
             return ActionName.tv.rawValue
         case 5:
-            return ActionName.defaultUrl.rawValue
+            return ActionName._default.rawValue
         default:
             return ActionName.defaultUrl.rawValue
         }

@@ -53,12 +53,12 @@ class HomeMainViewController: BaseViewController {
     
     private func fetchData(isInit: Bool, actionIndexPath: Int?) {
         if isInit {
-            HomeMainDataManager().getMainHomeData(actionIndex: 5) { data in
+            HomeMainDataManager().getMainHomeData(actionIndex: Action.defaultActionIndexPath) { data in
                 self.userConcept = data
             }
             return
         }
-        HomeMainDataManager().getMainHomeData(actionIndex: actionIndexPath ?? 5) { data in
+        HomeMainDataManager().getMainHomeData(actionIndex: actionIndexPath ?? Action.defaultActionIndexPath) { data in
             self.userConcept = data
         }
     }
