@@ -7,10 +7,10 @@ workflows:
           XCODE_SCHEME: "OfMe" # <-- Put the name of your scheme here.
           BUNDLE_ID: "com.TeamEmo.ofme" # <-- Put your Bundle Id here.
           # https://docs.codemagic.io/code-signing-yaml/signing-ios/
-          APP_STORE_CONNECT_ISSUER_ID: Encrypted(...) # <-- Put your encrypted App Store Connect Issuer Id here 
-          APP_STORE_CONNECT_KEY_IDENTIFIER: Encrypted(...) # <-- Put your encrypted App Store Connect Key Identifier here 
-          APP_STORE_CONNECT_PRIVATE_KEY: Encrypted(...) # <-- Put your encrypted App Store Connect Private Key here 
-          CERTIFICATE_PRIVATE_KEY: Encrypted(...) # <-- Put your encrypted Certificate Private Key here 
+          APP_STORE_CONNECT_ISSUER_ID: Encrypted(...) # <-- Put your encrypted App Store Connect Issuer Id here
+          APP_STORE_CONNECT_KEY_IDENTIFIER: Encrypted(...) # <-- Put your encrypted App Store Connect Key Identifier here
+          APP_STORE_CONNECT_PRIVATE_KEY: Encrypted(...) # <-- Put your encrypted App Store Connect Private Key here
+          CERTIFICATE_PRIVATE_KEY: Encrypted(...) # <-- Put your encrypted Certificate Private Key here
           APPLE_ID_EMAIL: Encrypted(...) # <-- Put your encrypted Apple Id email address here
           APP_SPECIFIC_PASSWORD: Encrypted(...) # <-- Put your encrypted App Specific password address here
         xcode: latest
@@ -51,8 +51,8 @@ workflows:
         - build/ios/ipa/*.ipa
         - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.dSYM
       publishing:
-        app_store_connect:   # https://docs.codemagic.io/publishing-yaml/distribution              
-          apple_id: $APPLE_ID_EMAIL   
+        app_store_connect:   # https://docs.codemagic.io/publishing-yaml/distribution
+          apple_id: $APPLE_ID_EMAIL
           password: $APP_SPECIFIC_PASSWORD
         email:
             recipients:
@@ -76,13 +76,13 @@ workflows:
           XCODE_SCHEME: "swiftly" # <-- Put the name of your scheme here.
           BUNDLE_ID: "io.codemagic.cmswiftly" # <-- Put your Bundle Id here.
           # https://docs.codemagic.io/code-signing-yaml/signing-ios/
-          APP_STORE_CONNECT_ISSUER_ID: Encrypted(...) # <-- Put your encrypted App Store Connect Issuer Id here 
-          APP_STORE_CONNECT_KEY_IDENTIFIER: Encrypted(...) # <-- Put your encrypted App Store Connect Key Identifier here 
-          APP_STORE_CONNECT_PRIVATE_KEY: Encrypted(...) # <-- Put your encrypted App Store Connect Private Key here 
-          CERTIFICATE_PRIVATE_KEY: Encrypted(...) # <-- Put your encrypted Certificate Private Key here 
-          APPLE_ID_EMAIL: Encrypted(...) # <-- Put your encrypted Apple Id email address here
-          APP_SPECIFIC_PASSWORD: Encrypted(...) # <-- Put your encrypted App Specific password address here
-          APPLE_APP_ID: 1570610860
+          APP_STORE_CONNECT_ISSUER_ID: Encrypted(...) # <-- Put your encrypted App Store Connect Issuer Id here
+          APP_STORE_CONNECT_KEY_IDENTIFIER: Encrypted(...) # <-- Put your encrypted App Store Connect Key Identifier here
+          APP_STORE_CONNECT_PRIVATE_KEY: Encrypted(...) # <-- Put your encrypted App Store Connect Private Key here
+          CERTIFICATE_PRIVATE_KEY: Encrypted(...) # <-- Put your encrypted Certificate Private Key here
+          APPLE_ID_EMAIL: Encrypted(awdudtls@gmail.com) # <-- Put your encrypted Apple Id email address here
+          APP_SPECIFIC_PASSWORD: Encrypted(Yong7793) # <-- Put your encrypted App Specific password address here
+          APPLE_APP_ID: 1577990811
         xcode: latest
         cocoapods: default
       triggering:
@@ -121,12 +121,13 @@ workflows:
         - build/ios/ipa/*.ipa
         - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.dSYM
       publishing:
-        app_store_connect:   # https://docs.codemagic.io/publishing-yaml/distribution              
-          apple_id: $APPLE_ID_EMAIL   
-          password: $APP_SPECIFIC_PASSWORD
+        app_store_connect:   # https://docs.codemagic.io/publishing-yaml/distribution
+          apple_id: $awdudtls@gmail.com
+          password: $Yong7793
         email:
             recipients:
-              - user1@example.com
+              - yshan4329@gmail.com
+              - ecvheo@naver.com
             notify:
               success: true
               failure: true
