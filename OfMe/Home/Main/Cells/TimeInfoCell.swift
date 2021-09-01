@@ -30,9 +30,11 @@ class TimeInfoCell: UITableViewCell {
         delegate?.endButtonDidCliikd()
     }
     
-    func configure(name: String?, time: String?) {
+    func configure(name: String?, time: Int?) {
         if let userTime = time {
-            timeNameLabel.makeHightledText(all: "함께한지 \(userTime)", for: userTime)
+            let conceptTime = ConcpetTimeModel(userTime: 1440)
+            
+            timeNameLabel.makeHightledText(all: "함께한지 \(conceptTime.getTimeText)", for: conceptTime.getTimeOnly)
             endCharacterBtn.isHidden = false
             endCharacterBtn.makeSmallRoundedButtnon(
                 "종료",
@@ -52,4 +54,38 @@ class TimeInfoCell: UITableViewCell {
         self.layer.cornerRadius = 10
     }
     
+    private func getReadableTime(userTime: Int) -> String {
+        return  "\(userTime/60/24)"
+    }
+    
+}
+
+
+struct ConcpetTimeModel {
+    var userTime: Int
+    
+    var hour: Int {
+        return userTime / 60
+    }
+    var minute: Int {
+        return userTime % 60
+    }
+    
+    var day: Int {
+        return userTime/60/24
+    }
+    
+    var getTimeOnly: String {
+        if userTime > 1440 {
+            return "\(day)"
+        }
+        return "\(hour.mmHour):\(minute.mmMinute)"
+    }
+    
+    var getTimeText: String {
+        if userTime > 1440 {
+            return "\(day)일"
+        }
+        return "\(hour.mmHour):\(minute.mmMinute)"
+    }
 }

@@ -25,11 +25,7 @@ class HomeMainViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
-        
-        HomeMainDataManager().getMainHomeData { data in
-            // 코치마크 화면 출력
-            self.userConcept = data
-        }
+        fetchData(isInit: true, actionIndexPath: nil)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -43,7 +39,7 @@ class HomeMainViewController: BaseViewController {
         self.view.removeFromSuperview()
     }
     
-    
+        
     @IBAction func characterActionsBtnClicked(_ sender: UIButton) {
         let vc = SideActionsViewController()
         vc.deleagte = self
@@ -55,6 +51,18 @@ class HomeMainViewController: BaseViewController {
         self.show(sideMenu, sender: nil)
     }
     
+    private func fetchData(isInit: Bool, actionIndexPath: Int?) {
+        if isInit {
+            HomeMainDataManager().getMainHomeData(actionIndex: 5) { data in
+                self.userConcept = data
+            }
+            return
+        }
+        HomeMainDataManager().getMainHomeData(actionIndex: actionIndexPath ?? 5) { data in
+            self.userConcept = data
+        }
+    }
+
     private func setupUI() {
         // 1. API 호출 -> response code & reuslt? 반환 -> response code를 기준으로 진행 중 / 미진행 UI 분기
         // dataManager.get() { code, result in
@@ -64,31 +72,15 @@ class HomeMainViewController: BaseViewController {
         setupTableView()
     }
     
-    // Delegate에서 처음 유저인지 여부를 판단해서 다르게 테이블뷰 생성
     private func setupTableView() {
         homeMainTableView.delegate = self
         homeMainTableView.dataSource = self
         homeMainTableView.backgroundColor = .clear
-        
         homeMainTableView.register(UINib.init(nibName: CellManager.TimeInfoCellName, bundle: nil), forCellReuseIdentifier: CellManager.TimeInfoCellIdentifier)
         homeMainTableView.register(UINib.init(nibName: CellManager.CharacterCellName, bundle: nil), forCellReuseIdentifier: CellManager.CharacterCellIdentifier)
         homeMainTableView.register(UINib.init(nibName: CellManager.CharacterInfoCellName, bundle: nil), forCellReuseIdentifier: CellManager.CharacterInfoCellIdentifier)
         homeMainTableView.register(UINib.init(nibName: CellManager.CharacterFeatureCellName, bundle: nil), forCellReuseIdentifier: CellManager.CharacterFeatureCellIdentifier)
         homeMainTableView.register(UINib.init(nibName: CellManager.ConceptSugesstionCellName, bundle: nil), forCellReuseIdentifier: CellManager.ConceptSugesstionCellIdentifier)
-    }
-    
-    func setTimer(startTime: Date) {
-        self.timer.invalidate()
-        DispatchQueue.main.async { [weak self] in
-            self?.timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { [weak self] timer in
-                UserDefaults.standard.setValue(self!.time, forKey: "time")
-                let startSec = Int(Date().timeIntervalSince(startTime)) + self!.time * 60
-                var diffMin = startSec / 60
-                let diffHour = diffMin / 60
-                diffMin = diffMin % 60
-                self?.customView.timeLabel?.text = "\(diffHour > 0 ? "\(diffHour)시간 \(diffMin)분" : "\(diffMin)분")"
-            }
-        }
     }
 }
 
@@ -117,18 +109,14 @@ extension HomeMainViewController: UITableViewDelegate, UITableViewDataSource {
         case 0: // 시간 정보 표시 Cell
             guard let timeInfocell = homeMainTableView.dequeueReusableCell(withIdentifier: CellManager.TimeInfoCellIdentifier) as? TimeInfoCell else { return UITableViewCell() }
             timeInfocell.delegate = self
+            timeInfocell.configure(name: userConcept?.nickname, time: userConcept?.clientTime)
             
-            // 메인 API 반환 Data를 매번 configrue 함수에 전달
-            let name = userConcept?.nickname
-//            let time = nil : 추후 메인 API에서 내려주는 시간 정보값 할당
-            timeInfocell.configure(name: name, time: "500")
             return timeInfocell
-            
         case 1: // 캐릭터 이미지 표시 Cell
             guard let characterImagecell = homeMainTableView.dequeueReusableCell(withIdentifier: CellManager.CharacterCellIdentifier) as? CharacterCell else{ return UITableViewCell() }
             characterImagecell.confgirue(imageUrl: userConcept?.image?.first ?? "")
-            return characterImagecell
             
+            return characterImagecell
         default: // 컨셉 진행 여부에 따라 -> 컨셉 테스트 시작 or 캐릭터 특성 표시 Cell
             if isEmptyChracter {
                 characterActions.isHidden = true
@@ -153,14 +141,6 @@ extension HomeMainViewController: TimeInfoCellDelegate, ConceptSugesstionCellDel
 
 extension HomeMainViewController: SideActionMenuDelegate {
     func actionButtonDidCliikd(actionIndexPath: Int) {
-        let actionName = Action().getActionNameFromIndexPath(indexPath: actionIndexPath)
-        print("LOG: 동작 \(actionName) 눌림")
-        HomeMainDataManager().getMainHomeData(actionIndex: actionIndexPath) { data in
-            self.userConcept = data
-        }
-    }
-    
-    func setCharacterImageByAction() {
-        
+        fetchData(isInit: false, actionIndexPath: actionIndexPath)
     }
 }

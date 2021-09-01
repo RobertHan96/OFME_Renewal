@@ -32,9 +32,9 @@ struct Action {
         case 4:
             return ActionName.tv.rawValue
         case 5:
-            return ActionName._default.rawValue
+            return ActionName.defaultUrl.rawValue
         default:
-            return ActionName._default.rawValue
+            return ActionName.defaultUrl.rawValue
         }
     }
     
