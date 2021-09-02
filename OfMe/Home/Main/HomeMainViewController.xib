@@ -30,13 +30,12 @@
                     <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                 </tableView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Qg-6y-c3p">
-                    <rect key="frame" x="350" y="427" width="64" height="52"/>
-                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <rect key="frame" x="360" y="427" width="64" height="52"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="64" id="LBC-Iw-jpx"/>
                         <constraint firstAttribute="height" constant="52" id="Tcc-C9-2ur"/>
                     </constraints>
-                    <state key="normal" image="main_action_button"/>
+                    <state key="normal" image="main_action_button" backgroundImage="sideactions"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                             <real key="value" value="10"/>
@@ -56,7 +55,7 @@
                 <constraint firstItem="zJM-i5-Xe3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="MQr-UZ-sk0"/>
                 <constraint firstItem="zJM-i5-Xe3" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="Tac-RI-3ne"/>
                 <constraint firstAttribute="top" secondItem="bkz-pZ-jwB" secondAttribute="top" id="aKV-fV-SkL"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="0Qg-6y-c3p" secondAttribute="trailing" id="fL4-HS-UiJ"/>
+                <constraint firstAttribute="trailing" secondItem="0Qg-6y-c3p" secondAttribute="trailing" constant="-10" id="fL4-HS-UiJ"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="zJM-i5-Xe3" secondAttribute="bottom" constant="40" id="lMM-SX-9eC"/>
                 <constraint firstAttribute="bottom" secondItem="bkz-pZ-jwB" secondAttribute="bottom" id="taz-G9-FAV"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="zJM-i5-Xe3" secondAttribute="trailing" constant="30" id="thW-Dy-ylT"/>
@@ -67,6 +66,7 @@
     <resources>
         <image name="home_main_background" width="375" height="812"/>
         <image name="main_action_button" width="22" height="19"/>
+        <image name="sideactions" width="71" height="62"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

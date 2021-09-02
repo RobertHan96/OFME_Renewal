@@ -32,7 +32,7 @@ class TimeInfoCell: UITableViewCell {
     
     func configure(name: String?, time: Int?) {
         if let userTime = time {
-            let conceptTime = ConcpetTimeModel(userTime: 1440)
+            let conceptTime = ConcpetTimeModel(userTime: userTime)
             
             timeNameLabel.makeHightledText(all: "함께한지 \(conceptTime.getTimeText)", for: conceptTime.getTimeOnly)
             endCharacterBtn.isHidden = false
