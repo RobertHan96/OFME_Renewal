@@ -1,0 +1,9 @@
+workflows:
+  ofme-workflow:
+    name: ofme-pipelines
+    scripts:
+        - echo "ofme msater branch is now build"
+    publishing:
+      email: 
+        recipients: 
+        - awdudtls@gmail.com
