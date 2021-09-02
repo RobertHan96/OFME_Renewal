@@ -131,6 +131,7 @@ extension HomeMainViewController: UITableViewDelegate, UITableViewDataSource {
 
 extension HomeMainViewController: TimeInfoCellDelegate, ConceptSugesstionCellDelegate {
     func endButtonDidCliikd() {
+        navigationController?.pushViewController(finishView.mainView, animated: false)
         print("캐릭터 컨셉이 종료되었습니다. + API 호출")
     }
     
