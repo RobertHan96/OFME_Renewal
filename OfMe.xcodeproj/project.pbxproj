@@ -921,6 +921,9 @@
 		3B638FB8268B0E170095F05B /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				3B91501C2698CE0A004FE9C0 /* Info */,
+				3B91501B2698CDF9004FE9C0 /* MainSubView */,
+				3B96642726A356DD00DE5DB3 /* Finish */,
 				3B638FC6268B48430095F05B /* Main */,
 			);
 			path = Home;
@@ -965,10 +968,7 @@
 				0020E96F26DE7B7900CA4882 /* SideActionsViewController.swift */,
 				3B96641A26A2D7F700DE5DB3 /* Data */,
 				00F12D1426D14B130055BC5F /* Cells */,
-				3B96642726A356DD00DE5DB3 /* Finish */,
 				3B96641926A2D7E900DE5DB3 /* Network */,
-				3B91501C2698CE0A004FE9C0 /* Info */,
-				3B91501B2698CDF9004FE9C0 /* MainSubView */,
 			);
 			path = Main;
 			sourceTree = "<group>";

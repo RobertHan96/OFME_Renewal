@@ -2,20 +2,18 @@ import UIKit
 import Alamofire
 
 class FinishDataManager {
-    func patchRate(idx: Int, id: Int, completed: @escaping (_ at: Int) -> Void) {
+    func patchRate(ratingPoint: Int, completion: @escaping (_ resultCode: Int) -> Void) {
         if let url = URL(string: URLString.finishRate), let jwt = UserDefaults.standard.object(forKey: "jwt") as? String {
             let header: HTTPHeaders = ["x-access-token":jwt]
             let body: Parameters = [
-                "conceptId":id,
-                "conceptPoint": idx,
-            ]
+                "conceptPoint":ratingPoint]
             print(body)
             AF.request(url, method: .patch, parameters: body, encoding: JSONEncoding.default, headers: header)
                 .validate()
                 .responseDecodable(of: FinishRateResponse.self) { response in
                     switch response.result {
                     case .success(let result):
-                        completed(result.code)
+                        completion(result.code)
                     case .failure(let error):
                         print("rateError: \(error.localizedDescription)")
                     }
@@ -23,22 +21,16 @@ class FinishDataManager {
         }
     }
     
-    func patchFinish(time: Int, completed: @escaping (_ at: Int) -> Void) {
+    func patchFinish(time: Int, completion: @escaping (_ resultCode: Int) -> Void) {
         if let url = URL(string: URLString.finishEnd), let jwt = UserDefaults.standard.object(forKey: "jwt") as? String {
             let header: HTTPHeaders = ["x-access-token":jwt]
-            let body: Parameters = [
-                "timer":time
-            ]
-            AF.request(url, method: .patch, parameters: body, encoding: JSONEncoding.default, headers: header)
+
+            AF.request(url, method: .patch, parameters: nil, encoding: JSONEncoding.default, headers: header)
                 .validate()
                 .responseDecodable(of: FinishEndResponse.self) { response in
                     switch response.result {
                     case .success(let result):
-                        if result.result != nil  {
-                            if result.result!.count > 0 {
-                                completed(result.result!.first!.id)
-                            }
-                        }
+                        completion(result.code)
                     case .failure(let error):
                         print("patchFinish: \(error.localizedDescription)")
                     }

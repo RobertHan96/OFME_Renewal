@@ -3,23 +3,12 @@ import SideMenu
 import Kingfisher
 
 class HomeMainViewController: BaseViewController {
-    
     @IBOutlet weak var homeMainTableView: UITableView!
     @IBOutlet weak var characterActions: UIButton!
     private var userConcept: HomeMainResult? { didSet {
         homeMainTableView.reloadData()
     }}
     private var isEmptyChracter: Bool = false
-    
-    // 이전 개발자가 짠 코드
-    private var tapImages: [String] = []
-    private var data: [CharacterResult] = []
-    private var actionData: [CharacterAction] = []
-    private var startTime: Date = Date()
-    private var timer: Timer = Timer()
-    private var time: Int = 0
-    private var stopTimer: Timer = Timer()
-    private var customView: HomeCustom = HomeCustom()
     private let finishView = FinishSubView()
 
     override func viewDidLoad() {
@@ -30,15 +19,11 @@ class HomeMainViewController: BaseViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.navigationBar.isHidden = true
-        self.middleButton?.removeFromSuperview()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         self.navigationController?.navigationBar.isHidden = false
-        middleButton?.removeFromSuperview()
-        self.view.removeFromSuperview()
     }
-    
         
     @IBAction func characterActionsBtnClicked(_ sender: UIButton) {
         let vc = SideActionsViewController()
@@ -64,11 +49,6 @@ class HomeMainViewController: BaseViewController {
     }
 
     private func setupUI() {
-        // 1. API 호출 -> response code & reuslt? 반환 -> response code를 기준으로 진행 중 / 미진행 UI 분기
-        // dataManager.get() { code, result in
-        // switch code 1001 -> setEmptyCharacterView & isEmptyChracter = true
-        //             default -> setCharacterView & isEmptyChracter = false
-        // }
         setupTableView()
     }
     
@@ -131,12 +111,16 @@ extension HomeMainViewController: UITableViewDelegate, UITableViewDataSource {
 
 extension HomeMainViewController: TimeInfoCellDelegate, ConceptSugesstionCellDelegate {
     func endButtonDidCliikd() {
-        navigationController?.pushViewController(finishView.mainView, animated: false)
-        print("캐릭터 컨셉이 종료되었습니다. + API 호출")
+        finishView.setConstraint(view: self.view)
+        finishView.confirmButton?.addTarget(self, action: #selector(finishConceptButtonDidClicked), for: .touchDown)
     }
     
     func conceptSugesstionButtonDidClicked() {
-        print("컨셉 테스트 화면으로 이동 + API 호출")
+        self.navigationController?.pushViewController(TestMainViewController(), animated: true)
+    }
+    
+    @objc func finishConceptButtonDidClicked() {
+        self.navigationController?.pushViewController(HomeFinishViewController(), animated: true)
     }
 }
 

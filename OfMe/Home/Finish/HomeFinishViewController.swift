@@ -12,17 +12,7 @@ class HomeFinishViewController: BaseViewController {
     @IBOutlet weak var descriptLabel: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var nextButton: UIButton!
-    
-    init(data: CharacterResult, time: Int) {
-        super.init(nibName: "HomeFinishViewController", bundle: Bundle.main)
-        self.data = data
-        self.time = time
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         let hour = time / 60
@@ -45,21 +35,7 @@ class HomeFinishViewController: BaseViewController {
     }
     
     @IBAction func laterTouchDown(_ sender: Any) {
-        dataManager.patchFinish(time: time) {
-            self.dataManager.patchRate(idx: self.idx+1, id: $0) {
-                if $0 == 1000 {
-                    self.navigationController?.viewControllers.forEach {
-                        if $0 is HomeMainViewController {
-                            if let vc = $0 as? HomeMainViewController {
-                                self.navigationController?.popToViewController(vc, animated: true)
-                            }
-                        }
-                    }
-                } else {
-                    self.presentAlert(title: "다시 시도해 주시기 바랍니다.")
-                }
-            }
-        }
+
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -67,7 +43,6 @@ class HomeFinishViewController: BaseViewController {
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-        middleButton?.removeFromSuperview()
     }
 }
 
