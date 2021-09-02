@@ -7,40 +7,60 @@
 
 import UIKit
 
+protocol StarRatingCellDelegate {
+    func starRatingDidClicked()
+}
+
 class StarRatingCell: UITableViewCell {
+    @IBOutlet weak var collectionView: UICollectionView!
+    var delegate: StarRatingCellDelegate?
+    private var idx: Int = -1
 
     override func awakeFromNib() {
         super.awakeFromNib()
+        setupUI()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
+    
+    func setupUI() {
+        setupCollectionView()
+    }
+    
+    func setupCollectionView() {
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        collectionView.register(UINib(nibName: StarCell.identifier, bundle: nil), forCellWithReuseIdentifier: StarCell.identifier)
+    }
 }
 
-//extension HomeFinishViewController: UICollectionViewDataSource {
-//    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-//        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: StarCell.identifier, for: indexPath) as? StarCell else {
-//            return UICollectionViewCell()
-//        }
-//        cell.updateUI(row: indexPath.row, idx: idx)
-//        return cell
-//    }
-//
-//    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-//        return 1
-//    }
-//}
-//
-//extension HomeFinishViewController: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
-//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        idx = indexPath.row
-//        if idx != -1 {
-//            nextButton.isUserInteractionEnabled = true
-//        }
-//        collectionView.reloadData()
-//    }
-//
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//        return CGSize(width: 44, height: 44)
-//    }
+extension StarRatingCell: UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: StarCell.identifier, for: indexPath) as? StarCell else {
+            return UICollectionViewCell()
+        }
+        cell.updateUI(row: indexPath.row, idx: idx)
+        cell.backgroundColor = .purple
+        return cell
+    }
+
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 5
+    }
+}
+
+extension StarRatingCell: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        idx = indexPath.row
+        if idx != -1 {
+            delegate?.starRatingDidClicked()
+        }
+        collectionView.reloadData()
+    }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 44, height: 44)
+    }
+}

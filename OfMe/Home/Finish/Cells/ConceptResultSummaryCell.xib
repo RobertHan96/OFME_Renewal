@@ -10,21 +10,21 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="139" id="KGk-i7-Jjw" customClass="ConceptResultSummaryCell" customModule="OfMe" customModuleProvider="target">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="conceptResultSummaryCell" rowHeight="139" id="KGk-i7-Jjw" customClass="ConceptResultSummaryCell" customModule="OfMe" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="406" height="139"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="406" height="139"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0wa-S3-gDX">
-                        <rect key="frame" x="286" y="-3" width="80" height="144"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="charctor" translatesAutoresizingMaskIntoConstraints="NO" id="0wa-S3-gDX">
+                        <rect key="frame" x="296" y="14" width="80" height="125"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="80" id="dS0-Qo-SXH"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Neq-dn-5jv">
-                        <rect key="frame" x="39" y="66" width="237" height="14"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Neq-dn-5jv">
+                        <rect key="frame" x="17" y="69" width="269" height="14"/>
                         <attributedString key="attributedText">
                             <fragment content="예상">
                                 <attributes>
@@ -81,8 +81,8 @@
                         </attributedString>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bxB-53-k4I">
-                        <rect key="frame" x="39" y="11" width="90" height="15"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bxB-53-k4I">
+                        <rect key="frame" x="17" y="14" width="90" height="15"/>
                         <color key="backgroundColor" red="0.95719021559999995" green="0.95999711750000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <attributedString key="attributedText">
                             <fragment content="우리가">
@@ -123,13 +123,26 @@
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="0wa-S3-gDX" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="bxB-53-k4I" secondAttribute="trailing" constant="10" id="CC3-wo-eOK"/>
+                    <constraint firstAttribute="trailing" secondItem="0wa-S3-gDX" secondAttribute="trailing" constant="30" id="7gD-Ef-xeu"/>
                     <constraint firstItem="Neq-dn-5jv" firstAttribute="top" secondItem="bxB-53-k4I" secondAttribute="bottom" constant="40" id="FD4-Hy-NSK"/>
-                    <constraint firstItem="0wa-S3-gDX" firstAttribute="leading" secondItem="Neq-dn-5jv" secondAttribute="trailing" constant="10" id="Vvh-5C-jRe"/>
+                    <constraint firstAttribute="bottom" secondItem="0wa-S3-gDX" secondAttribute="bottom" id="Ik9-sg-mFq"/>
+                    <constraint firstItem="Neq-dn-5jv" firstAttribute="leading" secondItem="bxB-53-k4I" secondAttribute="leading" id="NBZ-H6-yHh"/>
+                    <constraint firstItem="0wa-S3-gDX" firstAttribute="leading" secondItem="Neq-dn-5jv" secondAttribute="trailing" constant="10" id="Sph-pQ-F6w"/>
+                    <constraint firstItem="0wa-S3-gDX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14" id="Vtl-GE-9Ln"/>
+                    <constraint firstItem="bxB-53-k4I" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14" id="XuL-dX-z98"/>
+                    <constraint firstItem="bxB-53-k4I" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="17" id="gnk-EB-g8f"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="characterImage" destination="0wa-S3-gDX" id="4PH-hq-Czs"/>
+                <outlet property="pointLabel" destination="Neq-dn-5jv" id="3GN-co-U1y"/>
+                <outlet property="timeLabel" destination="bxB-53-k4I" id="y3J-LH-axz"/>
+            </connections>
             <point key="canvasLocation" x="0.0" y="105.46875"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="charctor" width="222" height="222"/>
+    </resources>
 </document>

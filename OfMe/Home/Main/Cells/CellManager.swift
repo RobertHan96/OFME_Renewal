@@ -26,6 +26,16 @@ struct CellManager {
     static let ConceptSugesstionCellIdentifier = "conceptSugesstion"
     static let CharacterFavoriteMusicCellIdentifier = "characterFavoriteMusic"
     static let ActionButtonCellIdentifier = "actionButtonCell"
+    
+    // Finish 관련 cell
+    static let StarRatingCellName = "StarRatingCell" // 별점 평가 cell
+    static let StarRatingCellIdentifier = "starRatingCell"
+    static let StepCellName = "StepCell" // STEP1, 2, 안내문구 cell
+    static let StepCellIdentifier = "stepCell"
+    static let ConceptResultSummaryCellName = "ConceptResultSummaryCell" // 최상한 컨셉 결과 요약 cell
+    static let ConceptResultSummaryCellIdentifier = "conceptResultSummaryCell"
+    
+
 }
 
 extension HomeMainViewController {

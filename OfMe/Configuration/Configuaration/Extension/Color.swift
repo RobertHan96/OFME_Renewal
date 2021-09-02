@@ -49,5 +49,8 @@ extension UIColor {
     class var characterFeatureCellBackground: UIColor { UIColor(hex: 0xF4F5FF) }
     class var characterFeatureCellGrayBackground: UIColor { UIColor(hex: 0xFFFFFF) }
     class var favoriteSongArtistName: UIColor { UIColor(hex: 0x828282) }
-    
+
+    // 컨셉 종료 Cells에서 사용하는 색상들
+    class var ofMeColor: UIColor { UIColor(hex: 0x365CD8) }
+
 }
