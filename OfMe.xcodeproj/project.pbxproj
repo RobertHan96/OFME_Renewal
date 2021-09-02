@@ -18,6 +18,14 @@
 		0020E97026DE7B7900CA4882 /* SideActionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0020E96F26DE7B7900CA4882 /* SideActionsViewController.swift */; };
 		0020E97526DE7E0700CA4882 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0020E97426DE7E0700CA4882 /* Action.swift */; };
 		0020E97826DFBFD400CA4882 /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0020E97726DFBFD400CA4882 /* Int.swift */; };
+		0020E97F26E1260000CA4882 /* ConceptResultSummaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0020E97D26E1260000CA4882 /* ConceptResultSummaryCell.swift */; };
+		0020E98026E1260000CA4882 /* ConceptResultSummaryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0020E97E26E1260000CA4882 /* ConceptResultSummaryCell.xib */; };
+		0020E98326E126B200CA4882 /* FirstStepCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0020E98126E126B200CA4882 /* FirstStepCell.swift */; };
+		0020E98426E126B200CA4882 /* FirstStepCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0020E98226E126B200CA4882 /* FirstStepCell.xib */; };
+		0020E98726E126DE00CA4882 /* SecondStepCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0020E98526E126DE00CA4882 /* SecondStepCell.swift */; };
+		0020E98826E126DE00CA4882 /* SecondStepCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0020E98626E126DE00CA4882 /* SecondStepCell.xib */; };
+		0020E98B26E1295B00CA4882 /* StarRatingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0020E98926E1295B00CA4882 /* StarRatingCell.swift */; };
+		0020E98C26E1295B00CA4882 /* StarRatingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0020E98A26E1295B00CA4882 /* StarRatingCell.xib */; };
 		00CE4F4926D9F42000EE352C /* MainHomeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CE4F4826D9F42000EE352C /* MainHomeResponse.swift */; };
 		00EAF4BE26D53EFD005DBDB8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 00EAF4BD26D53EFD005DBDB8 /* GoogleService-Info.plist */; };
 		00EAF4C026D544FB005DBDB8 /* CellManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EAF4BF26D544FB005DBDB8 /* CellManager.swift */; };
@@ -235,6 +243,14 @@
 		0020E96F26DE7B7900CA4882 /* SideActionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideActionsViewController.swift; sourceTree = "<group>"; };
 		0020E97426DE7E0700CA4882 /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
 		0020E97726DFBFD400CA4882 /* Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
+		0020E97D26E1260000CA4882 /* ConceptResultSummaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConceptResultSummaryCell.swift; sourceTree = "<group>"; };
+		0020E97E26E1260000CA4882 /* ConceptResultSummaryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConceptResultSummaryCell.xib; sourceTree = "<group>"; };
+		0020E98126E126B200CA4882 /* FirstStepCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstStepCell.swift; sourceTree = "<group>"; };
+		0020E98226E126B200CA4882 /* FirstStepCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstStepCell.xib; sourceTree = "<group>"; };
+		0020E98526E126DE00CA4882 /* SecondStepCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondStepCell.swift; sourceTree = "<group>"; };
+		0020E98626E126DE00CA4882 /* SecondStepCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondStepCell.xib; sourceTree = "<group>"; };
+		0020E98926E1295B00CA4882 /* StarRatingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarRatingCell.swift; sourceTree = "<group>"; };
+		0020E98A26E1295B00CA4882 /* StarRatingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StarRatingCell.xib; sourceTree = "<group>"; };
 		00CE4F4826D9F42000EE352C /* MainHomeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHomeResponse.swift; sourceTree = "<group>"; };
 		00EAF4BD26D53EFD005DBDB8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		00EAF4BF26D544FB005DBDB8 /* CellManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellManager.swift; sourceTree = "<group>"; };
@@ -1265,13 +1281,21 @@
 			path = DataManager;
 			sourceTree = "<group>";
 		};
-		3B8CF33926A362C000A6B627 /* Cell */ = {
+		3B8CF33926A362C000A6B627 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
 				3B8CF33526A362BC00A6B627 /* StarCell.swift */,
 				3B8CF33626A362BC00A6B627 /* StarCell.xib */,
+				0020E97D26E1260000CA4882 /* ConceptResultSummaryCell.swift */,
+				0020E97E26E1260000CA4882 /* ConceptResultSummaryCell.xib */,
+				0020E98126E126B200CA4882 /* FirstStepCell.swift */,
+				0020E98226E126B200CA4882 /* FirstStepCell.xib */,
+				0020E98526E126DE00CA4882 /* SecondStepCell.swift */,
+				0020E98626E126DE00CA4882 /* SecondStepCell.xib */,
+				0020E98926E1295B00CA4882 /* StarRatingCell.swift */,
+				0020E98A26E1295B00CA4882 /* StarRatingCell.xib */,
 			);
-			path = Cell;
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		3B8CF33A26A36B4A00A6B627 /* Network */ = {
@@ -1516,7 +1540,7 @@
 			isa = PBXGroup;
 			children = (
 				3B8CF33A26A36B4A00A6B627 /* Network */,
-				3B8CF33926A362C000A6B627 /* Cell */,
+				3B8CF33926A362C000A6B627 /* Cells */,
 				3B96642826A356FC00DE5DB3 /* HomeFinishViewController.swift */,
 				3B96642926A356FC00DE5DB3 /* HomeFinishViewController.xib */,
 			);
@@ -1915,7 +1939,9 @@
 				3B28D304268E1010005BCDE8 /* TestDetailViewController.xib in Resources */,
 				3B9150202698CE21004FE9C0 /* HomeInfoViewController.xib in Resources */,
 				0020E96C26DE7B1400CA4882 /* SideActionsViewController.xib in Resources */,
+				0020E98026E1260000CA4882 /* ConceptResultSummaryCell.xib in Resources */,
 				3B4BB02226AAA9440055E36D /* CommentCell.xib in Resources */,
+				0020E98426E126B200CA4882 /* FirstStepCell.xib in Resources */,
 				3B326DDC26920F8300094C0D /* TestConceptResultViewController.xib in Resources */,
 				3BE26F1B269F29F1002F67D4 /* ArchiveWriteViewController.xib in Resources */,
 				3B96640226A1F42900DE5DB3 /* QuestionMainCell.xib in Resources */,
@@ -1950,8 +1976,10 @@
 				3B1943F126AAF6DC0014558F /* InfoDetailViewController.xib in Resources */,
 				0020E95826DBF2A600CA4882 /* CharacterFeatureCell.xib in Resources */,
 				0020E96A26DE754300CA4882 /* ActionButtonCell.xib in Resources */,
+				0020E98C26E1295B00CA4882 /* StarRatingCell.xib in Resources */,
 				3B28D300268DF33E005BCDE8 /* CategoryCollectionViewCell.xib in Resources */,
 				3B40F76826A1C0CF001F6FE7 /* QuestionSubMainViewController.xib in Resources */,
+				0020E98826E126DE00CA4882 /* SecondStepCell.xib in Resources */,
 				3B2BAF3F268CC5D000CF3048 /* TestMainViewController.xib in Resources */,
 				3B2BAF2D268B5E9200CF3048 /* CustomTabBarViewController.xib in Resources */,
 				3B40F75B26A02C9E001F6FE7 /* WriteImageCell.xib in Resources */,
@@ -2061,6 +2089,7 @@
 				3B96640626A1F89700DE5DB3 /* QuestionMenuCell.swift in Sources */,
 				3B28D307268E133A005BCDE8 /* CircularProgressBar.swift in Sources */,
 				3BBD932E268F51F7003BB706 /* TestConceptDetailFirstViewController.swift in Sources */,
+				0020E97F26E1260000CA4882 /* ConceptResultSummaryCell.swift in Sources */,
 				3B2BAF3E268CC5D000CF3048 /* TestMainViewController.swift in Sources */,
 				3B8391F82689D98000B35A53 /* BaseViewController.swift in Sources */,
 				3BD6A026269DE49400F7E3AF /* TestMyCategoryDataManager.swift in Sources */,
@@ -2097,6 +2126,7 @@
 				3B91500726985481004FE9C0 /* LoginResponse.swift in Sources */,
 				3B8391E62689D98000B35A53 /* UIFont.swift in Sources */,
 				3B3ECE3C269228E7006BCD5D /* ConceptResultMusicCell.swift in Sources */,
+				0020E98B26E1295B00CA4882 /* StarRatingCell.swift in Sources */,
 				3B91500C26986C17004FE9C0 /* SignInProtocol.swift in Sources */,
 				3B96642126A335F100DE5DB3 /* CharacterActionResponse.swift in Sources */,
 				3B8C37F826AD39E400CD893A /* SubAllDataManager.swift in Sources */,
@@ -2109,6 +2139,7 @@
 				3B96642626A34B0A00DE5DB3 /* FinishSubView.swift in Sources */,
 				00F12D3326D15E060055BC5F /* CharacterInfoCell.swift in Sources */,
 				3B326DD72691ACF000094C0D /* TestConceptThird.swift in Sources */,
+				0020E98726E126DE00CA4882 /* SecondStepCell.swift in Sources */,
 				3B40F76026A083A6001F6FE7 /* WriteInfo.swift in Sources */,
 				3B8391E12689D98000B35A53 /* UIButton.swift in Sources */,
 				3B45DF7B26AAC37D0072B314 /* InfoMenuCell.swift in Sources */,
@@ -2127,6 +2158,7 @@
 				3B8391DD2689D98000B35A53 /* Device.swift in Sources */,
 				3B839212268A246A00B35A53 /* SignInViewController.swift in Sources */,
 				3B8391DC2689D98000B35A53 /* IndicatorView.swift in Sources */,
+				0020E98326E126B200CA4882 /* FirstStepCell.swift in Sources */,
 				3B753D2D26B5368500A941AA /* InfoWriteResponse.swift in Sources */,
 				3B96640E26A2112100DE5DB3 /* TestThirdDataManager.swift in Sources */,
 				00CE4F4926D9F42000EE352C /* MainHomeResponse.swift in Sources */,

@@ -6,34 +6,25 @@ class HomeFinishViewController: BaseViewController {
     private var time: Int = 0
     private var data: CharacterResult = CharacterResult(nickname: "", name: "", id: 0, url: "", timer: 0)
 
-    @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var timeLabel: UILabel!
-    @IBOutlet weak var pointLabel: UILabel!
-    @IBOutlet weak var descriptLabel: UILabel!
-    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var nextButton: UIButton!
-        
+    @IBOutlet weak var ratingLaterButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        let hour = time / 60
-        time = time % 60
-        let timeText = "\(hour > 0 ? "\(hour)시간 \(time)분" : "\(time)분")"
-        timeLabel.makeHightledText(all: "\(data.name!)과 함께한 시간    \(timeText)", for: "\(timeText)")
-        pointLabel.makeHightledText(all: "예상포인트 5p", for: "5p", font: .Notos(.regular, size: 11))
-        
-        descriptLabel.font = .Notos(.regular, size: 12)
-        descriptLabel.text = "헤헤.. \(data.nickname)!\n나와 함께해줘서고마워\n다음에 또 보자 :)"
-        nextButton.isUserInteractionEnabled = false
-        
-        if let url = URL(string: data.url!) {
-            imageView.kf.setImage(with: url)
-        }
-        print(data)
-        collectionView.register(UINib(nibName: StarCell.identifier, bundle: nil), forCellWithReuseIdentifier: StarCell.identifier)
-        collectionView.dataSource = self
-        collectionView.delegate = self
+        setupUI()        
     }
     
+    private func setupUI() {
+        nextButton.isUserInteractionEnabled = false
+        setupTableView()
+    }
+
+    private func setupTableView() {
+        tableView.dataSource = self
+        tableView.delegate = self
+    }
+
     @IBAction func laterTouchDown(_ sender: Any) {
 
     }
@@ -46,30 +37,58 @@ class HomeFinishViewController: BaseViewController {
     }
 }
 
-extension HomeFinishViewController: UICollectionViewDataSource {
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: StarCell.identifier, for: indexPath) as? StarCell else {
-            return UICollectionViewCell()
-        }
-        cell.updateUI(row: indexPath.row, idx: idx)
-        return cell
+extension HomeFinishViewController: UITableViewDelegate, UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
     }
     
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 3
     }
-}
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        switch indexPath.section {
+        case 0:
+            return 144
+        case 1:
+            return 70
+        case 2:
+            return 166
+        case 3:
+            return 70
+        case 4:
+            return 40
+        default:
+            return 0
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        switch indexPath.section {
+        case 0:
+            let cell = UITableViewCell()
+            cell.backgroundColor = .blue
+            return cell
+        case 1:
+            let cell = UITableViewCell()
+            cell.backgroundColor = .black
+            return cell
+        case 2:
+            let cell = UITableViewCell()
+            cell.backgroundColor = .gray
+            return cell
+        case 3:
+            let cell = UITableViewCell()
+            cell.backgroundColor = .magenta
+            return cell
+        case 4:
+            let cell = UITableViewCell()
+            cell.backgroundColor = .purple
+            return cell
+        default:
+            return UITableViewCell()
+        }
+    }
 
-extension HomeFinishViewController: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        idx = indexPath.row
-        if idx != -1 {
-            nextButton.isUserInteractionEnabled = true
-        }
-        collectionView.reloadData()
-    }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 44, height: 44)
-    }
 }
