@@ -23,10 +23,13 @@ class StarRatingCell: UITableViewCell {
     }
     
     func setupUI() {
+        self.backgroundColor = .endCharacterBtnBackground
+        titleLabel.backgroundColor = .textHighlightColor
         setupCollectionView()
     }
     
     func setupCollectionView() {
+        collectionView.backgroundColor = .endCharacterBtnBackground
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.register(UINib(nibName: StarCell.identifier, bundle: nil), forCellWithReuseIdentifier: StarCell.identifier)
@@ -39,7 +42,7 @@ extension StarRatingCell: UICollectionViewDataSource {
             return UICollectionViewCell()
         }
         cell.updateUI(row: indexPath.row, idx: idx)
-        cell.backgroundColor = .purple
+
         return cell
     }
 

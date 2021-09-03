@@ -41,12 +41,40 @@ extension UILabel {
         
         attributedText.addAttributes([
             .font : font,
-            .foregroundColor : UIColor.mainBlue
+            .foregroundColor : UIColor.mainBlue,
+            .backgroundColor : UIColor.textHighlightColor
         ], range: (text as NSString).range(of: subText))
         self.attributedText = attributedText
     }
     
+    func conceptResultmakeHightledText(all text: String,
+                                       subText: String,
+                                       totalText: String,
+                                       highlightText: String,
+                                       hitligthedFont: UIFont,
+                                       normalFont: UIFont) {
+        let attributedText = NSMutableAttributedString(string: text)
+        attributedText.addAttributes([
+            .font : normalFont,
+            .foregroundColor : UIColor.typoBlack
+        ], range: (text as NSString).range(of: text))
+        
+        attributedText.addAttributes([
+            .font : hitligthedFont,
+            .foregroundColor : UIColor.mainBlue,
+            .backgroundColor : UIColor.textHighlightColor
+        ], range: (text as NSString).range(of: highlightText))
+
+        attributedText.addAttributes([
+            .font : normalFont,
+            .foregroundColor : UIColor.typoBlack,
+            .backgroundColor : UIColor.textHighlightColor
+        ], range: (text as NSString).range(of: totalText))
+
+        self.attributedText = attributedText
+    }
 }
+
 @IBDesignable class PaddingLabel: UILabel {
 
     @IBInspectable var topInset: CGFloat = 5.0

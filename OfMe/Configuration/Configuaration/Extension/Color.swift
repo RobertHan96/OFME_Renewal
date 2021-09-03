@@ -51,6 +51,9 @@ extension UIColor {
     class var favoriteSongArtistName: UIColor { UIColor(hex: 0x828282) }
 
     // 컨셉 종료 Cells에서 사용하는 색상들
+    class var conceptResultCellBackground: UIColor { UIColor(hex: 0xFAFAFA)}
     class var ofMeColor: UIColor { UIColor(hex: 0x365CD8) }
+    class var textHighlightColor: UIColor { UIColor(hex: 0xEDF0F8) }
 
 }
+

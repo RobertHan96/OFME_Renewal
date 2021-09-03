@@ -27,7 +27,6 @@
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
-            <color key="backgroundColor" red="0.95719021559999995" green="0.95999711750000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             <constraints>
                 <constraint firstItem="w7U-94-fdO" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="XdG-tv-kXB"/>
                 <constraint firstItem="w7U-94-fdO" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" id="hcb-zp-05D"/>

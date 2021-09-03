@@ -1,12 +1,11 @@
 import UIKit
 
 class StarCell: UICollectionViewCell {
-    
     static let identifier = "StarCell"
     @IBOutlet weak var imageView: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
-        
+        setupUI()
     }
     
     func updateUI(row: Int, idx: Int) {
@@ -17,4 +16,7 @@ class StarCell: UICollectionViewCell {
         }
     }
 
+    private func setupUI() {
+        self.backgroundColor = .endCharacterBtnBackground
+    }
 }

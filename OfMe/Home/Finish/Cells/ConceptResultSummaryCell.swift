@@ -23,12 +23,15 @@ class ConceptResultSummaryCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func configure(time: Int) {
-                let hour = time / 60
-                let minute = time % 60
-                let timeText = "\(hour > 0 ? "\(hour)시간 \(minute)분" : "\(minute)분")"
-                timeLabel.makeHightledText(all: "우리가 함께한 시간\n    \(timeText)", for: "\(timeText)")
-                pointLabel.makeHightledText(all: "예상포인트 5p", for: "5p", font: .Notos(.regular, size: 11))
+    private func setupUI() {
+        self.backgroundColor = .conceptResultCellBackground
     }
     
+    func configure(time: Int) {
+        let hour = time / 60
+        let minute = time % 60
+        let timeText = "\(hour > 0 ? "\(hour)시간 \(minute)분" : "\(minute)분")"
+        timeLabel.conceptResultmakeHightledText(all: "우리가 함께한 시간\n 총 \(timeText)", subText: "우리가 함께한 시간", totalText: "총", highlightText: "\(timeText)", hitligthedFont: .Notos(.bold, size: 18), normalFont: .Notos(.regular, size: 12))
+        pointLabel.makeHightledText(all: "예상 획득 리워드는 5P 입니다 !", for: "5P", font: .Notos(.bold, size: 12))
+    }
 }

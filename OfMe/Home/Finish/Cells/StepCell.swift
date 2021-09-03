@@ -21,8 +21,11 @@ class StepCell: UITableViewCell {
     
     func configure(step: Int) {
         if step == 3 {
-            stepTitle.text = "STEP\(step - 1)"
-            stepDescription.text = "오늘의 일상과 감정을\nQ&A에 기록해보세요 !"
+            stepTitle.text = "Step\(step - 1)"
+            stepDescription.makeHightledText(all: "오늘의 일상과 감정을\nQ&A에 기록해보세요 !", for: "오늘의 일상과 감정을", font: .Notos(.bold, size: 18))
+        } else {
+            stepTitle.text = "Step\(step)"
+            stepDescription.makeHightledText(all: "컨셉과 함께 보낸 하루\n만족스러우셨나요 ?", for: "컨셉과 함께 보낸 하루", font: .Notos(.bold, size: 18))
         }
     }
     
