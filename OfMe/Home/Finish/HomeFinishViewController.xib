@@ -8,17 +8,9 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="NotoSansKR-Regular.otf">
-            <string>NotoSansKR-Regular</string>
-        </array>
-    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeFinishViewController" customModule="OfMe" customModuleProvider="target">
             <connections>
-                <outlet property="bottomInfromText" destination="c3z-fh-QI8" id="LhX-B6-s0f"/>
-                <outlet property="nextButton" destination="1tn-oW-15k" id="tuI-Hy-AAp"/>
-                <outlet property="ratingLaterButton" destination="BC9-gk-vPF" id="QZh-mL-WWr"/>
                 <outlet property="tableView" destination="wdQ-St-eA8" id="VHe-k0-EWA"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -28,112 +20,17 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1tn-oW-15k">
-                    <rect key="frame" x="30" y="747" width="354" height="55"/>
-                    <color key="backgroundColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="55" id="Zsb-gn-0Nf"/>
-                    </constraints>
-                    <state key="normal">
-                        <attributedString key="attributedTitle">
-                            <fragment content="컨셉 종료하기">
-                                <attributes>
-                                    <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <font key="NSFont" size="16" name="NotoSansCJKkr-Medium"/>
-                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                </attributes>
-                            </fragment>
-                        </attributedString>
-                    </state>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                            <real key="value" value="6"/>
-                        </userDefinedRuntimeAttribute>
-                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                            <real key="value" value="0.0"/>
-                        </userDefinedRuntimeAttribute>
-                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                            <color key="value" red="0.71940559150000005" green="0.76123851539999998" blue="0.92158919569999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        </userDefinedRuntimeAttribute>
-                    </userDefinedRuntimeAttributes>
-                    <connections>
-                        <action selector="laterTouchDown:" destination="-1" eventType="touchUpInside" id="Xhe-g7-pLD"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BC9-gk-vPF">
-                    <rect key="frame" x="156.5" y="807" width="101" height="55"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="55" id="X0g-A5-mUT"/>
-                    </constraints>
-                    <state key="normal">
-                        <attributedString key="attributedTitle">
-                            <fragment content="나중에">
-                                <attributes>
-                                    <color key="NSColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <font key="NSFont" size="14" name="NotoSansCJKkr-Medium"/>
-                                    <font key="NSOriginalFont" metaFont="system" size="16"/>
-                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                </attributes>
-                            </fragment>
-                            <fragment content=" ">
-                                <attributes>
-                                    <color key="NSColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <font key="NSFont" size="14" name="NotoSansCJKkr-Medium"/>
-                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                </attributes>
-                            </fragment>
-                            <fragment content="기록할게요">
-                                <attributes>
-                                    <color key="NSColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <font key="NSFont" size="14" name="NotoSansCJKkr-Medium"/>
-                                    <font key="NSOriginalFont" metaFont="system" size="16"/>
-                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                </attributes>
-                            </fragment>
-                        </attributedString>
-                    </state>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                            <real key="value" value="0.0"/>
-                        </userDefinedRuntimeAttribute>
-                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                            <real key="value" value="0.0"/>
-                        </userDefinedRuntimeAttribute>
-                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                            <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </userDefinedRuntimeAttribute>
-                    </userDefinedRuntimeAttributes>
-                    <connections>
-                        <action selector="laterTouchDown:" destination="-1" eventType="touchUpInside" id="l7G-OU-iRV"/>
-                    </connections>
-                </button>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="wdQ-St-eA8">
-                    <rect key="frame" x="32" y="74" width="356" height="593"/>
+                    <rect key="frame" x="32" y="74" width="356" height="788"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c3z-fh-QI8">
-                    <rect key="frame" x="32" y="683" width="362" height="35"/>
-                    <string key="text">오브미와 하루를 함께하며 느꼈던 점이 있나요?
-직접 기록해보고 나다움의 여정을 정리해보세요.</string>
-                    <fontDescription key="fontDescription" name="NotoSansKR-Regular" family="Noto Sans KR" pointSize="12"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="1tn-oW-15k" secondAttribute="trailing" constant="30" id="1SF-bE-XPa"/>
                 <constraint firstItem="wdQ-St-eA8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="6rG-u2-enF"/>
-                <constraint firstItem="c3z-fh-QI8" firstAttribute="top" secondItem="wdQ-St-eA8" secondAttribute="bottom" constant="16" id="Acf-AV-63T"/>
-                <constraint firstItem="c3z-fh-QI8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="Dp9-Mm-pM4"/>
-                <constraint firstItem="BC9-gk-vPF" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="GKX-Eh-GMp"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="wdQ-St-eA8" secondAttribute="trailing" constant="26" id="HGb-P8-SAD"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="BC9-gk-vPF" secondAttribute="bottom" id="KXR-9A-ajz"/>
-                <constraint firstItem="1tn-oW-15k" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="LG5-bi-Hcp"/>
-                <constraint firstItem="1tn-oW-15k" firstAttribute="top" secondItem="c3z-fh-QI8" secondAttribute="bottom" constant="29" id="NXa-kD-rXL"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="c3z-fh-QI8" secondAttribute="trailing" constant="20" id="gri-FU-ZXA"/>
-                <constraint firstItem="BC9-gk-vPF" firstAttribute="top" secondItem="1tn-oW-15k" secondAttribute="bottom" constant="5" id="nZR-kb-CAt"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="wdQ-St-eA8" secondAttribute="bottom" id="O5d-of-OIh"/>
                 <constraint firstItem="wdQ-St-eA8" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="rwg-jz-2Az"/>
             </constraints>
             <point key="canvasLocation" x="34.782608695652179" y="104.46428571428571"/>

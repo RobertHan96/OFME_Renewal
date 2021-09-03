@@ -17,8 +17,6 @@ class HomeFinishViewController: BaseViewController {
     }
     
     private func setupUI() {
-        nextButton.isUserInteractionEnabled = false
-        nextButton.backgroundColor = .ofMeColor
         setupTableView()
     }
 
@@ -28,6 +26,7 @@ class HomeFinishViewController: BaseViewController {
         tableView.register(UINib.init(nibName: CellManager.ConceptResultSummaryCellName, bundle: nil), forCellReuseIdentifier: CellManager.ConceptResultSummaryCellIdentifier)
         tableView.register(UINib.init(nibName: CellManager.StepCellName, bundle: nil), forCellReuseIdentifier: CellManager.StepCellIdentifier)
         tableView.register(UINib.init(nibName: CellManager.StarRatingCellName, bundle: nil), forCellReuseIdentifier: CellManager.StarRatingCellIdentifier)
+        tableView.register(UINib.init(nibName: CellManager.FinishButtonCellName, bundle: nil), forCellReuseIdentifier: CellManager.FinishButtonCellIdentifier)
     }
 
     @IBAction func laterTouchDown(_ sender: Any) {
@@ -55,14 +54,12 @@ extension HomeFinishViewController: UITableViewDelegate, UITableViewDataSource{
         switch indexPath.section {
         case 0:
             return 144
-        case 1, 3:
-            return 70
         case 2:
-            return 166
-        case 4:
-            return 40
+            return 200
+        case 1,3:
+            return 70
         default:
-            return 0
+            return 200
         }
     }
     
@@ -73,28 +70,19 @@ extension HomeFinishViewController: UITableViewDelegate, UITableViewDataSource{
             conceptResultSummaryCell.configure(time: 1000)
             
             return conceptResultSummaryCell
+        case 2:
+            guard let starRatingCell = tableView.dequeueReusableCell(withIdentifier: CellManager.StarRatingCellIdentifier) as? StarRatingCell else { return UITableViewCell() }
+
+            return starRatingCell
         case 1, 3:
             guard let firstStepCell = tableView.dequeueReusableCell(withIdentifier: CellManager.StepCellIdentifier) as? StepCell else { return UITableViewCell() }
             firstStepCell.configure(step: indexPath.section)
             
             return firstStepCell
-        case 2:
-            guard let starRatingCell = tableView.dequeueReusableCell(withIdentifier: CellManager.StarRatingCellName) as? StarRatingCell else { return UITableViewCell() }
-            starRatingCell.delegate = self
-            starRatingCell.backgroundColor = .brown
-            return starRatingCell
         default:
-            return UITableViewCell()
+            guard let buttonsCell = tableView.dequeueReusableCell(withIdentifier: CellManager.FinishButtonCellIdentifier) as? FinishButtonCell else { return UITableViewCell() }
+            
+            return buttonsCell
         }
     }
-
-    
-}
-
-extension HomeFinishViewController: StarRatingCellDelegate {
-    func starRatingDidClicked() {
-        nextButton.isUserInteractionEnabled = true
-        print("별점 눌림")
-    }
-        
 }

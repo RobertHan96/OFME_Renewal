@@ -24,6 +24,8 @@
 		0020E98426E126B200CA4882 /* StepCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0020E98226E126B200CA4882 /* StepCell.xib */; };
 		0020E98B26E1295B00CA4882 /* StarRatingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0020E98926E1295B00CA4882 /* StarRatingCell.swift */; };
 		0020E98C26E1295B00CA4882 /* StarRatingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0020E98A26E1295B00CA4882 /* StarRatingCell.xib */; };
+		0020E98F26E1C3D800CA4882 /* FinishButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0020E98D26E1C3D800CA4882 /* FinishButtonCell.swift */; };
+		0020E99026E1C3D800CA4882 /* FinishButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0020E98E26E1C3D800CA4882 /* FinishButtonCell.xib */; };
 		00CE4F4926D9F42000EE352C /* MainHomeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CE4F4826D9F42000EE352C /* MainHomeResponse.swift */; };
 		00EAF4BE26D53EFD005DBDB8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 00EAF4BD26D53EFD005DBDB8 /* GoogleService-Info.plist */; };
 		00EAF4C026D544FB005DBDB8 /* CellManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EAF4BF26D544FB005DBDB8 /* CellManager.swift */; };
@@ -247,6 +249,8 @@
 		0020E98226E126B200CA4882 /* StepCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StepCell.xib; sourceTree = "<group>"; };
 		0020E98926E1295B00CA4882 /* StarRatingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarRatingCell.swift; sourceTree = "<group>"; };
 		0020E98A26E1295B00CA4882 /* StarRatingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StarRatingCell.xib; sourceTree = "<group>"; };
+		0020E98D26E1C3D800CA4882 /* FinishButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishButtonCell.swift; sourceTree = "<group>"; };
+		0020E98E26E1C3D800CA4882 /* FinishButtonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FinishButtonCell.xib; sourceTree = "<group>"; };
 		00CE4F4826D9F42000EE352C /* MainHomeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHomeResponse.swift; sourceTree = "<group>"; };
 		00EAF4BD26D53EFD005DBDB8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		00EAF4BF26D544FB005DBDB8 /* CellManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellManager.swift; sourceTree = "<group>"; };
@@ -1288,6 +1292,8 @@
 				0020E97E26E1260000CA4882 /* ConceptResultSummaryCell.xib */,
 				0020E98126E126B200CA4882 /* StepCell.swift */,
 				0020E98226E126B200CA4882 /* StepCell.xib */,
+				0020E98D26E1C3D800CA4882 /* FinishButtonCell.swift */,
+				0020E98E26E1C3D800CA4882 /* FinishButtonCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -1977,6 +1983,7 @@
 				3B2BAF2D268B5E9200CF3048 /* CustomTabBarViewController.xib in Resources */,
 				3B40F75B26A02C9E001F6FE7 /* WriteImageCell.xib in Resources */,
 				00F12D2A26D159190055BC5F /* NotoSansKR-Light.otf in Resources */,
+				0020E99026E1C3D800CA4882 /* FinishButtonCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2119,6 +2126,7 @@
 				3B91500726985481004FE9C0 /* LoginResponse.swift in Sources */,
 				3B8391E62689D98000B35A53 /* UIFont.swift in Sources */,
 				3B3ECE3C269228E7006BCD5D /* ConceptResultMusicCell.swift in Sources */,
+				0020E98F26E1C3D800CA4882 /* FinishButtonCell.swift in Sources */,
 				0020E98B26E1295B00CA4882 /* StarRatingCell.swift in Sources */,
 				3B91500C26986C17004FE9C0 /* SignInProtocol.swift in Sources */,
 				3B96642126A335F100DE5DB3 /* CharacterActionResponse.swift in Sources */,

@@ -32,10 +32,12 @@ struct CellManager {
     static let StarRatingCellIdentifier = "starRatingCell"
     static let StepCellName = "StepCell" // STEP1, 2, 안내문구 cell
     static let StepCellIdentifier = "stepCell"
-    static let ConceptResultSummaryCellName = "ConceptResultSummaryCell" // 최상한 컨셉 결과 요약 cell
+    static let ConceptResultSummaryCellName = "ConceptResultSummaryCell" // 최상단 컨셉 결과 요약 cell
     static let ConceptResultSummaryCellIdentifier = "conceptResultSummaryCell"
-    
+    static let FinishButtonCellName = "FinishButtonCell" // 최하단 컨셉 종료, 나중에하기 버튼 cell
+    static let FinishButtonCellIdentifier = "finishButtonCell"
 
+    
 }
 
 extension HomeMainViewController {

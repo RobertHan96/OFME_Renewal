@@ -7,13 +7,8 @@
 
 import UIKit
 
-protocol StarRatingCellDelegate {
-    func starRatingDidClicked()
-}
-
 class StarRatingCell: UITableViewCell {
     @IBOutlet weak var collectionView: UICollectionView!
-    var delegate: StarRatingCellDelegate?
     private var idx: Int = -1
 
     override func awakeFromNib() {
@@ -55,7 +50,7 @@ extension StarRatingCell: UICollectionViewDelegate, UICollectionViewDelegateFlow
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         idx = indexPath.row
         if idx != -1 {
-            delegate?.starRatingDidClicked()
+//            delegate?.starRatingDidClicked()
         }
         collectionView.reloadData()
     }
