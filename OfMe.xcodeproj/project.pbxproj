@@ -43,7 +43,6 @@
 		00F12D3026D15B1E0055BC5F /* CharacterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00F12D2E26D15B1E0055BC5F /* CharacterCell.xib */; };
 		00F12D3326D15E060055BC5F /* CharacterInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F12D3126D15E060055BC5F /* CharacterInfoCell.swift */; };
 		00F12D3426D15E060055BC5F /* CharacterInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00F12D3226D15E060055BC5F /* CharacterInfoCell.xib */; };
-		00F12D3A26D16FE20055BC5F /* IBDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F12D3926D16FE20055BC5F /* IBDesignable.swift */; };
 		3B1943F026AAF6DC0014558F /* InfoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1943EE26AAF6DC0014558F /* InfoDetailViewController.swift */; };
 		3B1943F126AAF6DC0014558F /* InfoDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B1943EF26AAF6DC0014558F /* InfoDetailViewController.xib */; };
 		3B1943F526AB02720014558F /* FixNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1943F326AB02720014558F /* FixNameViewController.swift */; };
@@ -268,7 +267,6 @@
 		00F12D2E26D15B1E0055BC5F /* CharacterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterCell.xib; sourceTree = "<group>"; };
 		00F12D3126D15E060055BC5F /* CharacterInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterInfoCell.swift; sourceTree = "<group>"; };
 		00F12D3226D15E060055BC5F /* CharacterInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterInfoCell.xib; sourceTree = "<group>"; };
-		00F12D3926D16FE20055BC5F /* IBDesignable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBDesignable.swift; sourceTree = "<group>"; };
 		0F294F538A4B97EB52248CC5 /* Pods-OfMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OfMe.debug.xcconfig"; path = "Target Support Files/Pods-OfMe/Pods-OfMe.debug.xcconfig"; sourceTree = "<group>"; };
 		0FF14BA05BC0532E439C92AA /* Pods_OfMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OfMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B1943EE26AAF6DC0014558F /* InfoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoDetailViewController.swift; sourceTree = "<group>"; };
@@ -1164,7 +1162,6 @@
 		3B8391BA2689D97F00B35A53 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				00F12D3926D16FE20055BC5F /* IBDesignable.swift */,
 				3B8391BB2689D97F00B35A53 /* Date.swift */,
 				3B8391BC2689D97F00B35A53 /* UIView.swift */,
 				3B8391BD2689D97F00B35A53 /* String.swift */,
@@ -2184,7 +2181,6 @@
 				3B8CF34726A421E500A6B627 /* DiaryDataManager.swift in Sources */,
 				3B96640126A1F42900DE5DB3 /* QuestionMainCell.swift in Sources */,
 				3B96641F26A2FC8100DE5DB3 /* HomeMainDataManager.swift in Sources */,
-				00F12D3A26D16FE20055BC5F /* IBDesignable.swift in Sources */,
 				3B638FBF268B0FC40095F05B /* CustomTabBar.swift in Sources */,
 				3B28D303268E1010005BCDE8 /* TestDetailViewController.swift in Sources */,
 				3B8391E92689D98000B35A53 /* Color.swift in Sources */,

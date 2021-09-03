@@ -8,18 +8,23 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="NotoSansKR-Regular.otf">
+            <string>NotoSansKR-Regular</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="starRatingCell" id="KGk-i7-Jjw" customClass="StarRatingCell" customModule="OfMe" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="166"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="166"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="1hf-hb-XgQ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <rect key="frame" x="10" y="90" width="310" height="76"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="mvO-0A-ogx">
                             <size key="itemSize" width="128" height="128"/>
@@ -28,19 +33,48 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                     </collectionView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FFf-E6-XMw">
+                        <rect key="frame" x="10" y="41" width="300" height="35"/>
+                        <string key="text">오브미와 하루를 함께하며 느꼈던 점이 있나요?
+직접 기록해보고 나다움의 여정을 정리해보세요.</string>
+                        <fontDescription key="fontDescription" name="NotoSansKR-Regular" family="Noto Sans KR" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QyP-3i-lpV">
+                        <rect key="frame" x="10" y="17" width="127.5" height="14"/>
+                        <color key="backgroundColor" red="0.95719021559999995" green="0.95999711750000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <attributedString key="attributedText">
+                            <fragment content="만족한 만큼 표시해 주세요!">
+                                <attributes>
+                                    <font key="NSFont" size="12" name="NotoSansCJKkr-Regular"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="QyP-3i-lpV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="17" id="1as-fs-WwY"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="QyP-3i-lpV" secondAttribute="trailing" constant="10" id="F8R-lw-Dm6"/>
+                    <constraint firstItem="QyP-3i-lpV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="JV3-P6-fhu"/>
+                    <constraint firstItem="1hf-hb-XgQ" firstAttribute="leading" secondItem="QyP-3i-lpV" secondAttribute="leading" id="KZz-T3-4BH"/>
+                    <constraint firstItem="1hf-hb-XgQ" firstAttribute="top" secondItem="FFf-E6-XMw" secondAttribute="bottom" constant="14" id="PMV-tq-GDs"/>
+                    <constraint firstItem="FFf-E6-XMw" firstAttribute="leading" secondItem="QyP-3i-lpV" secondAttribute="leading" id="Pv5-rD-HVw"/>
                     <constraint firstAttribute="trailing" secondItem="1hf-hb-XgQ" secondAttribute="trailing" id="VeF-bf-mZN"/>
                     <constraint firstAttribute="bottom" secondItem="1hf-hb-XgQ" secondAttribute="bottom" id="YN5-Y3-yrg"/>
-                    <constraint firstItem="1hf-hb-XgQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="guZ-45-ifX"/>
-                    <constraint firstItem="1hf-hb-XgQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="iMa-zc-MhF"/>
+                    <constraint firstAttribute="trailing" secondItem="FFf-E6-XMw" secondAttribute="trailing" constant="10" id="cpx-oc-BH8"/>
+                    <constraint firstItem="FFf-E6-XMw" firstAttribute="top" secondItem="QyP-3i-lpV" secondAttribute="bottom" constant="10" id="zyd-Rj-9o2"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="collectionView" destination="1hf-hb-XgQ" id="OHF-O4-0Hy"/>
+                <outlet property="descriptionLabel" destination="FFf-E6-XMw" id="a0W-60-Wzp"/>
+                <outlet property="titleLabel" destination="QyP-3i-lpV" id="2Hi-1x-wnn"/>
             </connections>
-            <point key="canvasLocation" x="-61" y="74"/>
+            <point key="canvasLocation" x="-62.318840579710148" y="73.660714285714278"/>
         </tableViewCell>
     </objects>
     <resources>

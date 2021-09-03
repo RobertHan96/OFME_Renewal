@@ -8,6 +8,8 @@
 import UIKit
 
 class StarRatingCell: UITableViewCell {
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
     private var idx: Int = -1
 

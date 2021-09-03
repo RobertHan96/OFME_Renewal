@@ -55,7 +55,7 @@ extension HomeFinishViewController: UITableViewDelegate, UITableViewDataSource{
         case 0:
             return 144
         case 2:
-            return 200
+            return 166
         case 1,3:
             return 70
         default:
