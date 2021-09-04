@@ -47,6 +47,7 @@ class TestConceptSecondViewController: BaseViewController {
     }
     
     @objc func nextStageButtonDidClicked(_ sender: UIButton) {
+        UserDefaults.standard.setValue(index, forKey: Strings.userDefaultStageTwoResult)
         let vc = TestConceptThirdViewController()
         self.navigationController?.pushViewController(vc, animated: true)
     }
