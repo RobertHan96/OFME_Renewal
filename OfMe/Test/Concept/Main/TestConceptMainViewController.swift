@@ -6,22 +6,20 @@ class TestConceptMainViewController: BaseViewController {
     @IBOutlet weak var titleLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupUI()
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        self.navigationItem.title = "컨셉 추천 받기"
+        self.navigationItem.title = "컨셉 추천 테스트"
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
-        middleButton?.removeFromSuperview()
+    @IBAction func startTestButtonDidClicked(_ sender: Any) {
+        
+        self.navigationController?.pushViewController(TestConceptDetailFirstViewController(), animated: true)
     }
     
-    @IBAction func startTouchDown(_ sender: Any) {
-        let vc = TestConceptDetailFirstViewController()
-        self.navigationController?.pushViewController(vc, animated: true)
-    }
-    
-    func setUP() {
+    private func setupUI() {
+        view.layer.contents = UIImage(named: "test_main_background")?.cgImage
         let attributedText = NSMutableAttributedString(string: "안녕 반가워!\n오늘의 친구야")
         attributedText.addAttributes([
             .font : UIFont.Notos(.regular, size: 22),

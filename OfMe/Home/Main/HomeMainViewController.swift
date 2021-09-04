@@ -117,7 +117,7 @@ extension HomeMainViewController: UITableViewDelegate, UITableViewDataSource {
             
             return characterImagecell
         default: // 컨셉 진행 여부에 따라 -> 컨셉 테스트 시작 or 캐릭터 특성 표시 Cell
-            if isEmptyChracter {
+            if userConcept?.data == nil  {
                 characterActionButton.isHidden = true
                 return getBottomCellWithEmptyConcept()
             } else {
@@ -135,7 +135,7 @@ extension HomeMainViewController: TimeInfoCellDelegate, ConceptSugesstionCellDel
     }
     
     func conceptSugesstionButtonDidClicked() {
-        self.navigationController?.pushViewController(TestMainViewController(), animated: true)
+        self.navigationController?.pushViewController(TestConceptMainViewController(), animated: true)
     }
     
     @objc func finishConceptButtonDidClicked() {
