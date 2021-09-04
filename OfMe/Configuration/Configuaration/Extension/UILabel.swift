@@ -47,6 +47,20 @@ extension UILabel {
         self.attributedText = attributedText
     }
     
+    func makeConceptTestHeaderCellHightledText(all text: String,for subText: String, font: UIFont) {
+        let attributedText = NSMutableAttributedString(string: text)
+        attributedText.addAttributes([
+            .font : font,
+            .foregroundColor : UIColor.gray2
+        ], range: (text as NSString).range(of: text))
+        
+        attributedText.addAttributes([
+            .font : font,
+            .foregroundColor : UIColor.mainBlue,
+        ], range: (text as NSString).range(of: subText))
+        self.attributedText = attributedText
+    }
+
     func makeAlertTextHighlight(all text: String,for subText: String, font: UIFont) {
         let attributedText = NSMutableAttributedString(string: text)
         attributedText.addAttributes([

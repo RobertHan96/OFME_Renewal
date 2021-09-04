@@ -1,12 +1,10 @@
 import UIKit
 
 class TestConceptThirdViewController: BaseViewController {
-    private let dataManager: TestThirdDataManager = TestThirdDataManager()
-    private var adapter: TestConceptThird?
-    private var circularProgressBar: CircularProgressBar?
+    private var adapter: TestConceptThirdAdapter?
     private var secondIdx: Int = -1
     private var firstIdx: Int = 0
-    private var menu: ConceptFirstMenu?
+    private var menu: NextConceptButtonView?
     private var data: TestDummy?
     
     
@@ -14,9 +12,12 @@ class TestConceptThirdViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        dataManager.getTest { result in
+        menu = NextConceptButtonView()
+        setupUI()
+        
+        TestThirdDataManager().getTest { result in
             self.data = result
-            self.adapter = TestConceptThird(of: self.collectionView, data: result) { idx in
+            self.adapter = TestConceptThirdAdapter(of: self.collectionView, data: result) { idx in
                 switch idx {
                 case -1:
                     self.menu?.nextButton.removeFromSuperview()
@@ -27,19 +28,12 @@ class TestConceptThirdViewController: BaseViewController {
                 }
             }
         }
-        menu = ConceptFirstMenu()
+    }
+    
+    private func setupUI() {
+        self.navigationItem.title = "컨셉 추천 테스트"
         menu?.nextButton.setTitle("다음", for: .normal)
         menu?.nextButton.addTarget(self, action: #selector(nextStageButtonDidClicked(_:)), for: .touchDown)
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        self.navigationItem.title = "컨셉 추천 받기"
-        circularProgressBar = self.tabBarController?.circularProgressBar(duration: 0.6, progress: 3/3+0.1)
-        self.view.addSubview(circularProgressBar!)
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        circularProgressBar?.removeFromSuperview()
     }
     
     @objc func nextStageButtonDidClicked(_ sender: UIButton) {

@@ -57,6 +57,7 @@ extension ConceptFirstAdapter: UICollectionViewDelegate, UICollectionViewDelegat
         guard let selected = selected else { return }
         if idx != indexPath.row { idx = indexPath.row } else { idx = -1 }
         collectionView.reloadData()
+        print("LOG", idx)
         selected(idx)
     }
     

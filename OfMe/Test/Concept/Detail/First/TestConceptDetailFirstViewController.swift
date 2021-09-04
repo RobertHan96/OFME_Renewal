@@ -2,9 +2,8 @@ import UIKit
 
 class TestConceptDetailFirstViewController: BaseViewController {
     private var dataManager: TestConceptFirstDataManager = TestConceptFirstDataManager()
-    private var circularProgressBar: CircularProgressBar?
     private var adapter: ConceptFirstAdapter?
-    private var menu: ConceptFirstMenu?
+    private var menu: NextConceptButtonView?
     private var data: [TestConceptFirst] = []
     private var index: Int = -1
     
@@ -12,12 +11,19 @@ class TestConceptDetailFirstViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        menu = ConceptFirstMenu()
+        menu = NextConceptButtonView()
+        setupUI()
+        fetchData()
+    }
+    
+    private func setupUI() {
+        self.navigationItem.title = "컨셉 추천 테스트"
         menu?.nextButton.addTarget(self, action: #selector(nextStageButtonDidClicked(_:)), for: .touchDown)
-        dataManager.getTest { result in
-            self.data = result
+    }
+    
+    private func fetchData() {
+        dataManager.getFirstTest { result in
             self.adapter = ConceptFirstAdapter(of: self.collectionView, data: result) { idx in
-                print(self.data)
                 self.index = idx
                 switch idx {
                 case -1:
@@ -28,20 +34,10 @@ class TestConceptDetailFirstViewController: BaseViewController {
             }
         }
     }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        self.navigationItem.title = "컨셉 추천 테스트"
-        circularProgressBar = self.tabBarController?.circularProgressBar(duration: 0.6, progress: 1/3+0.1)
-        self.view.addSubview(circularProgressBar!)
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        circularProgressBar?.removeFromSuperview()
-    }
-    
+
     @objc func nextStageButtonDidClicked(_ sender: UIButton) {
-        UserDefaults.standard.setValue(data[index].id, forKey: "stageOneResult")
-        let vc = TestConceptSecondViewController(firstIdx: data[index].id)
+        UserDefaults.standard.setValue(index, forKey: Strings.userDefaultStageOneResult)
+        let vc = TestConceptSecondViewController(firstIdx: index)
         self.navigationController?.pushViewController(vc, animated: true)
     }
 }

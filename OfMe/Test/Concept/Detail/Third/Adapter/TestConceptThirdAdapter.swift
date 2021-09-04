@@ -1,6 +1,6 @@
 import UIKit
 
-class TestConceptThird: NSObject {
+class TestConceptThirdAdapter: NSObject {
     private var data: TestDummy?
     private var idx: Int = -1
     private weak var collectionView : UICollectionView!
@@ -30,7 +30,7 @@ class TestConceptThird: NSObject {
     }
 }
 
-extension TestConceptThird: UICollectionViewDataSource {
+extension TestConceptThirdAdapter: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 5
@@ -70,7 +70,7 @@ extension TestConceptThird: UICollectionViewDataSource {
     }
 }
 
-extension TestConceptThird: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+extension TestConceptThirdAdapter: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if indexPath.row > 0 {
             guard let selected = selected else { return }
@@ -85,7 +85,7 @@ extension TestConceptThird: UICollectionViewDelegate, UICollectionViewDelegateFl
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         referenceSizeForHeaderInSection section: Int) -> CGSize {
-        return CGSize(width: collectionView.frame.width, height: 120)
+        return CGSize(width: collectionView.frame.width, height: 106)
     }
     
     func collectionView(_ collectionView: UICollectionView,
@@ -93,7 +93,7 @@ extension TestConceptThird: UICollectionViewDelegate, UICollectionViewDelegateFl
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
         switch indexPath.row {
         case 0:
-            return CGSize(width: collectionView.frame.width-40, height: 150)
+            return CGSize(width: collectionView.frame.width-40, height: 127)
         default:
             return CGSize(width: collectionView.frame.width/2-27.5, height: 105)
         }

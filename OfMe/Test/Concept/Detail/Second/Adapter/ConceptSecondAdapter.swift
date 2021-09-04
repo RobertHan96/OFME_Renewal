@@ -84,7 +84,7 @@ extension ConceptSecondAdapter: UICollectionViewDelegate, UICollectionViewDelega
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         referenceSizeForHeaderInSection section: Int) -> CGSize {
-        return CGSize(width: collectionView.frame.width, height: 120)
+        return CGSize(width: collectionView.frame.width, height: 106)
     }
     
     func collectionView(_ collectionView: UICollectionView,
@@ -92,9 +92,9 @@ extension ConceptSecondAdapter: UICollectionViewDelegate, UICollectionViewDelega
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
         switch indexPath.row {
         case 0:
-            return CGSize(width: collectionView.frame.width-40, height: 150)
+            return CGSize(width: collectionView.frame.width-40, height: 137)
         default:
-            return CGSize(width: collectionView.frame.width-40, height: 80)
+            return CGSize(width: collectionView.frame.width-40, height: 56)
         }
     }
 }

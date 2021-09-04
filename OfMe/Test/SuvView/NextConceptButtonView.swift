@@ -1,7 +1,7 @@
 import UIKit
 
 
-class ConceptFirstMenu: NSObject {
+class NextConceptButtonView: NSObject {
     lazy var nextButton: UIButton = {
         let button = UIButton()
         button.setAttributedTitle(

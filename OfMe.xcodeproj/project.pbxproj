@@ -69,7 +69,7 @@
 		3B2BAF3F268CC5D000CF3048 /* TestMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B2BAF3D268CC5D000CF3048 /* TestMainViewController.xib */; };
 		3B326DD32690971100094C0D /* TestConceptThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B326DD12690971100094C0D /* TestConceptThirdViewController.swift */; };
 		3B326DD42690971100094C0D /* TestConceptThirdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B326DD22690971100094C0D /* TestConceptThirdViewController.xib */; };
-		3B326DD72691ACF000094C0D /* TestConceptThird.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B326DD62691ACF000094C0D /* TestConceptThird.swift */; };
+		3B326DD72691ACF000094C0D /* TestConceptThirdAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B326DD62691ACF000094C0D /* TestConceptThirdAdapter.swift */; };
 		3B326DDB26920F8300094C0D /* TestConceptResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B326DD926920F8300094C0D /* TestConceptResultViewController.swift */; };
 		3B326DDC26920F8300094C0D /* TestConceptResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B326DDA26920F8300094C0D /* TestConceptResultViewController.xib */; };
 		3B38D01E269E244B00870EB5 /* MainPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B38D01D269E244B00870EB5 /* MainPicker.swift */; };
@@ -200,7 +200,7 @@
 		3BBD9337268F6681003BB706 /* ConceptFirstAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBD9336268F6681003BB706 /* ConceptFirstAdapter.swift */; };
 		3BBD933A268F68D0003BB706 /* ConceptTestCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBD9338268F68D0003BB706 /* ConceptTestCollectionViewCell.swift */; };
 		3BBD933B268F68D0003BB706 /* ConceptTestCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BBD9339268F68D0003BB706 /* ConceptTestCollectionViewCell.xib */; };
-		3BBD933E268F73AB003BB706 /* ConceptFirstMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBD933D268F73AB003BB706 /* ConceptFirstMenu.swift */; };
+		3BBD933E268F73AB003BB706 /* NextConceptButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBD933D268F73AB003BB706 /* NextConceptButtonView.swift */; };
 		3BBD9342268F7652003BB706 /* TestConceptSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBD9340268F7652003BB706 /* TestConceptSecondViewController.swift */; };
 		3BBD9343268F7652003BB706 /* TestConceptSecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BBD9341268F7652003BB706 /* TestConceptSecondViewController.xib */; };
 		3BBD9346268F79AB003BB706 /* ConceptSecondAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBD9345268F79AB003BB706 /* ConceptSecondAdapter.swift */; };
@@ -296,7 +296,7 @@
 		3B2BAF3D268CC5D000CF3048 /* TestMainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestMainViewController.xib; sourceTree = "<group>"; };
 		3B326DD12690971100094C0D /* TestConceptThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestConceptThirdViewController.swift; sourceTree = "<group>"; };
 		3B326DD22690971100094C0D /* TestConceptThirdViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestConceptThirdViewController.xib; sourceTree = "<group>"; };
-		3B326DD62691ACF000094C0D /* TestConceptThird.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestConceptThird.swift; sourceTree = "<group>"; };
+		3B326DD62691ACF000094C0D /* TestConceptThirdAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestConceptThirdAdapter.swift; sourceTree = "<group>"; };
 		3B326DD926920F8300094C0D /* TestConceptResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestConceptResultViewController.swift; sourceTree = "<group>"; };
 		3B326DDA26920F8300094C0D /* TestConceptResultViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestConceptResultViewController.xib; sourceTree = "<group>"; };
 		3B38D01D269E244B00870EB5 /* MainPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPicker.swift; sourceTree = "<group>"; };
@@ -435,7 +435,7 @@
 		3BBD9336268F6681003BB706 /* ConceptFirstAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConceptFirstAdapter.swift; sourceTree = "<group>"; };
 		3BBD9338268F68D0003BB706 /* ConceptTestCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConceptTestCollectionViewCell.swift; sourceTree = "<group>"; };
 		3BBD9339268F68D0003BB706 /* ConceptTestCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConceptTestCollectionViewCell.xib; sourceTree = "<group>"; };
-		3BBD933D268F73AB003BB706 /* ConceptFirstMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConceptFirstMenu.swift; sourceTree = "<group>"; };
+		3BBD933D268F73AB003BB706 /* NextConceptButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextConceptButtonView.swift; sourceTree = "<group>"; };
 		3BBD9340268F7652003BB706 /* TestConceptSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestConceptSecondViewController.swift; sourceTree = "<group>"; };
 		3BBD9341268F7652003BB706 /* TestConceptSecondViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestConceptSecondViewController.xib; sourceTree = "<group>"; };
 		3BBD9345268F79AB003BB706 /* ConceptSecondAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConceptSecondAdapter.swift; sourceTree = "<group>"; };
@@ -501,6 +501,7 @@
 		0020E99326E3A41700CA4882 /* SuvView */ = {
 			isa = PBXGroup;
 			children = (
+				3BBD933D268F73AB003BB706 /* NextConceptButtonView.swift */,
 				0020E99426E3A43400CA4882 /* CustomInformAlert.swift */,
 			);
 			path = SuvView;
@@ -701,7 +702,7 @@
 		3B326DD52691ACE400094C0D /* Adapter */ = {
 			isa = PBXGroup;
 			children = (
-				3B326DD62691ACF000094C0D /* TestConceptThird.swift */,
+				3B326DD62691ACF000094C0D /* TestConceptThirdAdapter.swift */,
 			);
 			path = Adapter;
 			sourceTree = "<group>";
@@ -1561,11 +1562,10 @@
 		3BBD932A268F51C9003BB706 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
-				3B326DD0269095F400094C0D /* Third */,
-				3BBD933C268F739E003BB706 /* Menu */,
-				3BBD9330268F637B003BB706 /* Cell */,
-				3BBD933F268F7634003BB706 /* Second */,
 				3BBD932B268F51DD003BB706 /* First */,
+				3BBD933F268F7634003BB706 /* Second */,
+				3B326DD0269095F400094C0D /* Third */,
+				3BBD9330268F637B003BB706 /* Cell */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -1600,14 +1600,6 @@
 				3BBD9336268F6681003BB706 /* ConceptFirstAdapter.swift */,
 			);
 			path = Adapter;
-			sourceTree = "<group>";
-		};
-		3BBD933C268F739E003BB706 /* Menu */ = {
-			isa = PBXGroup;
-			children = (
-				3BBD933D268F73AB003BB706 /* ConceptFirstMenu.swift */,
-			);
-			path = Menu;
 			sourceTree = "<group>";
 		};
 		3BBD933F268F7634003BB706 /* Second */ = {
@@ -2139,11 +2131,11 @@
 				3BE470CE26A470EA00FF18D2 /* QuestionAllViewController.swift in Sources */,
 				3B96642626A34B0A00DE5DB3 /* FinishSubView.swift in Sources */,
 				00F12D3326D15E060055BC5F /* CharacterInfoCell.swift in Sources */,
-				3B326DD72691ACF000094C0D /* TestConceptThird.swift in Sources */,
+				3B326DD72691ACF000094C0D /* TestConceptThirdAdapter.swift in Sources */,
 				3B40F76026A083A6001F6FE7 /* WriteInfo.swift in Sources */,
 				3B8391E12689D98000B35A53 /* UIButton.swift in Sources */,
 				3B45DF7B26AAC37D0072B314 /* InfoMenuCell.swift in Sources */,
-				3BBD933E268F73AB003BB706 /* ConceptFirstMenu.swift in Sources */,
+				3BBD933E268F73AB003BB706 /* NextConceptButtonView.swift in Sources */,
 				0020E97526DE7E0700CA4882 /* Action.swift in Sources */,
 				3B8391EB2689D98000B35A53 /* KobisKey.swift in Sources */,
 				3B4037292689D6FC00AFAC40 /* SceneDelegate.swift in Sources */,

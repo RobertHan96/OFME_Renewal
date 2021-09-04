@@ -2,7 +2,7 @@ import UIKit
 import Alamofire
 
 class TestConceptFirstDataManager {
-    func getTest(completed: @escaping (_ result: [TestConceptFirst]) -> Void) {
+    func getFirstTest(completed: @escaping (_ result: [TestConceptFirst]) -> Void) {
         if let url = URL(string: URLString.getConceptFirst), let jwt = UserDefaults.standard.object(forKey: "jwt") as? String {
             let header: HTTPHeaders = ["x-access-token":jwt]
             AF.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: header)
