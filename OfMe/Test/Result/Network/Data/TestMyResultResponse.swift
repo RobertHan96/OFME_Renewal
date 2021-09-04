@@ -8,11 +8,25 @@ struct TestMyResultResponse: Codable {
 }
 
 struct TestMyResult: Codable {
-    var typeId: Int
+    var id: Int
+    var url: String
     var subName: String
-    var name: String
-    var highlight: String
-    var keyword: String
-    var description1: String
-    var description2: String
+    var description: String
+    var advantage: String
+    var habit: String
+    var behavior: String
+    var value: String
+    var music: String
+    var url2: String
+}
+
+struct ConfirmTestResultResponse: Codable {
+    var isSuccess: Bool
+    var code: Int
+    var message: String
+    var result: ConceptId
+}
+
+struct ConceptId: Codable {
+    var concept: Int
 }

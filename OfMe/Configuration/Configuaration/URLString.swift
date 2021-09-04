@@ -9,11 +9,11 @@ struct URLString {
     static let cateogryType = base + "/types"
     static let getTest = base + "/types/test"
     
-    static let conccept = base + "/concepts"
+    static let confirmCharacter = base + "/concepts2"
     static let getConceptFirst = base + "/concepts/stageOne"
     static let getConceptSecond = base + "/concepts/stageTwo"
     static let getConceptThird = base + "/concepts/stageThree"
-    static let conceptResult = base + "/concepts-two"
+    static let conceptResult = base + "/concepts2"
     
     static let character = base + "/characters"
     static let characterAction = base + "/characters/actions"
