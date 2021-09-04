@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -11,7 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeMainViewController" customModule="OfMe" customModuleProvider="target">
             <connections>
-                <outlet property="characterActions" destination="0Qg-6y-c3p" id="ZAE-3Q-Nht"/>
+                <outlet property="characterActionButton" destination="0Qg-6y-c3p" id="ZAE-3Q-Nht"/>
                 <outlet property="homeMainTableView" destination="zJM-i5-Xe3" id="YJs-Ob-29h"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -25,12 +23,12 @@
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                 </imageView>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="zJM-i5-Xe3">
-                    <rect key="frame" x="30" y="74" width="354" height="748"/>
+                    <rect key="frame" x="30" y="30" width="354" height="826"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                 </tableView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Qg-6y-c3p">
-                    <rect key="frame" x="360" y="427" width="64" height="52"/>
+                    <rect key="frame" x="360" y="422" width="64" height="52"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="64" id="LBC-Iw-jpx"/>
                         <constraint firstAttribute="height" constant="52" id="Tcc-C9-2ur"/>

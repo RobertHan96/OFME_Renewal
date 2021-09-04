@@ -1,10 +1,11 @@
 import UIKit
 import SideMenu
-import Kingfisher
+import Instructions
 
 class HomeMainViewController: BaseViewController {
     @IBOutlet weak var homeMainTableView: UITableView!
-    @IBOutlet weak var characterActions: UIButton!
+    @IBOutlet weak var characterActionButton: UIButton!
+    private let coachMarksController = CoachMarksController()
     private var userConcept: HomeMainResult? { didSet {
         homeMainTableView.reloadData()
     }}
@@ -16,13 +17,20 @@ class HomeMainViewController: BaseViewController {
         setupUI()
         fetchData(isInit: true, actionIndexPath: nil)
     }
-    
+
     override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         self.navigationController?.navigationBar.isHidden = true
     }
     
     override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
         self.navigationController?.navigationBar.isHidden = false
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        self.coachMarksController.stop(immediately: true)
     }
         
     @IBAction func characterActionsBtnClicked(_ sender: UIButton) {
@@ -40,6 +48,7 @@ class HomeMainViewController: BaseViewController {
         if isInit {
             HomeMainDataManager().getMainHomeData(actionIndex: Action.defaultActionIndexPath) { data in
                 self.userConcept = data
+                self.setCoachMark(isFirstCharacter: self.userConcept?.data?.isFirstMain?.getBoolFromOX)
             }
             return
         }
@@ -47,9 +56,19 @@ class HomeMainViewController: BaseViewController {
             self.userConcept = data
         }
     }
+    
+    private func setCoachMark(isFirstCharacter: Bool?) {
+        if isFirstCharacter ?? false {
+            self.coachMarksController.start(in: .window(over: self))
+        }
+    }
 
     private func setupUI() {
         setupTableView()
+        coachMarksController.overlay.backgroundColor = .clear
+        coachMarksController.overlay.blurEffectStyle = .none
+        coachMarksController.overlay.isUserInteractionEnabled = true
+        self.coachMarksController.dataSource = self
     }
     
     private func setupTableView() {
@@ -99,10 +118,10 @@ extension HomeMainViewController: UITableViewDelegate, UITableViewDataSource {
             return characterImagecell
         default: // 컨셉 진행 여부에 따라 -> 컨셉 테스트 시작 or 캐릭터 특성 표시 Cell
             if isEmptyChracter {
-                characterActions.isHidden = true
+                characterActionButton.isHidden = true
                 return getBottomCellWithEmptyConcept()
             } else {
-                characterActions.isHidden = false
+                characterActionButton.isHidden = false
                 return getBottomCellWithConcept(userConcept: userConcept)
             }
         }
@@ -139,5 +158,23 @@ extension HomeMainViewController: TimeInfoCellDelegate, ConceptSugesstionCellDel
 extension HomeMainViewController: SideActionMenuDelegate {
     func actionButtonDidCliikd(actionIndexPath: Int) {
         fetchData(isInit: false, actionIndexPath: actionIndexPath)
+    }
+}
+
+extension HomeMainViewController:  CoachMarksControllerDataSource, CoachMarksControllerDelegate {
+    func coachMarksController(_ coachMarksController: CoachMarksController, coachMarkViewsAt index: Int, madeFrom coachMark: CoachMark) -> (bodyView: (UIView & CoachMarkBodyView), arrowView: (UIView & CoachMarkArrowView)?) {
+        let coachView = coachMarksController.helper.makeDefaultCoachViews(hintText: "액션을 적용하면 재미가 두배")
+        coachView.bodyView.background.cornerRadius = 1
+        coachView.bodyView.hintLabel.font = UIFont.Notos(.regular, size: 12)
+
+        return (bodyView: coachView.bodyView, arrowView: coachView.arrowView)
+    }
+    
+    func coachMarksController(_ coachMarksController: CoachMarksController, coachMarkAt index: Int) -> CoachMark {
+        return coachMarksController.helper.makeCoachMark(for: self.characterActionButton)
+    }
+    
+    func numberOfCoachMarks(for coachMarksController: CoachMarksController) -> Int {
+        return 1
     }
 }
