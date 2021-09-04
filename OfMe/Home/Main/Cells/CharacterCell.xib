@@ -20,7 +20,7 @@
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeBackground" translatesAutoresizingMaskIntoConstraints="NO" id="JBK-y2-F5g">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
                     </imageView>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="TO2-ad-uUP">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TO2-ad-uUP">
                         <rect key="frame" x="16" y="22" width="288" height="287"/>
                     </imageView>
                 </subviews>
@@ -44,7 +44,6 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="default" width="116" height="325"/>
         <image name="homeBackground" width="375" height="762"/>
     </resources>
 </document>

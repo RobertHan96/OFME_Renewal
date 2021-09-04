@@ -1,21 +1,32 @@
 import UIKit
 
-class HomeFinishViewController: BaseViewController {
-    private var dataManager = FinishDataManager()
-    private var idx: Int = -1
-    private var time: Int = 0
-    private var data: CharacterResult = CharacterResult(nickname: "", name: "", id: 0, url: "", timer: 0)
+protocol HomeFinishViewControllerDelegate {
+    func starRatingDidClicked(ratingPoint: Int)
+}
 
+class HomeFinishViewController: BaseViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var bottomInfromText: UILabel!
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var ratingLaterButton: UIButton!
+    var finishData = FinishEnd(timer: 0, url: "https://ofmebucket.s3.ap-northeast-2.amazonaws.com/01_default_1.png", conceptId: 1)
+    var delegate: HomeFinishViewControllerDelegate?
+    private var idx: Int = -1
+    
+    init(finishData: FinishEnd) {
+        super.init(nibName: "HomeFinishViewController", bundle: Bundle.main)
+        self.finishData = finishData
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupUI()        
+        setupUI()
     }
-    
+
     private func setupUI() {
         setupTableView()
     }
@@ -67,11 +78,12 @@ extension HomeFinishViewController: UITableViewDelegate, UITableViewDataSource{
         switch indexPath.section {
         case 0:
             guard let conceptResultSummaryCell = tableView.dequeueReusableCell(withIdentifier: CellManager.ConceptResultSummaryCellIdentifier) as? ConceptResultSummaryCell else { return UITableViewCell() }
-            conceptResultSummaryCell.configure(time: 1000)
+            conceptResultSummaryCell.configure(time: finishData.timer, url: finishData.url)
             
             return conceptResultSummaryCell
         case 2:
             guard let starRatingCell = tableView.dequeueReusableCell(withIdentifier: CellManager.StarRatingCellIdentifier) as? StarRatingCell else { return UITableViewCell() }
+            starRatingCell.delegate = self
 
             return starRatingCell
         case 1, 3:
@@ -81,8 +93,36 @@ extension HomeFinishViewController: UITableViewDelegate, UITableViewDataSource{
             return firstStepCell
         default:
             guard let buttonsCell = tableView.dequeueReusableCell(withIdentifier: CellManager.FinishButtonCellIdentifier) as? FinishButtonCell else { return UITableViewCell() }
+            buttonsCell.delegate = self
+            self.delegate = buttonsCell
             
             return buttonsCell
         }
+    }
+}
+
+extension HomeFinishViewController: StarRatingCellDelegate, FinishButtonCellDelegate {
+    func ratingLaterButtonDidClicked() {
+        // 나중에 하기 팝업에 맞는 화면 레이아웃으로 변경 필요
+        FinishSubView().setConstraint(view: self.view)
+    }
+    
+    func endConceptButtonDidClicked(isValidEndRequest: Bool) {
+        print("LOG:컨셉 평가 API 호출")
+
+        if isValidEndRequest {
+            FinishDataManager().patchRate(ratingPoint: idx) { patchResult in
+                if patchResult == 1000 {
+                    self.navigationController?.popViewController(animated: true)
+                } else {
+                    self.presentAlert(title: Strings.PatchConceptRatingFaildAlert)
+                }
+            }
+        }
+    }
+    
+    func starRatingDidClicked(ratingPoint: Int) {
+        idx = ratingPoint
+        delegate?.starRatingDidClicked(ratingPoint: idx)
     }
 }

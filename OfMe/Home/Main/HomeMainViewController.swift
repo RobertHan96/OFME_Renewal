@@ -120,7 +120,19 @@ extension HomeMainViewController: TimeInfoCellDelegate, ConceptSugesstionCellDel
     }
     
     @objc func finishConceptButtonDidClicked() {
-        self.navigationController?.pushViewController(HomeFinishViewController(), animated: true)
+        pushToFinishViewController()
+    }
+    
+    private func pushToFinishViewController() {
+        FinishDataManager().patchFinish { finishData in
+            if finishData.code == 1000 {
+                self.navigationController?.pushViewController(
+                    HomeFinishViewController(finishData: finishData.result ?? DummyData.finishEndData),
+                    animated: true)
+            } else {
+                self.presentAlert(title: Strings.PatchFinishEndDataFaildAlert)
+            }
+        }
     }
 }
 

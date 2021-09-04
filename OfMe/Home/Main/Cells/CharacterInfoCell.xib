@@ -41,6 +41,11 @@
                     <constraint firstAttribute="trailing" secondItem="8mE-Gq-zhI" secondAttribute="trailing" id="b3s-zk-tyz"/>
                     <constraint firstAttribute="bottom" secondItem="OVJ-PC-SlC" secondAttribute="bottom" id="uFG-X3-WgE"/>
                 </constraints>
+                <userDefinedRuntimeAttributes>
+                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                        <real key="value" value="10"/>
+                    </userDefinedRuntimeAttribute>
+                </userDefinedRuntimeAttributes>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>

@@ -21,7 +21,7 @@ class FinishDataManager {
         }
     }
     
-    func patchFinish(time: Int, completion: @escaping (_ resultCode: Int) -> Void) {
+    func patchFinish(completion: @escaping (_ : FinishEndResponse) -> Void) {
         if let url = URL(string: URLString.finishEnd), let jwt = UserDefaults.standard.object(forKey: "jwt") as? String {
             let header: HTTPHeaders = ["x-access-token":jwt]
 
@@ -30,7 +30,7 @@ class FinishDataManager {
                 .responseDecodable(of: FinishEndResponse.self) { response in
                     switch response.result {
                     case .success(let result):
-                        completion(result.code)
+                        completion(result)
                     case .failure(let error):
                         print("patchFinish: \(error.localizedDescription)")
                     }

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class ConceptResultSummaryCell: UITableViewCell {
     @IBOutlet weak var pointLabel: UILabel!
@@ -27,11 +28,14 @@ class ConceptResultSummaryCell: UITableViewCell {
         self.backgroundColor = .conceptResultCellBackground
     }
     
-    func configure(time: Int) {
+    func configure(time: Int, url: String) {
         let hour = time / 60
         let minute = time % 60
         let timeText = "\(hour > 0 ? "\(hour)시간 \(minute)분" : "\(minute)분")"
+        let imgUrl = URL(string: url)
+
         timeLabel.conceptResultmakeHightledText(all: "우리가 함께한 시간\n 총 \(timeText)", subText: "우리가 함께한 시간", totalText: "총", highlightText: "\(timeText)", hitligthedFont: .Notos(.bold, size: 18), normalFont: .Notos(.regular, size: 12))
         pointLabel.makeHightledText(all: "예상 획득 리워드는 5P 입니다 !", for: "5P", font: .Notos(.bold, size: 12))
+        characterImage.kf.setImage(with: imgUrl)
     }
 }

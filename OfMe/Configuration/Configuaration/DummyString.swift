@@ -1,6 +1,7 @@
 import Foundation
 
 struct DummyData {
+    static let finishEndData = FinishEnd(timer: 0, url: "", conceptId: 0)
     static let pretestString = "나만 믿고 따라와!"
     static let titleResultString = "안 되는 거 빼고 다 되는\n현실주의자"
     static let titleResultHLString = "현실주의자"
@@ -92,4 +93,9 @@ struct DummyData {
         "오앤",
         "유우"
     ]
+}
+
+struct Strings {
+    static let PatchConceptRatingFaildAlert = "별점을 입력해주세요 :)"
+    static let PatchFinishEndDataFaildAlert = "진행 중인 컨셉이 없습니다."
 }
