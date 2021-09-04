@@ -13,10 +13,11 @@ class TestConceptDetailFirstViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         menu = ConceptFirstMenu()
-        menu?.nextButton.addTarget(self, action: #selector(nextTouchDown(_:)), for: .touchDown)
+        menu?.nextButton.addTarget(self, action: #selector(nextStageButtonDidClicked(_:)), for: .touchDown)
         dataManager.getTest { result in
             self.data = result
             self.adapter = ConceptFirstAdapter(of: self.collectionView, data: result) { idx in
+                print(self.data)
                 self.index = idx
                 switch idx {
                 case -1:
@@ -29,7 +30,7 @@ class TestConceptDetailFirstViewController: BaseViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        self.navigationItem.title = "컨셉 추천 받기"
+        self.navigationItem.title = "컨셉 추천 테스트"
         circularProgressBar = self.tabBarController?.circularProgressBar(duration: 0.6, progress: 1/3+0.1)
         self.view.addSubview(circularProgressBar!)
     }
@@ -38,7 +39,7 @@ class TestConceptDetailFirstViewController: BaseViewController {
         circularProgressBar?.removeFromSuperview()
     }
     
-    @objc func nextTouchDown(_ sender: UIButton) {
+    @objc func nextStageButtonDidClicked(_ sender: UIButton) {
         UserDefaults.standard.setValue(data[index].id, forKey: "stageOneResult")
         let vc = TestConceptSecondViewController(firstIdx: data[index].id)
         self.navigationController?.pushViewController(vc, animated: true)

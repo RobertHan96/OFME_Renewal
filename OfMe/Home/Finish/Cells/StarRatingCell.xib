@@ -24,7 +24,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="1hf-hb-XgQ">
-                        <rect key="frame" x="10" y="90" width="310" height="76"/>
+                        <rect key="frame" x="10" y="83" width="310" height="83"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="mvO-0A-ogx">
                             <size key="itemSize" width="128" height="128"/>
@@ -34,7 +34,7 @@
                         </collectionViewFlowLayout>
                     </collectionView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FFf-E6-XMw">
-                        <rect key="frame" x="10" y="41" width="300" height="35"/>
+                        <rect key="frame" x="10" y="41" width="300" height="28"/>
                         <string key="text">캐릭터와 내가 얼마나 잘 맞았는지 표시해주세요! 
 표시 내용은 마이페이지에서 확인할 수 있습니다.</string>
                         <fontDescription key="fontDescription" name="NotoSansKR-Regular" family="Noto Sans KR" pointSize="12"/>
@@ -99,6 +99,11 @@
             <point key="canvasLocation" x="-62.318840579710148" y="73.660714285714278"/>
         </tableViewCell>
     </objects>
+    <designables>
+        <designable name="QyP-3i-lpV">
+            <size key="intrinsicContentSize" width="127.5" height="14"/>
+        </designable>
+    </designables>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

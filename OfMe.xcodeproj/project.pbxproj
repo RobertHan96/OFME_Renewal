@@ -26,6 +26,7 @@
 		0020E98C26E1295B00CA4882 /* StarRatingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0020E98A26E1295B00CA4882 /* StarRatingCell.xib */; };
 		0020E98F26E1C3D800CA4882 /* FinishButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0020E98D26E1C3D800CA4882 /* FinishButtonCell.swift */; };
 		0020E99026E1C3D800CA4882 /* FinishButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0020E98E26E1C3D800CA4882 /* FinishButtonCell.xib */; };
+		0020E99526E3A43400CA4882 /* CustomInformAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0020E99426E3A43400CA4882 /* CustomInformAlert.swift */; };
 		00CE4F4926D9F42000EE352C /* MainHomeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CE4F4826D9F42000EE352C /* MainHomeResponse.swift */; };
 		00EAF4BE26D53EFD005DBDB8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 00EAF4BD26D53EFD005DBDB8 /* GoogleService-Info.plist */; };
 		00EAF4C026D544FB005DBDB8 /* CellManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EAF4BF26D544FB005DBDB8 /* CellManager.swift */; };
@@ -250,6 +251,7 @@
 		0020E98A26E1295B00CA4882 /* StarRatingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StarRatingCell.xib; sourceTree = "<group>"; };
 		0020E98D26E1C3D800CA4882 /* FinishButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishButtonCell.swift; sourceTree = "<group>"; };
 		0020E98E26E1C3D800CA4882 /* FinishButtonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FinishButtonCell.xib; sourceTree = "<group>"; };
+		0020E99426E3A43400CA4882 /* CustomInformAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInformAlert.swift; sourceTree = "<group>"; };
 		00CE4F4826D9F42000EE352C /* MainHomeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHomeResponse.swift; sourceTree = "<group>"; };
 		00EAF4BD26D53EFD005DBDB8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		00EAF4BF26D544FB005DBDB8 /* CellManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellManager.swift; sourceTree = "<group>"; };
@@ -496,6 +498,14 @@
 			path = DataModel;
 			sourceTree = "<group>";
 		};
+		0020E99326E3A41700CA4882 /* SuvView */ = {
+			isa = PBXGroup;
+			children = (
+				0020E99426E3A43400CA4882 /* CustomInformAlert.swift */,
+			);
+			path = SuvView;
+			sourceTree = "<group>";
+		};
 		00F12D1426D14B130055BC5F /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -658,6 +668,9 @@
 		3B2BAF3A268CC5A600CF3048 /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				3B6CF6E2268EEC43002A4DDE /* TestConceptMainViewController.xib */,
+				3B6CF6E1268EEC43002A4DDE /* TestConceptMainViewController.swift */,
+				0020E99326E3A41700CA4882 /* SuvView */,
 				3B6CF6DF268EEC26002A4DDE /* Concept */,
 				3B6CF6DE268EEC1D002A4DDE /* My */,
 			);
@@ -1036,18 +1049,8 @@
 			children = (
 				3B326DD826920F6C00094C0D /* Result */,
 				3BBD932A268F51C9003BB706 /* Detail */,
-				3B6CF6E0268EEC31002A4DDE /* Main */,
 			);
 			path = Concept;
-			sourceTree = "<group>";
-		};
-		3B6CF6E0268EEC31002A4DDE /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				3B6CF6E1268EEC43002A4DDE /* TestConceptMainViewController.swift */,
-				3B6CF6E2268EEC43002A4DDE /* TestConceptMainViewController.xib */,
-			);
-			path = Main;
 			sourceTree = "<group>";
 		};
 		3B753D1726B4602600A941AA /* Network */ = {
@@ -2168,6 +2171,7 @@
 				0020E95E26DCD6A100CA4882 /* Concpet.swift in Sources */,
 				3B753D2626B4E5D500A941AA /* MyInfoResponse.swift in Sources */,
 				3B91501F2698CE21004FE9C0 /* HomeInfoViewController.swift in Sources */,
+				0020E99526E3A43400CA4882 /* CustomInformAlert.swift in Sources */,
 				3BD6A03D269DF89700F7E3AF /* TestConceptFirstDataManager.swift in Sources */,
 				3B6CF6E3268EEC43002A4DDE /* TestConceptMainViewController.swift in Sources */,
 				3B5EB1A326ABE53900E41D24 /* WriteDataManager.swift in Sources */,

@@ -1,9 +1,10 @@
 import UIKit
 
 class TestConceptMainViewController: BaseViewController {
-    let titleText = "안녕 반가워!\n오늘의 친구야"
-
     @IBOutlet weak var titleLabel: UILabel!
+    let titleText = "안녕 반가워!\n오늘의 친구야"
+    let infromAlert = CustomInformAlert(titleText: "우리 내일 다시 만나요!", subText: "앗! 컨셉 테스트는 한 번만 가능합니다.\n다음에 다시 시도해 주세요.")
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
@@ -14,10 +15,20 @@ class TestConceptMainViewController: BaseViewController {
     }
     
     @IBAction func startTestButtonDidClicked(_ sender: Any) {
-        
-        self.navigationController?.pushViewController(TestConceptDetailFirstViewController(), animated: true)
+        pushFirstTestViewController()
     }
     
+    private func pushFirstTestViewController() {
+        TestConceptFirstDataManager().getisAvailableTester { resultCode in
+            if resultCode == 1000 {
+                self.navigationController?.pushViewController(TestConceptDetailFirstViewController(), animated: true)
+            } else {
+                self.infromAlert.setConstraint(view: self.view)
+            }
+        }
+
+    }
+
     private func setupUI() {
         view.layer.contents = UIImage(named: "test_main_background")?.cgImage
         let attributedText = NSMutableAttributedString(string: "안녕 반가워!\n오늘의 친구야")

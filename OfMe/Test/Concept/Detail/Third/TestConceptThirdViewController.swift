@@ -29,7 +29,7 @@ class TestConceptThirdViewController: BaseViewController {
         }
         menu = ConceptFirstMenu()
         menu?.nextButton.setTitle("다음", for: .normal)
-        menu?.nextButton.addTarget(self, action: #selector(nextTouchDown(_:)), for: .touchDown)
+        menu?.nextButton.addTarget(self, action: #selector(nextStageButtonDidClicked(_:)), for: .touchDown)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -42,7 +42,7 @@ class TestConceptThirdViewController: BaseViewController {
         circularProgressBar?.removeFromSuperview()
     }
     
-    @objc func nextTouchDown(_ sender: UIButton) {
+    @objc func nextStageButtonDidClicked(_ sender: UIButton) {
         let vc = TestConceptResultViewController()
         self.navigationController?.pushViewController(vc, animated: true)
     }

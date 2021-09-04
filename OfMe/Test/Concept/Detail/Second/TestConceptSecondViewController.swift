@@ -26,7 +26,7 @@ class TestConceptSecondViewController: BaseViewController {
         super.viewDidLoad()
         menu = ConceptFirstMenu()
         menu?.nextButton.setTitle("다음", for: .normal)
-        menu?.nextButton.addTarget(self, action: #selector(nextTouchDown(_:)), for: .touchDown)
+        menu?.nextButton.addTarget(self, action: #selector(nextStageButtonDidClicked(_:)), for: .touchDown)
         dataManager.getTest(idx: firstIdx) { result in
             self.data = result
             self.adapter = ConceptSecondAdapter(of: self.collectionView, data: result) { idx in
@@ -53,7 +53,7 @@ class TestConceptSecondViewController: BaseViewController {
         circularProgressBar?.removeFromSuperview()
     }
     
-    @objc func nextTouchDown(_ sender: UIButton) {
+    @objc func nextStageButtonDidClicked(_ sender: UIButton) {
         let vc = TestConceptThirdViewController()
         self.navigationController?.pushViewController(vc, animated: true)
     }

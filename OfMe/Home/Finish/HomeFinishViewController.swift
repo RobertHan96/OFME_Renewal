@@ -9,6 +9,7 @@ class HomeFinishViewController: BaseViewController {
     @IBOutlet weak var bottomInfromText: UILabel!
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var ratingLaterButton: UIButton!
+    let infromAlert = CustomInformAlert(titleText: "잠깐!", subText: "컨셉을 종료하기 위해 만족한 만큼\n별점을 표시해주세요.")
     var finishData = FinishEnd(timer: 0, url: "https://ofmebucket.s3.ap-northeast-2.amazonaws.com/01_default_1.png", conceptId: 1)
     var delegate: HomeFinishViewControllerDelegate?
     private var idx: Int = -1
@@ -104,7 +105,7 @@ extension HomeFinishViewController: UITableViewDelegate, UITableViewDataSource{
 extension HomeFinishViewController: StarRatingCellDelegate, FinishButtonCellDelegate {
     func ratingLaterButtonDidClicked() {
         // 나중에 하기 팝업에 맞는 화면 레이아웃으로 변경 필요
-        FinishSubView().setConstraint(view: self.view)
+        infromAlert.setConstraint(view: self.view)
     }
     
     func endConceptButtonDidClicked(isValidEndRequest: Bool) {
