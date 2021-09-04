@@ -37,8 +37,7 @@ class TestConceptThirdViewController: BaseViewController {
     }
     
     @objc func nextStageButtonDidClicked(_ sender: UIButton) {
-        let vc = TestConceptResultViewController()
-        self.navigationController?.pushViewController(vc, animated: true)
+        self.navigationController?.pushViewController(TestResultViewController(), animated: true)
     }
 
 }

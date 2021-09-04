@@ -56,25 +56,16 @@
 		3B2BAF29268B4FCE00CF3048 /* MyInfoMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B2BAF27268B4FCE00CF3048 /* MyInfoMainViewController.xib */; };
 		3B2BAF2C268B5E9200CF3048 /* CustomTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2BAF2A268B5E9200CF3048 /* CustomTabBarViewController.swift */; };
 		3B2BAF2D268B5E9200CF3048 /* CustomTabBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B2BAF2B268B5E9200CF3048 /* CustomTabBarViewController.xib */; };
-		3B2BAF36268CA4E000CF3048 /* PreviewAdpater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2BAF35268CA4E000CF3048 /* PreviewAdpater.swift */; };
 		3B2BAF39268CC44500CF3048 /* UITabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2BAF38268CC44500CF3048 /* UITabBarController.swift */; };
 		3B326DD32690971100094C0D /* TestConceptThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B326DD12690971100094C0D /* TestConceptThirdViewController.swift */; };
 		3B326DD42690971100094C0D /* TestConceptThirdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B326DD22690971100094C0D /* TestConceptThirdViewController.xib */; };
 		3B326DD72691ACF000094C0D /* TestConceptThirdAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B326DD62691ACF000094C0D /* TestConceptThirdAdapter.swift */; };
-		3B326DDB26920F8300094C0D /* TestConceptResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B326DD926920F8300094C0D /* TestConceptResultViewController.swift */; };
-		3B326DDC26920F8300094C0D /* TestConceptResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B326DDA26920F8300094C0D /* TestConceptResultViewController.xib */; };
 		3B38D01E269E244B00870EB5 /* MainPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B38D01D269E244B00870EB5 /* MainPicker.swift */; };
 		3B38D020269EBE4A00870EB5 /* MonthYearPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B38D01F269EBE4A00870EB5 /* MonthYearPickerView.swift */; };
 		3B3EC6A926B3F7D20063F3EA /* QuestionWriteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3EC6A826B3F7D20063F3EA /* QuestionWriteDataManager.swift */; };
 		3B3EC6AB26B3F85C0063F3EA /* QuestionGetResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3EC6AA26B3F85C0063F3EA /* QuestionGetResponse.swift */; };
 		3B3EC6AE26B440840063F3EA /* QuestionAllSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3EC6AD26B440840063F3EA /* QuestionAllSubView.swift */; };
 		3B3EC6B126B450070063F3EA /* QuestionSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3EC6B026B450070063F3EA /* QuestionSubView.swift */; };
-		3B3ECE2D26921C85006BCD5D /* ConceptDummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3ECE2C26921C85006BCD5D /* ConceptDummy.swift */; };
-		3B3ECE332692283E006BCD5D /* ConceptResultAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3ECE322692283E006BCD5D /* ConceptResultAdapter.swift */; };
-		3B3ECE37269228AB006BCD5D /* ConceptResultTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3ECE35269228AB006BCD5D /* ConceptResultTextCell.swift */; };
-		3B3ECE38269228AB006BCD5D /* ConceptResultTextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B3ECE36269228AB006BCD5D /* ConceptResultTextCell.xib */; };
-		3B3ECE3C269228E7006BCD5D /* ConceptResultMusicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3ECE3A269228E7006BCD5D /* ConceptResultMusicCell.swift */; };
-		3B3ECE3D269228E7006BCD5D /* ConceptResultMusicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B3ECE3B269228E7006BCD5D /* ConceptResultMusicCell.xib */; };
 		3B4037272689D6FC00AFAC40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4037262689D6FC00AFAC40 /* AppDelegate.swift */; };
 		3B4037292689D6FC00AFAC40 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4037282689D6FC00AFAC40 /* SceneDelegate.swift */; };
 		3B4037302689D6FE00AFAC40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B40372F2689D6FE00AFAC40 /* Assets.xcassets */; };
@@ -150,8 +141,6 @@
 		3B8CF34226A36DBC00A6B627 /* FinishEndResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8CF34126A36DBC00A6B627 /* FinishEndResponse.swift */; };
 		3B8CF34526A4187300A6B627 /* DirayGetResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8CF34426A4187300A6B627 /* DirayGetResponse.swift */; };
 		3B8CF34726A421E500A6B627 /* DiaryDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8CF34626A421E500A6B627 /* DiaryDataManager.swift */; };
-		3B8DFD4F2699F54100FA7718 /* ActionAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8DFD4E2699F54100FA7718 /* ActionAdapter.swift */; };
-		3B915001269344F9004FE9C0 /* HomeCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B915000269344F9004FE9C0 /* HomeCustom.swift */; };
 		3B91500726985481004FE9C0 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B91500626985481004FE9C0 /* LoginResponse.swift */; };
 		3B91500A269855AD004FE9C0 /* SignInResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B915009269855AD004FE9C0 /* SignInResponse.swift */; };
 		3B91500C26986C17004FE9C0 /* SignInProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B91500B26986C17004FE9C0 /* SignInProtocol.swift */; };
@@ -160,8 +149,6 @@
 		3B9150162698C237004FE9C0 /* LoginDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9150152698C237004FE9C0 /* LoginDelegate.swift */; };
 		3B9150182698C240004FE9C0 /* LoginDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9150172698C240004FE9C0 /* LoginDataManager.swift */; };
 		3B91501A2698C8D6004FE9C0 /* LoginBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9150192698C8D6004FE9C0 /* LoginBaseViewController.swift */; };
-		3B91501F2698CE21004FE9C0 /* HomeInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B91501D2698CE21004FE9C0 /* HomeInfoViewController.swift */; };
-		3B9150202698CE21004FE9C0 /* HomeInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B91501E2698CE21004FE9C0 /* HomeInfoViewController.xib */; };
 		3B9663FC26A1E46E00DE5DB3 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9663FA26A1E46E00DE5DB3 /* QuestionViewController.swift */; };
 		3B9663FD26A1E46E00DE5DB3 /* QuestionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B9663FB26A1E46E00DE5DB3 /* QuestionViewController.xib */; };
 		3B96640126A1F42900DE5DB3 /* QuestionMainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9663FF26A1F42900DE5DB3 /* QuestionMainCell.swift */; };
@@ -170,9 +157,6 @@
 		3B96640726A1F89700DE5DB3 /* QuestionMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B96640526A1F89700DE5DB3 /* QuestionMenuCell.xib */; };
 		3B96640C26A210A700DE5DB3 /* TestConceptThirdResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B96640B26A210A700DE5DB3 /* TestConceptThirdResponse.swift */; };
 		3B96640E26A2112100DE5DB3 /* TestThirdDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B96640D26A2112100DE5DB3 /* TestThirdDataManager.swift */; };
-		3B96641326A2BF3D00DE5DB3 /* ConceptRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B96641226A2BF3D00DE5DB3 /* ConceptRegister.swift */; };
-		3B96641526A2BF6C00DE5DB3 /* ConceptResultResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B96641426A2BF6C00DE5DB3 /* ConceptResultResponse.swift */; };
-		3B96641826A2C07E00DE5DB3 /* ConceptResultDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B96641726A2C07E00DE5DB3 /* ConceptResultDataManager.swift */; };
 		3B96641D26A2FC2200DE5DB3 /* CharacterResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B96641C26A2FC2200DE5DB3 /* CharacterResponse.swift */; };
 		3B96641F26A2FC8100DE5DB3 /* HomeMainDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B96641E26A2FC8100DE5DB3 /* HomeMainDataManager.swift */; };
 		3B96642126A335F100DE5DB3 /* CharacterActionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B96642026A335F100DE5DB3 /* CharacterActionResponse.swift */; };
@@ -268,25 +252,16 @@
 		3B2BAF27268B4FCE00CF3048 /* MyInfoMainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyInfoMainViewController.xib; sourceTree = "<group>"; };
 		3B2BAF2A268B5E9200CF3048 /* CustomTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarViewController.swift; sourceTree = "<group>"; };
 		3B2BAF2B268B5E9200CF3048 /* CustomTabBarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTabBarViewController.xib; sourceTree = "<group>"; };
-		3B2BAF35268CA4E000CF3048 /* PreviewAdpater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewAdpater.swift; sourceTree = "<group>"; };
 		3B2BAF38268CC44500CF3048 /* UITabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBarController.swift; sourceTree = "<group>"; };
 		3B326DD12690971100094C0D /* TestConceptThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestConceptThirdViewController.swift; sourceTree = "<group>"; };
 		3B326DD22690971100094C0D /* TestConceptThirdViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestConceptThirdViewController.xib; sourceTree = "<group>"; };
 		3B326DD62691ACF000094C0D /* TestConceptThirdAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestConceptThirdAdapter.swift; sourceTree = "<group>"; };
-		3B326DD926920F8300094C0D /* TestConceptResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestConceptResultViewController.swift; sourceTree = "<group>"; };
-		3B326DDA26920F8300094C0D /* TestConceptResultViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestConceptResultViewController.xib; sourceTree = "<group>"; };
 		3B38D01D269E244B00870EB5 /* MainPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPicker.swift; sourceTree = "<group>"; };
 		3B38D01F269EBE4A00870EB5 /* MonthYearPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthYearPickerView.swift; sourceTree = "<group>"; };
 		3B3EC6A826B3F7D20063F3EA /* QuestionWriteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionWriteDataManager.swift; sourceTree = "<group>"; };
 		3B3EC6AA26B3F85C0063F3EA /* QuestionGetResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionGetResponse.swift; sourceTree = "<group>"; };
 		3B3EC6AD26B440840063F3EA /* QuestionAllSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionAllSubView.swift; sourceTree = "<group>"; };
 		3B3EC6B026B450070063F3EA /* QuestionSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionSubView.swift; sourceTree = "<group>"; };
-		3B3ECE2C26921C85006BCD5D /* ConceptDummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConceptDummy.swift; sourceTree = "<group>"; };
-		3B3ECE322692283E006BCD5D /* ConceptResultAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConceptResultAdapter.swift; sourceTree = "<group>"; };
-		3B3ECE35269228AB006BCD5D /* ConceptResultTextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConceptResultTextCell.swift; sourceTree = "<group>"; };
-		3B3ECE36269228AB006BCD5D /* ConceptResultTextCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConceptResultTextCell.xib; sourceTree = "<group>"; };
-		3B3ECE3A269228E7006BCD5D /* ConceptResultMusicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConceptResultMusicCell.swift; sourceTree = "<group>"; };
-		3B3ECE3B269228E7006BCD5D /* ConceptResultMusicCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConceptResultMusicCell.xib; sourceTree = "<group>"; };
 		3B4037232689D6FC00AFAC40 /* OfMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OfMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B4037262689D6FC00AFAC40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B4037282689D6FC00AFAC40 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -370,8 +345,6 @@
 		3B8CF34126A36DBC00A6B627 /* FinishEndResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishEndResponse.swift; sourceTree = "<group>"; };
 		3B8CF34426A4187300A6B627 /* DirayGetResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirayGetResponse.swift; sourceTree = "<group>"; };
 		3B8CF34626A421E500A6B627 /* DiaryDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryDataManager.swift; sourceTree = "<group>"; };
-		3B8DFD4E2699F54100FA7718 /* ActionAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionAdapter.swift; sourceTree = "<group>"; };
-		3B915000269344F9004FE9C0 /* HomeCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCustom.swift; sourceTree = "<group>"; };
 		3B91500626985481004FE9C0 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
 		3B915009269855AD004FE9C0 /* SignInResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInResponse.swift; sourceTree = "<group>"; };
 		3B91500B26986C17004FE9C0 /* SignInProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInProtocol.swift; sourceTree = "<group>"; };
@@ -380,8 +353,6 @@
 		3B9150152698C237004FE9C0 /* LoginDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDelegate.swift; sourceTree = "<group>"; };
 		3B9150172698C240004FE9C0 /* LoginDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDataManager.swift; sourceTree = "<group>"; };
 		3B9150192698C8D6004FE9C0 /* LoginBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginBaseViewController.swift; sourceTree = "<group>"; };
-		3B91501D2698CE21004FE9C0 /* HomeInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInfoViewController.swift; sourceTree = "<group>"; };
-		3B91501E2698CE21004FE9C0 /* HomeInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeInfoViewController.xib; sourceTree = "<group>"; };
 		3B9663FA26A1E46E00DE5DB3 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		3B9663FB26A1E46E00DE5DB3 /* QuestionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionViewController.xib; sourceTree = "<group>"; };
 		3B9663FF26A1F42900DE5DB3 /* QuestionMainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionMainCell.swift; sourceTree = "<group>"; };
@@ -390,9 +361,6 @@
 		3B96640526A1F89700DE5DB3 /* QuestionMenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionMenuCell.xib; sourceTree = "<group>"; };
 		3B96640B26A210A700DE5DB3 /* TestConceptThirdResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestConceptThirdResponse.swift; sourceTree = "<group>"; };
 		3B96640D26A2112100DE5DB3 /* TestThirdDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestThirdDataManager.swift; sourceTree = "<group>"; };
-		3B96641226A2BF3D00DE5DB3 /* ConceptRegister.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConceptRegister.swift; sourceTree = "<group>"; };
-		3B96641426A2BF6C00DE5DB3 /* ConceptResultResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConceptResultResponse.swift; sourceTree = "<group>"; };
-		3B96641726A2C07E00DE5DB3 /* ConceptResultDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConceptResultDataManager.swift; sourceTree = "<group>"; };
 		3B96641C26A2FC2200DE5DB3 /* CharacterResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterResponse.swift; sourceTree = "<group>"; };
 		3B96641E26A2FC8100DE5DB3 /* HomeMainDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMainDataManager.swift; sourceTree = "<group>"; };
 		3B96642026A335F100DE5DB3 /* CharacterActionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterActionResponse.swift; sourceTree = "<group>"; };
@@ -589,22 +557,14 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
-		3B2BAF2E268C9F2700CF3048 /* Preview */ = {
-			isa = PBXGroup;
-			children = (
-				3B2BAF35268CA4E000CF3048 /* PreviewAdpater.swift */,
-			);
-			path = Preview;
-			sourceTree = "<group>";
-		};
 		3B2BAF3A268CC5A600CF3048 /* Test */ = {
 			isa = PBXGroup;
 			children = (
 				3B6CF6E2268EEC43002A4DDE /* TestConceptMainViewController.xib */,
 				3B6CF6E1268EEC43002A4DDE /* TestConceptMainViewController.swift */,
+				3B6CF6DF268EEC26002A4DDE /* ConceptTest */,
+				3B6CF6D9268EBC0B002A4DDE /* Result */,
 				0020E99326E3A41700CA4882 /* SuvView */,
-				3B6CF6DF268EEC26002A4DDE /* Concept */,
-				3B6CF6DE268EEC1D002A4DDE /* My */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -626,19 +586,6 @@
 				3B326DD62691ACF000094C0D /* TestConceptThirdAdapter.swift */,
 			);
 			path = Adapter;
-			sourceTree = "<group>";
-		};
-		3B326DD826920F6C00094C0D /* Result */ = {
-			isa = PBXGroup;
-			children = (
-				3B96640F26A2B10B00DE5DB3 /* Network */,
-				3B3ECE3426922886006BCD5D /* Cell */,
-				3B3ECE3126922831006BCD5D /* Adater */,
-				3B3ECE2B26921C6E006BCD5D /* ConceptDummy */,
-				3B326DD926920F8300094C0D /* TestConceptResultViewController.swift */,
-				3B326DDA26920F8300094C0D /* TestConceptResultViewController.xib */,
-			);
-			path = Result;
 			sourceTree = "<group>";
 		};
 		3B38D01C269E242E00870EB5 /* Picker */ = {
@@ -688,33 +635,6 @@
 				3B3EC6B026B450070063F3EA /* QuestionSubView.swift */,
 			);
 			path = SubView;
-			sourceTree = "<group>";
-		};
-		3B3ECE2B26921C6E006BCD5D /* ConceptDummy */ = {
-			isa = PBXGroup;
-			children = (
-				3B3ECE2C26921C85006BCD5D /* ConceptDummy.swift */,
-			);
-			path = ConceptDummy;
-			sourceTree = "<group>";
-		};
-		3B3ECE3126922831006BCD5D /* Adater */ = {
-			isa = PBXGroup;
-			children = (
-				3B3ECE322692283E006BCD5D /* ConceptResultAdapter.swift */,
-			);
-			path = Adater;
-			sourceTree = "<group>";
-		};
-		3B3ECE3426922886006BCD5D /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				3B3ECE35269228AB006BCD5D /* ConceptResultTextCell.swift */,
-				3B3ECE36269228AB006BCD5D /* ConceptResultTextCell.xib */,
-				3B3ECE3A269228E7006BCD5D /* ConceptResultMusicCell.swift */,
-				3B3ECE3B269228E7006BCD5D /* ConceptResultMusicCell.xib */,
-			);
-			path = Cell;
 			sourceTree = "<group>";
 		};
 		3B40371A2689D6FB00AFAC40 = {
@@ -870,10 +790,8 @@
 		3B638FB8268B0E170095F05B /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				3B91501C2698CE0A004FE9C0 /* Info */,
-				3B91501B2698CDF9004FE9C0 /* MainSubView */,
-				3B96642726A356DD00DE5DB3 /* Finish */,
 				3B638FC6268B48430095F05B /* Main */,
+				3B96642726A356DD00DE5DB3 /* Finish */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -955,21 +873,12 @@
 			path = Result;
 			sourceTree = "<group>";
 		};
-		3B6CF6DE268EEC1D002A4DDE /* My */ = {
+		3B6CF6DF268EEC26002A4DDE /* ConceptTest */ = {
 			isa = PBXGroup;
 			children = (
-				3B6CF6D9268EBC0B002A4DDE /* Result */,
-			);
-			path = My;
-			sourceTree = "<group>";
-		};
-		3B6CF6DF268EEC26002A4DDE /* Concept */ = {
-			isa = PBXGroup;
-			children = (
-				3B326DD826920F6C00094C0D /* Result */,
 				3BBD932A268F51C9003BB706 /* Detail */,
 			);
-			path = Concept;
+			path = ConceptTest;
 			sourceTree = "<group>";
 		};
 		3B753D1726B4602600A941AA /* Network */ = {
@@ -1230,22 +1139,6 @@
 			path = All;
 			sourceTree = "<group>";
 		};
-		3B8DFD4D2699F52D00FA7718 /* Action */ = {
-			isa = PBXGroup;
-			children = (
-				3B8DFD4E2699F54100FA7718 /* ActionAdapter.swift */,
-			);
-			path = Action;
-			sourceTree = "<group>";
-		};
-		3B914FFF26934444004FE9C0 /* Custom */ = {
-			isa = PBXGroup;
-			children = (
-				3B915000269344F9004FE9C0 /* HomeCustom.swift */,
-			);
-			path = Custom;
-			sourceTree = "<group>";
-		};
 		3B91500226985436004FE9C0 /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -1314,26 +1207,6 @@
 			path = DataManager;
 			sourceTree = "<group>";
 		};
-		3B91501B2698CDF9004FE9C0 /* MainSubView */ = {
-			isa = PBXGroup;
-			children = (
-				3B96642426A34AF100DE5DB3 /* Finish */,
-				3B8DFD4D2699F52D00FA7718 /* Action */,
-				3B914FFF26934444004FE9C0 /* Custom */,
-				3B2BAF2E268C9F2700CF3048 /* Preview */,
-			);
-			path = MainSubView;
-			sourceTree = "<group>";
-		};
-		3B91501C2698CE0A004FE9C0 /* Info */ = {
-			isa = PBXGroup;
-			children = (
-				3B91501D2698CE21004FE9C0 /* HomeInfoViewController.swift */,
-				3B91501E2698CE21004FE9C0 /* HomeInfoViewController.xib */,
-			);
-			path = Info;
-			sourceTree = "<group>";
-		};
 		3B9663FE26A1F2C500DE5DB3 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -1379,32 +1252,6 @@
 			path = DataManager;
 			sourceTree = "<group>";
 		};
-		3B96640F26A2B10B00DE5DB3 /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				3B96641126A2B4B600DE5DB3 /* Data */,
-				3B96641026A2B4AF00DE5DB3 /* DataManager */,
-			);
-			path = Network;
-			sourceTree = "<group>";
-		};
-		3B96641026A2B4AF00DE5DB3 /* DataManager */ = {
-			isa = PBXGroup;
-			children = (
-				3B96641726A2C07E00DE5DB3 /* ConceptResultDataManager.swift */,
-			);
-			path = DataManager;
-			sourceTree = "<group>";
-		};
-		3B96641126A2B4B600DE5DB3 /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				3B96641226A2BF3D00DE5DB3 /* ConceptRegister.swift */,
-				3B96641426A2BF6C00DE5DB3 /* ConceptResultResponse.swift */,
-			);
-			path = Data;
-			sourceTree = "<group>";
-		};
 		3B96641926A2D7E900DE5DB3 /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -1422,21 +1269,14 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
-		3B96642426A34AF100DE5DB3 /* Finish */ = {
-			isa = PBXGroup;
-			children = (
-				3B96642526A34B0A00DE5DB3 /* FinishSubView.swift */,
-			);
-			path = Finish;
-			sourceTree = "<group>";
-		};
 		3B96642726A356DD00DE5DB3 /* Finish */ = {
 			isa = PBXGroup;
 			children = (
+				3B96642926A356FC00DE5DB3 /* HomeFinishViewController.xib */,
+				3B96642826A356FC00DE5DB3 /* HomeFinishViewController.swift */,
+				3B96642526A34B0A00DE5DB3 /* FinishSubView.swift */,
 				3B8CF33A26A36B4A00A6B627 /* Network */,
 				3B8CF33926A362C000A6B627 /* Cells */,
-				3B96642826A356FC00DE5DB3 /* HomeFinishViewController.swift */,
-				3B96642926A356FC00DE5DB3 /* HomeFinishViewController.xib */,
 			);
 			path = Finish;
 			sourceTree = "<group>";
@@ -1770,12 +1610,10 @@
 				3BBD9343268F7652003BB706 /* TestConceptSecondViewController.xib in Resources */,
 				3B4037332689D6FE00AFAC40 /* LaunchScreen.storyboard in Resources */,
 				3B326DD42690971100094C0D /* TestConceptThirdViewController.xib in Resources */,
-				3B9150202698CE21004FE9C0 /* HomeInfoViewController.xib in Resources */,
 				0020E96C26DE7B1400CA4882 /* SideActionsViewController.xib in Resources */,
 				0020E98026E1260000CA4882 /* ConceptResultSummaryCell.xib in Resources */,
 				3B4BB02226AAA9440055E36D /* CommentCell.xib in Resources */,
 				0020E98426E126B200CA4882 /* StepCell.xib in Resources */,
-				3B326DDC26920F8300094C0D /* TestConceptResultViewController.xib in Resources */,
 				3BE26F1B269F29F1002F67D4 /* ArchiveWriteViewController.xib in Resources */,
 				3B96640226A1F42900DE5DB3 /* QuestionMainCell.xib in Resources */,
 				3B6CF6DD268EBC39002A4DDE /* TestResultViewController.xib in Resources */,
@@ -1783,7 +1621,6 @@
 				00F12D2826D159190055BC5F /* NotoSansKR-Bold.otf in Resources */,
 				00F12D2926D159190055BC5F /* NotoSansKR-Thin.otf in Resources */,
 				3BBD9334268F63C4003BB706 /* TestConceptHeader.xib in Resources */,
-				3B3ECE3D269228E7006BCD5D /* ConceptResultMusicCell.xib in Resources */,
 				3B753D3226B590F200A941AA /* DeleteUserViewController.xib in Resources */,
 				3B1943FA26AB05610014558F /* FixPasswordViewController.xib in Resources */,
 				3B45DF7C26AAC37D0072B314 /* InfoMenuCell.xib in Resources */,
@@ -1795,7 +1632,6 @@
 				3B8CF33826A362BC00A6B627 /* StarCell.xib in Resources */,
 				3B6CF6E4268EEC43002A4DDE /* TestConceptMainViewController.xib in Resources */,
 				3B4037302689D6FE00AFAC40 /* Assets.xcassets in Resources */,
-				3B3ECE38269228AB006BCD5D /* ConceptResultTextCell.xib in Resources */,
 				0020E95C26DC8A6400CA4882 /* CharacterFavoriteMusicCell.xib in Resources */,
 				3BE26F13269EF842002F67D4 /* DiaryViewCell.xib in Resources */,
 				3B1943F626AB02720014558F /* FixNameViewController.xib in Resources */,
@@ -1903,13 +1739,10 @@
 				3BD6A042269DFC7100F7E3AF /* TestConceptSecondResponse.swift in Sources */,
 				3BD6A02C269DEBF400F7E3AF /* TestMyResultResponse.swift in Sources */,
 				3B8391E22689D98000B35A53 /* UIImage.swift in Sources */,
-				3B96641326A2BF3D00DE5DB3 /* ConceptRegister.swift in Sources */,
-				3B3ECE2D26921C85006BCD5D /* ConceptDummy.swift in Sources */,
 				00F12D1726D1529B0055BC5F /* TimeInfoCell.swift in Sources */,
 				3B915010269877EF004FE9C0 /* URLString.swift in Sources */,
 				3B1943F526AB02720014558F /* FixNameViewController.swift in Sources */,
 				3B40F75A26A02C9E001F6FE7 /* WriteImageCell.swift in Sources */,
-				3B3ECE37269228AB006BCD5D /* ConceptResultTextCell.swift in Sources */,
 				3B753D2426B4E5BF00A941AA /* MyInfoDataManager.swift in Sources */,
 				3B638FD3268B498C0095F05B /* QuestionMainViewController.swift in Sources */,
 				3BD6A01C269DDCAF00F7E3AF /* AutoLoginResponse.swift in Sources */,
@@ -1937,7 +1770,6 @@
 				3B4037272689D6FC00AFAC40 /* AppDelegate.swift in Sources */,
 				3B5EB1A126AB08FD00E41D24 /* LogoutResponse.swift in Sources */,
 				0020E95726DBF2A600CA4882 /* CharacterFeatureCell.swift in Sources */,
-				3B3ECE332692283E006BCD5D /* ConceptResultAdapter.swift in Sources */,
 				3BE26F0E269EF6C0002F67D4 /* ArchiveMainAdapter.swift in Sources */,
 				0020E97026DE7B7900CA4882 /* SideActionsViewController.swift in Sources */,
 				3B83920C2689E49F00B35A53 /* ImageConstant.swift in Sources */,
@@ -1946,17 +1778,14 @@
 				3B40F76726A1C0CF001F6FE7 /* QuestionSubMainViewController.swift in Sources */,
 				3B9663FC26A1E46E00DE5DB3 /* QuestionViewController.swift in Sources */,
 				3B8391E02689D98000B35A53 /* String.swift in Sources */,
-				3B96641826A2C07E00DE5DB3 /* ConceptResultDataManager.swift in Sources */,
 				3B8CF34226A36DBC00A6B627 /* FinishEndResponse.swift in Sources */,
 				3B91500726985481004FE9C0 /* LoginResponse.swift in Sources */,
 				3B8391E62689D98000B35A53 /* UIFont.swift in Sources */,
-				3B3ECE3C269228E7006BCD5D /* ConceptResultMusicCell.swift in Sources */,
 				0020E98F26E1C3D800CA4882 /* FinishButtonCell.swift in Sources */,
 				0020E98B26E1295B00CA4882 /* StarRatingCell.swift in Sources */,
 				3B91500C26986C17004FE9C0 /* SignInProtocol.swift in Sources */,
 				3B96642126A335F100DE5DB3 /* CharacterActionResponse.swift in Sources */,
 				3B8C37F826AD39E400CD893A /* SubAllDataManager.swift in Sources */,
-				3B915001269344F9004FE9C0 /* HomeCustom.swift in Sources */,
 				0020E97826DFBFD400CA4882 /* Int.swift in Sources */,
 				3B8391DE2689D98000B35A53 /* Date.swift in Sources */,
 				3BE470CE26A470EA00FF18D2 /* QuestionAllViewController.swift in Sources */,
@@ -1975,7 +1804,6 @@
 				3B96642A26A356FC00DE5DB3 /* HomeFinishViewController.swift in Sources */,
 				3BBD933A268F68D0003BB706 /* ConceptTestCollectionViewCell.swift in Sources */,
 				3B3EC6A926B3F7D20063F3EA /* QuestionWriteDataManager.swift in Sources */,
-				3B8DFD4F2699F54100FA7718 /* ActionAdapter.swift in Sources */,
 				3B3EC6AE26B440840063F3EA /* QuestionAllSubView.swift in Sources */,
 				3B8391DD2689D98000B35A53 /* Device.swift in Sources */,
 				3B839212268A246A00B35A53 /* SignInViewController.swift in Sources */,
@@ -1992,14 +1820,12 @@
 				3B8CF34026A36BB200A6B627 /* FinishDataManager.swift in Sources */,
 				0020E95E26DCD6A100CA4882 /* Concpet.swift in Sources */,
 				3B753D2626B4E5D500A941AA /* MyInfoResponse.swift in Sources */,
-				3B91501F2698CE21004FE9C0 /* HomeInfoViewController.swift in Sources */,
 				0020E99526E3A43400CA4882 /* CustomInformAlert.swift in Sources */,
 				3BD6A03D269DF89700F7E3AF /* TestConceptFirstDataManager.swift in Sources */,
 				3B6CF6E3268EEC43002A4DDE /* TestConceptMainViewController.swift in Sources */,
 				3B5EB1A326ABE53900E41D24 /* WriteDataManager.swift in Sources */,
 				3B8CF33726A362BC00A6B627 /* StarCell.swift in Sources */,
 				3BE26F1A269F29F1002F67D4 /* ArchiveWriteViewController.swift in Sources */,
-				3B326DDB26920F8300094C0D /* TestConceptResultViewController.swift in Sources */,
 				3B8CF34526A4187300A6B627 /* DirayGetResponse.swift in Sources */,
 				3B638FB7268A44430095F05B /* SignInfo.swift in Sources */,
 				3B5EB1A526ABE5FC00E41D24 /* WriteConceptResponse.swift in Sources */,
@@ -2009,9 +1835,7 @@
 				3B96641F26A2FC8100DE5DB3 /* HomeMainDataManager.swift in Sources */,
 				3B638FBF268B0FC40095F05B /* CustomTabBar.swift in Sources */,
 				3B8391E92689D98000B35A53 /* Color.swift in Sources */,
-				3B96641526A2BF6C00DE5DB3 /* ConceptResultResponse.swift in Sources */,
 				3B9150162698C237004FE9C0 /* LoginDelegate.swift in Sources */,
-				3B2BAF36268CA4E000CF3048 /* PreviewAdpater.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
