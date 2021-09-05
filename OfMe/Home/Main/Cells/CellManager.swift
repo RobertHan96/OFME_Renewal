@@ -36,8 +36,8 @@ struct CellManager {
     static let ConceptResultSummaryCellIdentifier = "conceptResultSummaryCell"
     static let FinishButtonCellName = "FinishButtonCell" // 최하단 컨셉 종료, 나중에하기 버튼 cell
     static let FinishButtonCellIdentifier = "finishButtonCell"
-
-    
+    static let CharacterSummaryCellName = "CharacterSummaryCell" // 컨셉 테스트 결과 화면 상단에 표시되는 캐릭터 정보 요약 cell
+    static let CharacterSummaryCellIdentifier = "characterSummaryCell"
 }
 
 extension HomeMainViewController {

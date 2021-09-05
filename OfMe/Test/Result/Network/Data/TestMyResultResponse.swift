@@ -10,6 +10,7 @@ struct TestMyResultResponse: Codable {
 struct TestMyResult: Codable {
     var id: Int
     var url: String
+    var name: String
     var subName: String
     var description: String
     var advantage: String

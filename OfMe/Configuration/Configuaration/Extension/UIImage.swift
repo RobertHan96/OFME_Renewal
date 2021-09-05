@@ -1,8 +1,8 @@
 import Foundation
 import UIKit
+import Kingfisher
 
-
-extension UIImage {
+extension UIImage {    
     func imageWithColor(tintColor: UIColor) -> UIImage {
         UIGraphicsBeginImageContextWithOptions(self.size, false, self.scale)
         let context = UIGraphicsGetCurrentContext()!

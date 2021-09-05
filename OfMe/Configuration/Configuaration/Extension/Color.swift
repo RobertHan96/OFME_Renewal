@@ -54,9 +54,12 @@ extension UIColor {
     class var conceptResultCellBackground: UIColor { UIColor(hex: 0xFAFAFA)}
     class var ofMeColor: UIColor { UIColor(hex: 0x365CD8) }
     class var textHighlightColor: UIColor { UIColor(hex: 0xEDF0F8) }
+    class var typoBlue: UIColor { UIColor(hex: 0x1038BC) }
+    class var titleHilightText: UIColor { UIColor(hex: 0x9694F5) }
+
     
     // 팝업에서 쓰는 색상들
     class var popupSubTitleColor: UIColor { UIColor(hex: 0xEAEEFF) }
-    
+
 }
 
