@@ -27,13 +27,11 @@ struct Action {
         case 1:
             return ActionName.sun.rawValue
         case 2:
-            return ActionName.handTree.rawValue
+            return ActionName._handTree.rawValue
         case 3:
             return ActionName.sleep.rawValue
         case 4:
             return ActionName.tv.rawValue
-        case 5:
-            return ActionName._default.rawValue
         default:
             return ActionName.defaultUrl.rawValue
         }
@@ -65,7 +63,8 @@ struct Action {
         case sun = "sun"
         case tv = "tv"
         case handTree = "handTree"
-        case _default = "reset"
+        case _handTree = "reverse" // 서버에 저장된 이미지 이름과, 클라에서 저장 중인게 달라서 _로 구분
+        case _default = "reset" // 서버에 저장된 이미지 이름과, 클라에서 저장 중인게 달라서 _로 구분
         case defaultUrl = "default"
         
         var url: String {

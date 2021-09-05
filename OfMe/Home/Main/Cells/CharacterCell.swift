@@ -21,13 +21,18 @@ class CharacterCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
+    func confgirue(imageUrl: String) {
+        setCharacterImage(imageUrl: imageUrl)
+    }
+
     private func setupUI() {
         backgroundImage.layer.cornerRadius = 10
         backgroundImage.clipsToBounds = true
         self.backgroundColor = .clear
     }
     
-    func confgirue(imageUrl: String) {
+    
+    private func setCharacterImage(imageUrl: String) {
         DispatchQueue.main.async() {
             if let url = URL(string: imageUrl) {
                 
@@ -39,5 +44,4 @@ class CharacterCell: UITableViewCell {
             }
         }
     }
-    
 }
