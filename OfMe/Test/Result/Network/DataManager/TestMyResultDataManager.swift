@@ -29,7 +29,7 @@ class TestMyResultDataManager {
             let header: HTTPHeaders = ["x-access-token": jwt]
             AF.request(url, method: .post, parameters: nil, encoding: JSONEncoding.default, headers: header)
                 .validate()
-                .responseDecodable(of: TestMyResultResponse.self) { response in
+                .responseDecodable(of: ConfirmTestResultResponse.self) { response in
                     switch response.result {
                     case .success(let result):
                         print("LOGT",result)

@@ -43,7 +43,8 @@ class TestResultViewController: BaseViewController {
         TestMyResultDataManager().confrimTestResult(conceptId: id) { resultCode in
             if resultCode == 1000 { // 메인으로 이동안되는 오류 수정 필요
                 let vc = HomeMainViewController()
-                UIApplication.shared.keyWindow?.replaceRootViewController(vc, animated: true, completion: nil)
+                self.navigationController?.popToRootViewController(animated: true)
+//                UIApplication.shared.keyWindow?.replaceRootViewController(vc, animated: true, completion: nil)
                 return
             }
             print("LOG:", resultCode)
