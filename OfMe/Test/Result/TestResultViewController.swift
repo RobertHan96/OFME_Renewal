@@ -3,7 +3,11 @@ import UIKit
 class TestResultViewController: BaseViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var confrimConceptButton: UIButton!
-    var testResult: TestMyResult?
+    var testResult: TestMyResult? {
+        didSet {
+            tableView.reloadData()
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,8 +31,10 @@ class TestResultViewController: BaseViewController {
     private func fetchData() {
         let firstAnswerIdx = UserDefaults().integer(forKey: Strings.userDefaultStageOneResult)
         let secondAnswerIdx = UserDefaults().integer(forKey: Strings.userDefaultStageTwoResult)
+        print("LOG")
         TestMyResultDataManager().getResult(firstAnswer: firstAnswerIdx, secondAnswer: secondAnswerIdx) { data in
             self.testResult = data
+            print("LOG", data)
         }
     }
     
@@ -71,13 +77,13 @@ extension TestResultViewController: UITableViewDelegate, UITableViewDataSource {
         switch indexPath.section {
         case 0: // 시간 정보 표시 Cell
             guard let characterSummaryCell = tableView.dequeueReusableCell(withIdentifier: CellManager.CharacterSummaryCellIdentifier) as? CharacterSummaryCell else { return UITableViewCell() }
-            guard let testResultData = testResult else { return UITableViewCell() }
-                characterSummaryCell.configure(data: testResultData)
+                characterSummaryCell.configure(data: testResult)
             
             return characterSummaryCell
         default :
             guard let characterInfoCell = tableView.dequeueReusableCell(withIdentifier: CellManager.CharacterInfoCellIdentifier) as? CharacterInfoCell else { return UITableViewCell() }
-            
+            guard let testResult = testResult else { return UITableViewCell() }
+            characterInfoCell.configure(testResult: testResult)
             return characterInfoCell
         }
     }

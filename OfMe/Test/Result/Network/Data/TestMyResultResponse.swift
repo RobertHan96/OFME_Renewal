@@ -4,7 +4,7 @@ struct TestMyResultResponse: Codable {
     var isSuccess: Bool
     var code: Int
     var message: String
-    var result: TestMyResult
+    var result: TestMyResult?
 }
 
 struct TestMyResult: Codable {
@@ -25,9 +25,9 @@ struct ConfirmTestResultResponse: Codable {
     var isSuccess: Bool
     var code: Int
     var message: String
-    var result: ConceptId
+    var result: ConceptId?
 }
 
 struct ConceptId: Codable {
-    var concept: Int
+    var conceptId: String
 }

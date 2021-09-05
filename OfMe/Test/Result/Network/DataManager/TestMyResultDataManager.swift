@@ -12,11 +12,13 @@ class TestMyResultDataManager {
                 .responseDecodable(of: TestMyResultResponse.self) { response in
                     switch response.result {
                     case .success(let result):
-                        completed(result.result)
+                        if let data = result.result {
+                            completed(data)
+                        }
                     case .failure(let error):
                         print("TestMyResult Error: \(error.localizedDescription)")
-                    }
                 }
+            }
         }
     }
 
@@ -30,8 +32,10 @@ class TestMyResultDataManager {
                 .responseDecodable(of: TestMyResultResponse.self) { response in
                     switch response.result {
                     case .success(let result):
+                        print("LOGT",result)
                         completed(result.code)
                     case .failure(let error):
+                        print("LOGT", response.result)
                         print("TestMyResult Error: \(error.localizedDescription)")
                     }
                 }

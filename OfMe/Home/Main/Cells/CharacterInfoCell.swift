@@ -28,12 +28,24 @@ class CharacterInfoCell: UITableViewCell {
         characterInfo = userConcept
     }
 
+    func configure(testResult: TestMyResult) {
+        let feature = CharacterFeatures(id: testResult.id, name: testResult.name, advantage: testResult.advantage, habit: testResult.habit, behavior: testResult.behavior, value: testResult.value, music: testResult.music, isFirstMain: "X")
+        let data = HomeMainResult(conceptProgressCheck: "O", nickname: "", image: [testResult.url], data: feature, clientTime: nil)
+        characterInfo = data
+    }
+
     private func setupUI() {
         self.backgroundColor = .clear
         setupCollectionView()
         setupPageControll()
     }
-    
+
+    private func setupTestResultUI() {
+        self.layer.borderWidth = 1
+        self.borderColor = .characterFeatureCellBorder
+        self.layer.cornerRadius = 10
+    }
+
     private func setupCollectionView() {
         collectionView.delegate = self
         collectionView.dataSource = self

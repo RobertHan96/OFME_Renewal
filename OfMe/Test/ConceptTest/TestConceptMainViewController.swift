@@ -23,6 +23,7 @@ class TestConceptMainViewController: BaseViewController {
             if resultCode == 1000 {
                 self.navigationController?.pushViewController(TestConceptDetailFirstViewController(), animated: true)
             } else {
+                print("LOGT", resultCode)
                 self.infromAlert.setConstraint(view: self.view)
             }
         }

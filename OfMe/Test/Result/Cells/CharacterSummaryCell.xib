@@ -26,30 +26,6 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="컨셉 이름" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5sm-64-tgm">
-                        <rect key="frame" x="32" y="25" width="278" height="28"/>
-                        <fontDescription key="fontDescription" name="NotoSansKR-Medium" family="Noto Sans KR" pointSize="25"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="컨셉 요약 설명" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DuF-ht-FRe">
-                        <rect key="frame" x="32" y="57" width="262" height="21"/>
-                        <fontDescription key="fontDescription" name="NotoSansKR-Regular" family="Noto Sans KR" pointSize="14"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="컨셉 설명" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gMs-9b-JTf">
-                        <rect key="frame" x="20" y="120" width="290" height="18"/>
-                        <fontDescription key="fontDescription" name="NotoSansKR-Regular" family="Noto Sans KR" pointSize="12"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4vj-wd-weu">
-                        <rect key="frame" x="230" y="0.0" width="70" height="184"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="70" id="5Od-z2-hsf"/>
-                        </constraints>
-                    </imageView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1F0-2p-PQJ">
                         <rect key="frame" x="0.0" y="100" width="320" height="100"/>
                         <color key="backgroundColor" systemColor="systemBlueColor"/>
@@ -62,6 +38,30 @@
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4vj-wd-weu">
+                        <rect key="frame" x="230" y="0.0" width="70" height="184"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="5Od-z2-hsf"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="컨셉 이름" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5sm-64-tgm">
+                        <rect key="frame" x="0.0" y="25" width="310" height="28.5"/>
+                        <fontDescription key="fontDescription" name="NotoSansKR-Medium" family="Noto Sans KR" pointSize="25"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="컨셉 요약 설명" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DuF-ht-FRe">
+                        <rect key="frame" x="0.0" y="57.5" width="228" height="20.5"/>
+                        <fontDescription key="fontDescription" name="NotoSansKR-Regular" family="Noto Sans KR" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="컨셉 설명" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gMs-9b-JTf">
+                        <rect key="frame" x="20" y="120" width="200" height="17.5"/>
+                        <fontDescription key="fontDescription" name="NotoSansKR-Regular" family="Noto Sans KR" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
                     <constraint firstItem="gMs-9b-JTf" firstAttribute="top" secondItem="1F0-2p-PQJ" secondAttribute="top" constant="20" id="4vW-wY-6wB"/>
@@ -70,23 +70,23 @@
                     <constraint firstAttribute="trailing" secondItem="4vj-wd-weu" secondAttribute="trailing" constant="20" id="ECm-da-SBL"/>
                     <constraint firstItem="4vj-wd-weu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Ek7-Bs-lFS"/>
                     <constraint firstItem="1F0-2p-PQJ" firstAttribute="top" secondItem="DuF-ht-FRe" secondAttribute="bottom" constant="22" id="FEJ-Kz-24a"/>
-                    <constraint firstItem="5sm-64-tgm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="32" id="LaP-u4-7sz"/>
+                    <constraint firstItem="5sm-64-tgm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="LaP-u4-7sz"/>
                     <constraint firstItem="5sm-64-tgm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="25" id="PTk-IB-XTo"/>
+                    <constraint firstItem="4vj-wd-weu" firstAttribute="leading" secondItem="gMs-9b-JTf" secondAttribute="trailing" constant="10" id="W5J-an-Nyl"/>
                     <constraint firstAttribute="trailing" secondItem="1F0-2p-PQJ" secondAttribute="trailing" id="Zp5-7i-w9E"/>
                     <constraint firstItem="1F0-2p-PQJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="aeL-Mf-tvK"/>
                     <constraint firstItem="DuF-ht-FRe" firstAttribute="top" secondItem="5sm-64-tgm" secondAttribute="bottom" constant="4" id="j4s-tR-cqi"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="DuF-ht-FRe" secondAttribute="trailing" constant="10" id="k8E-Gc-dhc"/>
+                    <constraint firstItem="4vj-wd-weu" firstAttribute="leadingMargin" secondItem="DuF-ht-FRe" secondAttribute="trailing" constant="10" id="k8E-Gc-dhc"/>
                     <constraint firstItem="gMs-9b-JTf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="oVh-x8-kZa"/>
                     <constraint firstAttribute="bottom" secondItem="4vj-wd-weu" secondAttribute="bottom" constant="16" id="pqY-me-CmS"/>
                     <constraint firstAttribute="bottom" secondItem="1F0-2p-PQJ" secondAttribute="bottom" id="qRm-Zs-jEO"/>
-                    <constraint firstAttribute="trailing" secondItem="gMs-9b-JTf" secondAttribute="trailing" constant="10" id="spC-MN-a4N"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="backgroundSeparatorView" destination="1F0-2p-PQJ" id="htr-gu-wsL"/>
                 <outlet property="characterImage" destination="4vj-wd-weu" id="qIt-xJ-HIa"/>
-                <outlet property="descriptionLabel" destination="gMs-9b-JTf" id="J1h-rf-iIl"/>
+                <outlet property="descriptionLabel" destination="gMs-9b-JTf" id="6Jm-sr-i3c"/>
                 <outlet property="subTitleLabel" destination="DuF-ht-FRe" id="ERj-TM-hyH"/>
                 <outlet property="titleLabel" destination="5sm-64-tgm" id="hgW-hF-R5j"/>
             </connections>

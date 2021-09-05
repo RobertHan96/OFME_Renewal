@@ -26,8 +26,8 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="655"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="grouped" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="L2Z-dQ-Onn">
-                    <rect key="frame" x="20" y="0.0" width="280" height="449"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="L2Z-dQ-Onn">
+                    <rect key="frame" x="20" y="0.0" width="280" height="509"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
                 <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="loz-YT-gj2">
@@ -48,7 +48,7 @@
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="L2Z-dQ-Onn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="76L-iw-D7X"/>
-                <constraint firstItem="loz-YT-gj2" firstAttribute="top" secondItem="L2Z-dQ-Onn" secondAttribute="bottom" constant="100" id="8hK-LI-ceS"/>
+                <constraint firstItem="loz-YT-gj2" firstAttribute="top" secondItem="L2Z-dQ-Onn" secondAttribute="bottom" constant="40" id="8hK-LI-ceS"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="L2Z-dQ-Onn" secondAttribute="trailing" constant="20" id="Sfj-PE-dy0"/>
                 <constraint firstItem="L2Z-dQ-Onn" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="nij-0r-DHd"/>
                 <constraint firstItem="loz-YT-gj2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="pKP-TH-5ii"/>

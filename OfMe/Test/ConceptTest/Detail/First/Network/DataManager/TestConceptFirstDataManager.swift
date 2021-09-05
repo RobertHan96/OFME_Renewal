@@ -10,7 +10,9 @@ class TestConceptFirstDataManager {
                 .responseDecodable(of: TestConceptFirstResponse.self) { response in
                     switch response.result {
                     case .success(let result):
-                        completed(result.result)
+                        if let data = result.result {
+                            completed(data)
+                        }
                     case .failure(let error):
                         print("getTestError: \(error.localizedDescription)")
                     }

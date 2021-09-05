@@ -20,11 +20,13 @@ class CharacterSummaryCell: UITableViewCell {
         setupUI()
     }
     
-    func configure(data: TestMyResult) {
-        titleLabel.text = data.name
-        subTitleLabel.makeHightledText(all: data.subName, for: data.subName)
-        descriptionLabel.text = data.description
-        setImageFromUrl(imgURL: data.url)
+    func configure(data: TestMyResult?) {
+        if let testResult = data {
+            titleLabel.text = testResult.name
+            subTitleLabel.makeHightledText(all: testResult.subName, for: testResult.subName)
+            descriptionLabel.text = testResult.description
+            setImageFromUrl(imgURL: testResult.url)
+        }
     }
     
     private func setupUI() {

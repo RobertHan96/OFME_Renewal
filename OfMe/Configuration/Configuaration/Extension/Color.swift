@@ -56,6 +56,7 @@ extension UIColor {
     class var textHighlightColor: UIColor { UIColor(hex: 0xEDF0F8) }
     class var typoBlue: UIColor { UIColor(hex: 0x1038BC) }
     class var titleHilightText: UIColor { UIColor(hex: 0x9694F5) }
+    class var characterFeatureCellBorder: UIColor { UIColor(hex: 0xF1F4F9) }
 
     
     // 팝업에서 쓰는 색상들
