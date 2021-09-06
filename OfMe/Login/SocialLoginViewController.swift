@@ -8,7 +8,7 @@
 import UIKit
 import AuthenticationServices
 
-class SocialLoginViewController: UIViewController {
+class SocialLoginViewController: BaseViewController {
     @IBOutlet weak var contentView: UIView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var kakaoLoginButton: UIButton!
@@ -21,6 +21,17 @@ class SocialLoginViewController: UIViewController {
         setupUI()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.isHidden = true
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.navigationController?.navigationBar.isHidden = false
+    }
+
+    
     private func setupUI() {
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
         backgroundImage.image = UIImage(named: "login_background")
@@ -32,6 +43,7 @@ class SocialLoginViewController: UIViewController {
     }
     
     @IBAction func kakaoButtonDidClicked(_ sender: Any) {
+        navigationController?.pushViewController(MakeNicknameViewController(), animated: true)
     }
     
     

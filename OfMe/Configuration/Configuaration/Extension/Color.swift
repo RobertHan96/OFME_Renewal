@@ -62,5 +62,8 @@ extension UIColor {
     // 팝업에서 쓰는 색상들
     class var popupSubTitleColor: UIColor { UIColor(hex: 0xEAEEFF) }
 
+    // 로그인에서 쓰는 색상들
+    class var nicknameTextFieldColor: UIColor { UIColor(hex: 0xF7F7F8) }
+    
 }
 

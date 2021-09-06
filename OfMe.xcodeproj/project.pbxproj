@@ -32,6 +32,8 @@
 		003FE37726E479C100E00F8B /* CharacterSummaryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 003FE37526E479C100E00F8B /* CharacterSummaryCell.xib */; };
 		003FE37A26E63F5800E00F8B /* SocialLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003FE37826E63F5800E00F8B /* SocialLoginViewController.swift */; };
 		003FE37B26E63F5800E00F8B /* SocialLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 003FE37926E63F5800E00F8B /* SocialLoginViewController.xib */; };
+		003FE37E26E6530D00E00F8B /* MakeNicknameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003FE37C26E6530D00E00F8B /* MakeNicknameViewController.swift */; };
+		003FE37F26E6530D00E00F8B /* MakeNicknameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 003FE37D26E6530D00E00F8B /* MakeNicknameViewController.xib */; };
 		00CE4F4926D9F42000EE352C /* MainHomeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CE4F4826D9F42000EE352C /* MainHomeResponse.swift */; };
 		00EAF4BE26D53EFD005DBDB8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 00EAF4BD26D53EFD005DBDB8 /* GoogleService-Info.plist */; };
 		00EAF4C026D544FB005DBDB8 /* CellManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EAF4BF26D544FB005DBDB8 /* CellManager.swift */; };
@@ -231,6 +233,8 @@
 		003FE37526E479C100E00F8B /* CharacterSummaryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterSummaryCell.xib; sourceTree = "<group>"; };
 		003FE37826E63F5800E00F8B /* SocialLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialLoginViewController.swift; sourceTree = "<group>"; };
 		003FE37926E63F5800E00F8B /* SocialLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SocialLoginViewController.xib; sourceTree = "<group>"; };
+		003FE37C26E6530D00E00F8B /* MakeNicknameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeNicknameViewController.swift; sourceTree = "<group>"; };
+		003FE37D26E6530D00E00F8B /* MakeNicknameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MakeNicknameViewController.xib; sourceTree = "<group>"; };
 		00CE4F4826D9F42000EE352C /* MainHomeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHomeResponse.swift; sourceTree = "<group>"; };
 		00EAF4BD26D53EFD005DBDB8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		00EAF4BF26D544FB005DBDB8 /* CellManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellManager.swift; sourceTree = "<group>"; };
@@ -959,6 +963,8 @@
 				3B8392072689E12B00B35A53 /* LoginMainViewController.swift */,
 				3B9150112698C213004FE9C0 /* Network */,
 				3B83920F268A245300B35A53 /* SignIn */,
+				003FE37C26E6530D00E00F8B /* MakeNicknameViewController.swift */,
+				003FE37D26E6530D00E00F8B /* MakeNicknameViewController.xib */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -1639,6 +1645,7 @@
 				0020E95826DBF2A600CA4882 /* CharacterFeatureCell.xib in Resources */,
 				0020E96A26DE754300CA4882 /* ActionButtonCell.xib in Resources */,
 				0020E98C26E1295B00CA4882 /* StarRatingCell.xib in Resources */,
+				003FE37F26E6530D00E00F8B /* MakeNicknameViewController.xib in Resources */,
 				3B40F76826A1C0CF001F6FE7 /* QuestionSubMainViewController.xib in Resources */,
 				3B2BAF2D268B5E9200CF3048 /* CustomTabBarViewController.xib in Resources */,
 				3B40F75B26A02C9E001F6FE7 /* WriteImageCell.xib in Resources */,
@@ -1803,6 +1810,7 @@
 				3B3EC6AE26B440840063F3EA /* QuestionAllSubView.swift in Sources */,
 				3B8391DD2689D98000B35A53 /* Device.swift in Sources */,
 				3B839212268A246A00B35A53 /* SignInViewController.swift in Sources */,
+				003FE37E26E6530D00E00F8B /* MakeNicknameViewController.swift in Sources */,
 				3B8391DC2689D98000B35A53 /* IndicatorView.swift in Sources */,
 				0020E98326E126B200CA4882 /* StepCell.swift in Sources */,
 				3B753D2D26B5368500A941AA /* InfoWriteResponse.swift in Sources */,
