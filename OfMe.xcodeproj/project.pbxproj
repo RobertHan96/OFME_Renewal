@@ -30,6 +30,8 @@
 		003FE37226E477D000E00F8B /* UIWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003FE37126E477D000E00F8B /* UIWindow.swift */; };
 		003FE37626E479C100E00F8B /* CharacterSummaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003FE37426E479C100E00F8B /* CharacterSummaryCell.swift */; };
 		003FE37726E479C100E00F8B /* CharacterSummaryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 003FE37526E479C100E00F8B /* CharacterSummaryCell.xib */; };
+		003FE37A26E63F5800E00F8B /* SocialLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003FE37826E63F5800E00F8B /* SocialLoginViewController.swift */; };
+		003FE37B26E63F5800E00F8B /* SocialLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 003FE37926E63F5800E00F8B /* SocialLoginViewController.xib */; };
 		00CE4F4926D9F42000EE352C /* MainHomeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CE4F4826D9F42000EE352C /* MainHomeResponse.swift */; };
 		00EAF4BE26D53EFD005DBDB8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 00EAF4BD26D53EFD005DBDB8 /* GoogleService-Info.plist */; };
 		00EAF4C026D544FB005DBDB8 /* CellManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EAF4BF26D544FB005DBDB8 /* CellManager.swift */; };
@@ -227,6 +229,8 @@
 		003FE37126E477D000E00F8B /* UIWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWindow.swift; sourceTree = "<group>"; };
 		003FE37426E479C100E00F8B /* CharacterSummaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSummaryCell.swift; sourceTree = "<group>"; };
 		003FE37526E479C100E00F8B /* CharacterSummaryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterSummaryCell.xib; sourceTree = "<group>"; };
+		003FE37826E63F5800E00F8B /* SocialLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialLoginViewController.swift; sourceTree = "<group>"; };
+		003FE37926E63F5800E00F8B /* SocialLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SocialLoginViewController.xib; sourceTree = "<group>"; };
 		00CE4F4826D9F42000EE352C /* MainHomeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHomeResponse.swift; sourceTree = "<group>"; };
 		00EAF4BD26D53EFD005DBDB8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		00EAF4BF26D544FB005DBDB8 /* CellManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellManager.swift; sourceTree = "<group>"; };
@@ -672,7 +676,6 @@
 			isa = PBXGroup;
 			children = (
 				00F12D1926D156430055BC5F /* Configuration */,
-				3BD6A018269DDC9400F7E3AF /* Auto-Login */,
 				3B2BAF3A268CC5A600CF3048 /* Test */,
 				3B638FBB268B0E380095F05B /* MyInfo */,
 				3B638FBA268B0E320095F05B /* Question */,
@@ -950,8 +953,12 @@
 		3B82375B2689D8D5005AA543 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				003FE37926E63F5800E00F8B /* SocialLoginViewController.xib */,
+				003FE37826E63F5800E00F8B /* SocialLoginViewController.swift */,
+				3B8392082689E12B00B35A53 /* LoginMainViewController.xib */,
+				3B8392072689E12B00B35A53 /* LoginMainViewController.swift */,
+				3B9150112698C213004FE9C0 /* Network */,
 				3B83920F268A245300B35A53 /* SignIn */,
-				3B8392062689E11100B35A53 /* Main */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -1037,16 +1044,6 @@
 				3B9150192698C8D6004FE9C0 /* LoginBaseViewController.swift */,
 			);
 			path = Base;
-			sourceTree = "<group>";
-		};
-		3B8392062689E11100B35A53 /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				3B9150112698C213004FE9C0 /* Network */,
-				3B8392072689E12B00B35A53 /* LoginMainViewController.swift */,
-				3B8392082689E12B00B35A53 /* LoginMainViewController.xib */,
-			);
-			path = Main;
 			sourceTree = "<group>";
 		};
 		3B83920F268A245300B35A53 /* SignIn */ = {
@@ -1203,6 +1200,7 @@
 		3B9150122698C219004FE9C0 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				3BD6A01B269DDCAE00F7E3AF /* AutoLoginResponse.swift */,
 				3B91500626985481004FE9C0 /* LoginResponse.swift */,
 			);
 			path = Data;
@@ -1219,6 +1217,7 @@
 		3B9150142698C222004FE9C0 /* DataManager */ = {
 			isa = PBXGroup;
 			children = (
+				3BD6A01E269DDD0F00F7E3AF /* AutoLoginDataManager.swift */,
 				3B9150172698C240004FE9C0 /* LoginDataManager.swift */,
 			);
 			path = DataManager;
@@ -1369,31 +1368,6 @@
 				3BBD9345268F79AB003BB706 /* ConceptSecondAdapter.swift */,
 			);
 			path = Adapter;
-			sourceTree = "<group>";
-		};
-		3BD6A018269DDC9400F7E3AF /* Auto-Login */ = {
-			isa = PBXGroup;
-			children = (
-				3BD6A01A269DDCA600F7E3AF /* Data */,
-				3BD6A019269DDC9E00F7E3AF /* DataManager */,
-			);
-			path = "Auto-Login";
-			sourceTree = "<group>";
-		};
-		3BD6A019269DDC9E00F7E3AF /* DataManager */ = {
-			isa = PBXGroup;
-			children = (
-				3BD6A01E269DDD0F00F7E3AF /* AutoLoginDataManager.swift */,
-			);
-			path = DataManager;
-			sourceTree = "<group>";
-		};
-		3BD6A01A269DDCA600F7E3AF /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				3BD6A01B269DDCAE00F7E3AF /* AutoLoginResponse.swift */,
-			);
-			path = Data;
 			sourceTree = "<group>";
 		};
 		3BD6A028269DEBDD00F7E3AF /* Network */ = {
@@ -1635,6 +1609,7 @@
 				3B96640226A1F42900DE5DB3 /* QuestionMainCell.xib in Resources */,
 				3B6CF6DD268EBC39002A4DDE /* TestResultViewController.xib in Resources */,
 				3B2BAF29268B4FCE00CF3048 /* MyInfoMainViewController.xib in Resources */,
+				003FE37B26E63F5800E00F8B /* SocialLoginViewController.xib in Resources */,
 				00F12D2826D159190055BC5F /* NotoSansKR-Bold.otf in Resources */,
 				00F12D2926D159190055BC5F /* NotoSansKR-Thin.otf in Resources */,
 				3BBD9334268F63C4003BB706 /* TestConceptHeader.xib in Resources */,
@@ -1822,6 +1797,7 @@
 				3B2BAF28268B4FCE00CF3048 /* MyInfoMainViewController.swift in Sources */,
 				3B753D3126B590F200A941AA /* DeleteUserViewController.swift in Sources */,
 				3B96642A26A356FC00DE5DB3 /* HomeFinishViewController.swift in Sources */,
+				003FE37A26E63F5800E00F8B /* SocialLoginViewController.swift in Sources */,
 				3BBD933A268F68D0003BB706 /* ConceptTestCollectionViewCell.swift in Sources */,
 				3B3EC6A926B3F7D20063F3EA /* QuestionWriteDataManager.swift in Sources */,
 				3B3EC6AE26B440840063F3EA /* QuestionAllSubView.swift in Sources */,
