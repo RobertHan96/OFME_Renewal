@@ -27,6 +27,7 @@ class HomeMainViewController: BaseViewController {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         self.navigationController?.navigationBar.isHidden = false
+        finishView.removeView()
     }
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -146,9 +147,8 @@ extension HomeMainViewController: TimeInfoCellDelegate, ConceptSugesstionCellDel
     private func pushToFinishViewController() {
         FinishDataManager().patchFinish { finishData in
             if finishData.code == 1000 {
-                self.navigationController?.pushViewController(
-                    HomeFinishViewController(finishData: finishData.result ?? DummyData.finishEndData),
-                    animated: true)
+                let vc = HomeFinishViewController(finishData: finishData.result ?? DummyData.finishEndData)
+                self.navigationController?.pushViewController(vc, animated: true)
             } else {
                 self.presentAlert(title: Strings.PatchFinishEndDataFaildAlert)
             }

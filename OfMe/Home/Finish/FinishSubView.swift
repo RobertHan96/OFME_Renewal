@@ -66,7 +66,7 @@ class FinishSubView: NSObject {
                                                             .font : UIFont.Notos(.regular, size: 14),
                                                             .foregroundColor : UIColor.gray4
                                                            ]), for: .normal)
-        cancelButton.addTarget(self, action: #selector(removeTouchDown), for: .touchDown)
+        cancelButton.addTarget(self, action: #selector(removeView), for: .touchDown)
         
         view.addSubview(cancelButton)
         cancelButton.snp.makeConstraints { make in
@@ -101,7 +101,7 @@ class FinishSubView: NSObject {
         }
     }
     
-    @objc func removeTouchDown() {
+    @objc func removeView() {
         mainView.removeFromSuperview()
     }
 }

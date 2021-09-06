@@ -10,7 +10,7 @@ class HomeFinishViewController: BaseViewController {
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var ratingLaterButton: UIButton!
     let infromAlert = CustomInformAlert(titleText: "잠깐!", subText: "컨셉을 종료하기 위해 만족한 만큼\n별점을 표시해주세요.")
-    var finishData = FinishEnd(timer: 0, url: "https://ofmebucket.s3.ap-northeast-2.amazonaws.com/01_default_1.png", conceptId: 1)
+    var finishData = DummyData.finishEndData
     var delegate: HomeFinishViewControllerDelegate?
     private var idx: Int = -1
     
@@ -29,6 +29,7 @@ class HomeFinishViewController: BaseViewController {
     }
 
     private func setupUI() {
+        self.navigationItem.setHidesBackButton(true, animated: false)
         setupTableView()
     }
 
@@ -79,7 +80,7 @@ extension HomeFinishViewController: UITableViewDelegate, UITableViewDataSource{
         switch indexPath.section {
         case 0:
             guard let conceptResultSummaryCell = tableView.dequeueReusableCell(withIdentifier: CellManager.ConceptResultSummaryCellIdentifier) as? ConceptResultSummaryCell else { return UITableViewCell() }
-            conceptResultSummaryCell.configure(time: finishData.timer, url: finishData.url)
+            conceptResultSummaryCell.configure(time: finishData.clientTime, url: finishData.url)
             
             return conceptResultSummaryCell
         case 2:
@@ -114,9 +115,10 @@ extension HomeFinishViewController: StarRatingCellDelegate, FinishButtonCellDele
         if isValidEndRequest {
             FinishDataManager().patchRate(ratingPoint: idx) { patchResult in
                 if patchResult == 1000 {
-                    let vc = HomeMainViewController()
-                    UIApplication.shared.keyWindow?.replaceRootViewController(vc, animated: true, completion: nil)
-                    return
+                    self.navigationController?.popToRootViewController(animated: true)
+//                    let vc = HomeMainViewController()
+//                    UIApplication.shared.keyWindow?.replaceRootViewController(vc, animated: true, completion: nil)
+//                    return
                 } else {
                     self.presentAlert(title: Strings.PatchConceptRatingFaildAlert)
                 }

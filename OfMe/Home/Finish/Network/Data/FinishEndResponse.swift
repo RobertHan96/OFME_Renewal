@@ -8,7 +8,7 @@ struct FinishEndResponse: Codable {
 }
 
 struct FinishEnd: Codable {
-    var timer: Int
+    var clientTime: Int
     var url: String
     var conceptId: Int
 }

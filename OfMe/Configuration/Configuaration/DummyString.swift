@@ -1,7 +1,7 @@
 import Foundation
 
 struct DummyData {
-    static let finishEndData = FinishEnd(timer: 0, url: "", conceptId: 0)
+    static let finishEndData = FinishEnd(clientTime: 0, url: "https://ofmebucket.s3.ap-northeast-2.amazonaws.com/01_default_1.png", conceptId: 1)
     static let pretestString = "나만 믿고 따라와!"
     static let titleResultString = "안 되는 거 빼고 다 되는\n현실주의자"
     static let titleResultHLString = "현실주의자"
