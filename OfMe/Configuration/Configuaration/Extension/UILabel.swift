@@ -47,16 +47,44 @@ extension UILabel {
         self.attributedText = attributedText
     }
     
-    func makeConceptTestHeaderCellHightledText(all text: String,for subText: String, font: UIFont) {
+    func makeLoginTitleHightledText(all text: String,for subText: String) {
         let attributedText = NSMutableAttributedString(string: text)
         attributedText.addAttributes([
-            .font : font,
-            .foregroundColor : UIColor.gray2
+            .font : UIFont.Notos(.medium, size: 35),
+            .foregroundColor : UIColor.mainBlue
         ], range: (text as NSString).range(of: text))
         
         attributedText.addAttributes([
-            .font : font,
-            .foregroundColor : UIColor.mainBlue,
+            .font : UIFont.Notos(.medium, size: 25),
+            .foregroundColor : UIColor.typoBlack,
+        ], range: (text as NSString).range(of: subText))
+        self.attributedText = attributedText
+    }
+
+    func makeNicknameMakingTitleHightledText(all text: String,for subText: String) {
+        let attributedText = NSMutableAttributedString(string: text)
+        attributedText.addAttributes([
+            .font : UIFont.Notos(.medium, size: 35),
+            .foregroundColor : UIColor.mainBlue
+        ], range: (text as NSString).range(of: text))
+        
+        attributedText.addAttributes([
+            .font : UIFont.Notos(.medium, size: 25),
+            .foregroundColor : UIColor.typoBlack,
+        ], range: (text as NSString).range(of: subText))
+        self.attributedText = attributedText
+    }
+
+    func makeConceptTestHeaderCellHightledText(all text: String,for subText: String, font: UIFont) {
+        let attributedText = NSMutableAttributedString(string: text)
+        attributedText.addAttributes([
+            .font :  UIFont.Notos(.medium, size: 25),
+            .foregroundColor : UIColor.mainBlue
+        ], range: (text as NSString).range(of: text))
+        
+        attributedText.addAttributes([
+            .font :  UIFont.Notos(.medium, size: 25),
+            .foregroundColor : UIColor.typoBlack,
         ], range: (text as NSString).range(of: subText))
         self.attributedText = attributedText
     }

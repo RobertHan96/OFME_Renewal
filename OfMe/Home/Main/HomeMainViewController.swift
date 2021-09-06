@@ -137,7 +137,8 @@ extension HomeMainViewController: TimeInfoCellDelegate, ConceptSugesstionCellDel
     }
     
     func conceptSugesstionButtonDidClicked() {
-        self.navigationController?.pushViewController(TestConceptMainViewController(), animated: true)
+//        self.navigationController?.pushViewController(TestConceptMainViewController(), animated: true)
+        self.navigationController?.pushViewController(SocialLoginViewController(), animated: true)
     }
     
     @objc func finishConceptButtonDidClicked() {
