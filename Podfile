@@ -20,6 +20,5 @@ target 'OfMe' do
   pod 'NVActivityIndicatorView'
   pod 'ImagePicker'
   pod 'SideMenu'
-  pod 'Instructions'
 
 end

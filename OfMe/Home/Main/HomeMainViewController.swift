@@ -5,7 +5,6 @@ import Instructions
 class HomeMainViewController: BaseViewController {
     @IBOutlet weak var homeMainTableView: UITableView!
     @IBOutlet weak var characterActionButton: UIButton!
-    private let coachMarksController = CoachMarksController()
     private var userConcept: HomeMainResult? { didSet {
         homeMainTableView.reloadData()
     }}
@@ -32,7 +31,6 @@ class HomeMainViewController: BaseViewController {
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
-        self.coachMarksController.stop(immediately: true)
     }
         
     @IBAction func characterActionsBtnClicked(_ sender: UIButton) {
@@ -50,7 +48,7 @@ class HomeMainViewController: BaseViewController {
         if isInit {
             HomeMainDataManager().getMainHomeData(actionIndex: Action.defaultActionIndexPath) { data in
                 self.userConcept = data
-                self.setCoachMark(isFirstCharacter: self.userConcept?.data?.isFirstMain?.getBoolFromOX)
+                self.setCoachmarkerView()
             }
             return
         }
@@ -59,18 +57,16 @@ class HomeMainViewController: BaseViewController {
         }
     }
     
-    private func setCoachMark(isFirstCharacter: Bool?) {
-        if isFirstCharacter ?? false {
-            self.coachMarksController.start(in: .window(over: self))
-        }
-    }
 
     private func setupUI() {
         setupTableView()
-        coachMarksController.overlay.backgroundColor = .clear
-        coachMarksController.overlay.blurEffectStyle = .none
-        coachMarksController.overlay.isUserInteractionEnabled = true
-        self.coachMarksController.dataSource = self
+    }
+    
+    private func setCoachmarkerView() {
+        if userConcept?.data?.isFirstMain?.getBoolFromOX == true {
+            let vc = CoachmarkerViewController(coachMarkCase: .mainFirst)
+            self.navigationController?.pushViewController(vc, animated: false)
+        }
     }
     
     private func setupTableView() {
@@ -137,9 +133,7 @@ extension HomeMainViewController: TimeInfoCellDelegate, ConceptSugesstionCellDel
     }
     
     func conceptSugesstionButtonDidClicked() {
-//        self.navigationController?.pushViewController(TestConceptMainViewController(), animated: true)
-        let vc = CoachmarkerViewController(coachMarkCase: .mainFirst)
-        self.navigationController?.pushViewController(vc, animated: false)
+        self.navigationController?.pushViewController(TestConceptMainViewController(), animated: true)
     }
     
     @objc func finishConceptButtonDidClicked() {
