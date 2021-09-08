@@ -84,15 +84,6 @@ class SocialLoginViewController: BaseViewController {
                 }
             }
         }
-//        UserApi.shared.accessTokenInfo {(accessTokenInfo, error) in
-//            if let error = error {
-//                print(error)
-//            }
-//            else {
-//                let tokeenInfo = accessTokenInfo
-//                print("LOGT:KAKAO", tokeenInfo)
-//            }
-//        }
     }
 
 }
@@ -101,12 +92,9 @@ class SocialLoginViewController: BaseViewController {
 extension SocialLoginViewController: ASAuthorizationControllerDelegate, ASAuthorizationControllerPresentationContextProviding {
     // Apple ID 연동 성공 시
     func authorizationController(controller: ASAuthorizationController, didCompleteWithAuthorization authorization: ASAuthorization) {
-        print("LOG")
-
         switch authorization.credential {
             case let appleIDCredential as ASAuthorizationAppleIDCredential:
                 let name = appleIDCredential.fullName?.description ?? ""
-                let accessToken = String(data: appleIDCredential.identityToken!, encoding: .ascii) ?? ""
                 let authToken = String(data: appleIDCredential.authorizationCode ?? Data(), encoding: .ascii) ?? ""
                 print("LOGT", authToken)
                 
