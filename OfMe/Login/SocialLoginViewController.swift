@@ -7,6 +7,8 @@
 
 import UIKit
 import AuthenticationServices
+import KakaoSDKAuth
+import KakaoSDKUser
 
 class SocialLoginViewController: BaseViewController {
     @IBOutlet weak var contentView: UIView!
@@ -43,15 +45,16 @@ class SocialLoginViewController: BaseViewController {
     }
     
     @IBAction func kakaoButtonDidClicked(_ sender: Any) {
-        navigationController?.pushViewController(MakeNicknameViewController(), animated: true)
+//        navigationController?.pushViewController(MakeNicknameViewController(), animated: true)
+        kakaoLogin()
     }
     
     
     @IBAction func appleLoginButtonDidClicked(_ sender: Any) {
-        tabAppleLogin()
+        appleLogin()
     }
     
-    func tabAppleLogin() {
+    private func appleLogin() {
         if #available(iOS 13.0, *) {
             let appleIDProvider = ASAuthorizationAppleIDProvider()
             let request = appleIDProvider.createRequest()
@@ -65,6 +68,22 @@ class SocialLoginViewController: BaseViewController {
             self.presentAlert(title: "애플 로그인은 iOS 13.0 이상부터 가능합니다.")
         }
     }
+    
+    private func kakaoLogin() {
+        UserApi.shared.me() {(user, error) in
+            if let error = error {
+                print(error)
+            }
+            else {
+                _ = user
+                if let nickname = user?.kakaoAccount?.profile?.nickname {
+                    if let url = user?.kakaoAccount?.profile?.profileImageUrl,
+                        let data = try? Data(contentsOf: url) {
+                    }
+                }
+            }
+        }
+    }
 
 }
 
@@ -72,13 +91,17 @@ class SocialLoginViewController: BaseViewController {
 extension SocialLoginViewController: ASAuthorizationControllerDelegate, ASAuthorizationControllerPresentationContextProviding {
     // Apple ID 연동 성공 시
     func authorizationController(controller: ASAuthorizationController, didCompleteWithAuthorization authorization: ASAuthorization) {
+        print("LOG")
+
         switch authorization.credential {
             case let appleIDCredential as ASAuthorizationAppleIDCredential:
                 let name = appleIDCredential.fullName?.description ?? ""
                 let accessToken = String(data: appleIDCredential.identityToken!, encoding: .ascii) ?? ""
+                let authToken = String(data: appleIDCredential.authorizationCode ?? Data(), encoding: .ascii) ?? ""
+                print("LOGT", authToken)
                 
-                LoginDataManager().postAppleLogin(token: accessToken, completion: { response in
-                    print("LOG", name, accessToken, response)
+                LoginDataManager().postAppleLogin(token: authToken, completion: { response in
+                    print("LOG", name, authToken, response)
                 })
         default:
             self.presentAlert(title: "로그인 에러 발생")

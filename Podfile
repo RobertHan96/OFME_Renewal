@@ -10,7 +10,9 @@ target 'OfMe' do
   pod 'Alamofire'
   pod 'Firebase/Analytics'
   pod 'Kingfisher'
+  pod 'KakaoSDK'
 
+  # 화면 관련 라이브러리
   pod 'SnapKit'
   pod 'Then'
   pod 'IQKeyboardManager'

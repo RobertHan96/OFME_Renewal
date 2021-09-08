@@ -42,13 +42,13 @@ class LoginDataManager: LoginDelegate {
     
     func postAppleLogin(token: String, completion: @escaping (response) -> Void) {
         let parameter: Parameters = ["code":token]
-        if let url = URL(string: URLString.login) {
+        if let url = URL(string: URLString.appleLogin) {
             AF.request(url, method: .post, parameters: parameter, encoding: JSONEncoding.default, headers: nil)
                 .validate()
                 .responseDecodable(of: LoginResponse.self) { response in
                     switch response.result {
                     case .success(let result):
-                        print(result)
+                        print("LOGT", url, token, parameter, result)
                         completion(result)
                     case .failure(let error):
                         print("login Error: \(error.errorDescription ?? "error")")
