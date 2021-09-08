@@ -137,7 +137,9 @@ extension HomeMainViewController: TimeInfoCellDelegate, ConceptSugesstionCellDel
     }
     
     func conceptSugesstionButtonDidClicked() {
-        self.navigationController?.pushViewController(TestConceptMainViewController(), animated: true)
+//        self.navigationController?.pushViewController(TestConceptMainViewController(), animated: true)
+        let vc = CoachmarkerViewController(coachMarkCase: .mainFirst)
+        self.navigationController?.pushViewController(vc, animated: false)
     }
     
     @objc func finishConceptButtonDidClicked() {
