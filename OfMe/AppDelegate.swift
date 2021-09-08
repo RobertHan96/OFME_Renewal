@@ -2,6 +2,7 @@ import UIKit
 import IQKeyboardManager
 import Firebase
 import FirebaseAnalytics
+import KakaoSDKCommon
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -14,6 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         IQKeyboardManager.shared().isEnabled = true
         FirebaseApp.configure()
         Analytics.logEvent("init", parameters: nil)
+        KakaoSDKCommon.initSDK(appKey: KobisKey.KAKAO_APP_KEY)
         
         return true
     }

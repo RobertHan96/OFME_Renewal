@@ -70,19 +70,29 @@ class SocialLoginViewController: BaseViewController {
     }
     
     private func kakaoLogin() {
-        UserApi.shared.me() {(user, error) in
-            if let error = error {
-                print(error)
-            }
-            else {
-                _ = user
-                if let nickname = user?.kakaoAccount?.profile?.nickname {
-                    if let url = user?.kakaoAccount?.profile?.profileImageUrl,
-                        let data = try? Data(contentsOf: url) {
-                    }
+        if (UserApi.isKakaoTalkLoginAvailable()) {
+            UserApi.shared.loginWithKakaoTalk {(oauthToken, error) in
+                if let error = error {
+                    print(error)
+                }
+                else {
+                    print("loginWithKakaoTalk() success.")
+
+                    //do something
+                    let token = oauthToken
+                    print("LOGT:KAKAO", token?.accessToken)
                 }
             }
         }
+//        UserApi.shared.accessTokenInfo {(accessTokenInfo, error) in
+//            if let error = error {
+//                print(error)
+//            }
+//            else {
+//                let tokeenInfo = accessTokenInfo
+//                print("LOGT:KAKAO", tokeenInfo)
+//            }
+//        }
     }
 
 }

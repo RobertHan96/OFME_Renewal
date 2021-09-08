@@ -6,17 +6,27 @@
 //
 
 import UIKit
-
+import KakaoSDKAuth
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     var window: UIWindow?
     let dataManager: AutoLoginDataManager = AutoLoginDataManager()
 
 
+    // 카카오 로그인
+    func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
+      if let url = URLContexts.first?.url {
+        if (AuthApi.isKakaoTalkLoginUrl(url)) {
+          _ = AuthController.handleOpenUrl(url: url)
+        }
+      }
+    }
+    
     func scene(_ scene: UIScene,
                willConnectTo session: UISceneSession,
                options connectionOptions: UIScene.ConnectionOptions) {
     
+        
         self.window = UIWindow(windowScene: scene as! UIWindowScene)
         dataManager.autoLogin { result in
             if result.code == 1000 {
