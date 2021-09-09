@@ -963,13 +963,13 @@
 			children = (
 				003FE37926E63F5800E00F8B /* SocialLoginViewController.xib */,
 				003FE37826E63F5800E00F8B /* SocialLoginViewController.swift */,
+				003FE37D26E6530D00E00F8B /* MakeNicknameViewController.xib */,
+				003FE37C26E6530D00E00F8B /* MakeNicknameViewController.swift */,
 				3B8392082689E12B00B35A53 /* LoginMainViewController.xib */,
 				3B8392072689E12B00B35A53 /* LoginMainViewController.swift */,
+				003FE38726EA24A200E00F8B /* SocialLoginManager.swift */,
 				3B9150112698C213004FE9C0 /* Network */,
 				3B83920F268A245300B35A53 /* SignIn */,
-				003FE37C26E6530D00E00F8B /* MakeNicknameViewController.swift */,
-				003FE37D26E6530D00E00F8B /* MakeNicknameViewController.xib */,
-				003FE38726EA24A200E00F8B /* SocialLoginManager.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";

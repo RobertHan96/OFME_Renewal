@@ -100,4 +100,5 @@ struct Strings {
     static let PatchFinishEndDataFaildAlert = "진행 중인 컨셉이 없습니다."
     static let userDefaultStageOneResult = "stageOneResult"
     static let userDefaultStageTwoResult = "stageTwoResult"
+    static let userDefaultDeviceJwtToken = "jwt"
 }

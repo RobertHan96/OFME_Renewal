@@ -46,7 +46,6 @@ class SocialLoginViewController: BaseViewController {
         socialLoginManager?.login()
     }
     
-    
     @IBAction func appleLoginButtonDidClicked(_ sender: Any) {
         socialLoginManager = SocialLoginManager(self, socialLoginType: .apple)
         socialLoginManager?.login()

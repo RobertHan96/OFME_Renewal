@@ -19,6 +19,11 @@ class LoginDataManager: LoginDelegate {
         3004 : "비밀번호가 올바르지 않습니다."
     ]
     
+    enum ResponseType: Int {
+        case signIn = 1001
+        case login = 1000
+    }
+
     func postLogin(vc: viewController, email: String, password: String, completion: @escaping (response) -> Void) {
         let parameter: Parameters = [
             param.email.rawValue : email,
@@ -48,7 +53,25 @@ class LoginDataManager: LoginDelegate {
                 .responseDecodable(of: SocialLoginResponse.self) { response in
                     switch response.result {
                     case .success(let result):
-                        print("LOGTTT", url, token, parameter, result)
+                        print("LOG: appleLoginSucess", url, token, parameter, result)
+                        completion(result)
+                    case .failure(let error):
+                        print("login Error: \(error.errorDescription ?? "error")", response )
+                        completion(SocialLoginResponse.error)
+                    }
+                }
+        }
+    }
+    
+    func postKakaoLogin(token: String, completion: @escaping (SocialLoginResponse) -> Void) {
+        let parameter: Parameters = ["accessToken":token]
+        if let url = URL(string: URLString.kakaoLogin) {
+            AF.request(url, method: .post, parameters: parameter, encoding: JSONEncoding.default, headers: nil)
+                .validate()
+                .responseDecodable(of: SocialLoginResponse.self) { response in
+                    switch response.result {
+                    case .success(let result):
+                        print("LOG: kakaoLoginSucess", url, token, parameter, result)
                         completion(result)
                     case .failure(let error):
                         print("login Error: \(error.errorDescription ?? "error")", response )

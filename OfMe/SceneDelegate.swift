@@ -31,12 +31,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         dataManager.autoLogin { result in
             if result.code == 1000 {
                 UserDefaults.standard.setValue(result.result?.jwt, forKey: "jwt")
-                UserDefaults.standard.setValue(result.result?.userId, forKey: "userID")
                 let mainVC = CustomTabBarViewController()
                 self.window?.rootViewController = mainVC
             } else {
-                let mainVC = LoginMainViewController()
-                let navigationController = UINavigationController(rootViewController: mainVC)
+//                let mainVC = LoginMainViewController()
+                let socialLoginVC = SocialLoginViewController()
+                let navigationController = UINavigationController(rootViewController: socialLoginVC)
                 self.window?.rootViewController = navigationController
             }
             self.window?.makeKeyAndVisible()

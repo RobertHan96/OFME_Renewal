@@ -12,7 +12,7 @@ class AutoLoginDataManager {
                 .responseDecodable(of: AutoLoginResponse.self) { response in
                     switch response.result {
                     case .success(let result):
-                        print(result)
+                        print("LOGT",result)
                         completion(result)
                     case .failure(let error):
                         print("Auto Login: \(error.errorDescription ?? "error")")

@@ -6,6 +6,7 @@ struct URLString {
     static let signIn = base + "/sign-up"
     static let login = base + "/login"
     static let appleLogin = base + "/login/apple"
+    static let kakaoLogin = base + "/login/kakao"
     static let autoLogIn = base + "/auto-login"
     static let cateogryType = base + "/types"
     static let getTest = base + "/types/test"
