@@ -77,7 +77,6 @@ PODS:
   - GoogleUtilities/UserDefaults (7.5.1):
     - GoogleUtilities/Logger
   - ImagePicker (3.2.0)
-  - Instructions (2.1.0)
   - IQKeyboardManager (6.5.6)
   - KakaoSDK (2.6.0):
     - KakaoSDKAuth (= 2.6.0)
@@ -121,6 +120,12 @@ PODS:
     - NVActivityIndicatorView/Base (= 5.1.1)
   - NVActivityIndicatorView/Base (5.1.1)
   - PromisesObjC (2.0.0)
+  - RxCocoa (6.2.0):
+    - RxRelay (= 6.2.0)
+    - RxSwift (= 6.2.0)
+  - RxRelay (6.2.0):
+    - RxSwift (= 6.2.0)
+  - RxSwift (6.2.0)
   - SideMenu (6.5.0)
   - SnapKit (5.0.1)
   - Then (2.7.0)
@@ -130,11 +135,12 @@ DEPENDENCIES:
   - Firebase/Analytics
   - FSCalendar
   - ImagePicker
-  - Instructions
   - IQKeyboardManager
   - KakaoSDK
   - Kingfisher
   - NVActivityIndicatorView
+  - RxCocoa (= 6.2.0)
+  - RxSwift (= 6.2.0)
   - SideMenu
   - SnapKit
   - Then
@@ -152,7 +158,6 @@ SPEC REPOS:
     - GoogleDataTransport
     - GoogleUtilities
     - ImagePicker
-    - Instructions
     - IQKeyboardManager
     - KakaoSDK
     - KakaoSDKAuth
@@ -167,6 +172,9 @@ SPEC REPOS:
     - nanopb
     - NVActivityIndicatorView
     - PromisesObjC
+    - RxCocoa
+    - RxRelay
+    - RxSwift
     - SideMenu
     - SnapKit
     - Then
@@ -183,7 +191,6 @@ SPEC CHECKSUMS:
   GoogleDataTransport: 85fd18ff3019bb85d3f2c551d04c481dedf71fc9
   GoogleUtilities: 3df19e3c24f7bbc291d8b5809aa6b0d41e642437
   ImagePicker: 1d950bbb2422548ed58791b4ec7f42fe42920511
-  Instructions: 2465e321dde23f7c8fc26fe8efddf605df80dfba
   IQKeyboardManager: 2a6e97afdafc7becf0cb17a9a8d795e3a980717f
   KakaoSDK: fa00ea44415f172721d7469388c04db8912330cd
   KakaoSDKAuth: 037e6260f4468cbc3bde89a802864d6b58c5271c
@@ -198,10 +205,13 @@ SPEC CHECKSUMS:
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
   NVActivityIndicatorView: 1f6c5687f1171810aa27a3296814dc2d7dec3667
   PromisesObjC: 68159ce6952d93e17b2dfe273b8c40907db5ba58
+  RxCocoa: 4baf94bb35f2c0ab31bc0cb9f1900155f646ba42
+  RxRelay: e72dbfd157807478401ef1982e1c61c945c94b2f
+  RxSwift: d356ab7bee873611322f134c5f9ef379fa183d8f
   SideMenu: f583187d21c5b1dd04c72002be544b555a2627a2
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   Then: acfe0be7e98221c6204e12f8161459606d5d822d
 
-PODFILE CHECKSUM: 072c44535a62af832b07d935b3f934cd6d98ba73
+PODFILE CHECKSUM: 317e3c9189149a0ed0cd223c42135eb0408794f6
 
 COCOAPODS: 1.10.0
