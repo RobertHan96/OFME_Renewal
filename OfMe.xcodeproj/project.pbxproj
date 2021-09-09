@@ -34,6 +34,7 @@
 		003FE37B26E63F5800E00F8B /* SocialLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 003FE37926E63F5800E00F8B /* SocialLoginViewController.xib */; };
 		003FE37E26E6530D00E00F8B /* MakeNicknameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003FE37C26E6530D00E00F8B /* MakeNicknameViewController.swift */; };
 		003FE37F26E6530D00E00F8B /* MakeNicknameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 003FE37D26E6530D00E00F8B /* MakeNicknameViewController.xib */; };
+		003FE38826EA24A200E00F8B /* SocialLoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003FE38726EA24A200E00F8B /* SocialLoginManager.swift */; };
 		00CE4F4926D9F42000EE352C /* MainHomeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CE4F4826D9F42000EE352C /* MainHomeResponse.swift */; };
 		00EAF4BE26D53EFD005DBDB8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 00EAF4BD26D53EFD005DBDB8 /* GoogleService-Info.plist */; };
 		00EAF4C026D544FB005DBDB8 /* CellManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EAF4BF26D544FB005DBDB8 /* CellManager.swift */; };
@@ -236,6 +237,7 @@
 		003FE37C26E6530D00E00F8B /* MakeNicknameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeNicknameViewController.swift; sourceTree = "<group>"; };
 		003FE37D26E6530D00E00F8B /* MakeNicknameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MakeNicknameViewController.xib; sourceTree = "<group>"; };
 		003FE38126E65D6300E00F8B /* OfMe.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OfMe.entitlements; sourceTree = "<group>"; };
+		003FE38726EA24A200E00F8B /* SocialLoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialLoginManager.swift; sourceTree = "<group>"; };
 		00CE4F4826D9F42000EE352C /* MainHomeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHomeResponse.swift; sourceTree = "<group>"; };
 		00EAF4BD26D53EFD005DBDB8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		00EAF4BF26D544FB005DBDB8 /* CellManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellManager.swift; sourceTree = "<group>"; };
@@ -967,6 +969,7 @@
 				3B83920F268A245300B35A53 /* SignIn */,
 				003FE37C26E6530D00E00F8B /* MakeNicknameViewController.swift */,
 				003FE37D26E6530D00E00F8B /* MakeNicknameViewController.xib */,
+				003FE38726EA24A200E00F8B /* SocialLoginManager.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -1705,6 +1708,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				003FE38826EA24A200E00F8B /* SocialLoginManager.swift in Sources */,
 				0020E96926DE754300CA4882 /* ActionButtonCell.swift in Sources */,
 				3B3EC6AB26B3F85C0063F3EA /* QuestionGetResponse.swift in Sources */,
 				3B38D01E269E244B00870EB5 /* MainPicker.swift in Sources */,
