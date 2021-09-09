@@ -35,6 +35,8 @@
 		003FE37E26E6530D00E00F8B /* MakeNicknameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003FE37C26E6530D00E00F8B /* MakeNicknameViewController.swift */; };
 		003FE37F26E6530D00E00F8B /* MakeNicknameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 003FE37D26E6530D00E00F8B /* MakeNicknameViewController.xib */; };
 		003FE38826EA24A200E00F8B /* SocialLoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003FE38726EA24A200E00F8B /* SocialLoginManager.swift */; };
+		003FE38A26EA4AF200E00F8B /* NicknameDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003FE38926EA4AF200E00F8B /* NicknameDataManager.swift */; };
+		003FE38C26EA4B7A00E00F8B /* NicknameResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003FE38B26EA4B7A00E00F8B /* NicknameResponse.swift */; };
 		00CE4F4926D9F42000EE352C /* MainHomeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CE4F4826D9F42000EE352C /* MainHomeResponse.swift */; };
 		00EAF4BE26D53EFD005DBDB8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 00EAF4BD26D53EFD005DBDB8 /* GoogleService-Info.plist */; };
 		00EAF4C026D544FB005DBDB8 /* CellManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EAF4BF26D544FB005DBDB8 /* CellManager.swift */; };
@@ -238,6 +240,8 @@
 		003FE37D26E6530D00E00F8B /* MakeNicknameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MakeNicknameViewController.xib; sourceTree = "<group>"; };
 		003FE38126E65D6300E00F8B /* OfMe.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OfMe.entitlements; sourceTree = "<group>"; };
 		003FE38726EA24A200E00F8B /* SocialLoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialLoginManager.swift; sourceTree = "<group>"; };
+		003FE38926EA4AF200E00F8B /* NicknameDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicknameDataManager.swift; sourceTree = "<group>"; };
+		003FE38B26EA4B7A00E00F8B /* NicknameResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicknameResponse.swift; sourceTree = "<group>"; };
 		00CE4F4826D9F42000EE352C /* MainHomeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHomeResponse.swift; sourceTree = "<group>"; };
 		00EAF4BD26D53EFD005DBDB8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		00EAF4BF26D544FB005DBDB8 /* CellManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellManager.swift; sourceTree = "<group>"; };
@@ -1213,6 +1217,7 @@
 			children = (
 				3BD6A01B269DDCAE00F7E3AF /* AutoLoginResponse.swift */,
 				3B91500626985481004FE9C0 /* LoginResponse.swift */,
+				003FE38B26EA4B7A00E00F8B /* NicknameResponse.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -1230,6 +1235,7 @@
 			children = (
 				3BD6A01E269DDD0F00F7E3AF /* AutoLoginDataManager.swift */,
 				3B9150172698C240004FE9C0 /* LoginDataManager.swift */,
+				003FE38926EA4AF200E00F8B /* NicknameDataManager.swift */,
 			);
 			path = DataManager;
 			sourceTree = "<group>";
@@ -1745,6 +1751,7 @@
 				3BD7007E26A5CB4C0055AF8A /* QuestionWriteViewController.swift in Sources */,
 				3BD6A042269DFC7100F7E3AF /* TestConceptSecondResponse.swift in Sources */,
 				3BD6A02C269DEBF400F7E3AF /* TestMyResultResponse.swift in Sources */,
+				003FE38A26EA4AF200E00F8B /* NicknameDataManager.swift in Sources */,
 				3B8391E22689D98000B35A53 /* UIImage.swift in Sources */,
 				00F12D1726D1529B0055BC5F /* TimeInfoCell.swift in Sources */,
 				3B915010269877EF004FE9C0 /* URLString.swift in Sources */,
@@ -1772,6 +1779,7 @@
 				3B1943F926AB05610014558F /* FixPasswordViewController.swift in Sources */,
 				3B2BAF2C268B5E9200CF3048 /* CustomTabBarViewController.swift in Sources */,
 				3B8391E72689D98000B35A53 /* UILabel.swift in Sources */,
+				003FE38C26EA4B7A00E00F8B /* NicknameResponse.swift in Sources */,
 				3B753D2B26B5367100A941AA /* InfoWriteDataManager.swift in Sources */,
 				3B28D309268E34C9005BCDE8 /* DummyString.swift in Sources */,
 				3B9150182698C240004FE9C0 /* LoginDataManager.swift in Sources */,

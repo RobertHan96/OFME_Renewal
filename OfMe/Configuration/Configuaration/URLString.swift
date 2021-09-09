@@ -8,6 +8,8 @@ struct URLString {
     static let appleLogin = base + "/login/apple"
     static let kakaoLogin = base + "/login/kakao"
     static let autoLogIn = base + "/auto-login"
+    static let duplecatedNickname = base + "/login/nickname"
+    static let makeNickname = base + "/login/nickname"
     static let cateogryType = base + "/types"
     static let getTest = base + "/types/test"
     
