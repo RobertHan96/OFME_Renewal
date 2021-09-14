@@ -90,8 +90,8 @@ extension SocialLoginManager: ASAuthorizationControllerDelegate, ASAuthorization
         switch authorization.credential {
             case let appleIDCredential as ASAuthorizationAppleIDCredential:
                 let authToken = String(data: appleIDCredential.authorizationCode ?? Data(), encoding: .ascii) ?? ""
-                
                 LoginDataManager().postAppleLogin(token: authToken, completion: { response in
+                    print("LOG", response)
                     self.fetchView(response: response)
                 })
         default:

@@ -28,21 +28,24 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
         
         self.window = UIWindow(windowScene: scene as! UIWindowScene)
-        dataManager.autoLogin { result in
-            if result.code == 1000 {
-                UserDefaults.standard.setValue(result.result?.jwt, forKey: "jwt")
-                let mainVC = CustomTabBarViewController()
-                self.window?.rootViewController = mainVC
-            } else {
-//                let mainVC = LoginMainViewController()
-                let socialLoginVC = SocialLoginViewController()
-                let navigationController = UINavigationController(rootViewController: socialLoginVC)
-                self.window?.rootViewController = navigationController
-            }
-            self.window?.makeKeyAndVisible()
-        }
-        
+        let socialLoginVC = SocialLoginViewController()
+        let navigationController = UINavigationController(rootViewController: socialLoginVC)
+        self.window?.rootViewController = navigationController
+
+        //        dataManager.autoLogin { result in
+//            if result.code == 1000 {
+//                UserDefaults.standard.setValue(result.result?.jwt, forKey: "jwt")
+//                let mainVC = CustomTabBarViewController()
+//                self.window?.rootViewController = mainVC
+//            } else {
+////                let mainVC = LoginMainViewController()
+//                let socialLoginVC = SocialLoginViewController()
+//                let navigationController = UINavigationController(rootViewController: socialLoginVC)
+//                self.window?.rootViewController = navigationController
+//            }
+        self.window?.makeKeyAndVisible()
     }
+        
 
     func sceneDidDisconnect(_ scene: UIScene) {
 

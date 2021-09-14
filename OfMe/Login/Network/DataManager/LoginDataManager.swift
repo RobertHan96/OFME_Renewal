@@ -40,8 +40,8 @@ class LoginDataManager: LoginDelegate {
                     case .failure(let error):
                         print("login Error: \(error.errorDescription ?? "error")")
                         completion(LoginResponse.error)
-                    }
                 }
+            }
         }
     }
     
@@ -56,10 +56,10 @@ class LoginDataManager: LoginDelegate {
                         print("LOG: appleLoginSucess", url, token, parameter, result)
                         completion(result)
                     case .failure(let error):
-                        print("login Error: \(error.errorDescription ?? "error")", response )
+                        print("login Error: \(error.errorDescription ?? "error")", response, token )
                         completion(SocialLoginResponse.error)
-                    }
                 }
+            }
         }
     }
     
@@ -74,7 +74,7 @@ class LoginDataManager: LoginDelegate {
                         print("LOG: kakaoLoginSucess", url, token, parameter, result)
                         completion(result)
                     case .failure(let error):
-                        print("login Error: \(error.errorDescription ?? "error")", response )
+                        print("login Error: \(error.errorDescription ?? "error")", response, token)
                         completion(SocialLoginResponse.error)
                     }
                 }
