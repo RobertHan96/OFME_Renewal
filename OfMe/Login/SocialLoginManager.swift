@@ -1,10 +1,9 @@
-//
+
 //  SocialLoginManager.swift
 //  OfMe
 //
 //  Created by HanaHan on 2021/09/09.
 //
-
 import Foundation
 import UIKit
 import AuthenticationServices

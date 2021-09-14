@@ -40,3 +40,10 @@ class NicknameDataManager {
         }
     }
 }
+
+
+struct NicknameResponse: Codable {
+    var isSuccess: Bool
+    var code: Int
+    var message: String
+}

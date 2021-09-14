@@ -36,3 +36,15 @@ struct Device {
     }
 }
 
+func hasAppBeenLaunchedBefore() -> Bool {
+      let defaults = UserDefaults.standard
+      if let hasAppBeenLaunchedBefore = defaults.string(forKey: "hasAppBeenLaunchedBefore") {
+          print("App has been launched before. \(hasAppBeenLaunchedBefore)")
+          return true
+      }
+      else{
+          defaults.set(true, forKey: "hasAppBeenLaunchedBefore")
+          print("App is launched first time")
+          return false
+      }
+}

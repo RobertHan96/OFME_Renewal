@@ -3,6 +3,7 @@ import UIKit
 class TestResultViewController: BaseViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var confrimConceptButton: UIButton!
+    var coachmarkCount: Int = 0 // 코치마크를 1번만 보여주게 하기 위한 카운트 변수
     var testResult: TestMyResult? {
         didSet {
             tableView.reloadData()
@@ -12,6 +13,11 @@ class TestResultViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        fetchData()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         fetchData()
     }
     
@@ -31,10 +37,11 @@ class TestResultViewController: BaseViewController {
     private func fetchData() {
         let firstAnswerIdx = UserDefaults().integer(forKey: Strings.userDefaultStageOneResult)
         let secondAnswerIdx = UserDefaults().integer(forKey: Strings.userDefaultStageTwoResult)
-        print("LOG")
         TestMyResultDataManager().getResult(firstAnswer: firstAnswerIdx, secondAnswer: secondAnswerIdx) { data in
             self.testResult = data
-            print("LOG", data)
+            if self.testResult != nil {
+                self.setCoachmarkerView()
+            }
         }
     }
     
@@ -42,15 +49,23 @@ class TestResultViewController: BaseViewController {
         guard let id = testResult?.id else { return }
         TestMyResultDataManager().confrimTestResult(conceptId: id) { resultCode in
             if resultCode == 1000 { // 메인으로 이동안되는 오류 수정 필요
-                let vc = HomeMainViewController()
                 self.navigationController?.popToRootViewController(animated: true)
-//                UIApplication.shared.keyWindow?.replaceRootViewController(vc, animated: true, completion: nil)
+                
                 return
             }
-            print("LOG:", resultCode)
+            self.presentAlert(title: "네트워크 오류로 정보를 불러오지 못했습니다.\n 코드 : \(resultCode)")
         }
     }
     
+    private func setCoachmarkerView() {
+        if hasAppBeenLaunchedBefore() == false && coachmarkCount == 0 {
+            let vc = CoachmarkerViewController(coachMarkCase: .testResultFirst)
+            self.navigationController?.pushViewController(vc, animated: false)
+        } else {
+            print("LOG: 이전에 앱 실행 경험 있음, 코치마크 튜토리얼 생략")
+        }
+    }
+
     @IBAction func confrimConcept(_ sender: UIButton) {
         confirmConcept()
     }
