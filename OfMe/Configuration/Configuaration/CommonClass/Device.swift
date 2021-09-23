@@ -34,6 +34,14 @@ struct Device {
     static var bottomInset: CGFloat {
         return UIApplication.shared.windows.first?.safeAreaInsets.bottom ?? 0
     }
+    
+    func getTokenInfo() -> String {
+        let jwt = UserDefaults.standard.string(forKey: Strings.userDefaultDeviceJwtToken)
+        print("LOG:토큰정보 -", jwt)
+        
+        return jwt ?? ""
+    }
+
 }
 
 func hasAppBeenLaunchedBefore() -> Bool {

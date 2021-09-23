@@ -64,6 +64,7 @@ extension UIColor {
 
     // 로그인에서 쓰는 색상들
     class var nicknameTextFieldColor: UIColor { UIColor(hex: 0xF7F7F8) }
+    class var nicknameDuplecatedWaringColor: UIColor { UIColor(hex: 0xF8522D) }
     
 }
 

@@ -68,7 +68,7 @@ extension InfoDetailViewController: UICollectionViewDelegate, UICollectionViewDe
         case 2:
             dataManager.logout { result in
                 if result == 1000 {
-                    let vc = UINavigationController(rootViewController: LoginMainViewController())
+                    let vc = UINavigationController(rootViewController: SocialLoginViewController())
                     self.navigationController?.changeRootViewController(vc)
                 }
             }

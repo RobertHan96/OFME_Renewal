@@ -74,6 +74,7 @@ class SocialLoginManager: NSObject {
                 self.viewController.presentAlert(title: "로그인 에러 발생\n\(response.code)")
             }
         }
+        
     }
 
     enum SocialLoginType {

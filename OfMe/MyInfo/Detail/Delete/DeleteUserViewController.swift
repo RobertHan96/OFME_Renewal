@@ -15,7 +15,7 @@ class DeleteUserViewController: BaseViewController {
             if $0 == 1000 {
                 UserDefaults.standard.removeObject(forKey: "jwt")
                 UserDefaults.standard.removeObject(forKey: "userID")
-                let root = UINavigationController(rootViewController: LoginMainViewController())
+                let root = UINavigationController(rootViewController: SocialLoginViewController())
                 self.changeRootViewController(root)
             }
         }

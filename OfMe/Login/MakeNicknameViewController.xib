@@ -19,6 +19,7 @@
                 <outlet property="checkDuplecatedNicknameButton" destination="j1B-RV-Clq" id="c1Y-r8-ADF"/>
                 <outlet property="clearTextButton" destination="GyF-Ho-TTw" id="YEA-am-K58"/>
                 <outlet property="nextButton" destination="hpJ-9X-28j" id="HSX-mx-88y"/>
+                <outlet property="nicknameStatusLabel" destination="Elx-N5-GdZ" id="hJV-vw-vDA"/>
                 <outlet property="nicknameTextFeild" destination="oGI-kq-jrL" id="oaZ-CC-2g9"/>
                 <outlet property="titleLabel" destination="fm5-Yj-fGt" id="WbR-MU-Pk2"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -98,17 +99,26 @@
                         <action selector="checkDuplecatedNicknameButtonDidClicked:" destination="-1" eventType="touchUpInside" id="aRb-5N-JQB"/>
                     </connections>
                 </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Elx-N5-GdZ">
+                    <rect key="frame" x="30" y="313.5" width="31" height="17.5"/>
+                    <fontDescription key="fontDescription" name="NotoSansKR-Regular" family="Noto Sans KR" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="fm5-Yj-fGt" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="127" id="07H-aT-TQ9"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Elx-N5-GdZ" secondAttribute="trailing" constant="10" id="81j-hh-8Ef"/>
                 <constraint firstItem="fm5-Yj-fGt" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="CEA-hN-mRQ"/>
                 <constraint firstItem="hpJ-9X-28j" firstAttribute="leading" secondItem="oGI-kq-jrL" secondAttribute="leading" id="KUQ-JA-1TI"/>
                 <constraint firstItem="oGI-kq-jrL" firstAttribute="top" secondItem="fm5-Yj-fGt" secondAttribute="bottom" constant="50" id="ORC-3G-1tU"/>
+                <constraint firstItem="Elx-N5-GdZ" firstAttribute="leading" secondItem="oGI-kq-jrL" secondAttribute="leading" id="aRh-mC-xPz"/>
                 <constraint firstItem="GyF-Ho-TTw" firstAttribute="centerY" secondItem="oGI-kq-jrL" secondAttribute="centerY" id="erG-uY-VJE"/>
                 <constraint firstItem="GyF-Ho-TTw" firstAttribute="leading" secondItem="j1B-RV-Clq" secondAttribute="trailing" constant="10" id="fmK-Ds-8F0"/>
                 <constraint firstItem="j1B-RV-Clq" firstAttribute="centerY" secondItem="oGI-kq-jrL" secondAttribute="centerY" id="mtE-NU-E2e"/>
+                <constraint firstItem="Elx-N5-GdZ" firstAttribute="top" secondItem="oGI-kq-jrL" secondAttribute="bottom" constant="4" id="n7l-rL-lIZ"/>
                 <constraint firstItem="oGI-kq-jrL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="oKt-Dc-G2m"/>
                 <constraint firstItem="GyF-Ho-TTw" firstAttribute="trailing" secondItem="oGI-kq-jrL" secondAttribute="trailing" constant="-20" id="oNY-ng-u7R"/>
                 <constraint firstItem="hpJ-9X-28j" firstAttribute="top" secondItem="oGI-kq-jrL" secondAttribute="bottom" constant="40" id="rDB-Aj-cBp"/>

@@ -25,24 +25,17 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene,
                willConnectTo session: UISceneSession,
                options connectionOptions: UIScene.ConnectionOptions) {
-    
-        
+            
         self.window = UIWindow(windowScene: scene as! UIWindowScene)
-        let socialLoginVC = SocialLoginViewController()
-        let navigationController = UINavigationController(rootViewController: socialLoginVC)
-        self.window?.rootViewController = navigationController
-
-        //        dataManager.autoLogin { result in
-//            if result.code == 1000 {
-//                UserDefaults.standard.setValue(result.result?.jwt, forKey: "jwt")
-//                let mainVC = CustomTabBarViewController()
-//                self.window?.rootViewController = mainVC
-//            } else {
-////                let mainVC = LoginMainViewController()
-//                let socialLoginVC = SocialLoginViewController()
-//                let navigationController = UINavigationController(rootViewController: socialLoginVC)
-//                self.window?.rootViewController = navigationController
-//            }
+    
+        dataManager.autoLogin { result in
+            if result.code == 1000 {
+                self.window?.rootViewController = CustomTabBarViewController()
+            } else {
+                let navigationController = UINavigationController(rootViewController: SocialLoginViewController())
+                self.window?.rootViewController = navigationController
+            }
+            
         self.window?.makeKeyAndVisible()
     }
         
@@ -75,3 +68,4 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 }
 
+}

@@ -38,6 +38,7 @@
 		003FE38526E8FB3B00E00F8B /* CoachmarkerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 003FE38326E8FB3B00E00F8B /* CoachmarkerViewController.xib */; };
 		003FE38E26F0DEBB00E00F8B /* SocialLoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003FE38D26F0DEBB00E00F8B /* SocialLoginManager.swift */; };
 		003FE39026F0DEF300E00F8B /* NicknameDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003FE38F26F0DEF300E00F8B /* NicknameDataManager.swift */; };
+		003FE39226FCDC2300E00F8B /* LoginDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003FE39126FCDC2300E00F8B /* LoginDataManager.swift */; };
 		00CE4F4926D9F42000EE352C /* MainHomeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CE4F4826D9F42000EE352C /* MainHomeResponse.swift */; };
 		00EAF4BE26D53EFD005DBDB8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 00EAF4BD26D53EFD005DBDB8 /* GoogleService-Info.plist */; };
 		00EAF4C026D544FB005DBDB8 /* CellManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EAF4BF26D544FB005DBDB8 /* CellManager.swift */; };
@@ -97,7 +98,6 @@
 		3B5EB1A126AB08FD00E41D24 /* LogoutResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5EB1A026AB08FD00E41D24 /* LogoutResponse.swift */; };
 		3B5EB1A326ABE53900E41D24 /* WriteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5EB1A226ABE53900E41D24 /* WriteDataManager.swift */; };
 		3B5EB1A526ABE5FC00E41D24 /* WriteConceptResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5EB1A426ABE5FC00E41D24 /* WriteConceptResponse.swift */; };
-		3B638FB7268A44430095F05B /* SignInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B638FB6268A44430095F05B /* SignInfo.swift */; };
 		3B638FBF268B0FC40095F05B /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B638FBE268B0FC40095F05B /* CustomTabBar.swift */; };
 		3B638FC9268B485B0095F05B /* HomeMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B638FC7268B485B0095F05B /* HomeMainViewController.swift */; };
 		3B638FCA268B485B0095F05B /* HomeMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B638FC8268B485B0095F05B /* HomeMainViewController.xib */; };
@@ -136,12 +136,9 @@
 		3B8391E92689D98000B35A53 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8391C62689D97F00B35A53 /* Color.swift */; };
 		3B8391EB2689D98000B35A53 /* KobisKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8391C92689D97F00B35A53 /* KobisKey.swift */; };
 		3B8391F82689D98000B35A53 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8391D92689D98000B35A53 /* BaseViewController.swift */; };
-		3B8392092689E12B00B35A53 /* LoginMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8392072689E12B00B35A53 /* LoginMainViewController.swift */; };
 		3B83920A2689E12B00B35A53 /* LoginMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B8392082689E12B00B35A53 /* LoginMainViewController.xib */; };
 		3B83920C2689E49F00B35A53 /* ImageConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B83920B2689E49F00B35A53 /* ImageConstant.swift */; };
 		3B83920E2689E8A500B35A53 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B83920D2689E8A500B35A53 /* UITextField.swift */; };
-		3B839212268A246A00B35A53 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B839210268A246A00B35A53 /* SignInViewController.swift */; };
-		3B839213268A246A00B35A53 /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B839211268A246A00B35A53 /* SignInViewController.xib */; };
 		3B8C37F826AD39E400CD893A /* SubAllDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8C37F726AD39E400CD893A /* SubAllDataManager.swift */; };
 		3B8C37FA26AD3A0500CD893A /* SubAllQuestionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8C37F926AD3A0500CD893A /* SubAllQuestionResponse.swift */; };
 		3B8C37FE26AD400100CD893A /* QuestionAllDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8C37FD26AD400100CD893A /* QuestionAllDataManager.swift */; };
@@ -153,12 +150,7 @@
 		3B8CF34526A4187300A6B627 /* DirayGetResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8CF34426A4187300A6B627 /* DirayGetResponse.swift */; };
 		3B8CF34726A421E500A6B627 /* DiaryDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8CF34626A421E500A6B627 /* DiaryDataManager.swift */; };
 		3B91500726985481004FE9C0 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B91500626985481004FE9C0 /* LoginResponse.swift */; };
-		3B91500A269855AD004FE9C0 /* SignInResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B915009269855AD004FE9C0 /* SignInResponse.swift */; };
-		3B91500C26986C17004FE9C0 /* SignInProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B91500B26986C17004FE9C0 /* SignInProtocol.swift */; };
-		3B91500E269871AD004FE9C0 /* SignInDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B91500D269871AD004FE9C0 /* SignInDataManager.swift */; };
 		3B915010269877EF004FE9C0 /* URLString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B91500F269877EF004FE9C0 /* URLString.swift */; };
-		3B9150162698C237004FE9C0 /* LoginDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9150152698C237004FE9C0 /* LoginDelegate.swift */; };
-		3B9150182698C240004FE9C0 /* LoginDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9150172698C240004FE9C0 /* LoginDataManager.swift */; };
 		3B91501A2698C8D6004FE9C0 /* LoginBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9150192698C8D6004FE9C0 /* LoginBaseViewController.swift */; };
 		3B9663FC26A1E46E00DE5DB3 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9663FA26A1E46E00DE5DB3 /* QuestionViewController.swift */; };
 		3B9663FD26A1E46E00DE5DB3 /* QuestionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B9663FB26A1E46E00DE5DB3 /* QuestionViewController.xib */; };
@@ -244,6 +236,7 @@
 		003FE38326E8FB3B00E00F8B /* CoachmarkerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoachmarkerViewController.xib; sourceTree = "<group>"; };
 		003FE38D26F0DEBB00E00F8B /* SocialLoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialLoginManager.swift; sourceTree = "<group>"; };
 		003FE38F26F0DEF300E00F8B /* NicknameDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicknameDataManager.swift; sourceTree = "<group>"; };
+		003FE39126FCDC2300E00F8B /* LoginDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDataManager.swift; sourceTree = "<group>"; };
 		00CE4F4826D9F42000EE352C /* MainHomeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHomeResponse.swift; sourceTree = "<group>"; };
 		00EAF4BD26D53EFD005DBDB8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		00EAF4BF26D544FB005DBDB8 /* CellManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellManager.swift; sourceTree = "<group>"; };
@@ -307,7 +300,6 @@
 		3B5EB1A026AB08FD00E41D24 /* LogoutResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutResponse.swift; sourceTree = "<group>"; };
 		3B5EB1A226ABE53900E41D24 /* WriteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteDataManager.swift; sourceTree = "<group>"; };
 		3B5EB1A426ABE5FC00E41D24 /* WriteConceptResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteConceptResponse.swift; sourceTree = "<group>"; };
-		3B638FB6268A44430095F05B /* SignInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInfo.swift; sourceTree = "<group>"; };
 		3B638FBE268B0FC40095F05B /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
 		3B638FC7268B485B0095F05B /* HomeMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMainViewController.swift; sourceTree = "<group>"; };
 		3B638FC8268B485B0095F05B /* HomeMainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeMainViewController.xib; sourceTree = "<group>"; };
@@ -352,12 +344,9 @@
 		3B8391FD2689DFE000B35A53 /* NotoSansKR-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Regular.otf"; sourceTree = "<group>"; };
 		3B8391FE2689DFE000B35A53 /* NotoSansKR-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Bold.otf"; sourceTree = "<group>"; };
 		3B8391FF2689DFE000B35A53 /* NotoSansKR-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Black.otf"; sourceTree = "<group>"; };
-		3B8392072689E12B00B35A53 /* LoginMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginMainViewController.swift; sourceTree = "<group>"; };
 		3B8392082689E12B00B35A53 /* LoginMainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginMainViewController.xib; sourceTree = "<group>"; };
 		3B83920B2689E49F00B35A53 /* ImageConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageConstant.swift; sourceTree = "<group>"; };
 		3B83920D2689E8A500B35A53 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
-		3B839210268A246A00B35A53 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
-		3B839211268A246A00B35A53 /* SignInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
 		3B8C37F726AD39E400CD893A /* SubAllDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubAllDataManager.swift; sourceTree = "<group>"; };
 		3B8C37F926AD3A0500CD893A /* SubAllQuestionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubAllQuestionResponse.swift; sourceTree = "<group>"; };
 		3B8C37FD26AD400100CD893A /* QuestionAllDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionAllDataManager.swift; sourceTree = "<group>"; };
@@ -369,12 +358,7 @@
 		3B8CF34426A4187300A6B627 /* DirayGetResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirayGetResponse.swift; sourceTree = "<group>"; };
 		3B8CF34626A421E500A6B627 /* DiaryDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryDataManager.swift; sourceTree = "<group>"; };
 		3B91500626985481004FE9C0 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
-		3B915009269855AD004FE9C0 /* SignInResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInResponse.swift; sourceTree = "<group>"; };
-		3B91500B26986C17004FE9C0 /* SignInProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInProtocol.swift; sourceTree = "<group>"; };
-		3B91500D269871AD004FE9C0 /* SignInDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInDataManager.swift; sourceTree = "<group>"; };
 		3B91500F269877EF004FE9C0 /* URLString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLString.swift; sourceTree = "<group>"; };
-		3B9150152698C237004FE9C0 /* LoginDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDelegate.swift; sourceTree = "<group>"; };
-		3B9150172698C240004FE9C0 /* LoginDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDataManager.swift; sourceTree = "<group>"; };
 		3B9150192698C8D6004FE9C0 /* LoginBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginBaseViewController.swift; sourceTree = "<group>"; };
 		3B9663FA26A1E46E00DE5DB3 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		3B9663FB26A1E46E00DE5DB3 /* QuestionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionViewController.xib; sourceTree = "<group>"; };
@@ -820,14 +804,6 @@
 			path = DataManager;
 			sourceTree = "<group>";
 		};
-		3B638FB5268A44340095F05B /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				3B638FB6268A44430095F05B /* SignInfo.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		3B638FB8268B0E170095F05B /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -982,10 +958,8 @@
 				003FE37D26E6530D00E00F8B /* MakeNicknameViewController.xib */,
 				003FE37C26E6530D00E00F8B /* MakeNicknameViewController.swift */,
 				3B8392082689E12B00B35A53 /* LoginMainViewController.xib */,
-				3B8392072689E12B00B35A53 /* LoginMainViewController.swift */,
 				003FE38D26F0DEBB00E00F8B /* SocialLoginManager.swift */,
 				3B9150112698C213004FE9C0 /* Network */,
-				3B83920F268A245300B35A53 /* SignIn */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -1071,17 +1045,6 @@
 				3B9150192698C8D6004FE9C0 /* LoginBaseViewController.swift */,
 			);
 			path = Base;
-			sourceTree = "<group>";
-		};
-		3B83920F268A245300B35A53 /* SignIn */ = {
-			isa = PBXGroup;
-			children = (
-				3B91500226985436004FE9C0 /* Network */,
-				3B638FB5268A44340095F05B /* Model */,
-				3B839210268A246A00B35A53 /* SignInViewController.swift */,
-				3B839211268A246A00B35A53 /* SignInViewController.xib */,
-			);
-			path = SignIn;
 			sourceTree = "<group>";
 		};
 		3B8C37F426AD394B00CD893A /* Network */ = {
@@ -1180,45 +1143,10 @@
 			path = All;
 			sourceTree = "<group>";
 		};
-		3B91500226985436004FE9C0 /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				3B9150052698546B004FE9C0 /* Data */,
-				3B91500426985452004FE9C0 /* Protocol */,
-				3B9150032698544B004FE9C0 /* DataManager */,
-			);
-			path = Network;
-			sourceTree = "<group>";
-		};
-		3B9150032698544B004FE9C0 /* DataManager */ = {
-			isa = PBXGroup;
-			children = (
-				3B91500D269871AD004FE9C0 /* SignInDataManager.swift */,
-			);
-			path = DataManager;
-			sourceTree = "<group>";
-		};
-		3B91500426985452004FE9C0 /* Protocol */ = {
-			isa = PBXGroup;
-			children = (
-				3B91500B26986C17004FE9C0 /* SignInProtocol.swift */,
-			);
-			path = Protocol;
-			sourceTree = "<group>";
-		};
-		3B9150052698546B004FE9C0 /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				3B915009269855AD004FE9C0 /* SignInResponse.swift */,
-			);
-			path = Data;
-			sourceTree = "<group>";
-		};
 		3B9150112698C213004FE9C0 /* Network */ = {
 			isa = PBXGroup;
 			children = (
 				3B9150142698C222004FE9C0 /* DataManager */,
-				3B9150132698C21D004FE9C0 /* Protocol */,
 				3B9150122698C219004FE9C0 /* Data */,
 			);
 			path = Network;
@@ -1233,20 +1161,12 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
-		3B9150132698C21D004FE9C0 /* Protocol */ = {
-			isa = PBXGroup;
-			children = (
-				3B9150152698C237004FE9C0 /* LoginDelegate.swift */,
-			);
-			path = Protocol;
-			sourceTree = "<group>";
-		};
 		3B9150142698C222004FE9C0 /* DataManager */ = {
 			isa = PBXGroup;
 			children = (
 				3BD6A01E269DDD0F00F7E3AF /* AutoLoginDataManager.swift */,
-				3B9150172698C240004FE9C0 /* LoginDataManager.swift */,
 				003FE38F26F0DEF300E00F8B /* NicknameDataManager.swift */,
+				003FE39126FCDC2300E00F8B /* LoginDataManager.swift */,
 			);
 			path = DataManager;
 			sourceTree = "<group>";
@@ -1614,7 +1534,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B96640726A1F89700DE5DB3 /* QuestionMenuCell.xib in Resources */,
-				3B839213268A246A00B35A53 /* SignInViewController.xib in Resources */,
 				00F12D2B26D159190055BC5F /* NotoSansKR-Black.otf in Resources */,
 				003FE38526E8FB3B00E00F8B /* CoachmarkerViewController.xib in Resources */,
 				3BBD934A268F7AD8003BB706 /* TestConceptDescriptCollectionViewCell.xib in Resources */,
@@ -1733,7 +1652,6 @@
 				3B97443D26A86A8800027219 /* QuestionSubCell.swift in Sources */,
 				3B753D3526B5ADC100A941AA /* MyInfoHistoryCell.swift in Sources */,
 				003FE37626E479C100E00F8B /* CharacterSummaryCell.swift in Sources */,
-				3B8392092689E12B00B35A53 /* LoginMainViewController.swift in Sources */,
 				3B83920E2689E8A500B35A53 /* UITextField.swift in Sources */,
 				3B8C37FA26AD3A0500CD893A /* SubAllQuestionResponse.swift in Sources */,
 				3B8391E42689D98000B35A53 /* UINavigationBar.swift in Sources */,
@@ -1746,7 +1664,6 @@
 				3B96641D26A2FC2200DE5DB3 /* CharacterResponse.swift in Sources */,
 				3B1943F026AAF6DC0014558F /* InfoDetailViewController.swift in Sources */,
 				3BD6A01F269DDD0F00F7E3AF /* AutoLoginDataManager.swift in Sources */,
-				3B91500E269871AD004FE9C0 /* SignInDataManager.swift in Sources */,
 				3B753D3926B5B11B00A941AA /* MyInfoCharCell.swift in Sources */,
 				3BD6A02E269DEC3500F7E3AF /* TestMyResultDataManager.swift in Sources */,
 				3BE26F12269EF842002F67D4 /* DiaryViewCell.swift in Sources */,
@@ -1762,6 +1679,7 @@
 				3BBD9333268F63C4003BB706 /* TestConceptHeader.swift in Sources */,
 				3BD7007E26A5CB4C0055AF8A /* QuestionWriteViewController.swift in Sources */,
 				3BD6A042269DFC7100F7E3AF /* TestConceptSecondResponse.swift in Sources */,
+				003FE39226FCDC2300E00F8B /* LoginDataManager.swift in Sources */,
 				3BD6A02C269DEBF400F7E3AF /* TestMyResultResponse.swift in Sources */,
 				3B8391E22689D98000B35A53 /* UIImage.swift in Sources */,
 				00F12D1726D1529B0055BC5F /* TimeInfoCell.swift in Sources */,
@@ -1792,7 +1710,6 @@
 				3B8391E72689D98000B35A53 /* UILabel.swift in Sources */,
 				3B753D2B26B5367100A941AA /* InfoWriteDataManager.swift in Sources */,
 				3B28D309268E34C9005BCDE8 /* DummyString.swift in Sources */,
-				3B9150182698C240004FE9C0 /* LoginDataManager.swift in Sources */,
 				3B4037272689D6FC00AFAC40 /* AppDelegate.swift in Sources */,
 				3B5EB1A126AB08FD00E41D24 /* LogoutResponse.swift in Sources */,
 				0020E95726DBF2A600CA4882 /* CharacterFeatureCell.swift in Sources */,
@@ -1809,7 +1726,6 @@
 				3B8391E62689D98000B35A53 /* UIFont.swift in Sources */,
 				0020E98F26E1C3D800CA4882 /* FinishButtonCell.swift in Sources */,
 				0020E98B26E1295B00CA4882 /* StarRatingCell.swift in Sources */,
-				3B91500C26986C17004FE9C0 /* SignInProtocol.swift in Sources */,
 				3B96642126A335F100DE5DB3 /* CharacterActionResponse.swift in Sources */,
 				3B8C37F826AD39E400CD893A /* SubAllDataManager.swift in Sources */,
 				0020E97826DFBFD400CA4882 /* Int.swift in Sources */,
@@ -1834,7 +1750,6 @@
 				3B3EC6AE26B440840063F3EA /* QuestionAllSubView.swift in Sources */,
 				3B8391DD2689D98000B35A53 /* Device.swift in Sources */,
 				003FE38E26F0DEBB00E00F8B /* SocialLoginManager.swift in Sources */,
-				3B839212268A246A00B35A53 /* SignInViewController.swift in Sources */,
 				003FE37E26E6530D00E00F8B /* MakeNicknameViewController.swift in Sources */,
 				3B8391DC2689D98000B35A53 /* IndicatorView.swift in Sources */,
 				0020E98326E126B200CA4882 /* StepCell.swift in Sources */,
@@ -1844,7 +1759,6 @@
 				3BD6A044269DFCDF00F7E3AF /* TestConceptSecondDataManager.swift in Sources */,
 				3B8C37FE26AD400100CD893A /* QuestionAllDataManager.swift in Sources */,
 				00F12D2F26D15B1E0055BC5F /* CharacterCell.swift in Sources */,
-				3B91500A269855AD004FE9C0 /* SignInResponse.swift in Sources */,
 				3B96640C26A210A700DE5DB3 /* TestConceptThirdResponse.swift in Sources */,
 				3B8CF34026A36BB200A6B627 /* FinishDataManager.swift in Sources */,
 				0020E95E26DCD6A100CA4882 /* Concpet.swift in Sources */,
@@ -1856,7 +1770,6 @@
 				3B8CF33726A362BC00A6B627 /* StarCell.swift in Sources */,
 				3BE26F1A269F29F1002F67D4 /* ArchiveWriteViewController.swift in Sources */,
 				3B8CF34526A4187300A6B627 /* DirayGetResponse.swift in Sources */,
-				3B638FB7268A44430095F05B /* SignInfo.swift in Sources */,
 				003FE39026F0DEF300E00F8B /* NicknameDataManager.swift in Sources */,
 				3B5EB1A526ABE5FC00E41D24 /* WriteConceptResponse.swift in Sources */,
 				00EAF4C326D6889F005DBDB8 /* ConceptSugesstionCell.swift in Sources */,
@@ -1865,7 +1778,6 @@
 				3B96641F26A2FC8100DE5DB3 /* HomeMainDataManager.swift in Sources */,
 				3B638FBF268B0FC40095F05B /* CustomTabBar.swift in Sources */,
 				3B8391E92689D98000B35A53 /* Color.swift in Sources */,
-				3B9150162698C237004FE9C0 /* LoginDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

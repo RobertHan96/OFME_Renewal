@@ -1,7 +1,7 @@
 import UIKit
 import Alamofire
 
-class LoginDataManager: LoginDelegate {
+class LoginDataManager {
     
     private enum param: String {
         case email = "email"
@@ -22,27 +22,6 @@ class LoginDataManager: LoginDelegate {
     enum ResponseType: Int {
         case signIn = 1001
         case login = 1000
-    }
-
-    func postLogin(vc: viewController, email: String, password: String, completion: @escaping (response) -> Void) {
-        let parameter: Parameters = [
-            param.email.rawValue : email,
-            param.password.rawValue : password
-        ]
-        if let url = URL(string: URLString.login) {
-            AF.request(url, method: .post, parameters: parameter, encoding: JSONEncoding.default, headers: nil)
-                .validate()
-                .responseDecodable(of: LoginResponse.self) { response in
-                    switch response.result {
-                    case .success(let result):
-                        print(result)
-                        completion(result)
-                    case .failure(let error):
-                        print("login Error: \(error.errorDescription ?? "error")")
-                        completion(LoginResponse.error)
-                }
-            }
-        }
     }
     
     func postAppleLogin(token: String, completion: @escaping (SocialLoginResponse) -> Void) {
