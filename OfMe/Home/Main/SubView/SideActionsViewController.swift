@@ -22,6 +22,7 @@ class SideActionsViewController: UIViewController {
     }
 
     private func setupUI() {
+        self.navigationController?.navigationBar.isHidden = true
         setupCollectionView()
         setupFlowLayout()
     }

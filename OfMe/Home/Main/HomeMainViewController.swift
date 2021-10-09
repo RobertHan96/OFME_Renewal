@@ -34,15 +34,13 @@ class HomeMainViewController: BaseViewController {
     
     // 사이드액션바 닫을때 색깔 원복 필요
     @IBAction func characterActionsBtnClicked(_ sender: UIButton) {
-        self.navigationController?.navigationBar.isHidden = false
-        self.navigationController?.navigationBar.barTintColor = .white
-
+        print("LOGT TT")
         let vc = SideActionsViewController()
         vc.deleagte = self
         let sideMenu = SideMenuNavigationController(rootViewController: vc)
         sideMenu.leftSide = false
-        sideMenu.statusBarEndAlpha = 0
-        sideMenu.presentationStyle.backgroundColor = .clear
+        sideMenu.statusBarEndAlpha = 0.0
+        sideMenu.presentationStyle.backgroundColor = .gray
         sideMenu.presentationStyle = .menuDissolveIn
         self.show(sideMenu, sender: nil)
 
