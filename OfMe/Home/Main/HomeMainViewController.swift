@@ -31,8 +31,12 @@ class HomeMainViewController: BaseViewController {
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
     }
-        
+    
+    // 사이드액션바 닫을때 색깔 원복 필요
     @IBAction func characterActionsBtnClicked(_ sender: UIButton) {
+        self.navigationController?.navigationBar.isHidden = false
+        self.navigationController?.navigationBar.barTintColor = .white
+
         let vc = SideActionsViewController()
         vc.deleagte = self
         let sideMenu = SideMenuNavigationController(rootViewController: vc)
@@ -41,6 +45,7 @@ class HomeMainViewController: BaseViewController {
         sideMenu.presentationStyle.backgroundColor = .clear
         sideMenu.presentationStyle = .menuDissolveIn
         self.show(sideMenu, sender: nil)
+
     }
     
     private func fetchData(isInit: Bool, actionIndexPath: Int?) {

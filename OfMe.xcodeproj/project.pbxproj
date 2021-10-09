@@ -72,7 +72,6 @@
 		3B326DD32690971100094C0D /* TestConceptThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B326DD12690971100094C0D /* TestConceptThirdViewController.swift */; };
 		3B326DD42690971100094C0D /* TestConceptThirdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B326DD22690971100094C0D /* TestConceptThirdViewController.xib */; };
 		3B326DD72691ACF000094C0D /* TestConceptThirdAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B326DD62691ACF000094C0D /* TestConceptThirdAdapter.swift */; };
-		3B38D01E269E244B00870EB5 /* MainPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B38D01D269E244B00870EB5 /* MainPicker.swift */; };
 		3B38D020269EBE4A00870EB5 /* MonthYearPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B38D01F269EBE4A00870EB5 /* MonthYearPickerView.swift */; };
 		3B3EC6A926B3F7D20063F3EA /* QuestionWriteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3EC6A826B3F7D20063F3EA /* QuestionWriteDataManager.swift */; };
 		3B3EC6AB26B3F85C0063F3EA /* QuestionGetResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3EC6AA26B3F85C0063F3EA /* QuestionGetResponse.swift */; };
@@ -82,10 +81,7 @@
 		3B4037292689D6FC00AFAC40 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4037282689D6FC00AFAC40 /* SceneDelegate.swift */; };
 		3B4037302689D6FE00AFAC40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B40372F2689D6FE00AFAC40 /* Assets.xcassets */; };
 		3B4037332689D6FE00AFAC40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B4037312689D6FE00AFAC40 /* LaunchScreen.storyboard */; };
-		3B40F75A26A02C9E001F6FE7 /* WriteImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B40F75826A02C9E001F6FE7 /* WriteImageCell.swift */; };
-		3B40F75B26A02C9E001F6FE7 /* WriteImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B40F75926A02C9E001F6FE7 /* WriteImageCell.xib */; };
 		3B40F75D26A07816001F6FE7 /* CharactorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B40F75C26A07816001F6FE7 /* CharactorPickerView.swift */; };
-		3B40F76026A083A6001F6FE7 /* WriteInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B40F75F26A083A6001F6FE7 /* WriteInfo.swift */; };
 		3B40F76726A1C0CF001F6FE7 /* QuestionSubMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B40F76526A1C0CF001F6FE7 /* QuestionSubMainViewController.swift */; };
 		3B40F76826A1C0CF001F6FE7 /* QuestionSubMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B40F76626A1C0CF001F6FE7 /* QuestionSubMainViewController.xib */; };
 		3B45DF7B26AAC37D0072B314 /* InfoMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B45DF7926AAC37D0072B314 /* InfoMenuCell.swift */; };
@@ -96,13 +92,9 @@
 		3B4BB02226AAA9440055E36D /* CommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B4BB02026AAA9440055E36D /* CommentCell.xib */; };
 		3B5EB19F26AB08E300E41D24 /* InfoDetailDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5EB19E26AB08E300E41D24 /* InfoDetailDataManager.swift */; };
 		3B5EB1A126AB08FD00E41D24 /* LogoutResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5EB1A026AB08FD00E41D24 /* LogoutResponse.swift */; };
-		3B5EB1A326ABE53900E41D24 /* WriteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5EB1A226ABE53900E41D24 /* WriteDataManager.swift */; };
-		3B5EB1A526ABE5FC00E41D24 /* WriteConceptResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5EB1A426ABE5FC00E41D24 /* WriteConceptResponse.swift */; };
 		3B638FBF268B0FC40095F05B /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B638FBE268B0FC40095F05B /* CustomTabBar.swift */; };
 		3B638FC9268B485B0095F05B /* HomeMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B638FC7268B485B0095F05B /* HomeMainViewController.swift */; };
 		3B638FCA268B485B0095F05B /* HomeMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B638FC8268B485B0095F05B /* HomeMainViewController.xib */; };
-		3B638FCE268B488F0095F05B /* ArchiveMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B638FCC268B488F0095F05B /* ArchiveMainViewController.swift */; };
-		3B638FCF268B488F0095F05B /* ArchiveMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B638FCD268B488F0095F05B /* ArchiveMainViewController.xib */; };
 		3B638FD3268B498C0095F05B /* QuestionMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B638FD1268B498C0095F05B /* QuestionMainViewController.swift */; };
 		3B638FD4268B498C0095F05B /* QuestionMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B638FD2268B498C0095F05B /* QuestionMainViewController.xib */; };
 		3B6CF6DC268EBC39002A4DDE /* TestResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6CF6DA268EBC39002A4DDE /* TestResultViewController.swift */; };
@@ -147,8 +139,6 @@
 		3B8CF33E26A36B8A00A6B627 /* FinishRateResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8CF33D26A36B8A00A6B627 /* FinishRateResponse.swift */; };
 		3B8CF34026A36BB200A6B627 /* FinishDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8CF33F26A36BB200A6B627 /* FinishDataManager.swift */; };
 		3B8CF34226A36DBC00A6B627 /* FinishEndResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8CF34126A36DBC00A6B627 /* FinishEndResponse.swift */; };
-		3B8CF34526A4187300A6B627 /* DirayGetResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8CF34426A4187300A6B627 /* DirayGetResponse.swift */; };
-		3B8CF34726A421E500A6B627 /* DiaryDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8CF34626A421E500A6B627 /* DiaryDataManager.swift */; };
 		3B91500726985481004FE9C0 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B91500626985481004FE9C0 /* LoginResponse.swift */; };
 		3B915010269877EF004FE9C0 /* URLString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B91500F269877EF004FE9C0 /* URLString.swift */; };
 		3B91501A2698C8D6004FE9C0 /* LoginBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9150192698C8D6004FE9C0 /* LoginBaseViewController.swift */; };
@@ -192,12 +182,6 @@
 		3BD6A044269DFCDF00F7E3AF /* TestConceptSecondDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD6A043269DFCDF00F7E3AF /* TestConceptSecondDataManager.swift */; };
 		3BD7007E26A5CB4C0055AF8A /* QuestionWriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD7007C26A5CB4C0055AF8A /* QuestionWriteViewController.swift */; };
 		3BD7007F26A5CB4C0055AF8A /* QuestionWriteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BD7007D26A5CB4C0055AF8A /* QuestionWriteViewController.xib */; };
-		3BE26F0E269EF6C0002F67D4 /* ArchiveMainAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE26F0D269EF6C0002F67D4 /* ArchiveMainAdapter.swift */; };
-		3BE26F12269EF842002F67D4 /* DiaryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE26F10269EF842002F67D4 /* DiaryViewCell.swift */; };
-		3BE26F13269EF842002F67D4 /* DiaryViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BE26F11269EF842002F67D4 /* DiaryViewCell.xib */; };
-		3BE26F1A269F29F1002F67D4 /* ArchiveWriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE26F18269F29F1002F67D4 /* ArchiveWriteViewController.swift */; };
-		3BE26F1B269F29F1002F67D4 /* ArchiveWriteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BE26F19269F29F1002F67D4 /* ArchiveWriteViewController.xib */; };
-		3BE26F1E269F2EBC002F67D4 /* ArchiveWritePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE26F1D269F2EBC002F67D4 /* ArchiveWritePicker.swift */; };
 		3BE470CE26A470EA00FF18D2 /* QuestionAllViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE470CC26A470EA00FF18D2 /* QuestionAllViewController.swift */; };
 		3BE470CF26A470EA00FF18D2 /* QuestionAllViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BE470CD26A470EA00FF18D2 /* QuestionAllViewController.xib */; };
 		E9FF493FA896DFC1F39021CF /* Pods_OfMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FF14BA05BC0532E439C92AA /* Pods_OfMe.framework */; };
@@ -272,7 +256,6 @@
 		3B326DD12690971100094C0D /* TestConceptThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestConceptThirdViewController.swift; sourceTree = "<group>"; };
 		3B326DD22690971100094C0D /* TestConceptThirdViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestConceptThirdViewController.xib; sourceTree = "<group>"; };
 		3B326DD62691ACF000094C0D /* TestConceptThirdAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestConceptThirdAdapter.swift; sourceTree = "<group>"; };
-		3B38D01D269E244B00870EB5 /* MainPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPicker.swift; sourceTree = "<group>"; };
 		3B38D01F269EBE4A00870EB5 /* MonthYearPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthYearPickerView.swift; sourceTree = "<group>"; };
 		3B3EC6A826B3F7D20063F3EA /* QuestionWriteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionWriteDataManager.swift; sourceTree = "<group>"; };
 		3B3EC6AA26B3F85C0063F3EA /* QuestionGetResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionGetResponse.swift; sourceTree = "<group>"; };
@@ -284,10 +267,7 @@
 		3B40372F2689D6FE00AFAC40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B4037322689D6FE00AFAC40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B4037342689D6FE00AFAC40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3B40F75826A02C9E001F6FE7 /* WriteImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteImageCell.swift; sourceTree = "<group>"; };
-		3B40F75926A02C9E001F6FE7 /* WriteImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WriteImageCell.xib; sourceTree = "<group>"; };
 		3B40F75C26A07816001F6FE7 /* CharactorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactorPickerView.swift; sourceTree = "<group>"; };
-		3B40F75F26A083A6001F6FE7 /* WriteInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteInfo.swift; sourceTree = "<group>"; };
 		3B40F76526A1C0CF001F6FE7 /* QuestionSubMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionSubMainViewController.swift; sourceTree = "<group>"; };
 		3B40F76626A1C0CF001F6FE7 /* QuestionSubMainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionSubMainViewController.xib; sourceTree = "<group>"; };
 		3B45DF7926AAC37D0072B314 /* InfoMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoMenuCell.swift; sourceTree = "<group>"; };
@@ -298,13 +278,9 @@
 		3B4BB02026AAA9440055E36D /* CommentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentCell.xib; sourceTree = "<group>"; };
 		3B5EB19E26AB08E300E41D24 /* InfoDetailDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoDetailDataManager.swift; sourceTree = "<group>"; };
 		3B5EB1A026AB08FD00E41D24 /* LogoutResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutResponse.swift; sourceTree = "<group>"; };
-		3B5EB1A226ABE53900E41D24 /* WriteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteDataManager.swift; sourceTree = "<group>"; };
-		3B5EB1A426ABE5FC00E41D24 /* WriteConceptResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteConceptResponse.swift; sourceTree = "<group>"; };
 		3B638FBE268B0FC40095F05B /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
 		3B638FC7268B485B0095F05B /* HomeMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMainViewController.swift; sourceTree = "<group>"; };
 		3B638FC8268B485B0095F05B /* HomeMainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeMainViewController.xib; sourceTree = "<group>"; };
-		3B638FCC268B488F0095F05B /* ArchiveMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveMainViewController.swift; sourceTree = "<group>"; };
-		3B638FCD268B488F0095F05B /* ArchiveMainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArchiveMainViewController.xib; sourceTree = "<group>"; };
 		3B638FD1268B498C0095F05B /* QuestionMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionMainViewController.swift; sourceTree = "<group>"; };
 		3B638FD2268B498C0095F05B /* QuestionMainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionMainViewController.xib; sourceTree = "<group>"; };
 		3B6CF6DA268EBC39002A4DDE /* TestResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestResultViewController.swift; sourceTree = "<group>"; };
@@ -355,8 +331,6 @@
 		3B8CF33D26A36B8A00A6B627 /* FinishRateResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishRateResponse.swift; sourceTree = "<group>"; };
 		3B8CF33F26A36BB200A6B627 /* FinishDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishDataManager.swift; sourceTree = "<group>"; };
 		3B8CF34126A36DBC00A6B627 /* FinishEndResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishEndResponse.swift; sourceTree = "<group>"; };
-		3B8CF34426A4187300A6B627 /* DirayGetResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirayGetResponse.swift; sourceTree = "<group>"; };
-		3B8CF34626A421E500A6B627 /* DiaryDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryDataManager.swift; sourceTree = "<group>"; };
 		3B91500626985481004FE9C0 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
 		3B91500F269877EF004FE9C0 /* URLString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLString.swift; sourceTree = "<group>"; };
 		3B9150192698C8D6004FE9C0 /* LoginBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginBaseViewController.swift; sourceTree = "<group>"; };
@@ -400,12 +374,6 @@
 		3BD6A043269DFCDF00F7E3AF /* TestConceptSecondDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestConceptSecondDataManager.swift; sourceTree = "<group>"; };
 		3BD7007C26A5CB4C0055AF8A /* QuestionWriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionWriteViewController.swift; sourceTree = "<group>"; };
 		3BD7007D26A5CB4C0055AF8A /* QuestionWriteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionWriteViewController.xib; sourceTree = "<group>"; };
-		3BE26F0D269EF6C0002F67D4 /* ArchiveMainAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveMainAdapter.swift; sourceTree = "<group>"; };
-		3BE26F10269EF842002F67D4 /* DiaryViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryViewCell.swift; sourceTree = "<group>"; };
-		3BE26F11269EF842002F67D4 /* DiaryViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiaryViewCell.xib; sourceTree = "<group>"; };
-		3BE26F18269F29F1002F67D4 /* ArchiveWriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveWriteViewController.swift; sourceTree = "<group>"; };
-		3BE26F19269F29F1002F67D4 /* ArchiveWriteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArchiveWriteViewController.xib; sourceTree = "<group>"; };
-		3BE26F1D269F2EBC002F67D4 /* ArchiveWritePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveWritePicker.swift; sourceTree = "<group>"; };
 		3BE470CC26A470EA00FF18D2 /* QuestionAllViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionAllViewController.swift; sourceTree = "<group>"; };
 		3BE470CD26A470EA00FF18D2 /* QuestionAllViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionAllViewController.xib; sourceTree = "<group>"; };
 		8F2896C95CC74C0473196FD9 /* Pods-OfMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OfMe.release.xcconfig"; path = "Target Support Files/Pods-OfMe/Pods-OfMe.release.xcconfig"; sourceTree = "<group>"; };
@@ -613,14 +581,6 @@
 			path = Adapter;
 			sourceTree = "<group>";
 		};
-		3B38D01C269E242E00870EB5 /* Picker */ = {
-			isa = PBXGroup;
-			children = (
-				3B38D01D269E244B00870EB5 /* MainPicker.swift */,
-			);
-			path = Picker;
-			sourceTree = "<group>";
-		};
 		3B3EC6A526B3F6060063F3EA /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -688,7 +648,6 @@
 				3B2BAF3A268CC5A600CF3048 /* Test */,
 				3B638FBB268B0E380095F05B /* MyInfo */,
 				3B638FBA268B0E320095F05B /* Question */,
-				3B638FB9268B0E2A0095F05B /* Archive */,
 				3B638FB8268B0E170095F05B /* Home */,
 				3B82375B2689D8D5005AA543 /* Login */,
 				3B4037262689D6FC00AFAC40 /* AppDelegate.swift */,
@@ -699,48 +658,6 @@
 				00EAF4BD26D53EFD005DBDB8 /* GoogleService-Info.plist */,
 			);
 			path = OfMe;
-			sourceTree = "<group>";
-		};
-		3B40F75726A02C84001F6FE7 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				3B40F75826A02C9E001F6FE7 /* WriteImageCell.swift */,
-				3B40F75926A02C9E001F6FE7 /* WriteImageCell.xib */,
-			);
-			path = Cell;
-			sourceTree = "<group>";
-		};
-		3B40F75E26A0839D001F6FE7 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				3B40F75F26A083A6001F6FE7 /* WriteInfo.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		3B40F76126A091FB001F6FE7 /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				3B40F76326A09204001F6FE7 /* Data */,
-				3B40F76226A09200001F6FE7 /* DataManager */,
-			);
-			path = Network;
-			sourceTree = "<group>";
-		};
-		3B40F76226A09200001F6FE7 /* DataManager */ = {
-			isa = PBXGroup;
-			children = (
-				3B5EB1A226ABE53900E41D24 /* WriteDataManager.swift */,
-			);
-			path = DataManager;
-			sourceTree = "<group>";
-		};
-		3B40F76326A09204001F6FE7 /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				3B5EB1A426ABE5FC00E41D24 /* WriteConceptResponse.swift */,
-			);
-			path = Data;
 			sourceTree = "<group>";
 		};
 		3B40F76426A1C095001F6FE7 /* Sub */ = {
@@ -813,15 +730,6 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
-		3B638FB9268B0E2A0095F05B /* Archive */ = {
-			isa = PBXGroup;
-			children = (
-				3BE26F17269F29DB002F67D4 /* Write */,
-				3B638FCB268B48850095F05B /* Main */,
-			);
-			path = Archive;
-			sourceTree = "<group>";
-		};
 		3B638FBA268B0E320095F05B /* Question */ = {
 			isa = PBXGroup;
 			children = (
@@ -852,19 +760,6 @@
 				3B96641A26A2D7F700DE5DB3 /* Data */,
 				00F12D1426D14B130055BC5F /* Cells */,
 				3B96641926A2D7E900DE5DB3 /* Network */,
-			);
-			path = Main;
-			sourceTree = "<group>";
-		};
-		3B638FCB268B48850095F05B /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				3BE26F14269F230C002F67D4 /* Network */,
-				3BE26F0F269EF7E0002F67D4 /* Cell */,
-				3BE26F0C269EF6AD002F67D4 /* Adapter */,
-				3B38D01C269E242E00870EB5 /* Picker */,
-				3B638FCC268B488F0095F05B /* ArchiveMainViewController.swift */,
-				3B638FCD268B488F0095F05B /* ArchiveMainViewController.xib */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -1403,69 +1298,6 @@
 			path = Write;
 			sourceTree = "<group>";
 		};
-		3BE26F0C269EF6AD002F67D4 /* Adapter */ = {
-			isa = PBXGroup;
-			children = (
-				3BE26F0D269EF6C0002F67D4 /* ArchiveMainAdapter.swift */,
-			);
-			path = Adapter;
-			sourceTree = "<group>";
-		};
-		3BE26F0F269EF7E0002F67D4 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				3BE26F10269EF842002F67D4 /* DiaryViewCell.swift */,
-				3BE26F11269EF842002F67D4 /* DiaryViewCell.xib */,
-			);
-			path = Cell;
-			sourceTree = "<group>";
-		};
-		3BE26F14269F230C002F67D4 /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				3BE26F16269F2319002F67D4 /* DataManager */,
-				3BE26F15269F2313002F67D4 /* Data */,
-			);
-			path = Network;
-			sourceTree = "<group>";
-		};
-		3BE26F15269F2313002F67D4 /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				3B8CF34426A4187300A6B627 /* DirayGetResponse.swift */,
-			);
-			path = Data;
-			sourceTree = "<group>";
-		};
-		3BE26F16269F2319002F67D4 /* DataManager */ = {
-			isa = PBXGroup;
-			children = (
-				3B8CF34626A421E500A6B627 /* DiaryDataManager.swift */,
-			);
-			path = DataManager;
-			sourceTree = "<group>";
-		};
-		3BE26F17269F29DB002F67D4 /* Write */ = {
-			isa = PBXGroup;
-			children = (
-				3B40F76126A091FB001F6FE7 /* Network */,
-				3B40F75E26A0839D001F6FE7 /* Model */,
-				3B40F75726A02C84001F6FE7 /* Cell */,
-				3BE26F1C269F2EB0002F67D4 /* Picker */,
-				3BE26F18269F29F1002F67D4 /* ArchiveWriteViewController.swift */,
-				3BE26F19269F29F1002F67D4 /* ArchiveWriteViewController.xib */,
-			);
-			path = Write;
-			sourceTree = "<group>";
-		};
-		3BE26F1C269F2EB0002F67D4 /* Picker */ = {
-			isa = PBXGroup;
-			children = (
-				3BE26F1D269F2EBC002F67D4 /* ArchiveWritePicker.swift */,
-			);
-			path = Picker;
-			sourceTree = "<group>";
-		};
 		E19496DEA6B5DAC5C6C92C38 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -1553,7 +1385,6 @@
 				0020E98026E1260000CA4882 /* ConceptResultSummaryCell.xib in Resources */,
 				3B4BB02226AAA9440055E36D /* CommentCell.xib in Resources */,
 				0020E98426E126B200CA4882 /* StepCell.xib in Resources */,
-				3BE26F1B269F29F1002F67D4 /* ArchiveWriteViewController.xib in Resources */,
 				3B96640226A1F42900DE5DB3 /* QuestionMainCell.xib in Resources */,
 				3B6CF6DD268EBC39002A4DDE /* TestResultViewController.xib in Resources */,
 				3B2BAF29268B4FCE00CF3048 /* MyInfoMainViewController.xib in Resources */,
@@ -1565,7 +1396,6 @@
 				3B1943FA26AB05610014558F /* FixPasswordViewController.xib in Resources */,
 				3B45DF7C26AAC37D0072B314 /* InfoMenuCell.xib in Resources */,
 				3B83920A2689E12B00B35A53 /* LoginMainViewController.xib in Resources */,
-				3B638FCF268B488F0095F05B /* ArchiveMainViewController.xib in Resources */,
 				00EAF4C426D6889F005DBDB8 /* ConceptSugesstionCell.xib in Resources */,
 				3B96642B26A356FC00DE5DB3 /* HomeFinishViewController.xib in Resources */,
 				00F12D2C26D159190055BC5F /* NotoSansKR-Medium.otf in Resources */,
@@ -1574,7 +1404,6 @@
 				3B6CF6E4268EEC43002A4DDE /* TestConceptMainViewController.xib in Resources */,
 				3B4037302689D6FE00AFAC40 /* Assets.xcassets in Resources */,
 				0020E95C26DC8A6400CA4882 /* CharacterFavoriteMusicCell.xib in Resources */,
-				3BE26F13269EF842002F67D4 /* DiaryViewCell.xib in Resources */,
 				3B1943F626AB02720014558F /* FixNameViewController.xib in Resources */,
 				3B638FD4268B498C0095F05B /* QuestionMainViewController.xib in Resources */,
 				3B753D3626B5ADC100A941AA /* MyInfoHistoryCell.xib in Resources */,
@@ -1590,7 +1419,6 @@
 				003FE37F26E6530D00E00F8B /* MakeNicknameViewController.xib in Resources */,
 				3B40F76826A1C0CF001F6FE7 /* QuestionSubMainViewController.xib in Resources */,
 				3B2BAF2D268B5E9200CF3048 /* CustomTabBarViewController.xib in Resources */,
-				3B40F75B26A02C9E001F6FE7 /* WriteImageCell.xib in Resources */,
 				00F12D2A26D159190055BC5F /* NotoSansKR-Light.otf in Resources */,
 				0020E99026E1C3D800CA4882 /* FinishButtonCell.xib in Resources */,
 			);
@@ -1647,7 +1475,6 @@
 			files = (
 				0020E96926DE754300CA4882 /* ActionButtonCell.swift in Sources */,
 				3B3EC6AB26B3F85C0063F3EA /* QuestionGetResponse.swift in Sources */,
-				3B38D01E269E244B00870EB5 /* MainPicker.swift in Sources */,
 				3B8391DF2689D98000B35A53 /* UIView.swift in Sources */,
 				3B97443D26A86A8800027219 /* QuestionSubCell.swift in Sources */,
 				3B753D3526B5ADC100A941AA /* MyInfoHistoryCell.swift in Sources */,
@@ -1655,7 +1482,6 @@
 				3B83920E2689E8A500B35A53 /* UITextField.swift in Sources */,
 				3B8C37FA26AD3A0500CD893A /* SubAllQuestionResponse.swift in Sources */,
 				3B8391E42689D98000B35A53 /* UINavigationBar.swift in Sources */,
-				3B638FCE268B488F0095F05B /* ArchiveMainViewController.swift in Sources */,
 				3BBD9346268F79AB003BB706 /* ConceptSecondAdapter.swift in Sources */,
 				3B638FC9268B485B0095F05B /* HomeMainViewController.swift in Sources */,
 				3B96642326A33D7000DE5DB3 /* CharacterTimeResponse.swift in Sources */,
@@ -1666,10 +1492,8 @@
 				3BD6A01F269DDD0F00F7E3AF /* AutoLoginDataManager.swift in Sources */,
 				3B753D3926B5B11B00A941AA /* MyInfoCharCell.swift in Sources */,
 				3BD6A02E269DEC3500F7E3AF /* TestMyResultDataManager.swift in Sources */,
-				3BE26F12269EF842002F67D4 /* DiaryViewCell.swift in Sources */,
 				3B6CF6DC268EBC39002A4DDE /* TestResultViewController.swift in Sources */,
 				3B753D1A26B4605800A941AA /* QuestionSubDataManager.swift in Sources */,
-				3BE26F1E269F2EBC002F67D4 /* ArchiveWritePicker.swift in Sources */,
 				3BD6A03A269DF70900F7E3AF /* TestConceptFirstResponse.swift in Sources */,
 				0020E95B26DC8A6400CA4882 /* CharacterFavoriteMusicCell.swift in Sources */,
 				3B8391E52689D98000B35A53 /* FSCalendar.swift in Sources */,
@@ -1685,7 +1509,6 @@
 				00F12D1726D1529B0055BC5F /* TimeInfoCell.swift in Sources */,
 				3B915010269877EF004FE9C0 /* URLString.swift in Sources */,
 				3B1943F526AB02720014558F /* FixNameViewController.swift in Sources */,
-				3B40F75A26A02C9E001F6FE7 /* WriteImageCell.swift in Sources */,
 				3B753D2426B4E5BF00A941AA /* MyInfoDataManager.swift in Sources */,
 				3B638FD3268B498C0095F05B /* QuestionMainViewController.swift in Sources */,
 				3BD6A01C269DDCAF00F7E3AF /* AutoLoginResponse.swift in Sources */,
@@ -1713,7 +1536,6 @@
 				3B4037272689D6FC00AFAC40 /* AppDelegate.swift in Sources */,
 				3B5EB1A126AB08FD00E41D24 /* LogoutResponse.swift in Sources */,
 				0020E95726DBF2A600CA4882 /* CharacterFeatureCell.swift in Sources */,
-				3BE26F0E269EF6C0002F67D4 /* ArchiveMainAdapter.swift in Sources */,
 				0020E97026DE7B7900CA4882 /* SideActionsViewController.swift in Sources */,
 				3B83920C2689E49F00B35A53 /* ImageConstant.swift in Sources */,
 				3B326DD32690971100094C0D /* TestConceptThirdViewController.swift in Sources */,
@@ -1734,7 +1556,6 @@
 				3B96642626A34B0A00DE5DB3 /* FinishSubView.swift in Sources */,
 				00F12D3326D15E060055BC5F /* CharacterInfoCell.swift in Sources */,
 				3B326DD72691ACF000094C0D /* TestConceptThirdAdapter.swift in Sources */,
-				3B40F76026A083A6001F6FE7 /* WriteInfo.swift in Sources */,
 				3B8391E12689D98000B35A53 /* UIButton.swift in Sources */,
 				3B45DF7B26AAC37D0072B314 /* InfoMenuCell.swift in Sources */,
 				3BBD933E268F73AB003BB706 /* NextConceptButtonView.swift in Sources */,
@@ -1766,14 +1587,9 @@
 				0020E99526E3A43400CA4882 /* CustomInformAlert.swift in Sources */,
 				3BD6A03D269DF89700F7E3AF /* TestConceptFirstDataManager.swift in Sources */,
 				3B6CF6E3268EEC43002A4DDE /* TestConceptMainViewController.swift in Sources */,
-				3B5EB1A326ABE53900E41D24 /* WriteDataManager.swift in Sources */,
 				3B8CF33726A362BC00A6B627 /* StarCell.swift in Sources */,
-				3BE26F1A269F29F1002F67D4 /* ArchiveWriteViewController.swift in Sources */,
-				3B8CF34526A4187300A6B627 /* DirayGetResponse.swift in Sources */,
 				003FE39026F0DEF300E00F8B /* NicknameDataManager.swift in Sources */,
-				3B5EB1A526ABE5FC00E41D24 /* WriteConceptResponse.swift in Sources */,
 				00EAF4C326D6889F005DBDB8 /* ConceptSugesstionCell.swift in Sources */,
-				3B8CF34726A421E500A6B627 /* DiaryDataManager.swift in Sources */,
 				3B96640126A1F42900DE5DB3 /* QuestionMainCell.swift in Sources */,
 				3B96641F26A2FC8100DE5DB3 /* HomeMainDataManager.swift in Sources */,
 				3B638FBF268B0FC40095F05B /* CustomTabBar.swift in Sources */,
@@ -1923,6 +1739,7 @@
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 7ZJR765VK9;
 				INFOPLIST_FILE = OfMe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1948,6 +1765,7 @@
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 7ZJR765VK9;
 				INFOPLIST_FILE = OfMe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

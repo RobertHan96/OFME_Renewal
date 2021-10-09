@@ -24,6 +24,7 @@ class LoginDataManager {
         case login = 1000
     }
     
+    // jwt 토큰 저장 필요
     func postAppleLogin(token: String, completion: @escaping (SocialLoginResponse) -> Void) {
         let parameter: Parameters = ["code":token]
         if let url = URL(string: URLString.appleLogin) {

@@ -7,7 +7,6 @@ class CustomTabBarViewController: UITabBarController, UITabBarControllerDelegate
     let questionVC = QuestionViewController()
     let tesetVC = TestConceptMainViewController()
     let myinfoVC = MyInfoMainViewController()
-    let archiveWriteVC = ArchiveWriteViewController()
     let homeTabBarItem = UITabBarItem(title: nil, image: UIImage(named: ImgName.imgName(of: .homeIcon)), tag: 0)
     let tesetTabBarItem = UITabBarItem(title: nil, image: UIImage(named: "new_test_icon"), tag: 1)
     let questionTabBarItem = UITabBarItem(title: nil, image: UIImage(named: ImgName.imgName(of: .questionIcon)), tag: 2)
