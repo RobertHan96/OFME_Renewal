@@ -45,7 +45,8 @@ class NicknameDataManager {
     func postUserNickname(nickname: String, completion: @escaping (NicknameResponse) -> Void) {
         let parameter: Parameters = [Params.nickname.rawValue:nickname]
         if let url = URL(string: URLString.makeNickname) {
-            AF.request(url, method: .post, parameters: parameter, encoding: JSONEncoding.default, headers: nil)
+            let header: HTTPHeaders = ["x-access-token": Device().getTokenInfo()]
+            AF.request(url, method: .post, parameters: parameter, encoding: JSONEncoding.default, headers: header)
                 .validate()
                 .responseDecodable(of: NicknameResponse.self) { response in
                     switch response.result {
@@ -59,7 +60,6 @@ class NicknameDataManager {
         }
     }
 }
-
 
 struct NicknameResponse: Codable {
     var isSuccess: Bool

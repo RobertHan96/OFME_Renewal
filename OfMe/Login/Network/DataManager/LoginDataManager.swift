@@ -34,6 +34,7 @@ class LoginDataManager {
                     switch response.result {
                     case .success(let result):
                         print("LOG: appleLoginSucess", url, token, parameter, result)
+                        Device().setTokenInfo(jwt: result.result?.jwt ?? "")
                         completion(result)
                     case .failure(let error):
                         print("login Error: \(error.errorDescription ?? "error")", response, token )
@@ -52,12 +53,13 @@ class LoginDataManager {
                     switch response.result {
                     case .success(let result):
                         print("LOG: kakaoLoginSucess", url, token, parameter, result)
+                        Device().setTokenInfo(jwt: result.result?.jwt ?? "")
                         completion(result)
                     case .failure(let error):
                         print("login Error: \(error.errorDescription ?? "error")", response, token)
                         completion(SocialLoginResponse.error)
-                    }
                 }
+            }
         }
     }
 }

@@ -35,6 +35,10 @@ struct Device {
         return UIApplication.shared.windows.first?.safeAreaInsets.bottom ?? 0
     }
     
+    func setTokenInfo(jwt: String) {
+        UserDefaults.standard.setValue(jwt, forKey: Strings.userDefaultDeviceJwtToken)
+    }
+    
     func getTokenInfo() -> String {
         let jwt = UserDefaults.standard.string(forKey: Strings.userDefaultDeviceJwtToken)
         print("LOG:토큰정보 -", jwt)
