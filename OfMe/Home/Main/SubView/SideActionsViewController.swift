@@ -79,5 +79,5 @@ extension SideActionsViewController: UICollectionViewDataSource, UICollectionVie
         deleagte?.actionButtonDidCliikd(actionIndexPath: indexPath.row)
         selectedCellIndex = indexPath.row
         collectionView.reloadData()
-    }
+    }    
 }

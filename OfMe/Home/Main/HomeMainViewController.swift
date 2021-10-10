@@ -56,6 +56,8 @@ class HomeMainViewController: BaseViewController {
     }
     
     private func setupUI() {
+        homeMainTableView.estimatedRowHeight = 700
+        homeMainTableView.rowHeight = UITableView.automaticDimension
         setupTableView()
     }
     
