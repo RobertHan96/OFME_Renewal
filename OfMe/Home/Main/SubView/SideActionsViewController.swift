@@ -16,6 +16,7 @@ class SideActionsViewController: UIViewController {
     @IBOutlet weak var sidemenuTitle: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
     var deleagte: SideActionMenuDelegate?
+    var selectedCellIndex: Int?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +28,7 @@ class SideActionsViewController: UIViewController {
         view.backgroundColor = .clear
         containerView.backgroundColor = .white
         containerView.layer.cornerRadius = 10
+        sidemenuTitle.makeHighlightTextWithBackground(all: "액션 선택하기", subText: "하기", totalText: "총", highlightText: "액션 선택", hitligthedFont: .Notos(.bold, size: 20), normalFont: .Notos(.regular, size: 20))
         setupCollectionView()
         setupFlowLayout()
     }
@@ -42,10 +44,10 @@ class SideActionsViewController: UIViewController {
     private func setupFlowLayout() {
         let flowLayout = UICollectionViewFlowLayout()
         flowLayout.scrollDirection = .horizontal
+        flowLayout.minimumInteritemSpacing = 0
         flowLayout.minimumLineSpacing = 26
-        flowLayout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         flowLayout.itemSize = CGSize(width: collectionView.layer.bounds.width / 4
-                                     , height: collectionView.layer.bounds.height / 4)
+                                     , height: collectionView.layer.bounds.height / 4 + 10)
         collectionView.collectionViewLayout = flowLayout
     }
 
@@ -64,12 +66,18 @@ extension SideActionsViewController: UICollectionViewDataSource, UICollectionVie
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellManager.ActionButtonCellIdentifier, for: indexPath as IndexPath) as? ActionButtonCell else { return UICollectionViewCell() }
-        cell.configure(actionName: Action.actions[indexPath.row])
+        cell.configure(actionName: Action.actions[indexPath.row], isSelected: false)
+
+        if indexPath.row == selectedCellIndex {
+            cell.configure(actionName: Action.actions[indexPath.row], isSelected: true)
+        }
         
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         deleagte?.actionButtonDidCliikd(actionIndexPath: indexPath.row)
+        selectedCellIndex = indexPath.row
+        collectionView.reloadData()
     }
 }

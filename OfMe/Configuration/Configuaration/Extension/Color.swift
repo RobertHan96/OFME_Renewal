@@ -70,5 +70,8 @@ extension UIColor {
     class var currentPageIndicatorColor: UIColor { UIColor(hex: 0xC3CAD6) }
     class var otherPageIndicatorColor: UIColor { UIColor(hex: 0xE7EAEF) }
 
+    // 홈 -> 캐릭터 액션 사이드 메뉴바에서 사용하는 색상
+    class var actionImageBorderColor: UIColor { UIColor(hex: 0xE1E3E9) }
+    
 }
 

@@ -104,7 +104,7 @@ extension UILabel {
         self.attributedText = attributedText
     }
     
-    func conceptResultmakeHighlight(all text: String,
+    func makeHighlightTextWithBackground(all text: String,
                                        subText: String,
                                        totalText: String,
                                        highlightText: String,
