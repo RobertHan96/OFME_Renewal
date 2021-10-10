@@ -66,8 +66,6 @@
 		3B28D309268E34C9005BCDE8 /* DummyString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B28D308268E34C9005BCDE8 /* DummyString.swift */; };
 		3B2BAF28268B4FCE00CF3048 /* MyInfoMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2BAF26268B4FCE00CF3048 /* MyInfoMainViewController.swift */; };
 		3B2BAF29268B4FCE00CF3048 /* MyInfoMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B2BAF27268B4FCE00CF3048 /* MyInfoMainViewController.xib */; };
-		3B2BAF2C268B5E9200CF3048 /* CustomTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2BAF2A268B5E9200CF3048 /* CustomTabBarViewController.swift */; };
-		3B2BAF2D268B5E9200CF3048 /* CustomTabBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B2BAF2B268B5E9200CF3048 /* CustomTabBarViewController.xib */; };
 		3B2BAF39268CC44500CF3048 /* UITabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2BAF38268CC44500CF3048 /* UITabBarController.swift */; };
 		3B326DD32690971100094C0D /* TestConceptThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B326DD12690971100094C0D /* TestConceptThirdViewController.swift */; };
 		3B326DD42690971100094C0D /* TestConceptThirdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B326DD22690971100094C0D /* TestConceptThirdViewController.xib */; };
@@ -92,7 +90,7 @@
 		3B4BB02226AAA9440055E36D /* CommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B4BB02026AAA9440055E36D /* CommentCell.xib */; };
 		3B5EB19F26AB08E300E41D24 /* InfoDetailDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5EB19E26AB08E300E41D24 /* InfoDetailDataManager.swift */; };
 		3B5EB1A126AB08FD00E41D24 /* LogoutResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5EB1A026AB08FD00E41D24 /* LogoutResponse.swift */; };
-		3B638FBF268B0FC40095F05B /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B638FBE268B0FC40095F05B /* CustomTabBar.swift */; };
+		3B638FBF268B0FC40095F05B /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B638FBE268B0FC40095F05B /* BaseTabBarController.swift */; };
 		3B638FC9268B485B0095F05B /* HomeMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B638FC7268B485B0095F05B /* HomeMainViewController.swift */; };
 		3B638FCA268B485B0095F05B /* HomeMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B638FC8268B485B0095F05B /* HomeMainViewController.xib */; };
 		3B638FD3268B498C0095F05B /* QuestionMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B638FD1268B498C0095F05B /* QuestionMainViewController.swift */; };
@@ -250,8 +248,6 @@
 		3B28D308268E34C9005BCDE8 /* DummyString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyString.swift; sourceTree = "<group>"; };
 		3B2BAF26268B4FCE00CF3048 /* MyInfoMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyInfoMainViewController.swift; sourceTree = "<group>"; };
 		3B2BAF27268B4FCE00CF3048 /* MyInfoMainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyInfoMainViewController.xib; sourceTree = "<group>"; };
-		3B2BAF2A268B5E9200CF3048 /* CustomTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarViewController.swift; sourceTree = "<group>"; };
-		3B2BAF2B268B5E9200CF3048 /* CustomTabBarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTabBarViewController.xib; sourceTree = "<group>"; };
 		3B2BAF38268CC44500CF3048 /* UITabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBarController.swift; sourceTree = "<group>"; };
 		3B326DD12690971100094C0D /* TestConceptThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestConceptThirdViewController.swift; sourceTree = "<group>"; };
 		3B326DD22690971100094C0D /* TestConceptThirdViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestConceptThirdViewController.xib; sourceTree = "<group>"; };
@@ -278,7 +274,7 @@
 		3B4BB02026AAA9440055E36D /* CommentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentCell.xib; sourceTree = "<group>"; };
 		3B5EB19E26AB08E300E41D24 /* InfoDetailDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoDetailDataManager.swift; sourceTree = "<group>"; };
 		3B5EB1A026AB08FD00E41D24 /* LogoutResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutResponse.swift; sourceTree = "<group>"; };
-		3B638FBE268B0FC40095F05B /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		3B638FBE268B0FC40095F05B /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
 		3B638FC7268B485B0095F05B /* HomeMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMainViewController.swift; sourceTree = "<group>"; };
 		3B638FC8268B485B0095F05B /* HomeMainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeMainViewController.xib; sourceTree = "<group>"; };
 		3B638FD1268B498C0095F05B /* QuestionMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionMainViewController.swift; sourceTree = "<group>"; };
@@ -934,9 +930,7 @@
 			isa = PBXGroup;
 			children = (
 				3B8391D92689D98000B35A53 /* BaseViewController.swift */,
-				3B638FBE268B0FC40095F05B /* CustomTabBar.swift */,
-				3B2BAF2A268B5E9200CF3048 /* CustomTabBarViewController.swift */,
-				3B2BAF2B268B5E9200CF3048 /* CustomTabBarViewController.xib */,
+				3B638FBE268B0FC40095F05B /* BaseTabBarController.swift */,
 				3B9150192698C8D6004FE9C0 /* LoginBaseViewController.swift */,
 			);
 			path = Base;
@@ -1418,7 +1412,6 @@
 				0020E98C26E1295B00CA4882 /* StarRatingCell.xib in Resources */,
 				003FE37F26E6530D00E00F8B /* MakeNicknameViewController.xib in Resources */,
 				3B40F76826A1C0CF001F6FE7 /* QuestionSubMainViewController.xib in Resources */,
-				3B2BAF2D268B5E9200CF3048 /* CustomTabBarViewController.xib in Resources */,
 				00F12D2A26D159190055BC5F /* NotoSansKR-Light.otf in Resources */,
 				0020E99026E1C3D800CA4882 /* FinishButtonCell.xib in Resources */,
 			);
@@ -1529,7 +1522,6 @@
 				3B2BAF39268CC44500CF3048 /* UITabBarController.swift in Sources */,
 				3B8CF33E26A36B8A00A6B627 /* FinishRateResponse.swift in Sources */,
 				3B1943F926AB05610014558F /* FixPasswordViewController.swift in Sources */,
-				3B2BAF2C268B5E9200CF3048 /* CustomTabBarViewController.swift in Sources */,
 				3B8391E72689D98000B35A53 /* UILabel.swift in Sources */,
 				3B753D2B26B5367100A941AA /* InfoWriteDataManager.swift in Sources */,
 				3B28D309268E34C9005BCDE8 /* DummyString.swift in Sources */,
@@ -1592,7 +1584,7 @@
 				00EAF4C326D6889F005DBDB8 /* ConceptSugesstionCell.swift in Sources */,
 				3B96640126A1F42900DE5DB3 /* QuestionMainCell.swift in Sources */,
 				3B96641F26A2FC8100DE5DB3 /* HomeMainDataManager.swift in Sources */,
-				3B638FBF268B0FC40095F05B /* CustomTabBar.swift in Sources */,
+				3B638FBF268B0FC40095F05B /* BaseTabBarController.swift in Sources */,
 				3B8391E92689D98000B35A53 /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,6 +7,7 @@
 
 import UIKit
 import KakaoSDKAuth
+
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     var window: UIWindow?
@@ -30,7 +31,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
         dataManager.autoLogin { result in
             if result.code == 1000 {
-                self.window?.rootViewController = CustomTabBarViewController()
+                self.window?.rootViewController = BaseTabBarController().initMainTabBar()
             } else {
                 let navigationController = UINavigationController(rootViewController: SocialLoginViewController())
                 self.window?.rootViewController = navigationController
@@ -65,7 +66,5 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // to restore the scene back to its current state.
     }
 
-
-}
-
+    }
 }

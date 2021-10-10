@@ -19,7 +19,7 @@ struct ImgName {
         case chevronRightWhite = "chevron_right_white"
         case chevronRightMainBlue = "chevron_right_mainBlue"
         case bubble = "bubble"
-        case testIcon = "testIcon"
+        case testIcon = "test_icon"
         case normalIcon = "normalIcon"
         case moon = "moon"
         case play = "play"

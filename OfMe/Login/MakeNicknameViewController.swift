@@ -151,7 +151,7 @@ class MakeNicknameViewController: BaseViewController {
     @IBAction func nextButtonDidkClicked(_ sender: UIButton) {
         NicknameDataManager().postUserNickname(nickname: nicknameTextFeild.text ?? "") { makeNicknameResponse in
             if makeNicknameResponse.code == 1000 {
-                self.changeRootViewController(CustomTabBarViewController())
+                self.changeRootViewController(BaseTabBarController().initMainTabBar())
             } else {
                 self.presentBottomAlert(message: "닉네임 생성 실패 - code(\(makeNicknameResponse.code))")
                 print("LOG:", makeNicknameResponse)

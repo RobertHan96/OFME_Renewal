@@ -68,7 +68,7 @@ class SocialLoginManager: NSObject {
                 UserDefaults.standard.setValue(response.result?.jwt, forKey: Strings.userDefaultDeviceJwtToken)
 
             } else if response.code == 1000 {
-                self.viewController.navigationController?.pushViewController(CustomTabBarViewController(), animated: false)
+                self.viewController.navigationController?.pushViewController(BaseTabBarController().initMainTabBar(), animated: false)
                 UserDefaults.standard.setValue(response.result?.jwt, forKey: Strings.userDefaultDeviceJwtToken)
             } else {
                 self.viewController.presentAlert(title: "로그인 에러 발생\n\(response.code)")
