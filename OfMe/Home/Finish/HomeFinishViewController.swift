@@ -115,10 +115,7 @@ extension HomeFinishViewController: StarRatingCellDelegate, FinishButtonCellDele
         if isValidEndRequest {
             FinishDataManager().patchRate(ratingPoint: idx) { patchResult in
                 if patchResult == 1000 {
-                    self.navigationController?.popToRootViewController(animated: true)
-//                    let vc = HomeMainViewController()
-//                    UIApplication.shared.keyWindow?.replaceRootViewController(vc, animated: true, completion: nil)
-//                    return
+                    self.changeRootViewController(BaseTabBarController().initMainTabBar())
                 } else {
                     self.presentAlert(title: Strings.PatchConceptRatingFaildAlert)
                 }
