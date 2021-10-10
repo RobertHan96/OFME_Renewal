@@ -156,6 +156,11 @@
                 <constraint firstItem="ahQ-DX-xw1" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="13" id="q9f-Uz-qmJ"/>
                 <constraint firstItem="ahQ-DX-xw1" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="wpq-dj-5Ab"/>
             </constraints>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="10"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
             <connections>
                 <outlet property="featureName" destination="kHt-ER-qHU" id="DMk-1W-K8L"/>
                 <outlet property="firstArtistName" destination="srE-ul-aJ5" id="IYL-QB-M5H"/>

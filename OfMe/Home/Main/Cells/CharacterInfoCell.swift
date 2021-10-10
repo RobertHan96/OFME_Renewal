@@ -9,7 +9,7 @@ import UIKit
 
 class CharacterInfoCell: UITableViewCell {
     @IBOutlet weak var collectionView: UICollectionView!
-    @IBOutlet weak var pageControll: UIPageControl!
+    @IBOutlet weak var pageControl: UIPageControl!
 
     var characterInfo: HomeMainResult? { didSet {
         collectionView.reloadData()
@@ -58,7 +58,7 @@ class CharacterInfoCell: UITableViewCell {
     private func setupFlowLayout() {
         let flowLayout = UICollectionViewFlowLayout()
         flowLayout.scrollDirection = .horizontal
-        flowLayout.itemSize = CGSize(width: collectionView.layer.bounds.width - 10
+        flowLayout.itemSize = CGSize(width: collectionView.layer.bounds.width + 30
                                      , height: 171)
         flowLayout.minimumLineSpacing = 10.0
         flowLayout.minimumInteritemSpacing = 0.0
@@ -66,17 +66,23 @@ class CharacterInfoCell: UITableViewCell {
     }
 
     private func setupPageControll() {
-        pageControll.numberOfPages = CharacterFeatureCellModel.totalCharacterFeature
-        pageControll.currentPage = 0
-        pageControll.pageIndicatorTintColor = .otherPageIndicatorColor
-        pageControll.currentPageIndicatorTintColor = .currentPageIndicatorColor
+        pageControl.numberOfPages = CharacterFeatureCellModel.totalCharacterFeature
+        pageControl.currentPage = 0
+        pageControl.pageIndicatorTintColor = .otherPageIndicatorColor
+        pageControl.currentPageIndicatorTintColor = .currentPageIndicatorColor
+        let startPage = 0
+        setCustonIndicatorImage(page: startPage)
+    }
+    
+    private func setCustonIndicatorImage(page: Int) {
         if #available(iOS 14.0, *) {
-            let startPage = 0
-            pageControll.setIndicatorImage(UIImage(named: "pageControllCustomIndicator"), forPage: startPage)
-        } else {
-            // Fallback on earlier versions
+            (0..<pageControl.numberOfPages).forEach { (index) in
+                let activePageIconImage = UIImage(named: "pageControllCustomIndicator")
+                let otherPageIconImage = UIImage(named: "circlebadge.fill")
+                let pageIcon = index == page ? activePageIconImage : otherPageIconImage
+                pageControl.setIndicatorImage(pageIcon, forPage: index)
+            }
         }
-        
     }
     
 }
@@ -111,8 +117,9 @@ extension CharacterInfoCell: UIScrollViewDelegate {
         let x = scrollView.contentOffset.x + (width/2)
         
         let newPage = Int(x / width)
-        if pageControll.currentPage != newPage {
-            pageControll.currentPage = newPage
+        if pageControl.currentPage != newPage {
+            pageControl.currentPage = newPage
+            setCustonIndicatorImage(page: newPage)
         }
     }
 }

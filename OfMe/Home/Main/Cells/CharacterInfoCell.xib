@@ -50,7 +50,7 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="collectionView" destination="8mE-Gq-zhI" id="Us9-fG-1Au"/>
-                <outlet property="pageControll" destination="OVJ-PC-SlC" id="GfJ-7u-3J8"/>
+                <outlet property="pageControl" destination="OVJ-PC-SlC" id="GfJ-7u-3J8"/>
             </connections>
             <point key="canvasLocation" x="22" y="139"/>
         </tableViewCell>
