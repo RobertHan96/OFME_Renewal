@@ -45,6 +45,7 @@ class MakeNicknameViewController: BaseViewController {
         checkDuplecatedNicknameButton.isHidden = true
         nextButton.backgroundColor = .nicknameTextFieldColor
         checkDuplecatedNicknameButton.titleLabel?.textColor = .typoBlue
+        nicknameStatusLabel.textAlignment = .center
     }
     
     private func bindUI() {
@@ -116,32 +117,28 @@ class MakeNicknameViewController: BaseViewController {
         NicknameDataManager().postCheckUserNicknameDuplecated(nickname: nicknameTextFeild.text ?? "") { result in
             if let successResult = try? result.get() {
                 if successResult.code == 1000 {
-
                     let attributedString = NSMutableAttributedString(string: "")
-                    let text = "사용 가능한 닉네임입니다."
+                    let text = " 사용 가능한 닉네임입니다."
                     let attachedImage = NSTextAttachment()
-                    attachedImage.image = UIImage(named: "checked")
+                    attachedImage.image = UIImage(named: "trueCheck")
                     attributedString.append(NSAttributedString(attachment: attachedImage))
                     attributedString.append(NSAttributedString(string: text))
                     self.nicknameStatusLabel.attributedText = attributedString
-                    self.nicknameStatusLabel.textAlignment = .center
                     self.nextButton.isEnabled = true
                     self.nextButton.backgroundColor = .typoBlue
                     self.nicknameStatusLabel.isHidden = false
                     self.nicknameStatusLabel.textColor = .typoBlue
-
-                } else {
-
-                    let attributedString = NSMutableAttributedString(string: "")
-                    let text = "이미 사용 중인 닉네임입니다."
-                    let attachedImage = NSTextAttachment()
-                    attachedImage.image = UIImage(named: "falseCheck")
-                    attributedString.append(NSAttributedString(attachment: attachedImage))
-                    attributedString.append(NSAttributedString(string: text))
-                    self.nicknameStatusLabel.attributedText = attributedString
-                    self.nicknameStatusLabel.isHidden = false
-                    self.nicknameStatusLabel.textColor = .nicknameTextFieldColor
                 }
+            } else {
+                let attributedString = NSMutableAttributedString(string: "")
+                let text = " 이미 사용 중인 닉네임입니다."
+                let attachedImage = NSTextAttachment()
+                attachedImage.image = UIImage(named: "falseCheck")
+                attributedString.append(NSAttributedString(attachment: attachedImage))
+                attributedString.append(NSAttributedString(string: text))
+                self.nicknameStatusLabel.attributedText = attributedString
+                self.nicknameStatusLabel.isHidden = false
+                self.nicknameStatusLabel.textColor = .nicknameDuplecatedWaringColor
             }
         }
     }
