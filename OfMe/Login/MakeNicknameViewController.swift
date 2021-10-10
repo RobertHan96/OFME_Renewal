@@ -115,8 +115,8 @@ class MakeNicknameViewController: BaseViewController {
     @IBAction func checkDuplecatedNicknameButtonDidClicked(_ sender: UIButton) {
         NicknameDataManager().postCheckUserNicknameDuplecated(nickname: nicknameTextFeild.text ?? "") { result in
             if let successResult = try? result.get() {
-                switch successResult.code {
-                case 1000:
+                if successResult.code == 1000 {
+
                     let attributedString = NSMutableAttributedString(string: "")
                     let text = "사용 가능한 닉네임입니다."
                     let attachedImage = NSTextAttachment()
@@ -124,11 +124,14 @@ class MakeNicknameViewController: BaseViewController {
                     attributedString.append(NSAttributedString(attachment: attachedImage))
                     attributedString.append(NSAttributedString(string: text))
                     self.nicknameStatusLabel.attributedText = attributedString
+                    self.nicknameStatusLabel.textAlignment = .center
                     self.nextButton.isEnabled = true
                     self.nextButton.backgroundColor = .typoBlue
                     self.nicknameStatusLabel.isHidden = false
                     self.nicknameStatusLabel.textColor = .typoBlue
-                default:
+
+                } else {
+
                     let attributedString = NSMutableAttributedString(string: "")
                     let text = "이미 사용 중인 닉네임입니다."
                     let attachedImage = NSTextAttachment()

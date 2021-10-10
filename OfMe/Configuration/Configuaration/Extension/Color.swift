@@ -66,5 +66,9 @@ extension UIColor {
     class var nicknameTextFieldColor: UIColor { UIColor(hex: 0xF7F7F8) }
     class var nicknameDuplecatedWaringColor: UIColor { UIColor(hex: 0xF8522D) }
     
+    // pageControll Indicator 색상
+    class var currentPageIndicatorColor: UIColor { UIColor(hex: 0xC3CAD6) }
+    class var otherPageIndicatorColor: UIColor { UIColor(hex: 0xE7EAEF) }
+
 }
 

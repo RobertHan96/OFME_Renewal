@@ -18,5 +18,8 @@ class ActionButtonCell: UICollectionViewCell {
     func configure(actionName: String) {
         actionImage.image = UIImage(named: actionName)
         actionNameLabel.text = Action(name: actionName).getNameForLabel()
+        actionImage.layer.borderWidth = 1
+        actionImage.layer.borderColor = UIColor.gray.cgColor
+        actionImage.layer.cornerRadius = actionImage.frame.height * 0.5
     }
 }

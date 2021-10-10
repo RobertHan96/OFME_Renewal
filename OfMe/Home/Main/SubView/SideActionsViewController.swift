@@ -12,6 +12,7 @@ protocol SideActionMenuDelegate{
 }
 
 class SideActionsViewController: UIViewController {
+    @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var sidemenuTitle: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
     var deleagte: SideActionMenuDelegate?
@@ -22,7 +23,10 @@ class SideActionsViewController: UIViewController {
     }
 
     private func setupUI() {
-        self.navigationController?.navigationBar.isHidden = true
+        navigationController?.navigationBar.isHidden = true
+        view.backgroundColor = .clear
+        containerView.backgroundColor = .white
+        containerView.layer.cornerRadius = 10
         setupCollectionView()
         setupFlowLayout()
     }
@@ -38,8 +42,10 @@ class SideActionsViewController: UIViewController {
     private func setupFlowLayout() {
         let flowLayout = UICollectionViewFlowLayout()
         flowLayout.scrollDirection = .horizontal
+        flowLayout.minimumLineSpacing = 26
+        flowLayout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         flowLayout.itemSize = CGSize(width: collectionView.layer.bounds.width / 4
-                                     , height: collectionView.layer.bounds.height / 6)
+                                     , height: collectionView.layer.bounds.height / 4)
         collectionView.collectionViewLayout = flowLayout
     }
 

@@ -68,8 +68,15 @@ class CharacterInfoCell: UITableViewCell {
     private func setupPageControll() {
         pageControll.numberOfPages = CharacterFeatureCellModel.totalCharacterFeature
         pageControll.currentPage = 0
-        pageControll.pageIndicatorTintColor = UIColor.systemGray
-        pageControll.currentPageIndicatorTintColor = UIColor.black
+        pageControll.pageIndicatorTintColor = .otherPageIndicatorColor
+        pageControll.currentPageIndicatorTintColor = .currentPageIndicatorColor
+        if #available(iOS 14.0, *) {
+            let startPage = 0
+            pageControll.setIndicatorImage(UIImage(named: "pageControllCustomIndicator"), forPage: startPage)
+        } else {
+            // Fallback on earlier versions
+        }
+        
     }
     
 }

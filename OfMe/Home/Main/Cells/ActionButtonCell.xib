@@ -23,14 +23,14 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bed" translatesAutoresizingMaskIntoConstraints="NO" id="P7S-nX-ffH">
-                        <rect key="frame" x="35" y="18" width="50" height="50"/>
+                        <rect key="frame" x="35" y="0.0" width="50" height="50"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="50" id="kTl-mD-P5a"/>
                             <constraint firstAttribute="height" constant="50" id="uau-nx-9VN"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="동작명" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xjP-U7-klg">
-                        <rect key="frame" x="42" y="73" width="36" height="19"/>
+                        <rect key="frame" x="42" y="55" width="36" height="19"/>
                         <fontDescription key="fontDescription" name="NotoSansKR-Regular" family="Noto Sans KR" pointSize="13"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -40,7 +40,7 @@
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
                 <constraint firstItem="xjP-U7-klg" firstAttribute="top" secondItem="P7S-nX-ffH" secondAttribute="bottom" constant="5" id="0n6-5b-9wL"/>
-                <constraint firstItem="P7S-nX-ffH" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="18" id="Wok-Xq-1g8"/>
+                <constraint firstItem="P7S-nX-ffH" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Wok-Xq-1g8"/>
                 <constraint firstItem="xjP-U7-klg" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="bUu-mi-DEi"/>
                 <constraint firstItem="P7S-nX-ffH" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="u1X-Yv-Acp"/>
             </constraints>

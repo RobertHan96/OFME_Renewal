@@ -17,6 +17,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SideActionsViewController" customModule="OfMe" customModuleProvider="target">
             <connections>
                 <outlet property="collectionView" destination="7YD-tR-Q8Q" id="aB5-le-rpM"/>
+                <outlet property="containerView" destination="jgU-Zn-lDv" id="ZQx-sV-lAW"/>
                 <outlet property="sidemenuTitle" destination="UY4-TG-FyH" id="vrr-aO-guA"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -26,44 +27,56 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="7YD-tR-Q8Q">
-                    <rect key="frame" x="0.0" y="175" width="414" height="687"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Tiy-u8-e1T">
-                        <size key="itemSize" width="128" height="128"/>
-                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                    </collectionViewFlowLayout>
-                </collectionView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="액션 선택하기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UY4-TG-FyH">
-                    <rect key="frame" x="27" y="71" width="377" height="29"/>
-                    <fontDescription key="fontDescription" name="NotoSansKR-Regular" family="Noto Sans KR" pointSize="20"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="biS-2k-sRg">
-                    <rect key="frame" x="27" y="115" width="357" height="35"/>
-                    <string key="text">캐릭터와 더 가까워질 수 있는 방법!
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jgU-Zn-lDv">
+                    <rect key="frame" x="0.0" y="104" width="414" height="678"/>
+                    <subviews>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="7YD-tR-Q8Q">
+                            <rect key="frame" x="27" y="131" width="387" height="518"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Tiy-u8-e1T">
+                                <size key="itemSize" width="128" height="128"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                        </collectionView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="액션 선택하기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UY4-TG-FyH">
+                            <rect key="frame" x="27" y="27" width="387" height="29"/>
+                            <fontDescription key="fontDescription" name="NotoSansKR-Regular" family="Noto Sans KR" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="biS-2k-sRg">
+                            <rect key="frame" x="27" y="71" width="387" height="35"/>
+                            <string key="text">캐릭터와 더 가까워질 수 있는 방법!
 아래 아이템 리스트에서 적용할 액션을 선택하고 적용해보세요 :)</string>
-                    <fontDescription key="fontDescription" name="NotoSansKR-Regular" family="Noto Sans KR" pointSize="12"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                            <fontDescription key="fontDescription" name="NotoSansKR-Regular" family="Noto Sans KR" pointSize="12"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="7YD-tR-Q8Q" firstAttribute="leading" secondItem="jgU-Zn-lDv" secondAttribute="leading" constant="27" id="5OS-vo-gwO"/>
+                        <constraint firstAttribute="bottom" secondItem="7YD-tR-Q8Q" secondAttribute="bottom" constant="29" id="FK2-XW-paQ"/>
+                        <constraint firstItem="UY4-TG-FyH" firstAttribute="leading" secondItem="jgU-Zn-lDv" secondAttribute="leading" constant="27" id="LdH-VD-SV4"/>
+                        <constraint firstItem="biS-2k-sRg" firstAttribute="leading" secondItem="jgU-Zn-lDv" secondAttribute="leading" constant="27" id="OgS-DU-3kl"/>
+                        <constraint firstAttribute="trailing" secondItem="biS-2k-sRg" secondAttribute="trailing" id="Q1r-Ie-F0X"/>
+                        <constraint firstAttribute="trailing" secondItem="7YD-tR-Q8Q" secondAttribute="trailing" id="RkJ-mc-vCl"/>
+                        <constraint firstItem="7YD-tR-Q8Q" firstAttribute="top" secondItem="biS-2k-sRg" secondAttribute="bottom" constant="25" id="VJs-B5-Opz"/>
+                        <constraint firstAttribute="trailing" secondItem="UY4-TG-FyH" secondAttribute="trailing" id="W2G-eb-rqa"/>
+                        <constraint firstItem="biS-2k-sRg" firstAttribute="top" secondItem="UY4-TG-FyH" secondAttribute="bottom" constant="15" id="c3T-Y0-rrI"/>
+                        <constraint firstItem="UY4-TG-FyH" firstAttribute="top" secondItem="jgU-Zn-lDv" secondAttribute="top" constant="27" id="tX0-D4-43S"/>
+                    </constraints>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="UY4-TG-FyH" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="27" id="AWz-gn-3Eb"/>
-                <constraint firstItem="7YD-tR-Q8Q" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="GiC-wo-0wg"/>
-                <constraint firstItem="biS-2k-sRg" firstAttribute="top" secondItem="UY4-TG-FyH" secondAttribute="bottom" constant="15" id="Ocs-5g-rhe"/>
-                <constraint firstItem="7YD-tR-Q8Q" firstAttribute="top" secondItem="biS-2k-sRg" secondAttribute="bottom" constant="25" id="YzW-ry-q1I"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7YD-tR-Q8Q" secondAttribute="trailing" id="ZmB-8S-MKG"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="7YD-tR-Q8Q" secondAttribute="bottom" id="kRD-ci-QWU"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="UY4-TG-FyH" secondAttribute="trailing" constant="10" id="ki3-rE-5cx"/>
-                <constraint firstItem="biS-2k-sRg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="27" id="l9c-uo-n2m"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="biS-2k-sRg" secondAttribute="trailing" constant="30" id="lUr-HG-7Gf"/>
-                <constraint firstItem="UY4-TG-FyH" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="27" id="o90-xY-CwF"/>
+                <constraint firstItem="jgU-Zn-lDv" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="60" id="8Iu-2E-67z"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="jgU-Zn-lDv" secondAttribute="bottom" constant="80" id="Oer-Rd-AaC"/>
+                <constraint firstItem="jgU-Zn-lDv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="csQ-Yv-9Jo"/>
+                <constraint firstAttribute="trailing" secondItem="jgU-Zn-lDv" secondAttribute="trailing" id="hsn-Wb-1Fe"/>
             </constraints>
             <point key="canvasLocation" x="-62.318840579710148" y="73.660714285714278"/>
         </view>
