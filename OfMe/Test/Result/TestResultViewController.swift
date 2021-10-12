@@ -13,11 +13,12 @@ class TestResultViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
-        fetchData()
+//        fetchData()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        print("LOG", testResult)
         fetchData()
     }
     
@@ -35,10 +36,13 @@ class TestResultViewController: BaseViewController {
     }
 
     private func fetchData() {
+        print("LOG", testResult)
+
         let firstAnswerIdx = UserDefaults().integer(forKey: Strings.userDefaultStageOneResult)
         let secondAnswerIdx = UserDefaults().integer(forKey: Strings.userDefaultStageTwoResult)
         TestMyResultDataManager().getResult(firstAnswer: firstAnswerIdx, secondAnswer: secondAnswerIdx) { data in
             self.testResult = data
+            print("LOG", firstAnswerIdx, secondAnswerIdx, data)
             if self.testResult != nil {
                 self.setCoachmarkerView()
             }

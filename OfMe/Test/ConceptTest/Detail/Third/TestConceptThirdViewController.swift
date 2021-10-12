@@ -3,7 +3,6 @@ import UIKit
 class TestConceptThirdViewController: BaseViewController {
     private var adapter: TestConceptThirdAdapter?
     private var secondIdx: Int = -1
-    private var firstIdx: Int = 0
     private var menu: NextConceptButtonView?
     private var data: TestDummy?
     

@@ -36,8 +36,9 @@ class TestConceptDetailFirstViewController: BaseViewController {
     }
 
     @objc func nextStageButtonDidClicked(_ sender: UIButton) {
-        UserDefaults.standard.setValue(index, forKey: Strings.userDefaultStageOneResult)
-        let vc = TestConceptSecondViewController(firstIdx: index)
+        // DB idx가 1부터 시작하므로 1 더한 값을 전달
+        UserDefaults.standard.setValue(index + 1, forKey: Strings.userDefaultStageOneResult)
+        let vc = TestConceptSecondViewController(firstIdx: index + 1)
         self.navigationController?.pushViewController(vc, animated: true)
     }
 }
