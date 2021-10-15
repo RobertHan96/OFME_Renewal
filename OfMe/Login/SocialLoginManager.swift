@@ -44,14 +44,27 @@ class SocialLoginManager: NSObject {
     }
         
     private func kakaoLogin() {
-        if (UserApi.isKakaoTalkLoginAvailable()) {
+        if (UserApi.isKakaoTalkLoginAvailable()) { // 카카오톡으로 바로 로그인하는 경우
             UserApi.shared.loginWithKakaoTalk {(oauthToken, error) in
                 if let error = error {
                     self.viewController.presentAlert(title: "카카오 정보 불러오기 실패")
                     print("LOG:\(error)")
                 }
                 else {
-                    print("LOG:loginWithKakaoTalk() success.")
+                    print("LOG:카카오톡 설치 된 기기 - 로그인 성공")
+                    let accessToken = oauthToken?.accessToken ?? ""
+                    LoginDataManager().postKakaoLogin(token: accessToken, completion: { response in
+                        self.fetchView(response: response)
+                    })
+                }
+            }
+        } else { // 카카오톡이 없어서 웹뷰로 로그인하는 경우
+            UserApi.shared.loginWithKakaoAccount {(oauthToken, error) in
+                if let error = error {
+                    print(error)
+                }
+                else {
+                    print("LOG:카카오톡 미설치 기기 - 웹뷰로 로그인 성공")
                     let accessToken = oauthToken?.accessToken ?? ""
                     LoginDataManager().postKakaoLogin(token: accessToken, completion: { response in
                         self.fetchView(response: response)
