@@ -126,13 +126,12 @@ class QuestionWriteViewController: BaseViewController {
                                                             .foregroundColor : UIColor.gray3
                                                          ]), for: .normal)
         nextButton.backgroundColor = #colorLiteral(red: 0.9803065658, green: 0.9804469943, blue: 0.9802758098, alpha: 1)
-        nextButton.addTarget(self, action: #selector(nextTouchDown(_:)), for: .touchDown)
+        nextButton.addTarget(self, action: #selector(nextStageButtonDidClicked(_:)), for: .touchDown)
         
         removeButton.addTarget(self, action: #selector(removeTouchDown(_:)), for: .touchDown)
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        middleButton = self.tabBarController?.normalMiddleButton()
         self.navigationItem.title = "답변 작성"
     }
     
@@ -140,7 +139,7 @@ class QuestionWriteViewController: BaseViewController {
         middleButton?.removeFromSuperview()
     }
     
-    @objc func nextTouchDown(_ sender: UIButton) {
+    @objc func nextStageButtonDidClicked(_ sender: UIButton) {
         if isShare {
             self.nextButton.backgroundColor = #colorLiteral(red: 0.9803065658, green: 0.9804469943, blue: 0.9802758098, alpha: 1)
             self.nextButton.setAttributedTitle(NSAttributedString(string: "공유하기",

@@ -23,7 +23,6 @@ class InfoDetailViewController: BaseViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         self.navigationItem.title = "내 정보"
-        middleButton = self.tabBarController?.normalMiddleButton()
         
         dataManager.getDetail() { data in
             if data.count > 0 {
@@ -69,7 +68,7 @@ extension InfoDetailViewController: UICollectionViewDelegate, UICollectionViewDe
         case 2:
             dataManager.logout { result in
                 if result == 1000 {
-                    let vc = UINavigationController(rootViewController: LoginMainViewController())
+                    let vc = UINavigationController(rootViewController: SocialLoginViewController())
                     self.navigationController?.changeRootViewController(vc)
                 }
             }

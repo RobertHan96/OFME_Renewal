@@ -20,7 +20,6 @@ class FixNameViewController: BaseViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        middleButton = self.tabBarController?.normalMiddleButton()
     }
     
     override func viewWillDisappear(_ animated: Bool) {

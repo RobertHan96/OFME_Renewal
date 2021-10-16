@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import KakaoSDKAuth
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
@@ -13,31 +14,35 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     let dataManager: AutoLoginDataManager = AutoLoginDataManager()
 
 
+    // 카카오 로그인
+    func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
+      if let url = URLContexts.first?.url {
+        if (AuthApi.isKakaoTalkLoginUrl(url)) {
+          _ = AuthController.handleOpenUrl(url: url)
+        }
+      }
+    }
+    
     func scene(_ scene: UIScene,
                willConnectTo session: UISceneSession,
                options connectionOptions: UIScene.ConnectionOptions) {
-    
+            
         self.window = UIWindow(windowScene: scene as! UIWindowScene)
-        dataManager.autoLogin { result in
+    
+        dataManager.autoLogin{ result in
             if result.code == 1000 {
-                UserDefaults.standard.setValue(result.result?.jwt, forKey: "jwt")
-                UserDefaults.standard.setValue(result.result?.userId, forKey: "userID")
-                let mainVC = CustomTabBarViewController()
-                self.window?.rootViewController = mainVC
+                self.window?.rootViewController = BaseTabBarController().initMainTabBar()
             } else {
-                let mainVC = LoginMainViewController()
-                let navigationController = UINavigationController(rootViewController: mainVC)
+                let navigationController = UINavigationController(rootViewController: SocialLoginViewController())
                 self.window?.rootViewController = navigationController
             }
-            self.window?.makeKeyAndVisible()
-        }
-        
+            
+        self.window?.makeKeyAndVisible()
     }
+        
 
     func sceneDidDisconnect(_ scene: UIScene) {
-        if let time = UserDefaults.standard.object(forKey: "time") as? Int {
-            HomeMainDataManager().patchCharacterTime(time: time)
-        }
+
     }
 
     func sceneDidBecomeActive(_ scene: UIScene) {
@@ -53,9 +58,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func sceneWillEnterForeground(_ scene: UIScene) {
         // Called as the scene transitions from the background to the foreground.
         // Use this method to undo the changes made on entering the background.
-        if let time = UserDefaults.standard.object(forKey: "time") as? Int {
-            HomeMainDataManager().patchCharacterTime(time: time)
-        }
     }
 
     func sceneDidEnterBackground(_ scene: UIScene) {
@@ -64,6 +66,5 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // to restore the scene back to its current state.
     }
 
-
+    }
 }
-

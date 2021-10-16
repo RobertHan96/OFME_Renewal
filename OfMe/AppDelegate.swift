@@ -1,4 +1,8 @@
- import UIKit
+import UIKit
+import IQKeyboardManager
+import Firebase
+import FirebaseAnalytics
+import KakaoSDKCommon
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -6,8 +10,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        Thread.sleep(forTimeInterval: 2.0)
+        Thread.sleep(forTimeInterval: 2)        
+        IQKeyboardManager.shared().isEnabled = true
+        FirebaseApp.configure()
+        Analytics.logEvent("init", parameters: nil)
+        KakaoSDKCommon.initSDK(appKey: KobisKey.KAKAO_APP_KEY)
+        
         return true
     }
 

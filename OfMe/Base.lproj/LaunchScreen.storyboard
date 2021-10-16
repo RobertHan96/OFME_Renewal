@@ -16,50 +16,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j0e-MS-ir4">
-                                <rect key="frame" x="148.5" y="154" width="117" height="42"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="O F M E">
-                                        <attributes>
-                                            <color key="NSColor" red="0.2254246771" green="0.3421272635" blue="0.84710401300000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <font key="NSFont" metaFont="system" size="35"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rRJ-v8-HcT" userLabel="가장 쉽고 재미있게 나다움을 찾아가는 여정">
-                                <rect key="frame" x="129" y="236" width="156" height="41"/>
-                                <attributedString key="attributedText">
-                                    <fragment>
-                                        <string key="content">가장 쉽고 재미있게
-나다움을 찾아가는 여정</string>
-                                        <attributes>
-                                            <color key="NSColor" red="0.53217816350000002" green="0.5463445187" blue="0.81179416179999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <font key="NSFont" metaFont="system" size="17"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bigLogo" highlightedImage="bigLogo" translatesAutoresizingMaskIntoConstraints="NO" id="8LG-j8-wCB">
-                                <rect key="frame" x="146" y="337" width="122" height="135"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="135" id="DVy-bP-8aC"/>
-                                    <constraint firstAttribute="width" constant="122" id="sB3-qu-rlc"/>
-                                </constraints>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="8HE-fd-2Sl">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="circleLogo" translatesAutoresizingMaskIntoConstraints="NO" id="d27-Go-R6c">
+                                <rect key="frame" x="107" y="348" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.98054224249999999" green="0.97999888660000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="j0e-MS-ir4" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Fy0-UT-7GY"/>
-                            <constraint firstItem="8LG-j8-wCB" firstAttribute="top" secondItem="rRJ-v8-HcT" secondAttribute="bottom" constant="60" id="GnC-OD-gOo"/>
-                            <constraint firstItem="8LG-j8-wCB" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="N9b-c8-iaw"/>
-                            <constraint firstItem="j0e-MS-ir4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="110" id="WFT-6k-jEE"/>
-                            <constraint firstItem="rRJ-v8-HcT" firstAttribute="top" secondItem="j0e-MS-ir4" secondAttribute="bottom" constant="40" id="blv-I0-t36"/>
-                            <constraint firstItem="rRJ-v8-HcT" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="fI5-QH-eUi"/>
+                            <constraint firstAttribute="bottom" secondItem="8HE-fd-2Sl" secondAttribute="bottom" id="1B1-JH-gEz"/>
+                            <constraint firstItem="8HE-fd-2Sl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9Bq-ph-hfk"/>
+                            <constraint firstItem="8HE-fd-2Sl" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="Jw9-H7-wDj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8HE-fd-2Sl" secondAttribute="trailing" id="pSt-jx-Dv2"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -69,6 +40,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bigLogo" width="122" height="135"/>
+        <image name="circleLogo" width="228" height="228"/>
+        <image name="splash" width="375" height="812"/>
     </resources>
 </document>

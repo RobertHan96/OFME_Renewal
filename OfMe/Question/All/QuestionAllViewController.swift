@@ -37,7 +37,6 @@ class QuestionAllViewController: BaseViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        middleButton = self.tabBarController?.normalMiddleButton()
         dataManager.getQuestion(sort: type, answers: idx) { data in
             self.data = data
             self.data.sort { data, _ in

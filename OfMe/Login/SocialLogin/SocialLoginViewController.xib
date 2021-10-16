@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NotoSansKR-Regular.otf">
+            <string>NotoSansKR-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SocialLoginViewController" customModule="OfMe" customModuleProvider="target">
+            <connections>
+                <outlet property="appleLoginButton" destination="qQd-A6-lhq" id="jy5-M1-WCY"/>
+                <outlet property="contentView" destination="YZv-Eo-dUV" id="xFj-vf-8CY"/>
+                <outlet property="kakaoLoginButton" destination="J99-EM-oil" id="Dvz-jd-rtE"/>
+                <outlet property="termsOfServiceBackgroundView" destination="WXd-dk-fFw" id="COh-P8-aGb"/>
+                <outlet property="termsOfServiceLabel" destination="YKw-xn-9yE" id="AVO-iC-pUz"/>
+                <outlet property="titleLabel" destination="WXS-ar-uJl" id="zkX-0X-eeP"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2N9-xy-6pE">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YZv-Eo-dUV" userLabel="Content View">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J99-EM-oil">
+                                    <rect key="frame" x="30" y="481.5" width="354" height="56"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="56" id="i2Q-Kt-XEV"/>
+                                    </constraints>
+                                    <state key="normal" backgroundImage="kakao_login"/>
+                                    <connections>
+                                        <action selector="kakaoButtonDidClicked:" destination="-1" eventType="touchUpInside" id="00p-q3-879"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qQd-A6-lhq">
+                                    <rect key="frame" x="30" y="547.5" width="354" height="56"/>
+                                    <state key="normal" backgroundImage="apple_login"/>
+                                    <connections>
+                                        <action selector="appleLoginButtonDidClicked:" destination="-1" eventType="touchUpInside" id="etU-kq-Nr9"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WXS-ar-uJl">
+                                    <rect key="frame" x="30" y="200" width="210" height="101.5"/>
+                                    <string key="text">OFME
+시작해볼까요?</string>
+                                    <fontDescription key="fontDescription" name="NotoSansKR-Regular" family="Noto Sans KR" pointSize="35"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WXd-dk-fFw">
+                                    <rect key="frame" x="30" y="635.5" width="354" height="73"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YKw-xn-9yE">
+                                            <rect key="frame" x="10" y="19" width="334" height="35"/>
+                                            <string key="text">회원가입 없이 소셜 계정을 통해 바로 이용 가능하며
+로그인 시 서비스 이용 약관에 동의하게 됩니다.</string>
+                                            <fontDescription key="fontDescription" name="NotoSansKR-Regular" family="Noto Sans KR" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="YKw-xn-9yE" secondAttribute="trailing" constant="10" id="AOs-dx-iMB"/>
+                                        <constraint firstItem="YKw-xn-9yE" firstAttribute="centerY" secondItem="WXd-dk-fFw" secondAttribute="centerY" id="Bxk-h6-vn0"/>
+                                        <constraint firstAttribute="height" constant="73" id="Ndh-hu-K0Q"/>
+                                        <constraint firstItem="YKw-xn-9yE" firstAttribute="centerX" secondItem="WXd-dk-fFw" secondAttribute="centerX" id="qd1-Bh-Dc7"/>
+                                        <constraint firstItem="YKw-xn-9yE" firstAttribute="leading" secondItem="WXd-dk-fFw" secondAttribute="leading" constant="10" id="uH4-0A-sjg"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="6"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="WXd-dk-fFw" firstAttribute="top" secondItem="qQd-A6-lhq" secondAttribute="bottom" constant="32" id="4mW-I7-7WH"/>
+                                <constraint firstItem="qQd-A6-lhq" firstAttribute="top" secondItem="J99-EM-oil" secondAttribute="bottom" constant="10" id="53e-ox-k32"/>
+                                <constraint firstItem="qQd-A6-lhq" firstAttribute="leading" secondItem="J99-EM-oil" secondAttribute="leading" id="7Xf-sb-PHd"/>
+                                <constraint firstItem="qQd-A6-lhq" firstAttribute="trailing" secondItem="J99-EM-oil" secondAttribute="trailing" id="F7j-QZ-80b"/>
+                                <constraint firstItem="WXd-dk-fFw" firstAttribute="trailing" secondItem="J99-EM-oil" secondAttribute="trailing" id="LX3-8n-SZl"/>
+                                <constraint firstItem="WXS-ar-uJl" firstAttribute="leading" secondItem="YZv-Eo-dUV" secondAttribute="leading" constant="30" id="PV2-l7-918"/>
+                                <constraint firstItem="WXS-ar-uJl" firstAttribute="top" secondItem="YZv-Eo-dUV" secondAttribute="top" constant="200" id="T47-GY-rJx"/>
+                                <constraint firstAttribute="height" constant="800" id="VQz-Rf-OEN"/>
+                                <constraint firstAttribute="trailing" secondItem="J99-EM-oil" secondAttribute="trailing" constant="30" id="Yz1-vl-k8j"/>
+                                <constraint firstItem="WXd-dk-fFw" firstAttribute="leading" secondItem="J99-EM-oil" secondAttribute="leading" id="quA-e5-9LI"/>
+                                <constraint firstItem="J99-EM-oil" firstAttribute="leading" secondItem="YZv-Eo-dUV" secondAttribute="leading" constant="30" id="vad-fe-ItA"/>
+                                <constraint firstItem="J99-EM-oil" firstAttribute="top" secondItem="WXS-ar-uJl" secondAttribute="bottom" constant="180" id="xwH-3E-8Yn"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="YZv-Eo-dUV" firstAttribute="top" secondItem="2N9-xy-6pE" secondAttribute="top" id="G6t-MD-Sjr"/>
+                        <constraint firstAttribute="trailing" secondItem="YZv-Eo-dUV" secondAttribute="trailing" id="J0f-6j-WiD"/>
+                        <constraint firstAttribute="bottom" secondItem="YZv-Eo-dUV" secondAttribute="bottom" id="RQO-uO-dgz"/>
+                        <constraint firstItem="YZv-Eo-dUV" firstAttribute="width" secondItem="2N9-xy-6pE" secondAttribute="width" id="ict-bC-laz"/>
+                        <constraint firstItem="YZv-Eo-dUV" firstAttribute="leading" secondItem="2N9-xy-6pE" secondAttribute="leading" id="k6A-xQ-oYN"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="2N9-xy-6pE" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="4Ea-eH-7wl"/>
+                <constraint firstItem="2N9-xy-6pE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="OCZ-ET-5HD"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="2N9-xy-6pE" secondAttribute="bottom" id="h4m-6y-LUn"/>
+                <constraint firstAttribute="trailing" secondItem="2N9-xy-6pE" secondAttribute="trailing" id="y6Z-NL-R5p"/>
+            </constraints>
+            <point key="canvasLocation" x="-16" y="74"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="apple_login" width="317" height="56"/>
+        <image name="kakao_login" width="317" height="56"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
