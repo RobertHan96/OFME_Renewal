@@ -110,8 +110,6 @@ extension HomeFinishViewController: StarRatingCellDelegate, FinishButtonCellDele
     }
     
     func endConceptButtonDidClicked(isValidEndRequest: Bool) {
-        print("LOG:컨셉 평가 API 호출")
-
         if isValidEndRequest {
             FinishDataManager().patchRate(ratingPoint: idx) { patchResult in
                 if patchResult == 1000 {

@@ -39,7 +39,8 @@
 		003FE38E26F0DEBB00E00F8B /* SocialLoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003FE38D26F0DEBB00E00F8B /* SocialLoginManager.swift */; };
 		003FE39026F0DEF300E00F8B /* NicknameDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003FE38F26F0DEF300E00F8B /* NicknameDataManager.swift */; };
 		003FE39226FCDC2300E00F8B /* LoginDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003FE39126FCDC2300E00F8B /* LoginDataManager.swift */; };
-		00C904C8271B18D600C49E05 /* NetworkConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C904C7271B18D600C49E05 /* NetworkConstant.swift */; };
+		00C904C8271B18D600C49E05 /* ApiCallConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C904C7271B18D600C49E05 /* ApiCallConstant.swift */; };
+		00C904CC271B27BE00C49E05 /* NetworkUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C904CB271B27BE00C49E05 /* NetworkUtils.swift */; };
 		00CE4F4926D9F42000EE352C /* MainHomeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CE4F4826D9F42000EE352C /* MainHomeResponse.swift */; };
 		00EAF4BE26D53EFD005DBDB8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 00EAF4BD26D53EFD005DBDB8 /* GoogleService-Info.plist */; };
 		00EAF4C026D544FB005DBDB8 /* CellManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EAF4BF26D544FB005DBDB8 /* CellManager.swift */; };
@@ -219,7 +220,8 @@
 		003FE38D26F0DEBB00E00F8B /* SocialLoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialLoginManager.swift; sourceTree = "<group>"; };
 		003FE38F26F0DEF300E00F8B /* NicknameDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicknameDataManager.swift; sourceTree = "<group>"; };
 		003FE39126FCDC2300E00F8B /* LoginDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDataManager.swift; sourceTree = "<group>"; };
-		00C904C7271B18D600C49E05 /* NetworkConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstant.swift; sourceTree = "<group>"; };
+		00C904C7271B18D600C49E05 /* ApiCallConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiCallConstant.swift; sourceTree = "<group>"; };
+		00C904CB271B27BE00C49E05 /* NetworkUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkUtils.swift; sourceTree = "<group>"; };
 		00CE4F4826D9F42000EE352C /* MainHomeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHomeResponse.swift; sourceTree = "<group>"; };
 		00EAF4BD26D53EFD005DBDB8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		00EAF4BF26D544FB005DBDB8 /* CellManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellManager.swift; sourceTree = "<group>"; };
@@ -482,7 +484,7 @@
 			children = (
 				3B8391B52689D97F00B35A53 /* Configuaration */,
 				00F12D1A26D156500055BC5F /* Fonts */,
-				00C904C7271B18D600C49E05 /* NetworkConstant.swift */,
+				00C904C7271B18D600C49E05 /* ApiCallConstant.swift */,
 			);
 			path = Configuration;
 			sourceTree = "<group>";
@@ -892,6 +894,7 @@
 				3B8391B82689D97F00B35A53 /* IndicatorView.swift */,
 				3B8391B92689D97F00B35A53 /* Device.swift */,
 				3B28D306268E133A005BCDE8 /* CircularProgressBar.swift */,
+				00C904CB271B27BE00C49E05 /* NetworkUtils.swift */,
 			);
 			path = CommonClass;
 			sourceTree = "<group>";
@@ -1510,7 +1513,7 @@
 				3BBD9337268F6681003BB706 /* ConceptFirstAdapter.swift in Sources */,
 				3BBD9333268F63C4003BB706 /* TestConceptHeader.swift in Sources */,
 				3BD7007E26A5CB4C0055AF8A /* QuestionWriteViewController.swift in Sources */,
-				00C904C8271B18D600C49E05 /* NetworkConstant.swift in Sources */,
+				00C904C8271B18D600C49E05 /* ApiCallConstant.swift in Sources */,
 				3BD6A042269DFC7100F7E3AF /* TestConceptSecondResponse.swift in Sources */,
 				003FE39226FCDC2300E00F8B /* LoginDataManager.swift in Sources */,
 				3BD6A02C269DEBF400F7E3AF /* TestMyResultResponse.swift in Sources */,
@@ -1579,6 +1582,7 @@
 				3B3EC6AE26B440840063F3EA /* QuestionAllSubView.swift in Sources */,
 				3B8391DD2689D98000B35A53 /* Device.swift in Sources */,
 				003FE38E26F0DEBB00E00F8B /* SocialLoginManager.swift in Sources */,
+				00C904CC271B27BE00C49E05 /* NetworkUtils.swift in Sources */,
 				003FE37E26E6530D00E00F8B /* MakeNicknameViewController.swift in Sources */,
 				3B8391DC2689D98000B35A53 /* IndicatorView.swift in Sources */,
 				0020E98326E126B200CA4882 /* StepCell.swift in Sources */,

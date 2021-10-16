@@ -6,7 +6,7 @@ class AutoLoginDataManager {
         let jwt = Device().getTokenInfo()
         let header: HTTPHeaders = [ "x-access-token" : jwt ]
 
-        AF.request(URLString.autoLogIn, method: .post,  parameters: nil, encoding: JSONEncoding.default, headers: header) { $0.timeoutInterval = NetworkConstant.requestTimeiut }
+        AF.request(URLString.autoLogIn, method: .post,  parameters: nil, encoding: JSONEncoding.default, headers: header) { $0.timeoutInterval = ApiCallConstant.requestTimeiut }
             .validate()
             .responseDecodable(of: AutoLoginResponse.self) { response in
                 switch response.result {

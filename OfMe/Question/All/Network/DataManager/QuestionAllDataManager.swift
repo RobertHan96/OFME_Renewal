@@ -10,7 +10,7 @@ class QuestionAllDataManager {
                 "answers": answers
             ]
             print(parm)
-            AF.request(url, method: .get, parameters: parm, encoding: URLEncoding.queryString, headers: header) { $0.timeoutInterval = NetworkConstant.requestTimeiut }
+            AF.request(url, method: .get, parameters: parm, encoding: URLEncoding.queryString, headers: header) { $0.timeoutInterval = ApiCallConstant.requestTimeiut }
                 .validate()
                 .responseDecodable(of: SubAllQuestionResponse.self) { response in
                     switch response.result {

@@ -7,7 +7,7 @@ class TestMyResultDataManager {
            let jwt = UserDefaults.standard.object(forKey: "jwt") as? String {
             
             let header: HTTPHeaders = ["x-access-token": jwt]
-            AF.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: header) { $0.timeoutInterval = NetworkConstant.requestTimeiut }
+            AF.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: header) { $0.timeoutInterval = ApiCallConstant.requestTimeiut }
                 .validate()
                 .responseDecodable(of: TestMyResultResponse.self) { response in
                     switch response.result {
@@ -27,7 +27,7 @@ class TestMyResultDataManager {
            let jwt = UserDefaults.standard.object(forKey: "jwt") as? String {
             
             let header: HTTPHeaders = ["x-access-token": jwt]
-            AF.request(url, method: .post, parameters: nil, encoding: JSONEncoding.default, headers: header) { $0.timeoutInterval = NetworkConstant.requestTimeiut }
+            AF.request(url, method: .post, parameters: nil, encoding: JSONEncoding.default, headers: header) { $0.timeoutInterval = ApiCallConstant.requestTimeiut }
                 .validate()
                 .responseDecodable(of: ConfirmTestResultResponse.self) { response in
                     switch response.result {

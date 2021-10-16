@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct apiCallConstant {
+struct ApiCallConstant {
     static let requestTimeiut: TimeInterval = TimeInterval(10.0)
-    static let responseSuccess: Int = 1000
-    
+    static let responseSuccess: Int = 1000    
 }
+

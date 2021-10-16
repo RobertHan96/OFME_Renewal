@@ -28,7 +28,7 @@ class LoginDataManager {
     func postAppleLogin(token: String, completion: @escaping (SocialLoginResponse) -> Void) {
         let parameter: Parameters = ["code":token]
         if let url = URL(string: URLString.appleLogin) {
-            AF.request(url, method: .post, parameters: parameter, encoding: JSONEncoding.default, headers: nil) { $0.timeoutInterval = NetworkConstant.requestTimeiut }
+            AF.request(url, method: .post, parameters: parameter, encoding: JSONEncoding.default, headers: nil) { $0.timeoutInterval = ApiCallConstant.requestTimeiut }
                 .validate()
                 .responseDecodable(of: SocialLoginResponse.self) { response in
                     switch response.result {
@@ -47,7 +47,7 @@ class LoginDataManager {
     func postKakaoLogin(token: String, completion: @escaping (SocialLoginResponse) -> Void) {
         let parameter: Parameters = ["accessToken":token]
         if let url = URL(string: URLString.kakaoLogin) {
-            AF.request(url, method: .post, parameters: parameter, encoding: JSONEncoding.default, headers: nil) { $0.timeoutInterval = NetworkConstant.requestTimeiut }
+            AF.request(url, method: .post, parameters: parameter, encoding: JSONEncoding.default, headers: nil) { $0.timeoutInterval = ApiCallConstant.requestTimeiut }
                 .validate()
                 .responseDecodable(of: SocialLoginResponse.self) { response in
                     switch response.result {

@@ -104,7 +104,6 @@ class CustomInformAlert: NSObject {
     }
     
     @objc func confirmButtonDidClicked() {
-        print("TT")
         mainView.removeFromSuperview()
     }
 }

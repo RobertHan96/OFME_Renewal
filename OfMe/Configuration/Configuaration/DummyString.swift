@@ -96,8 +96,17 @@ struct DummyData {
 }
 
 struct Strings {
+    // 얼럿에 필요한 텍스트
+    static let alertTitleText = "우리 내일 다시 만나요!"
     static let PatchConceptRatingFaildAlert = "별점을 입력해주세요 :)"
     static let PatchFinishEndDataFaildAlert = "진행 중인 컨셉이 없습니다."
+    static let networkConectionFaildTitleAlert = "앗... 데이터를 불러오지 못했어요!"
+    static let networkConectionFaildSubAlert = "네트워크 연결 상태를 확인해주세요."
+    static let dailyTestLimitOverAlert = "앗! 컨셉 테스트는 한 번만 가능합니다.\n다음에 다시 시도해 주세요."
+    static let conceptRatingLaterAlert = "컨셉을 종료하기 위해 만족한 만큼\n별점을 표시해주세요."
+    static let conceptLimitOverAlert = "이미 진행 중인 컨셉이 있습니다."
+    
+    // userDefault 관련 값
     static let userDefaultStageOneResult = "stageOneResult"
     static let userDefaultStageTwoResult = "stageTwoResult"
     static let userDefaultDeviceJwtToken = "jwt"
