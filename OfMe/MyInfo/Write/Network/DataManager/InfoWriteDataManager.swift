@@ -6,7 +6,7 @@ class InfoWriteDataManager {
         if let url = URL(string: URLString.infoDetail), let jwt = UserDefaults.standard.object(forKey: "jwt") as? String {
             let header: HTTPHeaders = ["x-access-token":jwt]
             let parameter: Parameters = ["nickname":text, "imgUrl": "https://ofmebucket.s3.ap-northeast-2.amazonaws.com/profileImage.png"]
-            AF.request(url, method: .patch, parameters: parameter, encoding: JSONEncoding.default, headers: header)
+            AF.request(url, method: .patch, parameters: parameter, encoding: JSONEncoding.default, headers: header) { $0.timeoutInterval = NetworkConstant.requestTimeiut }
                 .validate()
                 .responseDecodable(of: InfoWriteResponse.self) { response in
                     switch response.result {
@@ -26,7 +26,7 @@ class InfoWriteDataManager {
                                          "checkPassword":new2,
                                          "password":origin
             ]
-            AF.request(url, method: .patch, parameters: parameter, encoding: JSONEncoding.default, headers: header)
+            AF.request(url, method: .patch, parameters: parameter, encoding: JSONEncoding.default, headers: header) { $0.timeoutInterval = NetworkConstant.requestTimeiut }
                 .validate()
                 .responseDecodable(of: InfoWriteResponse.self) { response in
                     switch response.result {

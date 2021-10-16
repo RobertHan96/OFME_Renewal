@@ -22,7 +22,7 @@ class TestConceptMainViewController: BaseViewController {
         TestConceptFirstDataManager().getisAvailableTester { resultCode in
             if resultCode == 1000 {
                 self.navigationController?.pushViewController(TestConceptDetailFirstViewController(), animated: true)
-            } else {
+            } else { // 하드코딩된 resultCode 부분 변경 필요
                 print("LOGT", resultCode)
                 self.infromAlert.setConstraint(view: self.view)
             }

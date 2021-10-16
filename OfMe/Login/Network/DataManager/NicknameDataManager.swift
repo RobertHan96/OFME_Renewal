@@ -19,7 +19,7 @@ class NicknameDataManager {
         let encodedUrl = strUrl.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
 
         if let url = URL(string: encodedUrl ?? URLString.duplecatedNickname){
-            AF.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: nil)
+            AF.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: nil) { $0.timeoutInterval = NetworkConstant.requestTimeiut }
                 .validate()
                 .responseDecodable(of: NicknameResponse.self) { response in
                     print("LOG: 닉네임 중복 검사 결과", response.result)
@@ -46,7 +46,7 @@ class NicknameDataManager {
         let parameter: Parameters = [Params.nickname.rawValue:nickname]
         if let url = URL(string: URLString.makeNickname) {
             let header: HTTPHeaders = ["x-access-token": Device().getTokenInfo()]
-            AF.request(url, method: .post, parameters: parameter, encoding: JSONEncoding.default, headers: header)
+            AF.request(url, method: .post, parameters: parameter, encoding: JSONEncoding.default, headers: header) { $0.timeoutInterval = NetworkConstant.requestTimeiut }
                 .validate()
                 .responseDecodable(of: NicknameResponse.self) { response in
                     switch response.result {

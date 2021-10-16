@@ -29,7 +29,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             
         self.window = UIWindow(windowScene: scene as! UIWindowScene)
     
-        dataManager.autoLogin { result in
+        dataManager.autoLogin{ result in
             if result.code == 1000 {
                 self.window?.rootViewController = BaseTabBarController().initMainTabBar()
             } else {
