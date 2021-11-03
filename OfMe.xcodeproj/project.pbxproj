@@ -39,6 +39,9 @@
 		003FE38E26F0DEBB00E00F8B /* SocialLoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003FE38D26F0DEBB00E00F8B /* SocialLoginManager.swift */; };
 		003FE39026F0DEF300E00F8B /* NicknameDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003FE38F26F0DEF300E00F8B /* NicknameDataManager.swift */; };
 		003FE39226FCDC2300E00F8B /* LoginDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003FE39126FCDC2300E00F8B /* LoginDataManager.swift */; };
+		008C104E2733476A00D94ECF /* MakeNicknameAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008C104D2733476A00D94ECF /* MakeNicknameAPIService.swift */; };
+		008C1050273347D800D94ECF /* MakeNicknameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008C104F273347D800D94ECF /* MakeNicknameViewModel.swift */; };
+		008C10522733486500D94ECF /* MakeNicknameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008C10512733486500D94ECF /* MakeNicknameModel.swift */; };
 		00C904C8271B18D600C49E05 /* ApiCallConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C904C7271B18D600C49E05 /* ApiCallConstant.swift */; };
 		00C904CC271B27BE00C49E05 /* NetworkUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C904CB271B27BE00C49E05 /* NetworkUtils.swift */; };
 		00CE4F4926D9F42000EE352C /* MainHomeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CE4F4826D9F42000EE352C /* MainHomeResponse.swift */; };
@@ -220,6 +223,9 @@
 		003FE38D26F0DEBB00E00F8B /* SocialLoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialLoginManager.swift; sourceTree = "<group>"; };
 		003FE38F26F0DEF300E00F8B /* NicknameDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicknameDataManager.swift; sourceTree = "<group>"; };
 		003FE39126FCDC2300E00F8B /* LoginDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDataManager.swift; sourceTree = "<group>"; };
+		008C104D2733476A00D94ECF /* MakeNicknameAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeNicknameAPIService.swift; sourceTree = "<group>"; };
+		008C104F273347D800D94ECF /* MakeNicknameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeNicknameViewModel.swift; sourceTree = "<group>"; };
+		008C10512733486500D94ECF /* MakeNicknameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeNicknameModel.swift; sourceTree = "<group>"; };
 		00C904C7271B18D600C49E05 /* ApiCallConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiCallConstant.swift; sourceTree = "<group>"; };
 		00C904CB271B27BE00C49E05 /* NetworkUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkUtils.swift; sourceTree = "<group>"; };
 		00CE4F4826D9F42000EE352C /* MainHomeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHomeResponse.swift; sourceTree = "<group>"; };
@@ -438,6 +444,39 @@
 			path = SubView;
 			sourceTree = "<group>";
 		};
+		008C10492733470600D94ECF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				008C104F273347D800D94ECF /* MakeNicknameViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		008C104A2733471100D94ECF /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				008C104D2733476A00D94ECF /* MakeNicknameAPIService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		008C104B2733473F00D94ECF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				003FE37C26E6530D00E00F8B /* MakeNicknameViewController.swift */,
+				003FE37D26E6530D00E00F8B /* MakeNicknameViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		008C104C2733474500D94ECF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				008C10512733486500D94ECF /* MakeNicknameModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		00C904C9271B1B1E00C49E05 /* SocialLogin */ = {
 			isa = PBXGroup;
 			children = (
@@ -451,8 +490,10 @@
 		00C904CA271B1B2C00C49E05 /* MakeNickname */ = {
 			isa = PBXGroup;
 			children = (
-				003FE37D26E6530D00E00F8B /* MakeNicknameViewController.xib */,
-				003FE37C26E6530D00E00F8B /* MakeNicknameViewController.swift */,
+				008C104C2733474500D94ECF /* Model */,
+				008C104B2733473F00D94ECF /* View */,
+				008C10492733470600D94ECF /* ViewModel */,
+				008C104A2733471100D94ECF /* Service */,
 			);
 			path = MakeNickname;
 			sourceTree = "<group>";
@@ -1506,6 +1547,7 @@
 				3B6CF6DC268EBC39002A4DDE /* TestResultViewController.swift in Sources */,
 				3B753D1A26B4605800A941AA /* QuestionSubDataManager.swift in Sources */,
 				3BD6A03A269DF70900F7E3AF /* TestConceptFirstResponse.swift in Sources */,
+				008C1050273347D800D94ECF /* MakeNicknameViewModel.swift in Sources */,
 				0020E95B26DC8A6400CA4882 /* CharacterFavoriteMusicCell.swift in Sources */,
 				3B8391E52689D98000B35A53 /* FSCalendar.swift in Sources */,
 				3BBD9349268F7AD8003BB706 /* TestConceptDescriptCollectionViewCell.swift in Sources */,
@@ -1513,6 +1555,7 @@
 				3BBD9337268F6681003BB706 /* ConceptFirstAdapter.swift in Sources */,
 				3BBD9333268F63C4003BB706 /* TestConceptHeader.swift in Sources */,
 				3BD7007E26A5CB4C0055AF8A /* QuestionWriteViewController.swift in Sources */,
+				008C10522733486500D94ECF /* MakeNicknameModel.swift in Sources */,
 				00C904C8271B18D600C49E05 /* ApiCallConstant.swift in Sources */,
 				3BD6A042269DFC7100F7E3AF /* TestConceptSecondResponse.swift in Sources */,
 				003FE39226FCDC2300E00F8B /* LoginDataManager.swift in Sources */,
@@ -1587,6 +1630,7 @@
 				3B8391DC2689D98000B35A53 /* IndicatorView.swift in Sources */,
 				0020E98326E126B200CA4882 /* StepCell.swift in Sources */,
 				3B753D2D26B5368500A941AA /* InfoWriteResponse.swift in Sources */,
+				008C104E2733476A00D94ECF /* MakeNicknameAPIService.swift in Sources */,
 				3B96640E26A2112100DE5DB3 /* TestThirdDataManager.swift in Sources */,
 				00CE4F4926D9F42000EE352C /* MainHomeResponse.swift in Sources */,
 				3BD6A044269DFCDF00F7E3AF /* TestConceptSecondDataManager.swift in Sources */,

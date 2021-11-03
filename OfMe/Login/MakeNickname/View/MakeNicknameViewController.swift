@@ -23,9 +23,9 @@ class MakeNicknameViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
-        bindUI()
     }
     
+    // hideNavigationBar로 함수화
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.navigationBar.isHidden = true
@@ -37,6 +37,7 @@ class MakeNicknameViewController: BaseViewController {
     }
     
     private func setupUI() {
+        bindUI()
         self.navigationItem.setHidesBackButton(true, animated: false)
         // 조건 만족시 다음 버튼 isEnabled = True로 변경 필요
         nicknameStatusLabel.isHidden = true
@@ -59,6 +60,7 @@ class MakeNicknameViewController: BaseViewController {
             }.disposed(by: disposeBag)
     }
     
+    // ViewModel 로직
     private func setNicknameDuplatedTestUI(isValidNickname: Bool) {
         if isValidNickname {
             self.checkDuplecatedNicknameButton.isHidden = false
@@ -69,6 +71,7 @@ class MakeNicknameViewController: BaseViewController {
         }
     }
     
+    // ViewModel 로직
     private func checkNicknamePolicy(text:String) -> Bool {
         if checkTextLength(text: text) && checkKoreanName(text: text) {
             return true
@@ -77,6 +80,7 @@ class MakeNicknameViewController: BaseViewController {
         return false
     }
     
+    // ViewModel 로직
     private func checkTextLength(text: String) -> Bool {
         if text.count < 2 || text.count > 10 {
             return false
@@ -85,6 +89,7 @@ class MakeNicknameViewController: BaseViewController {
         return true
     }
     
+    // ViewModel 로직
     private func checkKoreanName(text: String) -> Bool {
         // String -> Array
         let arr = Array(text)
@@ -109,10 +114,7 @@ class MakeNicknameViewController: BaseViewController {
         return true
     }
 
-    private func fetchData() {
-        // 닉네임 생성 가능할 때 활성화할 이미지
-    }
-    
+    // 하드코딩된 텍스트 분리 + rx로 viewModel과 바인딩 필요
     @IBAction func checkDuplecatedNicknameButtonDidClicked(_ sender: UIButton) {
         NicknameDataManager().postCheckUserNicknameDuplecated(nickname: nicknameTextFeild.text ?? "") { result in
             if let successResult = try? result.get() {
