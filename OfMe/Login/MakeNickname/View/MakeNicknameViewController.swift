@@ -1,10 +1,3 @@
-//
-//  MakeNicknameViewController.swift
-//  OfMe
-//
-//  Created by HanaHan on 2021/09/06.
-//
-
 import UIKit
 import RxCocoa
 import RxSwift
@@ -19,6 +12,7 @@ class MakeNicknameViewController: BaseViewController {
     @IBOutlet weak var nicknameStatusLabel: UILabel!
     let enabledBtnBackgroundImage = UIImage(named: "next_btn_background-1")
     let disposeBag: DisposeBag = DisposeBag()
+    let viewModel: MakeNicknameViewModel = MakeNicknameViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,12 +22,12 @@ class MakeNicknameViewController: BaseViewController {
     // hideNavigationBar로 함수화
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.navigationController?.navigationBar.isHidden = true
+        hideNavigationBar()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        self.navigationController?.navigationBar.isHidden = false
+        hideNavigationBar()
     }
     
     private func setupUI() {
@@ -49,10 +43,44 @@ class MakeNicknameViewController: BaseViewController {
         nicknameStatusLabel.textAlignment = .center
     }
     
+    private func hideNavigationBar() {
+        self.navigationController?.navigationBar.isHidden = true
+    }
+    
     private func bindUI() {
+        viewModel.isDuplecatedNickname
+            .asObservable()
+            .subscribe { isDuplecatedNicknameResult in
+                // Main 스레드에서 돌아가야할 것 같은데 Rx 메소드 조사 필요
+                if isDuplecatedNicknameResult {
+                    self.nicknameStatusLabel.attributedText = self.viewModel.infromMessage.value
+                    self.nicknameStatusLabel.isHidden = false
+                    self.nicknameStatusLabel.textColor = .nicknameDuplecatedWaringColor
+                } else {
+                    self.nicknameStatusLabel.attributedText = self.viewModel.infromMessage.value
+                    self.nextButton.isEnabled = true
+                    self.nextButton.backgroundColor = .typoBlue
+                    self.nicknameStatusLabel.isHidden = false
+                    self.nicknameStatusLabel.textColor = .typoBlue
+                }
+            }.disposed(by: disposeBag)
+
+        // 1000이면 다음, 아니면 에러 팝업 표시 : rx문서 더 찾아봐야함
+//        self.presentBottomAlert(message: "닉네임 생성 실패 - code(\(makeNicknameResponse.code))")
+//        viewModel.nicknameMakingResult
+//            .subscribe {  in
+//                self.presentBottomAlert(message: "닉네임 생성 실패 - code(\(makeNicknameResponse.code))")
+//            } onError: { <#Error#> in
+//                <#code#>
+//            } onCompleted: {
+//                <#code#>
+//            } onDisposed: {
+//                <#code#>
+//            }
+
+        
         nicknameTextFeild.rx.text.orEmpty
-            .map { self.checkNicknamePolicy(text: $0) }
-            .map { self.setNicknameDuplatedTestUI(isValidNickname: $0) }
+            .map { _ in self.isValidNickname() }
             .subscribe { str in
                 print(str)
             } onError: { err in
@@ -60,9 +88,8 @@ class MakeNicknameViewController: BaseViewController {
             }.disposed(by: disposeBag)
     }
     
-    // ViewModel 로직
-    private func setNicknameDuplatedTestUI(isValidNickname: Bool) {
-        if isValidNickname {
+    private func isValidNickname() -> Bool {
+        if viewModel.checkNicknamePolicy() {
             self.checkDuplecatedNicknameButton.isHidden = false
             self.clearTextButton.isHidden = false
         } else {
@@ -71,93 +98,19 @@ class MakeNicknameViewController: BaseViewController {
         }
     }
     
-    // ViewModel 로직
-    private func checkNicknamePolicy(text:String) -> Bool {
-        if checkTextLength(text: text) && checkKoreanName(text: text) {
-            return true
-        }
-        
-        return false
+    // viewModel에 있는 UI 관련 로직들이 다시 일로 와야함
+    @IBAction func checkDuplecatedNicknameButtonDidClicked(_ sender: UIButton) {
+        viewModel.checkDuplecatedNickname()
     }
     
-    // ViewModel 로직
-    private func checkTextLength(text: String) -> Bool {
-        if text.count < 2 || text.count > 10 {
-            return false
-        }
-        
-        return true
-    }
-    
-    // ViewModel 로직
-    private func checkKoreanName(text: String) -> Bool {
-        // String -> Array
-        let arr = Array(text)
-        // 정규식 pattern. 한글, 영어, 숫자, 밑줄(_)만 있어야함
-        let pattern = "^[ㄱ-ㅎ|ㅏ-ㅣ|가-힣]$"
-        if let regex = try? NSRegularExpression(pattern: pattern, options: .caseInsensitive) {
-            var index = 0
-            while index < arr.count { // string 내 각 문자 하나하나 마다 정규식 체크 후 충족하지 못한것은 제거.
-                let results = regex.matches(in: String(arr[index]), options: [], range: NSRange(location: 0, length: 1))
-                if results.count == 0 {
-                    return false
-                } else {
-                    index += 1
-                }
-            }
-        }
-        
-        if text.count < 2 || text.count > 10 {
-            return false
-        }
-        
-        return true
+    // viewModel에 있는 UI 관련 로직들이 다시 일로 와야함
+    @IBAction func nextButtonDidkClicked(_ sender: UIButton) {
+        viewModel.makeNickname(nickname: nicknameTextFeild.text ?? "")
     }
 
-    // 하드코딩된 텍스트 분리 + rx로 viewModel과 바인딩 필요
-    @IBAction func checkDuplecatedNicknameButtonDidClicked(_ sender: UIButton) {
-        NicknameDataManager().postCheckUserNicknameDuplecated(nickname: nicknameTextFeild.text ?? "") { result in
-            if let successResult = try? result.get() {
-                if successResult.code == 1000 {
-                    let attributedString = NSMutableAttributedString(string: "")
-                    let text = " 사용 가능한 닉네임입니다."
-                    let attachedImage = NSTextAttachment()
-                    attachedImage.image = UIImage(named: "trueCheck")
-                    attributedString.append(NSAttributedString(attachment: attachedImage))
-                    attributedString.append(NSAttributedString(string: text))
-                    self.nicknameStatusLabel.attributedText = attributedString
-                    self.nextButton.isEnabled = true
-                    self.nextButton.backgroundColor = .typoBlue
-                    self.nicknameStatusLabel.isHidden = false
-                    self.nicknameStatusLabel.textColor = .typoBlue
-                }
-            } else {
-                let attributedString = NSMutableAttributedString(string: "")
-                let text = " 이미 사용 중인 닉네임입니다."
-                let attachedImage = NSTextAttachment()
-                attachedImage.image = UIImage(named: "falseCheck")
-                attributedString.append(NSAttributedString(attachment: attachedImage))
-                attributedString.append(NSAttributedString(string: text))
-                self.nicknameStatusLabel.attributedText = attributedString
-                self.nicknameStatusLabel.isHidden = false
-                self.nicknameStatusLabel.textColor = .nicknameDuplecatedWaringColor
-            }
-        }
-    }
-    
     @IBAction func clearTextButtonDidClicked(_ sender: UIButton) {
         nicknameTextFeild.text = nil
         nicknameStatusLabel.isHidden = true
     }
     
-    @IBAction func nextButtonDidkClicked(_ sender: UIButton) {
-        NicknameDataManager().postUserNickname(nickname: nicknameTextFeild.text ?? "") { makeNicknameResponse in
-            if makeNicknameResponse.code == 1000 {
-                self.changeRootViewController(BaseTabBarController().initMainTabBar())
-            } else {
-                self.presentBottomAlert(message: "닉네임 생성 실패 - code(\(makeNicknameResponse.code))")
-                print("LOG:", makeNicknameResponse)
-            }
-        }
-    }
 }
