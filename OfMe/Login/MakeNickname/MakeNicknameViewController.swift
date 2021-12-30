@@ -1,10 +1,3 @@
-//
-//  MakeNicknameViewController.swift
-//  OfMe
-//
-//  Created by HanaHan on 2021/09/06.
-//
-
 import UIKit
 import RxCocoa
 import RxSwift

@@ -27,6 +27,22 @@
 		0020E98F26E1C3D800CA4882 /* FinishButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0020E98D26E1C3D800CA4882 /* FinishButtonCell.swift */; };
 		0020E99026E1C3D800CA4882 /* FinishButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0020E98E26E1C3D800CA4882 /* FinishButtonCell.xib */; };
 		0020E99526E3A43400CA4882 /* CustomInformAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0020E99426E3A43400CA4882 /* CustomInformAlert.swift */; };
+		00270CDE277E15CA000F59AF /* MyInfoMainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00270CDD277E15CA000F59AF /* MyInfoMainService.swift */; };
+		00270CE0277E15D7000F59AF /* MyInfoMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00270CDF277E15D7000F59AF /* MyInfoMainViewModel.swift */; };
+		00270CE2277E15F5000F59AF /* MyInfoMainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00270CE1277E15F5000F59AF /* MyInfoMainModel.swift */; };
+		00270CE5277E1694000F59AF /* MyInfoDetailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00270CE4277E1694000F59AF /* MyInfoDetailService.swift */; };
+		00270CE7277E16A2000F59AF /* MyInfoDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00270CE6277E16A2000F59AF /* MyInfoDetailViewModel.swift */; };
+		00270CE9277E16AE000F59AF /* MyInfoDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00270CE8277E16AE000F59AF /* MyInfoDetailModel.swift */; };
+		00270CF1277E173B000F59AF /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00270CEF277E173B000F59AF /* ChangePasswordViewController.swift */; };
+		00270CF2277E173B000F59AF /* ChangePasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00270CF0277E173B000F59AF /* ChangePasswordViewController.xib */; };
+		00270CF5277E1747000F59AF /* ChangeNicknameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00270CF3277E1747000F59AF /* ChangeNicknameViewController.swift */; };
+		00270CF6277E1747000F59AF /* ChangeNicknameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00270CF4277E1747000F59AF /* ChangeNicknameViewController.xib */; };
+		00270CF8277E1757000F59AF /* ChangeNicknameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00270CF7277E1757000F59AF /* ChangeNicknameViewModel.swift */; };
+		00270CFA277E175F000F59AF /* ChangeNicknameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00270CF9277E175F000F59AF /* ChangeNicknameModel.swift */; };
+		00270CFC277E176A000F59AF /* ChangeNicknameServicce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00270CFB277E176A000F59AF /* ChangeNicknameServicce.swift */; };
+		00270CFE277E177F000F59AF /* ChangePasswordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00270CFD277E177F000F59AF /* ChangePasswordModel.swift */; };
+		00270D00277E1794000F59AF /* ChangePasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00270CFF277E1794000F59AF /* ChangePasswordViewModel.swift */; };
+		00270D02277E179F000F59AF /* ChangePasswordServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00270D01277E179F000F59AF /* ChangePasswordServer.swift */; };
 		003FE37226E477D000E00F8B /* UIWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003FE37126E477D000E00F8B /* UIWindow.swift */; };
 		003FE37626E479C100E00F8B /* CharacterSummaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003FE37426E479C100E00F8B /* CharacterSummaryCell.swift */; };
 		003FE37726E479C100E00F8B /* CharacterSummaryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 003FE37526E479C100E00F8B /* CharacterSummaryCell.xib */; };
@@ -207,6 +223,22 @@
 		0020E98D26E1C3D800CA4882 /* FinishButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishButtonCell.swift; sourceTree = "<group>"; };
 		0020E98E26E1C3D800CA4882 /* FinishButtonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FinishButtonCell.xib; sourceTree = "<group>"; };
 		0020E99426E3A43400CA4882 /* CustomInformAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInformAlert.swift; sourceTree = "<group>"; };
+		00270CDD277E15CA000F59AF /* MyInfoMainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyInfoMainService.swift; sourceTree = "<group>"; };
+		00270CDF277E15D7000F59AF /* MyInfoMainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyInfoMainViewModel.swift; sourceTree = "<group>"; };
+		00270CE1277E15F5000F59AF /* MyInfoMainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyInfoMainModel.swift; sourceTree = "<group>"; };
+		00270CE4277E1694000F59AF /* MyInfoDetailService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyInfoDetailService.swift; sourceTree = "<group>"; };
+		00270CE6277E16A2000F59AF /* MyInfoDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyInfoDetailViewModel.swift; sourceTree = "<group>"; };
+		00270CE8277E16AE000F59AF /* MyInfoDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyInfoDetailModel.swift; sourceTree = "<group>"; };
+		00270CEF277E173B000F59AF /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
+		00270CF0277E173B000F59AF /* ChangePasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangePasswordViewController.xib; sourceTree = "<group>"; };
+		00270CF3277E1747000F59AF /* ChangeNicknameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeNicknameViewController.swift; sourceTree = "<group>"; };
+		00270CF4277E1747000F59AF /* ChangeNicknameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangeNicknameViewController.xib; sourceTree = "<group>"; };
+		00270CF7277E1757000F59AF /* ChangeNicknameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeNicknameViewModel.swift; sourceTree = "<group>"; };
+		00270CF9277E175F000F59AF /* ChangeNicknameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeNicknameModel.swift; sourceTree = "<group>"; };
+		00270CFB277E176A000F59AF /* ChangeNicknameServicce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeNicknameServicce.swift; sourceTree = "<group>"; };
+		00270CFD277E177F000F59AF /* ChangePasswordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordModel.swift; sourceTree = "<group>"; };
+		00270CFF277E1794000F59AF /* ChangePasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewModel.swift; sourceTree = "<group>"; };
+		00270D01277E179F000F59AF /* ChangePasswordServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordServer.swift; sourceTree = "<group>"; };
 		003FE37126E477D000E00F8B /* UIWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWindow.swift; sourceTree = "<group>"; };
 		003FE37426E479C100E00F8B /* CharacterSummaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSummaryCell.swift; sourceTree = "<group>"; };
 		003FE37526E479C100E00F8B /* CharacterSummaryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterSummaryCell.xib; sourceTree = "<group>"; };
@@ -418,6 +450,65 @@
 			path = SuvView;
 			sourceTree = "<group>";
 		};
+		00270CE3277E1642000F59AF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3B45DF7826AAC3630072B314 /* Cell */,
+				3B2BAF26268B4FCE00CF3048 /* MyInfoMainViewController.swift */,
+				3B2BAF27268B4FCE00CF3048 /* MyInfoMainViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		00270CEA277E16B4000F59AF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3B1943EE26AAF6DC0014558F /* InfoDetailViewController.swift */,
+				3B1943EF26AAF6DC0014558F /* InfoDetailViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		00270CEB277E16FA000F59AF /* ChangeNickname */ = {
+			isa = PBXGroup;
+			children = (
+				00270CEE277E1728000F59AF /* View */,
+				00270CF7277E1757000F59AF /* ChangeNicknameViewModel.swift */,
+				00270CF9277E175F000F59AF /* ChangeNicknameModel.swift */,
+				00270CFB277E176A000F59AF /* ChangeNicknameServicce.swift */,
+			);
+			path = ChangeNickname;
+			sourceTree = "<group>";
+		};
+		00270CEC277E1718000F59AF /* ChangePassword */ = {
+			isa = PBXGroup;
+			children = (
+				00270CED277E1724000F59AF /* View */,
+				00270CFF277E1794000F59AF /* ChangePasswordViewModel.swift */,
+				00270CFD277E177F000F59AF /* ChangePasswordModel.swift */,
+				00270D01277E179F000F59AF /* ChangePasswordServer.swift */,
+			);
+			path = ChangePassword;
+			sourceTree = "<group>";
+		};
+		00270CED277E1724000F59AF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				00270CEF277E173B000F59AF /* ChangePasswordViewController.swift */,
+				00270CF0277E173B000F59AF /* ChangePasswordViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		00270CEE277E1728000F59AF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				00270CF3277E1747000F59AF /* ChangeNicknameViewController.swift */,
+				00270CF4277E1747000F59AF /* ChangeNicknameViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		003FE37326E479A200E00F8B /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -539,10 +630,12 @@
 		3B1943ED26AAF6BB0014558F /* Detail */ = {
 			isa = PBXGroup;
 			children = (
+				00270CEA277E16B4000F59AF /* View */,
+				00270CE4277E1694000F59AF /* MyInfoDetailService.swift */,
+				00270CE6277E16A2000F59AF /* MyInfoDetailViewModel.swift */,
+				00270CE8277E16AE000F59AF /* MyInfoDetailModel.swift */,
 				3B753D2E26B590DB00A941AA /* Delete */,
 				3B5EB19B26AB08B800E41D24 /* Network */,
-				3B1943EE26AAF6DC0014558F /* InfoDetailViewController.swift */,
-				3B1943EF26AAF6DC0014558F /* InfoDetailViewController.xib */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -562,10 +655,11 @@
 		3B2BAF25268B4FBF00CF3048 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				00270CE3277E1642000F59AF /* View */,
+				00270CDF277E15D7000F59AF /* MyInfoMainViewModel.swift */,
+				00270CE1277E15F5000F59AF /* MyInfoMainModel.swift */,
+				00270CDD277E15CA000F59AF /* MyInfoMainService.swift */,
 				3B1943EA26AAF2C30014558F /* Network */,
-				3B45DF7826AAC3630072B314 /* Cell */,
-				3B2BAF26268B4FCE00CF3048 /* MyInfoMainViewController.swift */,
-				3B2BAF27268B4FCE00CF3048 /* MyInfoMainViewController.xib */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -762,6 +856,8 @@
 		3B638FBB268B0E380095F05B /* MyInfo */ = {
 			isa = PBXGroup;
 			children = (
+				00270CEC277E1718000F59AF /* ChangePassword */,
+				00270CEB277E16FA000F59AF /* ChangeNickname */,
 				3B1943F226AB019E0014558F /* Write */,
 				3B1943ED26AAF6BB0014558F /* Detail */,
 				3B2BAF25268B4FBF00CF3048 /* Main */,
@@ -1425,6 +1521,8 @@
 				3BD7007F26A5CB4C0055AF8A /* QuestionWriteViewController.xib in Resources */,
 				3BBD933B268F68D0003BB706 /* ConceptTestCollectionViewCell.xib in Resources */,
 				3B1943F126AAF6DC0014558F /* InfoDetailViewController.xib in Resources */,
+				00270CF2277E173B000F59AF /* ChangePasswordViewController.xib in Resources */,
+				00270CF6277E1747000F59AF /* ChangeNicknameViewController.xib in Resources */,
 				0020E95826DBF2A600CA4882 /* CharacterFeatureCell.xib in Resources */,
 				0020E96A26DE754300CA4882 /* ActionButtonCell.xib in Resources */,
 				0020E98C26E1295B00CA4882 /* StarRatingCell.xib in Resources */,
@@ -1484,6 +1582,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00270CF1277E173B000F59AF /* ChangePasswordViewController.swift in Sources */,
 				0020E96926DE754300CA4882 /* ActionButtonCell.swift in Sources */,
 				3B3EC6AB26B3F85C0063F3EA /* QuestionGetResponse.swift in Sources */,
 				3B8391DF2689D98000B35A53 /* UIView.swift in Sources */,
@@ -1492,6 +1591,7 @@
 				003FE37626E479C100E00F8B /* CharacterSummaryCell.swift in Sources */,
 				3B83920E2689E8A500B35A53 /* UITextField.swift in Sources */,
 				3B8C37FA26AD3A0500CD893A /* SubAllQuestionResponse.swift in Sources */,
+				00270CE9277E16AE000F59AF /* MyInfoDetailModel.swift in Sources */,
 				3B8391E42689D98000B35A53 /* UINavigationBar.swift in Sources */,
 				3BBD9346268F79AB003BB706 /* ConceptSecondAdapter.swift in Sources */,
 				3B638FC9268B485B0095F05B /* HomeMainViewController.swift in Sources */,
@@ -1513,6 +1613,7 @@
 				3BBD9337268F6681003BB706 /* ConceptFirstAdapter.swift in Sources */,
 				3BBD9333268F63C4003BB706 /* TestConceptHeader.swift in Sources */,
 				3BD7007E26A5CB4C0055AF8A /* QuestionWriteViewController.swift in Sources */,
+				00270CFE277E177F000F59AF /* ChangePasswordModel.swift in Sources */,
 				00C904C8271B18D600C49E05 /* ApiCallConstant.swift in Sources */,
 				3BD6A042269DFC7100F7E3AF /* TestConceptSecondResponse.swift in Sources */,
 				003FE39226FCDC2300E00F8B /* LoginDataManager.swift in Sources */,
@@ -1522,13 +1623,16 @@
 				3B915010269877EF004FE9C0 /* URLConstant.swift in Sources */,
 				3B1943F526AB02720014558F /* FixNameViewController.swift in Sources */,
 				3B753D2426B4E5BF00A941AA /* MyInfoDataManager.swift in Sources */,
+				00270CF5277E1747000F59AF /* ChangeNicknameViewController.swift in Sources */,
 				3B638FD3268B498C0095F05B /* QuestionMainViewController.swift in Sources */,
 				3BD6A01C269DDCAF00F7E3AF /* AutoLoginResponse.swift in Sources */,
 				3B8391E82689D98000B35A53 /* UITextView.swift in Sources */,
+				00270D02277E179F000F59AF /* ChangePasswordServer.swift in Sources */,
 				3B96640626A1F89700DE5DB3 /* QuestionMenuCell.swift in Sources */,
 				003FE37226E477D000E00F8B /* UIWindow.swift in Sources */,
 				3B28D307268E133A005BCDE8 /* CircularProgressBar.swift in Sources */,
 				3BBD932E268F51F7003BB706 /* TestConceptDetailFirstViewController.swift in Sources */,
+				00270CE7277E16A2000F59AF /* MyInfoDetailViewModel.swift in Sources */,
 				0020E97F26E1260000CA4882 /* ConceptResultSummaryCell.swift in Sources */,
 				3B8391F82689D98000B35A53 /* BaseViewController.swift in Sources */,
 				00EAF4C026D544FB005DBDB8 /* CellManager.swift in Sources */,
@@ -1539,14 +1643,17 @@
 				3B8391E32689D98000B35A53 /* UIViewController.swift in Sources */,
 				3B38D020269EBE4A00870EB5 /* MonthYearPickerView.swift in Sources */,
 				3B2BAF39268CC44500CF3048 /* UITabBarController.swift in Sources */,
+				00270CE0277E15D7000F59AF /* MyInfoMainViewModel.swift in Sources */,
 				3B8CF33E26A36B8A00A6B627 /* FinishRateResponse.swift in Sources */,
 				3B1943F926AB05610014558F /* FixPasswordViewController.swift in Sources */,
 				3B8391E72689D98000B35A53 /* UILabel.swift in Sources */,
 				3B753D2B26B5367100A941AA /* InfoWriteDataManager.swift in Sources */,
+				00270CE5277E1694000F59AF /* MyInfoDetailService.swift in Sources */,
 				3B28D309268E34C9005BCDE8 /* DummyString.swift in Sources */,
 				3B4037272689D6FC00AFAC40 /* AppDelegate.swift in Sources */,
 				3B5EB1A126AB08FD00E41D24 /* LogoutResponse.swift in Sources */,
 				0020E95726DBF2A600CA4882 /* CharacterFeatureCell.swift in Sources */,
+				00270D00277E1794000F59AF /* ChangePasswordViewModel.swift in Sources */,
 				0020E97026DE7B7900CA4882 /* SideActionsViewController.swift in Sources */,
 				3B83920C2689E49F00B35A53 /* ImageConstant.swift in Sources */,
 				3B326DD32690971100094C0D /* TestConceptThirdViewController.swift in Sources */,
@@ -1571,16 +1678,19 @@
 				3B45DF7B26AAC37D0072B314 /* InfoMenuCell.swift in Sources */,
 				3BBD933E268F73AB003BB706 /* NextConceptButtonView.swift in Sources */,
 				0020E97526DE7E0700CA4882 /* Action.swift in Sources */,
+				00270CFC277E176A000F59AF /* ChangeNicknameServicce.swift in Sources */,
 				3B8391EB2689D98000B35A53 /* KobisKey.swift in Sources */,
 				3B4037292689D6FC00AFAC40 /* SceneDelegate.swift in Sources */,
 				3B2BAF28268B4FCE00CF3048 /* MyInfoMainViewController.swift in Sources */,
 				3B753D3126B590F200A941AA /* DeleteUserViewController.swift in Sources */,
+				00270CFA277E175F000F59AF /* ChangeNicknameModel.swift in Sources */,
 				3B96642A26A356FC00DE5DB3 /* HomeFinishViewController.swift in Sources */,
 				003FE37A26E63F5800E00F8B /* SocialLoginViewController.swift in Sources */,
 				3BBD933A268F68D0003BB706 /* ConceptTestCollectionViewCell.swift in Sources */,
 				3B3EC6A926B3F7D20063F3EA /* QuestionWriteDataManager.swift in Sources */,
 				3B3EC6AE26B440840063F3EA /* QuestionAllSubView.swift in Sources */,
 				3B8391DD2689D98000B35A53 /* Device.swift in Sources */,
+				00270CF8277E1757000F59AF /* ChangeNicknameViewModel.swift in Sources */,
 				003FE38E26F0DEBB00E00F8B /* SocialLoginManager.swift in Sources */,
 				00C904CC271B27BE00C49E05 /* NetworkUtils.swift in Sources */,
 				003FE37E26E6530D00E00F8B /* MakeNicknameViewController.swift in Sources */,
@@ -1595,6 +1705,8 @@
 				3B96640C26A210A700DE5DB3 /* TestConceptThirdResponse.swift in Sources */,
 				3B8CF34026A36BB200A6B627 /* FinishDataManager.swift in Sources */,
 				0020E95E26DCD6A100CA4882 /* Concpet.swift in Sources */,
+				00270CE2277E15F5000F59AF /* MyInfoMainModel.swift in Sources */,
+				00270CDE277E15CA000F59AF /* MyInfoMainService.swift in Sources */,
 				3B753D2626B4E5D500A941AA /* MyInfoResponse.swift in Sources */,
 				0020E99526E3A43400CA4882 /* CustomInformAlert.swift in Sources */,
 				3BD6A03D269DF89700F7E3AF /* TestConceptFirstDataManager.swift in Sources */,
