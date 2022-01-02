@@ -77,6 +77,7 @@ extension UIColor {
     class var tabBarIconColor: UIColor { UIColor(hex: 0xD8D8D8) }
     class var selectedTabBarIconColor: UIColor { UIColor(hex: 0x4761C6) }
 
-    
+    // 마이페이지
+    class var totalConceptHistoryLabelColor: UIColor { UIColor(hex: 0x818182) }
 }
 
