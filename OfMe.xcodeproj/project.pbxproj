@@ -43,6 +43,15 @@
 		00270CFE277E177F000F59AF /* ChangePasswordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00270CFD277E177F000F59AF /* ChangePasswordModel.swift */; };
 		00270D00277E1794000F59AF /* ChangePasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00270CFF277E1794000F59AF /* ChangePasswordViewModel.swift */; };
 		00270D02277E179F000F59AF /* ChangePasswordServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00270D01277E179F000F59AF /* ChangePasswordServer.swift */; };
+		00270D062781F693000F59AF /* NewMainMyInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00270D042781F693000F59AF /* NewMainMyInfoViewController.swift */; };
+		00270D072781F693000F59AF /* NewMainMyInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00270D052781F693000F59AF /* NewMainMyInfoViewController.xib */; };
+		00270D0A2781F7AD000F59AF /* NewMyPageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00270D082781F7AD000F59AF /* NewMyPageTableViewCell.swift */; };
+		00270D0B2781F7AD000F59AF /* NewMyPageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00270D092781F7AD000F59AF /* NewMyPageTableViewCell.xib */; };
+		00270D0E2781F7C0000F59AF /* NewConceptHistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00270D0C2781F7C0000F59AF /* NewConceptHistoryTableViewCell.swift */; };
+		00270D0F2781F7C0000F59AF /* NewConceptHistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00270D0D2781F7C0000F59AF /* NewConceptHistoryTableViewCell.xib */; };
+		00270D122781F80A000F59AF /* NewEmptyConceptHistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00270D102781F80A000F59AF /* NewEmptyConceptHistoryTableViewCell.swift */; };
+		00270D132781F80A000F59AF /* NewEmptyConceptHistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00270D112781F80A000F59AF /* NewEmptyConceptHistoryTableViewCell.xib */; };
+		00270D152781F8B5000F59AF /* CellManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00270D142781F8B5000F59AF /* CellManager.swift */; };
 		003FE37226E477D000E00F8B /* UIWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003FE37126E477D000E00F8B /* UIWindow.swift */; };
 		003FE37626E479C100E00F8B /* CharacterSummaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003FE37426E479C100E00F8B /* CharacterSummaryCell.swift */; };
 		003FE37726E479C100E00F8B /* CharacterSummaryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 003FE37526E479C100E00F8B /* CharacterSummaryCell.xib */; };
@@ -239,6 +248,15 @@
 		00270CFD277E177F000F59AF /* ChangePasswordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordModel.swift; sourceTree = "<group>"; };
 		00270CFF277E1794000F59AF /* ChangePasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewModel.swift; sourceTree = "<group>"; };
 		00270D01277E179F000F59AF /* ChangePasswordServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordServer.swift; sourceTree = "<group>"; };
+		00270D042781F693000F59AF /* NewMainMyInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMainMyInfoViewController.swift; sourceTree = "<group>"; };
+		00270D052781F693000F59AF /* NewMainMyInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewMainMyInfoViewController.xib; sourceTree = "<group>"; };
+		00270D082781F7AD000F59AF /* NewMyPageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMyPageTableViewCell.swift; sourceTree = "<group>"; };
+		00270D092781F7AD000F59AF /* NewMyPageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewMyPageTableViewCell.xib; sourceTree = "<group>"; };
+		00270D0C2781F7C0000F59AF /* NewConceptHistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewConceptHistoryTableViewCell.swift; sourceTree = "<group>"; };
+		00270D0D2781F7C0000F59AF /* NewConceptHistoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewConceptHistoryTableViewCell.xib; sourceTree = "<group>"; };
+		00270D102781F80A000F59AF /* NewEmptyConceptHistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEmptyConceptHistoryTableViewCell.swift; sourceTree = "<group>"; };
+		00270D112781F80A000F59AF /* NewEmptyConceptHistoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewEmptyConceptHistoryTableViewCell.xib; sourceTree = "<group>"; };
+		00270D142781F8B5000F59AF /* CellManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellManager.swift; sourceTree = "<group>"; };
 		003FE37126E477D000E00F8B /* UIWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWindow.swift; sourceTree = "<group>"; };
 		003FE37426E479C100E00F8B /* CharacterSummaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSummaryCell.swift; sourceTree = "<group>"; };
 		003FE37526E479C100E00F8B /* CharacterSummaryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterSummaryCell.xib; sourceTree = "<group>"; };
@@ -456,6 +474,8 @@
 				3B45DF7826AAC3630072B314 /* Cell */,
 				3B2BAF26268B4FCE00CF3048 /* MyInfoMainViewController.swift */,
 				3B2BAF27268B4FCE00CF3048 /* MyInfoMainViewController.xib */,
+				00270D042781F693000F59AF /* NewMainMyInfoViewController.swift */,
+				00270D052781F693000F59AF /* NewMainMyInfoViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -795,6 +815,13 @@
 				3B753D3426B5ADC100A941AA /* MyInfoHistoryCell.xib */,
 				3B753D3726B5B11B00A941AA /* MyInfoCharCell.swift */,
 				3B753D3826B5B11B00A941AA /* MyInfoCharCell.xib */,
+				00270D082781F7AD000F59AF /* NewMyPageTableViewCell.swift */,
+				00270D092781F7AD000F59AF /* NewMyPageTableViewCell.xib */,
+				00270D0C2781F7C0000F59AF /* NewConceptHistoryTableViewCell.swift */,
+				00270D0D2781F7C0000F59AF /* NewConceptHistoryTableViewCell.xib */,
+				00270D102781F80A000F59AF /* NewEmptyConceptHistoryTableViewCell.swift */,
+				00270D112781F80A000F59AF /* NewEmptyConceptHistoryTableViewCell.xib */,
+				00270D142781F8B5000F59AF /* CellManager.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -1476,6 +1503,7 @@
 			files = (
 				3B96640726A1F89700DE5DB3 /* QuestionMenuCell.xib in Resources */,
 				00F12D2B26D159190055BC5F /* NotoSansKR-Black.otf in Resources */,
+				00270D0F2781F7C0000F59AF /* NewConceptHistoryTableViewCell.xib in Resources */,
 				003FE38526E8FB3B00E00F8B /* CoachmarkerViewController.xib in Resources */,
 				3BBD934A268F7AD8003BB706 /* TestConceptDescriptCollectionViewCell.xib in Resources */,
 				00F12D1826D1529C0055BC5F /* TimeInfoCell.xib in Resources */,
@@ -1483,6 +1511,7 @@
 				3B638FCA268B485B0095F05B /* HomeMainViewController.xib in Resources */,
 				00F12D3026D15B1E0055BC5F /* CharacterCell.xib in Resources */,
 				00F12D2726D159190055BC5F /* NotoSansKR-Regular.otf in Resources */,
+				00270D132781F80A000F59AF /* NewEmptyConceptHistoryTableViewCell.xib in Resources */,
 				3B97443E26A86A8800027219 /* QuestionSubCell.xib in Resources */,
 				3BE470CF26A470EA00FF18D2 /* QuestionAllViewController.xib in Resources */,
 				00EAF4BE26D53EFD005DBDB8 /* GoogleService-Info.plist in Resources */,
@@ -1507,11 +1536,13 @@
 				00EAF4C426D6889F005DBDB8 /* ConceptSugesstionCell.xib in Resources */,
 				3B96642B26A356FC00DE5DB3 /* HomeFinishViewController.xib in Resources */,
 				00F12D2C26D159190055BC5F /* NotoSansKR-Medium.otf in Resources */,
+				00270D072781F693000F59AF /* NewMainMyInfoViewController.xib in Resources */,
 				3B8CF33826A362BC00A6B627 /* StarCell.xib in Resources */,
 				003FE37726E479C100E00F8B /* CharacterSummaryCell.xib in Resources */,
 				3B6CF6E4268EEC43002A4DDE /* TestConceptMainViewController.xib in Resources */,
 				3B4037302689D6FE00AFAC40 /* Assets.xcassets in Resources */,
 				0020E95C26DC8A6400CA4882 /* CharacterFavoriteMusicCell.xib in Resources */,
+				00270D0B2781F7AD000F59AF /* NewMyPageTableViewCell.xib in Resources */,
 				3B1943F626AB02720014558F /* FixNameViewController.xib in Resources */,
 				3B638FD4268B498C0095F05B /* QuestionMainViewController.xib in Resources */,
 				3B753D3626B5ADC100A941AA /* MyInfoHistoryCell.xib in Resources */,
@@ -1583,6 +1614,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00270CF1277E173B000F59AF /* ChangePasswordViewController.swift in Sources */,
+				00270D152781F8B5000F59AF /* CellManager.swift in Sources */,
 				0020E96926DE754300CA4882 /* ActionButtonCell.swift in Sources */,
 				3B3EC6AB26B3F85C0063F3EA /* QuestionGetResponse.swift in Sources */,
 				3B8391DF2689D98000B35A53 /* UIView.swift in Sources */,
@@ -1604,6 +1636,7 @@
 				3B753D3926B5B11B00A941AA /* MyInfoCharCell.swift in Sources */,
 				3BD6A02E269DEC3500F7E3AF /* TestMyResultDataManager.swift in Sources */,
 				3B6CF6DC268EBC39002A4DDE /* TestResultViewController.swift in Sources */,
+				00270D122781F80A000F59AF /* NewEmptyConceptHistoryTableViewCell.swift in Sources */,
 				3B753D1A26B4605800A941AA /* QuestionSubDataManager.swift in Sources */,
 				3BD6A03A269DF70900F7E3AF /* TestConceptFirstResponse.swift in Sources */,
 				0020E95B26DC8A6400CA4882 /* CharacterFavoriteMusicCell.swift in Sources */,
@@ -1625,6 +1658,7 @@
 				3B753D2426B4E5BF00A941AA /* MyInfoDataManager.swift in Sources */,
 				00270CF5277E1747000F59AF /* ChangeNicknameViewController.swift in Sources */,
 				3B638FD3268B498C0095F05B /* QuestionMainViewController.swift in Sources */,
+				00270D0A2781F7AD000F59AF /* NewMyPageTableViewCell.swift in Sources */,
 				3BD6A01C269DDCAF00F7E3AF /* AutoLoginResponse.swift in Sources */,
 				3B8391E82689D98000B35A53 /* UITextView.swift in Sources */,
 				00270D02277E179F000F59AF /* ChangePasswordServer.swift in Sources */,
@@ -1642,6 +1676,7 @@
 				3B5EB19F26AB08E300E41D24 /* InfoDetailDataManager.swift in Sources */,
 				3B8391E32689D98000B35A53 /* UIViewController.swift in Sources */,
 				3B38D020269EBE4A00870EB5 /* MonthYearPickerView.swift in Sources */,
+				00270D0E2781F7C0000F59AF /* NewConceptHistoryTableViewCell.swift in Sources */,
 				3B2BAF39268CC44500CF3048 /* UITabBarController.swift in Sources */,
 				00270CE0277E15D7000F59AF /* MyInfoMainViewModel.swift in Sources */,
 				3B8CF33E26A36B8A00A6B627 /* FinishRateResponse.swift in Sources */,
@@ -1701,6 +1736,7 @@
 				00CE4F4926D9F42000EE352C /* MainHomeResponse.swift in Sources */,
 				3BD6A044269DFCDF00F7E3AF /* TestConceptSecondDataManager.swift in Sources */,
 				3B8C37FE26AD400100CD893A /* QuestionAllDataManager.swift in Sources */,
+				00270D062781F693000F59AF /* NewMainMyInfoViewController.swift in Sources */,
 				00F12D2F26D15B1E0055BC5F /* CharacterCell.swift in Sources */,
 				3B96640C26A210A700DE5DB3 /* TestConceptThirdResponse.swift in Sources */,
 				3B8CF34026A36BB200A6B627 /* FinishDataManager.swift in Sources */,
