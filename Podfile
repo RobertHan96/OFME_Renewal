@@ -18,7 +18,7 @@ target 'OfMe' do
   pod 'IQKeyboardManager'
   pod 'FSCalendar'
   pod 'NVActivityIndicatorView'
-  pod 'ImagePicker'
+#  pod 'ImagePicker'
   pod 'SideMenu'
   pod 'RxSwift', '6.2.0'
   pod 'RxCocoa', '6.2.0'

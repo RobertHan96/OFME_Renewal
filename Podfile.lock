@@ -76,7 +76,6 @@ PODS:
     - GoogleUtilities/Logger
   - GoogleUtilities/UserDefaults (7.5.1):
     - GoogleUtilities/Logger
-  - ImagePicker (3.2.0)
   - IQKeyboardManager (6.5.6)
   - KakaoSDK (2.6.0):
     - KakaoSDKAuth (= 2.6.0)
@@ -134,7 +133,6 @@ DEPENDENCIES:
   - Alamofire
   - Firebase/Analytics
   - FSCalendar
-  - ImagePicker
   - IQKeyboardManager
   - KakaoSDK
   - Kingfisher
@@ -157,7 +155,6 @@ SPEC REPOS:
     - GoogleAppMeasurement
     - GoogleDataTransport
     - GoogleUtilities
-    - ImagePicker
     - IQKeyboardManager
     - KakaoSDK
     - KakaoSDKAuth
@@ -190,7 +187,6 @@ SPEC CHECKSUMS:
   GoogleAppMeasurement: 2c0c6e2a7ab3fe730ade6379f732bdefb46f50b0
   GoogleDataTransport: 85fd18ff3019bb85d3f2c551d04c481dedf71fc9
   GoogleUtilities: 3df19e3c24f7bbc291d8b5809aa6b0d41e642437
-  ImagePicker: 1d950bbb2422548ed58791b4ec7f42fe42920511
   IQKeyboardManager: 2a6e97afdafc7becf0cb17a9a8d795e3a980717f
   KakaoSDK: fa00ea44415f172721d7469388c04db8912330cd
   KakaoSDKAuth: 037e6260f4468cbc3bde89a802864d6b58c5271c
@@ -212,6 +208,6 @@ SPEC CHECKSUMS:
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   Then: acfe0be7e98221c6204e12f8161459606d5d822d
 
-PODFILE CHECKSUM: 317e3c9189149a0ed0cd223c42135eb0408794f6
+PODFILE CHECKSUM: 3088a6d0baa806c52de69ea9b6d6ab7c2d204024
 
-COCOAPODS: 1.10.0
+COCOAPODS: 1.11.2
