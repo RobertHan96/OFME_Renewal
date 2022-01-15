@@ -79,5 +79,6 @@ extension UIColor {
 
     // 마이페이지
     class var totalConceptHistoryLabelColor: UIColor { UIColor(hex: 0x818182) }
+    class var profileDetailButtonBackgroundColor: UIColor { UIColor(hex: 0x6181E8) }
+    class var welcomTextColor: UIColor { UIColor(hex: 0x8195CE) }
 }
-

@@ -47,6 +47,20 @@ extension UILabel {
         self.attributedText = attributedText
     }
     
+    func makeMypageUserNameHightledText(all text: String,for subText: String) {
+        let attributedText = NSMutableAttributedString(string: text)
+        attributedText.addAttributes([
+            .font : UIFont.Notos(.medium, size: 26),
+            .foregroundColor : UIColor.mainBlue
+        ], range: (text as NSString).range(of: text))
+        
+        attributedText.addAttributes([
+            .font : UIFont.Notos(.medium, size: 14),
+            .foregroundColor : UIColor.welcomTextColor,
+        ], range: (text as NSString).range(of: subText))
+        self.attributedText = attributedText
+    }
+    
     func makeLoginTitleHightledText(all text: String,for subText: String) {
         let attributedText = NSMutableAttributedString(string: text)
         attributedText.addAttributes([

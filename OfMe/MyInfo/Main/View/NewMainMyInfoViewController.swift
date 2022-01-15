@@ -16,8 +16,13 @@ class NewMainMyInfoViewController: UIViewController {
     }
 
     private func setupUI() {
-        myInfoTableView.estimatedRowHeight = 700
-        myInfoTableView.rowHeight = UITableView.automaticDimension
+        myInfoTableView.estimatedRowHeight = 400
+//        TODO
+//        2) 캐릭터 히스토리 cell 디자인 + 제작
+//        3) 버튼 cell 디자인 + 제작 : 히스토리 없을때, 있을때로 2개 제작
+//        UI 테스트 끝나면 동적 높이 할당으로 원복 필요
+//        myInfoTableView.rowHeight = UITableView.automaticDimension
+        myInfoTableView.rowHeight = 400
         setupTableView()
     }
     
@@ -25,9 +30,9 @@ class NewMainMyInfoViewController: UIViewController {
         myInfoTableView.delegate = self
         myInfoTableView.dataSource = self
         myInfoTableView.backgroundColor = .clear
-//        myInfoTableView.register(UINib.init(nibName: CellManager.TimeInfoCellName, bundle: nil), forCellReuseIdentifier: CellManager.TimeInfoCellIdentifier)
-//        myInfoTableView.register(UINib.init(nibName: CellManager.CharacterCellName, bundle: nil), forCellReuseIdentifier: CellManager.CharacterCellIdentifier)
         myInfoTableView.register(UINib.init(nibName: MyInfoTableViewCellManager.TableViewHeaderCellName, bundle: nil), forCellReuseIdentifier: MyInfoTableViewCellManager.TableViewHeaderCellIdentifier)
+        myInfoTableView.register(UINib.init(nibName: MyInfoTableViewCellManager.MyPageCellName, bundle: nil), forCellReuseIdentifier: MyInfoTableViewCellManager.MyPageCellIdentifier)
+        
     }
 
 }
@@ -39,8 +44,9 @@ extension NewMainMyInfoViewController : UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let tablewViewHeaderCell = myInfoTableView.dequeueReusableCell(withIdentifier: MyInfoTableViewCellManager.TableViewHeaderCellIdentifier) as? TableViewHeaderCell else{ return UITableViewCell() }
-        
-        return tablewViewHeaderCell
+        guard let myPageCell = myInfoTableView.dequeueReusableCell(withIdentifier: MyInfoTableViewCellManager.MyPageCellIdentifier) as? NewMyPageTableViewCell else{ return UITableViewCell() }
+
+        return myPageCell
 
     }
     
