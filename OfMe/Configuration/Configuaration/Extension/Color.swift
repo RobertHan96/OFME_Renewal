@@ -78,7 +78,11 @@ extension UIColor {
     class var selectedTabBarIconColor: UIColor { UIColor(hex: 0x4761C6) }
 
     // 마이페이지
+    class var coachmarkHighlightTextColor: UIColor { UIColor(hex: 0xFDEDC0) }
     class var totalConceptHistoryLabelColor: UIColor { UIColor(hex: 0x818182) }
     class var profileDetailButtonBackgroundColor: UIColor { UIColor(hex: 0x6181E8) }
     class var welcomTextColor: UIColor { UIColor(hex: 0x8195CE) }
-}
+    class var historyTimeViewBackgroundColor: UIColor { UIColor(hex: 0xF0F2F8) }
+    class var timeLabelTextColor: UIColor { UIColor(hex: 0xAEB2BE) }}
+
+

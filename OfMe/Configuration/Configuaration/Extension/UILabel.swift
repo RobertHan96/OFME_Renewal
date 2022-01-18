@@ -144,6 +144,32 @@ extension UILabel {
 
         self.attributedText = attributedText
     }
+    
+    func makeConceptSuggestionCoachmarkHighlightedText(all text: String,
+                                       boldText: String,
+                                       colorBackgroundText: String,
+                                       colorBackgroundFont: UIFont,
+                                       boldFont: UIFont,
+                                       normalFont: UIFont) {
+        let attributedText = NSMutableAttributedString(string: text)
+        attributedText.addAttributes([
+            .font : normalFont,
+            .foregroundColor : UIColor.typoBlack
+        ], range: (text as NSString).range(of: text))
+        
+        attributedText.addAttributes([
+            .font : boldFont,
+            .foregroundColor : UIColor.typoBlack,
+        ], range: (text as NSString).range(of: boldText))
+
+        attributedText.addAttributes([
+            .font : colorBackgroundFont,
+            .foregroundColor : UIColor.typoBlack,
+            .backgroundColor : UIColor.coachmarkHighlightTextColor
+        ], range: (text as NSString).range(of: colorBackgroundText))
+
+        self.attributedText = attributedText
+    }
 }
 
 @IBDesignable class PaddingLabel: UILabel {

@@ -1,4 +1,5 @@
 import UIKit
+import SwiftUI
 
 // MARK: UIButton 내에 Indicator 표시
 extension UIButton {
@@ -67,4 +68,18 @@ extension UIButton {
         self.layer.cornerRadius = 4
     }
     
+    func roundCorners(corners:UIRectCorner, radius: CGFloat)
+    {
+      let borderLayer = CAShapeLayer()
+      borderLayer.frame = self.layer.bounds
+//        borderLayer.strokeColor = GenerateShape.UIColorFromHex(0x989898,
+//        alpha: (1.0-0.3)).CGColor
+//        borderLayer.fillColor = UIColor.clear.cgColor
+//      borderLayer.lineWidth = 1.0
+      let path = UIBezierPath(roundedRect: self.bounds,
+        byRoundingCorners: corners,
+        cornerRadii: CGSize(width: radius, height: radius))
+        borderLayer.path = path.cgPath
+      self.layer.addSublayer(borderLayer);
+    }
 }

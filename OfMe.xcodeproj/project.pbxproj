@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00103FCA2797048300D26D03 /* FindNewConceptButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00103FC82797048300D26D03 /* FindNewConceptButtonTableViewCell.swift */; };
+		00103FCB2797048300D26D03 /* FindNewConceptButtonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00103FC92797048300D26D03 /* FindNewConceptButtonTableViewCell.xib */; };
 		0020E95726DBF2A600CA4882 /* CharacterFeatureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0020E95526DBF2A600CA4882 /* CharacterFeatureCell.swift */; };
 		0020E95826DBF2A600CA4882 /* CharacterFeatureCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0020E95626DBF2A600CA4882 /* CharacterFeatureCell.xib */; };
 		0020E95B26DC8A6400CA4882 /* CharacterFavoriteMusicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0020E95926DC8A6400CA4882 /* CharacterFavoriteMusicCell.swift */; };
@@ -214,6 +216,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00103FC82797048300D26D03 /* FindNewConceptButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindNewConceptButtonTableViewCell.swift; sourceTree = "<group>"; };
+		00103FC92797048300D26D03 /* FindNewConceptButtonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FindNewConceptButtonTableViewCell.xib; sourceTree = "<group>"; };
 		0020E95526DBF2A600CA4882 /* CharacterFeatureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterFeatureCell.swift; sourceTree = "<group>"; };
 		0020E95626DBF2A600CA4882 /* CharacterFeatureCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterFeatureCell.xib; sourceTree = "<group>"; };
 		0020E95926DC8A6400CA4882 /* CharacterFavoriteMusicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterFavoriteMusicCell.swift; sourceTree = "<group>"; };
@@ -828,6 +832,8 @@
 				00270D162781FCC7000F59AF /* NewEmptyConceptHistoryTableViewCell.swift */,
 				00270D172781FCC7000F59AF /* NewEmptyConceptHistoryTableViewCell.xib */,
 				00270D1A2781FFD3000F59AF /* MyInfoTableViewCellManager.swift */,
+				00103FC82797048300D26D03 /* FindNewConceptButtonTableViewCell.swift */,
+				00103FC92797048300D26D03 /* FindNewConceptButtonTableViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -1567,6 +1573,7 @@
 				003FE37F26E6530D00E00F8B /* MakeNicknameViewController.xib in Resources */,
 				3B40F76826A1C0CF001F6FE7 /* QuestionSubMainViewController.xib in Resources */,
 				00F12D2A26D159190055BC5F /* NotoSansKR-Light.otf in Resources */,
+				00103FCB2797048300D26D03 /* FindNewConceptButtonTableViewCell.xib in Resources */,
 				0020E99026E1C3D800CA4882 /* FinishButtonCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1716,6 +1723,7 @@
 				3BE470CE26A470EA00FF18D2 /* QuestionAllViewController.swift in Sources */,
 				3B96642626A34B0A00DE5DB3 /* FinishSubView.swift in Sources */,
 				00F12D3326D15E060055BC5F /* CharacterInfoCell.swift in Sources */,
+				00103FCA2797048300D26D03 /* FindNewConceptButtonTableViewCell.swift in Sources */,
 				3B326DD72691ACF000094C0D /* TestConceptThirdAdapter.swift in Sources */,
 				3B8391E12689D98000B35A53 /* UIButton.swift in Sources */,
 				3B45DF7B26AAC37D0072B314 /* InfoMenuCell.swift in Sources */,
